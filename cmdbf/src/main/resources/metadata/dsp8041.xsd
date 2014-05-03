@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+DMTF - Distributed Management Task Force, Inc. - http://www.dmtf.org
+
+Document number: DSP8041
+Date:            2009-09-02
+Version:         1.0.0
+Document status: DMTF Standard
+
+Title: CMDBf XML Schema Specification for Service Metadata
+
+Document type: W3C XML Schema Document 
+Document language: E
+
+Abstract: XML schema specification for CMDBf (Configuration Management Database Federation)
+          service metadata. The semantics of the data is described in DSP0252 - Configuration 
+          Management Database (CMDB) Federation Specification. 
+
+Contact group: CMDB Federation Working Group, cmdbf@dmtf.org
+
+Acknowledgements: DMTF acknowledges the contributions of the following individuals to this document:
+- Forest Carlisle (CA)
+- Jacob Eisinger (IBM) 
+- Mark Johnson (IBM) 
+- Vincent Kowalski (BMC Software) 
+- Jishnu Mukerji (HP)
+- David Snelling (Fujitsu)
+- William Vambenepe (Oracle)
+- Marv Waschke (CA) 
+- Van Wiles  (BMC Software) 
+
+Copyright (C) 2009 Distributed Management Task Force, Inc. (DMTF).  All rights reserved.
+DMTF is a not-for-profit association of industry members dedicated to promoting enterprise and
+systems management and interoperability.  Members and non-members may reproduce DMTF specifications
+and documents for uses consistent with this purpose, provided that correct attribution is given.  As
+DMTF specifications may be revised from time to time, the particular version and release date should
+always be noted.  Implementation of certain elements of this standard or proposed standard may be
+subject to third party patent rights, including provisional patent rights (herein "patent rights").
+DMTF makes no representations to users of the standard as to the existence of such rights, and is
+not responsible to recognize, disclose, or identify any or all such third party patent right, owners
+or claimants, nor for any incomplete or inaccurate identification or disclosure of such rights,
+owners or claimants.  DMTF shall have no liability to any party, in any manner or circumstance,
+under any legal theory whatsoever, for failure to recognize, disclose, or identify any such third
+party patent rights, or for such party's reliance on the standard or incorporation thereof in its
+product, protocols or testing procedures.  DMTF shall have no liability to any party implementing
+such standard, whether such implementation is foreseeable or not, nor to any patent owner or
+claimant, and shall have no liability or responsibility for costs or losses incurred if a standard
+is withdrawn or modified after publication, and shall be indemnified and held harmless by any party
+implementing the standard from any and all claims of infringement by a patent owner for such
+implementations.  For information about patents held by third-parties which have notified the DMTF
+that, in their opinion, such patent may relate to or impact implementations of DMTF standards, visit
+http://www.dmtf.org/about/policies/disclosures.php.
+
+Change log:
+1.0.0 - 2009-09-02 - Initial version
+-->
+
+<xs:schema  
+  targetNamespace="http://schemas.dmtf.org/cmdbf/1/tns/serviceMetadata"
+  elementFormDefault="qualified" blockDefault="#all"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:cmdbfmd="http://schemas.dmtf.org/cmdbf/1/tns/serviceMetadata">
+    
+  <xs:import
+    namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2001/03/xml.xsd"
+    />
+    
+
+  <!-- *************** -->
+  <!-- Common elements -->
+  <!-- *************** -->
+  
+  <xs:element  name="serviceDescription">
+     <xs:complexType>
+        <xs:sequence>
+           <xs:element name="mdrId"       type="xs:anyURI" />
+           <xs:element name="serviceId"   type="xs:anyURI"               minOccurs="0" maxOccurs="1" />
+           <xs:element name="description" type="cmdbfmd:descriptionType" minOccurs="0" maxOccurs="unbounded" />
+           <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+     </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="descriptionType">
+     <xs:simpleContent>
+        <xs:extension base="xs:string">
+           <xs:attribute ref="xml:lang" use="optional"/>
+        </xs:extension>
+     </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:element name="recordTypeList">
+     <xs:complexType>
+        <xs:sequence>
+           <xs:element ref="cmdbfmd:recordTypes" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+     </xs:complexType>
+  </xs:element>
+
+  <xs:element name="recordTypes">
+     <xs:complexType>
+        <xs:sequence>
+           <xs:element ref="cmdbfmd:recordType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="namespace"      type="xs:anyURI" use="required" />
+        <xs:attribute name="schemaLocation" type="xs:anyURI" use="optional" />
+     </xs:complexType>
+  </xs:element>
+
+  <xs:element name="recordType"> 
+     <xs:complexType> 
+        <xs:sequence> 
+           <xs:element name="superType" type="cmdbfmd:QNameType" minOccurs="0" maxOccurs="unbounded" />
+           <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence> 
+        <xs:attribute name="localName" type="xs:NCName" use="required" /> 
+        <xs:attribute name="appliesTo" use="required"> 
+           <xs:simpleType> 
+              <xs:restriction base="xs:string"> 
+                 <xs:enumeration value="item" /> 
+                 <xs:enumeration value="relationship" /> 
+                 <xs:enumeration value="both" /> 
+              </xs:restriction> 
+           </xs:simpleType> 
+        </xs:attribute> 
+     </xs:complexType> 
+  </xs:element> 
+
+  <xs:complexType name="QNameType">
+     <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+     <xs:attribute name="localName" type="xs:NCName" use="required" />
+  </xs:complexType>
+
+
+  <!-- ********************************* -->
+  <!-- Query Service metadata definition -->
+  <!-- ********************************* -->
+  
+  <xs:element name="queryServiceMetadata">
+     <xs:complexType>
+        <xs:sequence>
+           <xs:element ref="cmdbfmd:serviceDescription" />
+           <xs:element name="supportedOptionSet" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded" />
+           <xs:element ref="cmdbfmd:queryCapabilities" minOccurs="0" maxOccurs="1" />
+           <xs:element ref="cmdbfmd:recordTypeList" />
+           <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+     </xs:complexType>
+  </xs:element>
+
+  <xs:element name="queryCapabilities">
+     <xs:complexType>
+        <xs:sequence>
+           <xs:element name="relationshipTemplateSupport" type="cmdbfmd:RelationshipTemplateType" 
+                                                            minOccurs="0" maxOccurs="1" />
+           <xs:element name="contentSelectorSupport"      type="cmdbfmd:ContentSelectorType" 
+                                                             minOccurs="0" maxOccurs="1" />
+           <xs:element name="recordConstraintSupport"     type="cmdbfmd:RecordConstraintType"  
+                                                             minOccurs="0" maxOccurs="1" />
+           <xs:element name="xpathSupport"                type="cmdbfmd:XPathType" 
+                                                            minOccurs="0" maxOccurs="1" />
+           <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+     </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="RelationshipTemplateType">
+     <xs:attribute name="depthLimit"     type="xs:boolean" use="required" />
+     <xs:attribute name="minimumMaximum" type="xs:boolean" use="required" />
+     <xs:anyAttribute namespace="##other" processContents="lax" />
+  </xs:complexType>
+
+  <xs:complexType name="ContentSelectorType">
+     <xs:attribute name="recordTypeSelector" type="xs:boolean" use="required" />
+     <xs:attribute name="propertySelector"   type="xs:boolean" use="required" />
+     <xs:anyAttribute namespace="##other" processContents="lax" />
+  </xs:complexType>
+
+  <xs:complexType name="RecordConstraintType">
+     <xs:sequence>
+        <xs:element name="propertyValueOperators" type="cmdbfmd:PropertyValueOperatorsType" 
+                                                    minOccurs="0" maxOccurs="1" />
+     </xs:sequence>
+     <xs:attribute name="recordTypeConstraint"    type="xs:boolean" use="required" />
+     <xs:attribute name="propertyValueConstraint" type="xs:boolean" use="required" />
+     <xs:anyAttribute namespace="##other" processContents="lax" />
+  </xs:complexType>
+
+  <xs:complexType name="PropertyValueOperatorsType">
+     <xs:attribute name="equal"          type="xs:boolean" use="required" />
+     <xs:attribute name="less"           type="xs:boolean" use="required" />
+     <xs:attribute name="lessOrEqual"    type="xs:boolean" use="required"/>
+     <xs:attribute name="greater"        type="xs:boolean" use="required" />
+     <xs:attribute name="greaterOrEqual" type="xs:boolean" use="required" />
+     <xs:attribute name="contains"       type="xs:boolean" use="required" />
+     <xs:attribute name="like"           type="xs:boolean" use="required" />
+     <xs:attribute name="isNull"         type="xs:boolean" use="required" />
+     <xs:anyAttribute namespace="##other" processContents="lax" />
+  </xs:complexType>
+
+  <xs:complexType name="XPathType">
+     <xs:sequence>
+        <xs:element name="dialect" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+
+  <!-- **************************************** -->
+  <!-- Registration Service metadata definition -->
+  <!-- **************************************** -->
+  
+  <xs:element name="registrationServiceMetadata">
+     <xs:complexType>
+        <xs:sequence>
+           <xs:element ref="cmdbfmd:serviceDescription" />
+           <xs:element ref="cmdbfmd:recordTypeList" />
+           <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+     </xs:complexType>
+  </xs:element>
+
+</xs:schema>

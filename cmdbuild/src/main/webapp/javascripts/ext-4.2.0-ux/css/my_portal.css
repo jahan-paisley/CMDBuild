@@ -1,0 +1,22 @@
+.x-portal-body {
+    padding: 0 15px 0 8px;
+    border: none;
+}
+.x-portal .x-portal-column {
+    /* columns must have vertical padding to avoid losing dimensions when empty */
+    padding: 8px 8px 0 0;
+}
+.x-portal .x-panel-dd-spacer {
+    border: 1px dashed #99bbe8;
+    background: #f6f6f6;
+    margin-bottom: 10px;
+}
+.x-portlet {
+    margin-bottom:10px;
+    padding: 1px;
+}
+
+.portlet-content {
+    padding: 10px;
+    font-size: 11px;
+}

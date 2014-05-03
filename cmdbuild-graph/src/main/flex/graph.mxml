@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+                width="100%" height="100%" creationComplete="init()"
+                xmlns:extensions="extensions.*"
+                xmlns:widgets="widgets.*"
+                resize="application_resize(event);"
+                paddingTop="5" paddingRight="5" paddingBottom="5" paddingLeft="5"
+                backgroundColor="0xFFFFFF">
+
+    <mx:Script>
+        <![CDATA[
+            import mx.collections.ArrayCollection;
+            import mx.events.ResizeEvent;
+            import mx.events.CollectionEvent;
+            import mx.controls.Button;
+
+            import extensions.CenteredCheckBox;
+            import extensions.LoadCanvas;
+
+            import widgets.events.ControlEvent;
+            import widgets.events.ClusterEvent;
+            import widgets.events.NodeEvent;
+
+            import models.CmdbData;
+            import models.events.CmdbDataEvent;
+
+            import utils.GraphUtil;
+
+            import mx.controls.Alert;
+
+            private var cmdbData:CmdbData;
+
+            private var cardB:Button;
+
+            private function application_resize(evt:ResizeEvent):void {
+                if(graphManagerW){
+                    this.validateNow();
+                    graphManagerW.containerResized(evt);
+                }
+            }
+
+            private function init():void {
+                GraphUtil.parameters = parameters;
+
+                cmdbData = new CmdbData();
+
+                var classId:String = parameters.classid;
+                var objId:String = parameters.objid;
+                cmdbData.centerOn({classId: classId, objId: objId});
+                setTimeout(
+                    function():void{cmdbData.cardFor({classId: classId, objId: objId})},
+                2000);
+
+                graphControlW.parameters = GraphUtil.parameters;
+
+                // Prepare button for filters
+                cardB = new Button();
+                cardB.label = "Applica";
+
+                // Setup Listeners
+                cmdbData.addEventListener(CmdbDataEvent.ERROR, function(evt:CmdbDataEvent):void {
+                    Alert.show(evt.parameters.error, 'Errore');
+                });
+                cmdbData.addEventListener(CmdbDataEvent.CLEAR, function(evt:CmdbDataEvent):void {
+                    graphManagerW.clearData();
+                });
+                cmdbData.addEventListener(CmdbDataEvent.RELATION_UPDATE, function(evt:CmdbDataEvent):void {
+                    graphManagerW.updateCluster(evt.parameters.cluster);
+                    var idx:int =relationsW.selectedIndex;
+                    relationsW.dataProvider = cmdbData.relations;
+                    relationsW.selectedIndex = idx;
+                });
+                cmdbData.addEventListener(CmdbDataEvent.NEW_DATA, function(evt:CmdbDataEvent):void {
+                    var cmdbData:CmdbData = evt.currentTarget as CmdbData;
+                    graphManagerW.loadData(cmdbData);
+                    graphManagerW.changeVisibility(cmdbData.level);
+                    relationsW.dataProvider = cmdbData.relations;
+                });
+                cmdbData.addEventListener(CmdbDataEvent.CARD, function(evt:CmdbDataEvent):void {
+                    var cmdbData:CmdbData = evt.currentTarget as CmdbData;
+                    cardP.title = "Scheda";
+                    cardW.mode = CmdbDataEvent.CARD;
+                    cardW.dataProvider = cmdbData.card;
+                    if(cardBox.numChildren == 2)
+                        cardBox.removeChildAt(1);
+                });
+                cmdbData.addEventListener(CmdbDataEvent.FILTER, function(evt:CmdbDataEvent):void {
+                    var cmdbData:CmdbData = evt.currentTarget as CmdbData;
+                    cardP.title = "Filtro";
+                    cardW.mode = CmdbDataEvent.FILTER;
+                    cardW.dataProvider = cmdbData.card;
+                    if(cardBox.numChildren == 1)
+                        cardBox.addChildAt(cardB, 1);
+                });
+                graphControlW.addEventListener(ControlEvent.EXTENSION, function(evt:ControlEvent):void {
+                    cmdbData.level = evt.extension;
+                });
+                graphControlW.addEventListener(ControlEvent.VIS_TYPE, function(evt:ControlEvent):void {
+                    graphManagerW.changeVisualization(evt.visType);
+                });
+                relationsW.addEventListener(ClusterEvent.CLUSTERIZE, function(evt:ClusterEvent):void {
+                    cmdbData.manageCluster(evt.clusterize, evt.relation);
+                });
+                cmdbData.addEventListener(CmdbDataEvent.CLUSTER, function(evt:CmdbDataEvent):void {
+                    var cmdbData:CmdbData = evt.currentTarget as CmdbData;
+                    graphManagerW.manageCluster(cmdbData, evt.parameters);
+                });
+                graphManagerW.addEventListener(NodeEvent.SELECT, function(evt:NodeEvent):void {
+                    relationsW.selectRelation(evt.node);
+                    if(evt.node.type == "cluster")
+                        cmdbData.filterFor(evt.node);
+                    else
+                        cmdbData.cardFor(evt.node);
+                });
+                graphManagerW.addEventListener(NodeEvent.CENTER, function(evt:NodeEvent):void {
+                    cmdbData.centerOn(evt.node);
+                });
+                cardB.addEventListener(MouseEvent.CLICK, function(evt:MouseEvent):void {
+                    cmdbData.setFilter(relationsW.selectedItem);
+                });
+            }
+        ]]>
+    </mx:Script>
+
+    <mx:Style>
+        global {
+            fontFamily:'Verdana';
+        }
+        Panel {
+            borderThicknessLeft: 5;
+            borderThicknessRight: 5;
+            borderThicknessBottom: 5;
+            borderAlpha: 1;
+            shadowDistance: 1;
+            borderColor: #52799C;
+            color: #FFFFFF;
+            headerHeight: 22;
+        }
+        .titlePanel {
+            fontSize: 12;
+            fontWeight: bold;
+        }
+    </mx:Style>
+
+    <mx:HBox width="100%" height="100%" id="HDiv">
+        <mx:Panel width="100%" height="100%"
+                  title="Mappa relazioni" titleStyleName="titlePanel">
+            <widgets:GraphControls id="graphControlW" width="100%" paddingTop="12" paddingBottom="12" paddingLeft="10" paddingRight="10" borderColor="#52799C"  borderThickness="2" borderStyle="solid" borderSides="bottom" color="#000000"/>
+            <extensions:LoadCanvas isLoading="false" loadImageSource="@Embed(source='assets/loadAnimation.swf')" width="100%"  height="100%">
+                <widgets:GraphManager id="graphManagerW" width="100%" height="100%"/>
+            </extensions:LoadCanvas>
+        </mx:Panel>
+        <mx:VBox width="250" height="100%">
+            <mx:Image source="@Embed(source='assets/logo.png')" width="100%"/>
+            <mx:Panel width="100%" height="100%" id="cardP"
+                      title="Scheda" titleStyleName="titlePanel">
+                <extensions:LoadCanvas isLoading="false" loadImageSource="@Embed(source='assets/loadAnimation.swf')" width="100%"  height="100%">
+                    <mx:VBox width="100%" height="100%" color="#000000"  id="cardBox">
+                        <widgets:Card id="cardW" width="100%" height="100%" showHeaders="false">
+                            <widgets:columns>
+                                <mx:DataGridColumn dataField="name" width="80" />
+                                <mx:DataGridColumn dataField="value" />
+                            </widgets:columns>
+                        </widgets:Card>
+                    </mx:VBox>
+                </extensions:LoadCanvas>
+            </mx:Panel>
+            <mx:Panel width="100%" title="Relazioni" titleStyleName="titlePanel">
+                <extensions:LoadCanvas isLoading="false" loadImageSource="@Embed(source='assets/loadAnimation.swf')" width="100%">
+                    <widgets:Relations id="relationsW" width="100%" rowCount="6" color="#000000">
+                        <widgets:columns>
+                            <mx:DataGridColumn dataField="level" width="20">
+                                <mx:headerRenderer>
+                                    <mx:Component>
+                                        <mx:Image source="@Embed(source='assets/icon_tree.png')"/>
+                                    </mx:Component>
+                                </mx:headerRenderer>
+                            </mx:DataGridColumn>
+                            <mx:DataGridColumn dataField="description" headerText="Description"/>
+                            <mx:DataGridColumn dataField="elements" headerText="#" width="35"/>
+                            <mx:DataGridColumn dataField="clusterize" itemRenderer="extensions.ClusterCheckBox" width="22">
+                                <mx:headerRenderer>
+                                    <mx:Component>
+                                        <mx:Image source="@Embed(source='assets/icon_cluster.png')"/>
+                                    </mx:Component>
+                                </mx:headerRenderer>
+                            </mx:DataGridColumn>
+                        </widgets:columns>
+                    </widgets:Relations>
+                </extensions:LoadCanvas>
+            </mx:Panel>
+        </mx:VBox>
+    </mx:HBox>
+
+</mx:Application>

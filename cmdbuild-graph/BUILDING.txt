@@ -1,0 +1,13 @@
+Build Instructions
+==================
+
+ * Download and unpack the Open Source Flex SDK [1] (tested with 3.4.1.10084)
+ * Download and compile Prefuse Flare Alpha [2] (tested with rel 2009.01.24)
+ * Copy build.properties.default to build.properties and set the correct
+   path to the Flex SDK and the Flare library
+ * Run "ant" to build the application (graph.swf)
+
+
+1: http://opensource.adobe.com/wiki/display/flexsdk/Downloads
+2: http://flare.prefuse.org/
+

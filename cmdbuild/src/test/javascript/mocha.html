@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cow tests</title>
+		<link rel="stylesheet" media="all" href="lib/mocha/mocha.css">
+	</head>
+	<body>
+		<div id="mocha">
+			<p>
+				<a href=".">Index</a>
+			</p>
+		</div>
+		<div id="messages"> </div>
+		<div id="fixtures"> </div>
+
+		<!-- Test framework -->
+		<script src="lib/mocha/mocha.js"></script>
+		<script src="lib/chai.js"></script>
+
+
+		<!-- Production code -->
+		<script>
+			CMDBuild = {};
+		</script>
+		<script src="../../main/webapp/javascripts/cmdbuild/core/Utils.js"></script>
+
+
+
+		<!-- Test code -->
+		<script>
+			mocha.setup('bdd');
+		</script>
+		<script src="unit/utils.js"></script>
+		<script>
+			mocha.run();
+		</script>
+	</body>
+</html>

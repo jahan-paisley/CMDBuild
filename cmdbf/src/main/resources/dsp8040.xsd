@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+DMTF - Distributed Management Task Force, Inc. - http://www.dmtf.org
+
+Document number: DSP8040
+Date:            2010-02-23
+Version:         1.0.1
+Document status: DMTF Standard
+
+Title: CMDBf XML Schema Specification for Service Data
+
+Document type: W3C XML Schema Document 
+Document language: E
+
+Abstract: XML schema specification for CMDBf (Configuration Management Database Federation)
+          service data. This data is exchanged via the CMDBf query and registration services, 
+          described in DSP0252 - Configuration Management Database (CMDB) Federation Specification. 
+
+Contact group: CMDB Federation Working Group, cmdbf@dmtf.org
+
+Acknowledgements: DMTF acknowledges the contributions of the following individuals to this document:
+- Forest Carlisle (CA)
+- Jacob Eisinger (IBM) 
+- Mark Johnson (IBM) 
+- Vincent Kowalski (BMC Software) 
+- Jishnu Mukerji (HP)
+- David Snelling (Fujitsu)
+- William Vambenepe (Oracle)
+- Marv Waschke (CA) 
+- Van Wiles  (BMC Software) 
+
+Copyright (C) 2009,2010 Distributed Management Task Force, Inc. (DMTF).  All rights reserved.
+DMTF is a not-for-profit association of industry members dedicated to promoting enterprise and
+systems management and interoperability.  Members and non-members may reproduce DMTF specifications
+and documents for uses consistent with this purpose, provided that correct attribution is given.  As
+DMTF specifications may be revised from time to time, the particular version and release date should
+always be noted.  Implementation of certain elements of this standard or proposed standard may be
+subject to third party patent rights, including provisional patent rights (herein "patent rights").
+DMTF makes no representations to users of the standard as to the existence of such rights, and is
+not responsible to recognize, disclose, or identify any or all such third party patent right, owners
+or claimants, nor for any incomplete or inaccurate identification or disclosure of such rights,
+owners or claimants.  DMTF shall have no liability to any party, in any manner or circumstance,
+under any legal theory whatsoever, for failure to recognize, disclose, or identify any such third
+party patent rights, or for such party's reliance on the standard or incorporation thereof in its
+product, protocols or testing procedures.  DMTF shall have no liability to any party implementing
+such standard, whether such implementation is foreseeable or not, nor to any patent owner or
+claimant, and shall have no liability or responsibility for costs or losses incurred if a standard
+is withdrawn or modified after publication, and shall be indemnified and held harmless by any party
+implementing the standard from any and all claims of infringement by a patent owner for such
+implementations.  For information about patents held by third-parties which have notified the DMTF
+that, in their opinion, such patent may relate to or impact implementations of DMTF standards, visit
+http://www.dmtf.org/about/policies/disclosures.php.
+
+Change log:
+1.0.0 - 2009-09-02 - Initial version
+1.0.1 - 2010-02-23 - Update to RecordType to fix a propertySet namespace issue
+                   - Update to change spelling of "unkown" to "unknown"
+-->
+
+
+<xs:schema  targetNamespace="http://schemas.dmtf.org/cmdbf/1/tns/serviceData"
+  elementFormDefault="qualified" blockDefault="#all"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:cmdbf="http://schemas.dmtf.org/cmdbf/1/tns/serviceData">
+
+  <!-- *********************************** -->
+  <!-- Message Global Element Declarations -->
+  <!-- *********************************** -->
+
+  <xs:element name="query" type="cmdbf:QueryType" />
+  <xs:element name="queryResult" type="cmdbf:QueryResultType" />
+  <xs:element name="registerRequest"    type="cmdbf:RegisterRequestType" />
+  <xs:element name="registerResponse"   type="cmdbf:RegisterResponseType" />
+  <xs:element name="deregisterRequest"  type="cmdbf:DeregisterRequestType" />
+  <xs:element name="deregisterResponse" type="cmdbf:DeregisterResponseType" />
+
+  <!-- *********************************************** -->
+  <!-- Query Fault Message Global Element Declarations -->
+  <!-- *********************************************** -->
+  
+  <xs:element name="UnknownTemplateIDFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="graphId" type="xs:ID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvalidPropertyTypeFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="propertyName">        
+          <xs:complexType>
+            <xs:attribute name="localName" type="xs:NCName" use="required" />
+            <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XPathErrorFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="expression"     type="xs:string" />
+        <xs:element name="xpathErrorCode" type="xs:string" />        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnsupportedConstraintFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="constraint">        
+          <xs:complexType>
+            <xs:attribute name="localName" type="xs:NCName" use="required" />
+            <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnsupportedSelectorFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="selector">        
+          <xs:complexType>
+            <xs:attribute name="localName" type="xs:NCName" use="required" />
+            <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryErrorFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any namespace="##any" processContents="lax" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExpensiveQueryErrorFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any namespace="##any" processContents="lax" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ************************************************ -->
+  <!-- Registration Message Global Element Declarations -->
+  <!-- ************************************************ -->
+
+  <xs:element name="InvalidRecordFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="recordId" type="xs:anyURI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnsupportedRecordTypeFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="recordType">        
+          <xs:complexType>
+            <xs:attribute name="localName" type="xs:NCName" use="required" />
+            <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvalidMDRFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="mdrId" type="xs:anyURI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrationErrorFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="recordId" type="xs:anyURI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeregistrationErrorFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="recordId" type="xs:anyURI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element> 
+
+  <!-- ************************* -->
+  <!-- Query Request Definitions -->
+  <!-- ************************* -->
+  
+  <xs:complexType name="QueryType">
+    <xs:sequence>
+      <xs:element name="itemTemplate"         type="cmdbf:ItemTemplateType" 
+                                                minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="relationshipTemplate" type="cmdbf:RelationshipTemplateType" 
+                                                minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ItemTemplateType">
+  	<xs:sequence>
+        <xs:group ref="cmdbf:Constraints" />
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required" />
+    <xs:attribute name="suppressFromResult" type="xs:boolean" use="optional" default="false"/>
+  </xs:complexType>
+
+  <xs:group name="Constraints" >
+     <xs:sequence>
+        <xs:element name="contentSelector"      type="cmdbf:ContentSelectorType" 
+                                                  minOccurs="0" maxOccurs="1" />
+        <xs:element name="instanceIdConstraint" type="cmdbf:InstanceIdConstraintType"
+                                                  minOccurs="0" maxOccurs="1" />
+        <xs:element name="recordConstraint"     type="cmdbf:RecordConstraintType" 
+                                                  minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:group>
+
+  <xs:complexType name="RelationshipTemplateType">
+     <xs:sequence>
+        <xs:group ref="cmdbf:Constraints" />
+        <xs:element name="sourceTemplate" type="cmdbf:RelationshipRefType" minOccurs="0" maxOccurs="1" />
+        <xs:element name="targetTemplate" type="cmdbf:RelationshipRefType" minOccurs="0" maxOccurs="1" />
+        <xs:element name="depthLimit"     type="cmdbf:DepthLimitType"      minOccurs="0" maxOccurs="1" />
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+     <xs:attribute name="id" type="xs:ID" use="required" />
+     <xs:attribute name="suppressFromResult" type="xs:boolean" use="optional" default="false"/>
+  </xs:complexType>
+
+  <xs:complexType name="RelationshipRefType">
+     <xs:attribute name="ref"     type="xs:IDREF" use="required" />
+     <xs:attribute name="minimum" type="xs:int" />
+     <xs:attribute name="maximum" type="xs:int" />
+  </xs:complexType>
+
+  <xs:complexType name="DepthLimitType">
+     <xs:attribute name="maxIntermediateItems"     type="xs:positiveInteger" />
+     <xs:attribute name="intermediateItemTemplate" type="xs:IDREF" />
+  </xs:complexType>
+
+  <xs:complexType name="ContentSelectorType">
+     <xs:sequence>
+    	<xs:element name="selectedRecordType" type="cmdbf:SelectedRecordTypeType" 
+    	                                        minOccurs="0" maxOccurs="unbounded" />
+    	<xs:element name="xpathSelector"      type="cmdbf:XPathExpressionType" 
+    	                                        minOccurs="0" maxOccurs="1" />
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SelectedRecordTypeType">
+     <xs:sequence>
+        <xs:element name="selectedProperty" type="cmdbf:QNameType" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+     <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+     <xs:attribute name="localName" type="xs:NCName" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="InstanceIdConstraintType">
+     <xs:sequence>
+        <xs:element ref="cmdbf:instanceId" minOccurs="1" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RecordConstraintType">
+     <xs:sequence>
+        <xs:element name="recordType"      type="cmdbf:QNameType"           minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="propertyValue"   type="cmdbf:PropertyValueType"   minOccurs="0" maxOccurs="unbounded" />
+    	<xs:element name="xpathConstraint" type="cmdbf:XPathExpressionType" minOccurs="0" maxOccurs="1" />
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PropertyValueType">
+     <xs:sequence>
+        <xs:element name="equal"          type="cmdbf:EqualOperatorType"
+                                            minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="less"           type="cmdbf:ComparisonOperatorType"
+                                            minOccurs="0" maxOccurs="1" />
+        <xs:element name="lessOrEqual"    type="cmdbf:ComparisonOperatorType" 
+                                            minOccurs="0" maxOccurs="1" />
+        <xs:element name="greater"        type="cmdbf:ComparisonOperatorType" 
+                                            minOccurs="0" maxOccurs="1" />
+        <xs:element name="greaterOrEqual" type="cmdbf:ComparisonOperatorType" 
+                                            minOccurs="0" maxOccurs="1" />
+        <xs:element name="contains"       type="cmdbf:StringOperatorType"
+                                            minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="like"           type="cmdbf:StringOperatorType"
+                                            minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="isNull"         type="cmdbf:NullOperatorType"
+                                            minOccurs="0" maxOccurs="1" />
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+     <xs:attribute name="namespace"      type="xs:anyURI"  use="required" />
+     <xs:attribute name="localName"      type="xs:NCName"  use="required" />
+     <xs:attribute name="recordMetadata" type="xs:boolean" use="optional" default="false" />
+     <xs:attribute name="matchAny"       type="xs:boolean" use="optional" default="false" />
+  </xs:complexType>
+
+  <!-- ************************ -->
+  <!-- property value operators -->
+  <!-- ************************ -->
+  
+  <xs:complexType name="ComparisonOperatorType">
+     <xs:simpleContent>
+        <xs:extension base="xs:anySimpleType">
+           <xs:attribute name="negate" type="xs:boolean" use="optional" default="false" />
+        </xs:extension>
+     </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="StringOperatorType">
+     <xs:simpleContent>
+        <xs:extension base="xs:string">
+           <xs:attribute name="caseSensitive" type="xs:boolean" use="optional" default="true" />
+           <xs:attribute name="negate"        type="xs:boolean" use="optional" default="false" />
+        </xs:extension>
+     </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="EqualOperatorType">
+     <xs:simpleContent>
+        <xs:extension base="xs:anySimpleType">
+           <xs:attribute name="caseSensitive" type="xs:boolean" use="optional" default="true" />
+           <xs:attribute name="negate"        type="xs:boolean" use="optional" default="false" />
+        </xs:extension>
+     </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="NullOperatorType">
+     <xs:attribute name="negate" type="xs:boolean" use="optional" default="false" />
+  </xs:complexType>
+
+  <xs:complexType name="XPathExpressionType">
+     <xs:sequence>
+        <xs:element name="prefixMapping" type="cmdbf:PrefixMappingType" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="expression"    type="xs:string" />
+     </xs:sequence>
+     <xs:attribute name="dialect" type="xs:anyURI" use="required" />
+  </xs:complexType> 
+
+  <xs:complexType name="PrefixMappingType">
+     <xs:attribute name="prefix"    type="xs:NCName" use="required" />
+     <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+  </xs:complexType>
+
+  <!-- ************************* -->
+  <!-- Query Response definition -->
+  <!-- ************************* -->
+  
+  <xs:complexType name="QueryResultType">
+     <xs:sequence>
+        <xs:element name="nodes" type="cmdbf:NodesType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="edges" type="cmdbf:EdgesType" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NodesType">
+     <xs:sequence>
+        <xs:element ref="cmdbf:item" minOccurs="1" maxOccurs="unbounded" />
+     </xs:sequence>
+     <xs:attribute name="templateId" type="xs:ID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="EdgesType">
+     <xs:sequence>
+        <xs:element ref="cmdbf:relationship" minOccurs="1" maxOccurs="unbounded" />
+     </xs:sequence>
+     <xs:attribute name="templateId" type="xs:ID" use="required" />
+  </xs:complexType>
+
+  <!-- ******************** -->
+  <!-- Registration Service -->
+  <!-- ******************** -->
+  
+  <xs:complexType name="RegisterRequestType">
+     <xs:sequence>
+        <xs:element name="mdrId" type="xs:anyURI" />
+        <xs:element name="itemList"         type="cmdbf:ItemListType"         minOccurs="0" maxOccurs="1" />
+        <xs:element name="relationshipList" type="cmdbf:RelationshipListType" minOccurs="0" maxOccurs="1" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ItemListType">
+     <xs:sequence>
+        <xs:element ref="cmdbf:item" minOccurs="1" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="RelationshipListType">
+     <xs:sequence>
+        <xs:element ref="cmdbf:relationship" minOccurs="1" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DeregisterRequestType">
+     <xs:sequence>
+        <xs:element name="mdrId" type="xs:anyURI" />
+        <xs:element name="itemIdList"         type="cmdbf:MdrScopedIdListType" minOccurs="0" maxOccurs="1" />
+        <xs:element name="relationshipIdList" type="cmdbf:MdrScopedIdListType" minOccurs="0" maxOccurs="1" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MdrScopedIdListType">
+     <xs:sequence>
+        <xs:element ref="cmdbf:instanceId" minOccurs="1" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RegisterResponseType">
+     <xs:sequence>
+        <xs:element name="RegisterInstanceResponse" type="cmdbf:RegisterInstanceResponseType" 
+                                                      minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RegisterInstanceResponseType">
+     <xs:sequence>
+        <xs:element name="instanceId" type="cmdbf:MdrScopedIdType" minOccurs="1" maxOccurs="1" />
+        <xs:element name="accepted"   type="cmdbf:AcceptedType"    minOccurs="0" maxOccurs="1" />
+        <xs:element name="declined"   type="cmdbf:DeclinedType"    minOccurs="0" maxOccurs="1" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DeregisterResponseType">
+     <xs:sequence>
+        <xs:element name="DeregisterInstanceResponse" type="cmdbf:DeregisterInstanceResponseType" 
+                                                        minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DeregisterInstanceResponseType">
+     <xs:sequence>
+        <xs:element name="instanceId" type="cmdbf:MdrScopedIdType" minOccurs="1" maxOccurs="1" />
+        <xs:element name="accepted"   type="xs:string"             minOccurs="0" maxOccurs="1" />
+        <xs:element name="declined"   type="cmdbf:DeclinedType"    minOccurs="0" maxOccurs="1" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AcceptedType">
+     <xs:sequence>
+        <xs:element name="alternateInstanceId" type="cmdbf:MdrScopedIdType" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DeclinedType">
+     <xs:sequence>
+        <xs:element name="reason" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <!-- ************************** -->
+  <!-- Shared elements definition -->
+  <!-- ************************** -->
+  
+  <xs:element name="item" type="cmdbf:ItemType" />
+  <xs:complexType name="ItemType">
+     <xs:sequence>
+        <xs:element ref="cmdbf:record"     minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="cmdbf:instanceId" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="additionalRecordType" type="cmdbf:QNameType" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="relationship" type="cmdbf:RelationshipType" />
+  <xs:complexType name="RelationshipType">
+     <xs:sequence>
+        <xs:element name="source" type="cmdbf:MdrScopedIdType" minOccurs="1" maxOccurs="1" />
+        <xs:element name="target" type="cmdbf:MdrScopedIdType" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="cmdbf:record"     minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="cmdbf:instanceId" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="additionalRecordType" type="cmdbf:QNameType" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="record" type="cmdbf:RecordType" />
+  <xs:complexType name="RecordType">
+     <xs:sequence>
+        <!-- *************************************************************** -->
+        <!-- NOTE: CHOOSE ONE OF THE FOLLOWING TWO ELEMENTS, BUT NOT BOTH!!, -->
+        <!--       EVEN THOUGH SYNTACTICALLY THE SCHEMA ALLOWS BOTH          -->
+        <!-- *************************************************************** -->
+        <xs:any namespace="##other" processContents="skip" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="cmdbf:propertySet" minOccurs="0" maxOccurs="1" />
+        <xs:element name="recordMetadata" minOccurs="0" maxOccurs="1" >
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="recordId"     type="xs:anyURI"   minOccurs="0" maxOccurs="1" />
+                  <xs:element name="lastModified" type="xs:dateTime" minOccurs="0" maxOccurs="1" />
+                  <xs:element name="baselineId"   type="xs:string"   minOccurs="0" maxOccurs="1" />
+                  <xs:element name="snapshotId"   type="xs:string"   minOccurs="0" maxOccurs="1" />
+                  <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" /> 
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="instanceId" type="cmdbf:MdrScopedIdType" />
+  <xs:complexType name="MdrScopedIdType">
+     <xs:sequence>
+        <xs:element name="mdrId"   type="xs:anyURI" minOccurs="1" maxOccurs="1" />
+        <xs:element name="localId" type="xs:anyURI" minOccurs="1" maxOccurs="1" />
+     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="QNameType">
+     <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+     <xs:attribute name="localName" type="xs:NCName" use="required" />
+  </xs:complexType>
+
+  <xs:element name="propertySet" type="cmdbf:propertySetType" />
+  <xs:complexType name="propertySetType">
+     <xs:sequence>
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+     </xs:sequence>
+     <xs:attribute name="namespace" type="xs:anyURI" use="required" />
+     <xs:attribute name="localName" type="xs:NCName" use="required" />
+  </xs:complexType>
+
+</xs:schema>

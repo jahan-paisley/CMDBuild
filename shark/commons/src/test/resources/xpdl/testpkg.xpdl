@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xpdl:Package xmlns:xpdl="http://www.wfmc.org/2008/XPDL2.1" xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="testpkg" Name="testpkg" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/docs/bpmnxpdl_31.xsd">
+    <xpdl:PackageHeader>
+        <xpdl:XPDLVersion>2.1</xpdl:XPDLVersion>
+        <xpdl:Vendor>Together Teamsolutions Co., Ltd.</xpdl:Vendor>
+        <xpdl:Created>2012-02-24 14:04:53</xpdl:Created>
+    </xpdl:PackageHeader>
+    <xpdl:Script Type="text/javascript"/>
+    <xpdl:ExternalPackages>
+        <xpdl:ExternalPackage Id="commonpkg" href="commonpkg.xpdl"/>
+    </xpdl:ExternalPackages>
+    <xpdl:Participants>
+        <xpdl:Participant Id="Role">
+            <xpdl:ParticipantType Type="ROLE"/>
+        </xpdl:Participant>
+    </xpdl:Participants>
+    <xpdl:DataFields>
+        <xpdl:DataField Id="PackageVariable" IsArray="false">
+            <xpdl:DataType>
+                <xpdl:BasicType Type="STRING"/>
+            </xpdl:DataType>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:DataField>
+    </xpdl:DataFields>
+    <xpdl:Pools>
+        <xpdl:Pool BoundaryVisible="true" Id="testpkg_pool1" MainPool="true" Orientation="HORIZONTAL" Process="startlanes">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="testpkg_pool1_lan1" Name="Human">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="240,240,240" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="240,240,240" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Human</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+                <xpdl:Lane Id="testpkg_pool1_lan2" Name="Role">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role1</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+                <xpdl:Lane Id="testpkg_pool1_lan3" Name="Expression lane">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Lane>
+                <xpdl:Lane Id="testpkg_pool1_lan4" Name="&quot;Role3&quot;">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>"Role3"</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+        <xpdl:Pool BoundaryVisible="true" Id="testpkg_pool11" MainPool="true" Orientation="HORIZONTAL" Process="startwp1">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="testpkg_pool1_lan11" Name="Human">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="240,240,240" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="240,240,240" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Human</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+        <xpdl:Pool BoundaryVisible="true" Id="testpkg_pool111" MainPool="true" Orientation="HORIZONTAL" Process="startwp2">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="testpkg_pool1_lan211" Name="Role">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+        <xpdl:Pool BoundaryVisible="true" Id="testpkg_pool2" MainPool="true" Orientation="HORIZONTAL" Process="parallel_parent">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="testpkg_pool2_lan2" Name="Role">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+        <xpdl:Pool BoundaryVisible="true" Id="testpkg_pool3" MainPool="true" Orientation="HORIZONTAL" Process="parallel_child">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="testpkg_pool3_lan1" Name="Role">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+        <xpdl:Pool BoundaryVisible="true" Id="testpkg_pool4" MainPool="true" Name="parallel_parent_ase1" Orientation="HORIZONTAL" Process="parallel_parent_aset">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="testpkg_pool4_lan1" Name="Role">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+        <xpdl:Pool BoundaryVisible="true" Id="testpkg_pool5" MainPool="true" Name="ext_parent" Orientation="HORIZONTAL" Process="ext_parent">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="testpkg_pool5_lan1" Name="Role">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+    </xpdl:Pools>
+    <xpdl:WorkflowProcesses>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" Id="startlanes">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-02-24 14:05:39</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:Participants>
+                <xpdl:Participant Id="Human">
+                    <xpdl:ParticipantType Type="HUMAN"/>
+                </xpdl:Participant>
+                <xpdl:Participant Id="Role1">
+                    <xpdl:ParticipantType Type="ROLE"/>
+                </xpdl:Participant>
+            </xpdl:Participants>
+            <xpdl:Activities>
+                <xpdl:Activity Id="startlanes_start">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Parallel">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="testwp_tra2"/>
+                                    <xpdl:TransitionRef Id="testwp_tra1"/>
+                                    <xpdl:TransitionRef Id="testwp_tra5"/>
+                                    <xpdl:TransitionRef Id="testwp_tra6"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="testpkg_pool1_lan2" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="65" YCoordinate="80"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startlanes_human">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Human</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="215" YCoordinate="50"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startlanes_role">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role1</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="215" YCoordinate="30"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startlanes_end">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Exclusive"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="testpkg_pool1_lan2" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="425" YCoordinate="80"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startlanes_expr">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>"Role2"</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="215" YCoordinate="40"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startlanes_commexpr">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>"Role3"</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan4" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="215" YCoordinate="50"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="startlanes_start" Id="testwp_tra1" To="startlanes_human">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startlanes_start" Id="testwp_tra2" To="startlanes_role">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startlanes_human" Id="testwp_tra3" To="startlanes_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startlanes_role" Id="testwp_tra4" To="startlanes_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startlanes_start" Id="testwp_tra5" To="startlanes_expr">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startlanes_start" Id="testwp_tra6" To="startlanes_commexpr">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startlanes_expr" Id="testwp_tra7" To="startlanes_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startlanes_commexpr" Id="testwp_tra8" To="startlanes_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+                <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="true"/>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+                <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" Id="startwp1">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-02-24 14:05:39</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:Participants>
+                <xpdl:Participant Id="Human">
+                    <xpdl:ParticipantType Type="HUMAN"/>
+                </xpdl:Participant>
+            </xpdl:Participants>
+            <xpdl:DataFields>
+                <xpdl:DataField Id="ProcessVariable" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="INTEGER"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+            </xpdl:DataFields>
+            <xpdl:Activities>
+                <xpdl:Activity Id="startwp1_start">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="testpkg_pool1_lan11" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="95" YCoordinate="60"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startwp1_noimp">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Human</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="PackageVariable"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATE" Value="ProcessVariable"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan11" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="395" YCoordinate="40"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startwp1_end">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="testpkg_pool1_lan11" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="585" YCoordinate="60"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startwp1_imp">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/javascript"/>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,204,204" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan11" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="215" YCoordinate="40"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="startwp1_noimp" Id="testwp_tra31" To="startwp1_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startwp1_start" Id="startwp_tra3" To="startwp1_imp">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startwp1_imp" Id="startwp_tra6" To="startwp1_noimp">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+                <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="true"/>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+                <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" Id="startwp2">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-02-24 14:05:39</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:Participants>
+                <xpdl:Participant Id="Human">
+                    <xpdl:ParticipantType Type="HUMAN"/>
+                </xpdl:Participant>
+                <xpdl:Participant Id="Role">
+                    <xpdl:ParticipantType Type="ROLE"/>
+                </xpdl:Participant>
+            </xpdl:Participants>
+            <xpdl:Activities>
+                <xpdl:Activity Id="startwp2_start">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="testpkg_pool1_lan211" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="95" YCoordinate="70"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startwp2_noimp2">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan211" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="395" YCoordinate="130"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startwp2_end">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Exclusive"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="testpkg_pool1_lan211" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="695" YCoordinate="80"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startwp2_noimp1">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool1_lan211" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="395" YCoordinate="10"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="startwp2_route">
+                    <xpdl:Route GatewayType="Parallel"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Parallel">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="startwp_tra21"/>
+                                    <xpdl:TransitionRef Id="startwp_tra11"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="testpkg_pool1_lan211" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="245" YCoordinate="70"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="startwp2_noimp2" Id="testwp_tra411" To="startwp2_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startwp2_noimp1" Id="startwp_tra41" To="startwp2_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startwp2_route" Id="startwp_tra11" To="startwp2_noimp2">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startwp2_start" Id="startwp_tra51" To="startwp2_route">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="startwp2_route" Id="startwp_tra21" To="startwp2_noimp1">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+                <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="true"/>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+                <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" Id="parallel_parent">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-02-29 15:55:54</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:ActivitySets>
+                <xpdl:ActivitySet Id="parallel_parent_aset">
+                    <xpdl:Activities>
+                        <xpdl:Activity Id="parallel_parent_aset_start">
+                            <xpdl:Event>
+                                <xpdl:StartEvent Trigger="None"/>
+                            </xpdl:Event>
+                            <xpdl:NodeGraphicsInfos>
+                                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="testpkg_pool4_lan1" ToolId="JaWE" Width="31">
+                                    <xpdl:Coordinates XCoordinate="91" YCoordinate="64"/>
+                                </xpdl:NodeGraphicsInfo>
+                            </xpdl:NodeGraphicsInfos>
+                        </xpdl:Activity>
+                        <xpdl:Activity Id="parallel_parent_aset_end">
+                            <xpdl:Event>
+                                <xpdl:EndEvent Result="None"/>
+                            </xpdl:Event>
+                            <xpdl:NodeGraphicsInfos>
+                                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="testpkg_pool4_lan1" ToolId="JaWE" Width="31">
+                                    <xpdl:Coordinates XCoordinate="619" YCoordinate="71"/>
+                                </xpdl:NodeGraphicsInfo>
+                            </xpdl:NodeGraphicsInfos>
+                        </xpdl:Activity>
+                        <xpdl:Activity Id="parallel_parent_aset_scr">
+                            <xpdl:Implementation>
+                                <xpdl:Task>
+                                    <xpdl:TaskScript>
+                                        <xpdl:Script ScriptType="text/javascript"/>
+                                    </xpdl:TaskScript>
+                                </xpdl:Task>
+                            </xpdl:Implementation>
+                            <xpdl:Performers>
+                                <xpdl:Performer/>
+                            </xpdl:Performers>
+                            <xpdl:NodeGraphicsInfos>
+                                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="testpkg_pool4_lan1" ToolId="JaWE" Width="90">
+                                    <xpdl:Coordinates XCoordinate="305" YCoordinate="50"/>
+                                </xpdl:NodeGraphicsInfo>
+                            </xpdl:NodeGraphicsInfos>
+                        </xpdl:Activity>
+                    </xpdl:Activities>
+                    <xpdl:Transitions>
+                        <xpdl:Transition From="parallel_parent_aset_start" Id="parallel_parent_tra7" To="parallel_parent_aset_scr">
+                            <xpdl:ConnectorGraphicsInfos>
+                                <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                            </xpdl:ConnectorGraphicsInfos>
+                        </xpdl:Transition>
+                        <xpdl:Transition From="parallel_parent_aset_scr" Id="parallel_parent_tra8" To="parallel_parent_aset_end">
+                            <xpdl:ConnectorGraphicsInfos>
+                                <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                            </xpdl:ConnectorGraphicsInfos>
+                        </xpdl:Transition>
+                    </xpdl:Transitions>
+                </xpdl:ActivitySet>
+            </xpdl:ActivitySets>
+            <xpdl:Activities>
+                <xpdl:Activity Id="parallel_parent_start">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Parallel">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="parallel_parent_tra1"/>
+                                    <xpdl:TransitionRef Id="parallel_parent_tra2"/>
+                                    <xpdl:TransitionRef Id="parallel_parent_tra3"/>
+                                    <xpdl:TransitionRef Id="parallel_parent_tra9"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="testpkg_pool2_lan2" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="55" YCoordinate="150"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="parallel_parent_end">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Exclusive"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="testpkg_pool2_lan2" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="585" YCoordinate="150"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="parallel_parent_sub">
+                    <xpdl:Implementation>
+                        <xpdl:SubFlow Execution="SYNCHR" Id="parallel_child"/>
+                    </xpdl:Implementation>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,106,106" Height="60" IsVisible="true" LaneId="testpkg_pool2_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="285" YCoordinate="170"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="parallel_parent_noimp">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool2_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="285" YCoordinate="100"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="parallel_parent_imp">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/javascript"/>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,204,204" Height="60" IsVisible="true" LaneId="testpkg_pool2_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="285" YCoordinate="30"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="parallel_parent_aset">
+                    <xpdl:BlockActivity ActivitySetId="parallel_parent_aset"/>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,165,121" Height="60" IsVisible="true" LaneId="testpkg_pool2_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="285" YCoordinate="240"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="parallel_parent_start" Id="parallel_parent_tra1" To="parallel_parent_noimp">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_parent_start" Id="parallel_parent_tra2" To="parallel_parent_imp">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_parent_start" Id="parallel_parent_tra3" To="parallel_parent_sub">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_parent_imp" Id="parallel_parent_tra4" To="parallel_parent_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_parent_noimp" Id="parallel_parent_tra5" To="parallel_parent_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_parent_sub" Id="parallel_parent_tra6" To="parallel_parent_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_parent_start" Id="parallel_parent_tra9" To="parallel_parent_aset">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_parent_aset" Id="parallel_parent_tra10" To="parallel_parent_end">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+                <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="true"/>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+                <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+        <xpdl:WorkflowProcess AccessLevel="PRIVATE" Id="parallel_child">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-02-29 16:20:43</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:Activities>
+                <xpdl:Activity Id="parallel_child_act1">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="testpkg_pool3_lan1" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="85" YCoordinate="50"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="parallel_child_noimpl">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool3_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="265" YCoordinate="40"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="parallel_child_act2">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="testpkg_pool3_lan1" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="547" YCoordinate="55"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="parallel_child_act1" Id="parallel_child_tra1" To="parallel_child_noimpl">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="parallel_child_noimpl" Id="parallel_child_tra2" To="parallel_child_act2">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+                <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="true"/>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+                <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" Id="ext_parent" Name="ext_parent">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-03-12 13:04:02</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:Activities>
+                <xpdl:Activity Id="ext_parent_act1">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="testpkg_pool5_lan1" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="85" YCoordinate="60"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="ext_parent_sub">
+                    <xpdl:Implementation>
+                        <xpdl:SubFlow Execution="SYNCHR" Id="commonwp"/>
+                    </xpdl:Implementation>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,106,106" Height="60" IsVisible="true" LaneId="testpkg_pool5_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="283" YCoordinate="46"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="ext_parent_noimp">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Role</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="testpkg_pool5_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="475" YCoordinate="50"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="ext_parent_act2">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="testpkg_pool5_lan1" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="693" YCoordinate="57"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="ext_parent_act1" Id="ext_parent_tra1" To="ext_parent_sub">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="ext_parent_sub" Id="ext_parent_tra2" To="ext_parent_noimp">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="ext_parent_noimp" Id="ext_parent_tra3" To="ext_parent_act2">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+                <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="true"/>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+                <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+    </xpdl:WorkflowProcesses>
+    <xpdl:ExtendedAttributes>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL" Value="Together Workflow Editor"/>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL_VERSION" Value="4.2-1-20110919-1709"/>
+        <xpdl:ExtendedAttribute Name="JaWE_CONFIGURATION" Value="shark"/>
+        <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+        <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+        <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="true"/>
+        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+        <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+        <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+    </xpdl:ExtendedAttributes>
+</xpdl:Package>

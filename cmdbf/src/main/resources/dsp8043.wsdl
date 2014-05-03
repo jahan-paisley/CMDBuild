@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+DMTF - Distributed Management Task Force, Inc. - http://www.dmtf.org
+
+Document number: DSP8043
+Date:            2010-03-01
+Version:         1.0.2
+Document status: DMTF Standard
+
+Title: CMDBf WSDL Specification for the CMDBf Query Service 
+
+Document type: W3C XML Schema Document 
+Document language: E
+
+Abstract: WSDL specification for CMDBf (Configuration Management Database Federation)
+          query service, as described in DSP0252 - Configuration Management 
+          Database (CMDB) Federation Specification. 
+
+Contact group: CMDB Federation Working Group, cmdbf@dmtf.org
+
+Acknowledgements: DMTF acknowledges the contributions of the following individuals to this document:
+- Forest Carlisle (CA)
+- Jacob Eisinger (IBM) 
+- Mark Johnson (IBM) 
+- Vincent Kowalski (BMC Software) 
+- Jishnu Mukerji (HP)
+- David Snelling (Fujitsu)
+- William Vambenepe (Oracle)
+- Marv Waschke (CA) 
+- Van Wiles  (BMC Software) 
+
+Copyright (C) 2009 Distributed Management Task Force, Inc. (DMTF).  All rights reserved.
+DMTF is a not-for-profit association of industry members dedicated to promoting enterprise and
+systems management and interoperability.  Members and non-members may reproduce DMTF specifications
+and documents for uses consistent with this purpose, provided that correct attribution is given.  As
+DMTF specifications may be revised from time to time, the particular version and release date should
+always be noted.  Implementation of certain elements of this standard or proposed standard may be
+subject to third party patent rights, including provisional patent rights (herein "patent rights").
+DMTF makes no representations to users of the standard as to the existence of such rights, and is
+not responsible to recognize, disclose, or identify any or all such third party patent right, owners
+or claimants, nor for any incomplete or inaccurate identification or disclosure of such rights,
+owners or claimants.  DMTF shall have no liability to any party, in any manner or circumstance,
+under any legal theory whatsoever, for failure to recognize, disclose, or identify any such third
+party patent rights, or for such party's reliance on the standard or incorporation thereof in its
+product, protocols or testing procedures.  DMTF shall have no liability to any party implementing
+such standard, whether such implementation is foreseeable or not, nor to any patent owner or
+claimant, and shall have no liability or responsibility for costs or losses incurred if a standard
+is withdrawn or modified after publication, and shall be indemnified and held harmless by any party
+implementing the standard from any and all claims of infringement by a patent owner for such
+implementations.  For information about patents held by third-parties which have notified the DMTF
+that, in their opinion, such patent may relate to or impact implementations of DMTF standards, visit
+http://www.dmtf.org/about/policies/disclosures.php.
+
+Change log:
+1.0.0 - 2009-09-02 - Initial version
+1.0.1 - 2010-01-09 - Errata to correct missing Expensive Query Error Fault; not approved due to header issues
+1.0.2 - 2010-03-01 - Errata to correct typo: replaced "unkown" with "unknown"
+-->
+
+<wsdl:definitions 
+  targetNamespace="http://schemas.dmtf.org/cmdbf/1/tns/query"
+  xmlns:tns="http://schemas.dmtf.org/cmdbf/1/tns/query"
+  xmlns:cmdbf="http://schemas.dmtf.org/cmdbf/1/tns/serviceData"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <wsdl:types>
+    <xs:schema
+      targetNamespace="http://schemas.dmtf.org/cmdbf/1/tns/serviceData">
+      <xs:include schemaLocation="dsp8040.xsd" />
+    </xs:schema>
+  </wsdl:types>
+
+  <wsdl:message name="QueryRequest">
+    <wsdl:part name="body" element="cmdbf:query" />
+  </wsdl:message>
+
+  <wsdl:message name="QueryResponse">
+    <wsdl:part name="body" element="cmdbf:queryResult" />
+  </wsdl:message>
+	
+  <wsdl:message name="UnknownTemplateIDFault">
+    <wsdl:part name="Detail" element="cmdbf:UnknownTemplateIDFault"/>
+  </wsdl:message>
+  <wsdl:message name="InvalidPropertyTypeFault">
+    <wsdl:part name="Detail" element="cmdbf:InvalidPropertyTypeFault"/>
+  </wsdl:message>
+
+  <wsdl:message name="XPathErrorFault">
+    <wsdl:part name="Detail" element="cmdbf:XPathErrorFault"/>
+  </wsdl:message>
+
+  <wsdl:message name="UnsupportedConstraintFault">
+    <wsdl:part name="Detail" 
+               element="cmdbf:UnsupportedConstraintFault"/>
+  </wsdl:message>
+
+  <wsdl:message name="UnsupportedSelectorFault">
+    <wsdl:part name="Detail" element="cmdbf:UnsupportedSelectorFault"/>
+  </wsdl:message>
+
+  <wsdl:message name="ExpensiveQueryErrorFault">
+    <wsdl:part name="Detail" element="cmdbf:ExpensiveQueryErrorFault"/>
+  </wsdl:message>
+
+  <wsdl:message name="QueryErrorFault">
+    <wsdl:part name="Detail" element="cmdbf:QueryErrorFault"/>
+  </wsdl:message>
+
+  <wsdl:portType name="QueryPortType">
+    <wsdl:operation name="GraphQuery">
+      <wsdl:input message="tns:QueryRequest" />
+      <wsdl:output message="tns:QueryResponse" />
+      <wsdl:fault name="UnknownTemplateID" 
+                  message="tns:UnknownTemplateIDFault"/>
+      <wsdl:fault name="InvalidPropertyType" 
+                  message="tns:InvalidPropertyTypeFault"/>
+      <wsdl:fault name="XPathError" 
+                  message="tns:XPathErrorFault"/>
+      <wsdl:fault name="UnsupportedConstraint" 
+                  message="tns:UnsupportedConstraintFault"/>
+      <wsdl:fault name="UnsupportedSelector" 
+                  message="tns:UnsupportedSelectorFault"/>
+      <wsdl:fault name="ExpensiveQueryError" 
+                  message="tns:ExpensiveQueryErrorFault"/>
+      <wsdl:fault name="QueryError" 
+                  message="tns:QueryErrorFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+
+</wsdl:definitions>

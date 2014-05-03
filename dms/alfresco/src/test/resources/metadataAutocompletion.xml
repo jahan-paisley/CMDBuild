@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<autocompletion>
+	<metadataGroups>
+		<metadataGroup name="aGroup">
+			<metadata name="foo">
+				<rules>
+					<rule classname="aClass" value="foo" />
+					<rule classname="anotherClass" value="bar" />
+				</rules>
+			</metadata>
+			<metadata name="bar">
+				<rules>
+					<rule classname="anotherClass" value="baz" />
+				</rules>
+			</metadata>
+		</metadataGroup>
+		<metadataGroup name="anotherGroup">
+			<metadata name="baz">
+				<rules>
+					<rule classname="anotherClass" value="foo" />
+				</rules>
+			</metadata>
+		</metadataGroup>
+	</metadataGroups>
+</autocompletion>

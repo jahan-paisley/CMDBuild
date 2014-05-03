@@ -1,0 +1,15 @@
+[ITALIANO]
+
+* Aggiungere le librerie presenti in extras/tomcat-libs, relative alla
+  versione di Tomcat su cui verrà installato CMDBuild, fra quelle a
+  disposizione del servlet container (come indicato nel file INSTALL.txt
+  presente nella cartella)
+* Copiare cmdbuild-{versione}.war nella cartella "webapps" di Tomcat, rinominandolo in cmdbuild.war
+
+[ENGLISH]
+
+* Copy the libraries in extras/tomcat-libs, for the Tomcat version you
+  will be installing CMDBuild in, to the Tomcat "libs" directory (as
+  written in the INSTALL.txt file present in that folder)
+* Copy cmdbuild-{version}.war in the Tomcat "webapps" directory, renaming it to cmdbuild.war
+

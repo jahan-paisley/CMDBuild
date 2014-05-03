@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.cmdbuild</groupId>
+		<artifactId>cmdbuild-main</artifactId>
+		<version>2.2-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>cmdbuild-graph</artifactId>
+	<packaging>swf</packaging>
+	<name>CMDBuild Graph</name>
+	<version>1.0</version>
+
+	<properties>
+		<flash.core.version>1.0</flash.core.version>
+		<perfuse.version>20090124</perfuse.version>
+		<flex.version>3.2.0.3958</flex.version>
+		<flex.plugin.version>2.3.2</flex.plugin.version>
+	</properties>
+
+	<dependencies>
+		 <dependency> 
+		     <groupId>org.perfuse</groupId> 
+		     <artifactId>flare-alpha</artifactId> 
+		     <version>${perfuse.version}</version>
+		     <type>swc</type> 
+		 </dependency>
+		 <!-- Version 1.0 corresponds to Flash Player 9.x, 2.0 to Flash Player 10.x -->
+		 <dependency> 
+		     <groupId>com.adobe.flash.core</groupId> 
+		     <artifactId>playerglobal</artifactId> 
+		     <version>${flash.core.version}</version> 
+		     <scope>provided</scope>
+		     <type>swc</type> 
+		 </dependency> 
+		 <dependency> 
+		     <groupId>com.adobe.flex.sdkcore</groupId> 
+		     <artifactId>framework</artifactId> 
+		     <version>${flex.version}</version> 
+		     <type>swc</type>
+		 </dependency> 
+		 <dependency> 
+		     <groupId>com.adobe.flex.sdkcore</groupId> 
+		     <artifactId>flex</artifactId> 
+		     <version>${flex.version}</version> 
+		     <type>swc</type>
+		 </dependency>  
+		 <dependency> 
+		     <groupId>com.adobe.flex.sdkcore</groupId> 
+		     <artifactId>rpc</artifactId> 
+		     <version>${flex.version}</version> 
+		     <type>swc</type>
+		 </dependency> 
+		 <dependency> 
+		     <groupId>com.adobe.flex.sdkcore</groupId> 
+		     <artifactId>utilities</artifactId> 
+		     <version>${flex.version}</version> 
+		     <type>swc</type>
+		 </dependency>
+		 <!-- LOCALE -->
+		 <dependency>
+		     <groupId>com.adobe.flex.locales.en_US</groupId> 
+		     <artifactId>framework_rb</artifactId> 
+		     <version>${flex.version}</version> 
+		     <type>swc</type>
+		 </dependency> 
+		 <dependency>
+		     <groupId>com.adobe.flex.locales.en_US</groupId> 
+		     <artifactId>rpc_rb</artifactId> 
+		     <version>${flex.version}</version> 
+		     <type>swc</type>
+		 </dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.servebox.flex</groupId>
+				<artifactId>flex-plugin</artifactId>
+				<version>${flex.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<mxmlFile>src/main/flex/graph.mxml</mxmlFile>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>servebox</id>
+            <name>ServeBox Plugin Repository</name>
+            <url>http://maven.servebox.org/repository</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <repositories>
+        <repository>
+            <id>Maven.ServeBox.org</id>
+            <name>ServeBox.org repository</name>
+            <url>http://maven.servebox.org/repository</url>
+        </repository>
+    </repositories>
+</project>
+

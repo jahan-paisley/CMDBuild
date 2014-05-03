@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xpdl:Package xmlns:xpdl="http://www.wfmc.org/2008/XPDL2.1" xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="Package_requestforchange" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/docs/bpmnxpdl_24.xsd">
+    <xpdl:PackageHeader>
+        <xpdl:XPDLVersion>2.1</xpdl:XPDLVersion>
+        <xpdl:Vendor/>
+        <xpdl:Created/>
+    </xpdl:PackageHeader>
+    <xpdl:Script Type="text/java"/>
+    <xpdl:TypeDeclarations>
+        <xpdl:TypeDeclaration Id="Reference">
+            <xpdl:ExternalReference location="org.cmdbuild.workflow.type.ReferenceType"/>
+        </xpdl:TypeDeclaration>
+        <xpdl:TypeDeclaration Id="References">
+            <xpdl:ExternalReference location="org.cmdbuild.workflow.type.ReferenceType&lt;&gt;"/>
+        </xpdl:TypeDeclaration>
+        <xpdl:TypeDeclaration Id="Lookup">
+            <xpdl:ExternalReference location="org.cmdbuild.workflow.type.LookupType"/>
+        </xpdl:TypeDeclaration>
+        <xpdl:TypeDeclaration Id="Lookups">
+            <xpdl:ExternalReference location="org.cmdbuild.workflow.type.LookupType&lt;&gt;"/>
+        </xpdl:TypeDeclaration>
+    </xpdl:TypeDeclarations>
+    <xpdl:Participants>
+        <xpdl:Participant Id="SuperUser">
+            <xpdl:ParticipantType Type="ROLE"/>
+        </xpdl:Participant>
+        <xpdl:Participant Id="Helpdesk">
+            <xpdl:ParticipantType Type="ROLE"/>
+        </xpdl:Participant>
+        <xpdl:Participant Id="ChangeManager">
+            <xpdl:ParticipantType Type="ROLE"/>
+        </xpdl:Participant>
+        <xpdl:Participant Id="Specialist">
+            <xpdl:ParticipantType Type="ROLE"/>
+        </xpdl:Participant>
+        <xpdl:Participant Id="System">
+            <xpdl:ParticipantType Type="SYSTEM"/>
+        </xpdl:Participant>
+    </xpdl:Participants>
+    <xpdl:Pools>
+        <xpdl:Pool BoundaryVisible="true" Id="Package_requestforchange_pool1" MainPool="true" Name="Process_requestforchange" Orientation="HORIZONTAL" Process="Process_requestforchange">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="Package_requestforchange_pool1_lan1" Name="Helpdesk">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Helpdesk</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+                <xpdl:Lane Id="Package_requestforchange_pool1_lan2" Name="ChangeManager">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>ChangeManager</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+                <xpdl:Lane Id="Package_requestforchange_pool1_lan3" Name="Specialist">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Specialist</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+    </xpdl:Pools>
+    <xpdl:WorkflowProcesses>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" Id="Process_requestforchange">
+            <xpdl:ProcessHeader/>
+            <xpdl:DataFields>
+                <xpdl:DataField Id="RiskAnalysisRequest" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="BOOLEAN"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="CostAnalysisRequest" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="BOOLEAN"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="ImpactAnalysisRequest" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="BOOLEAN"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="RFCStartDate" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="DATETIME"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="ExecutionEndDate" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="DATETIME"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="ExecutionStartDate" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="DATETIME"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="RFCEndDate" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="DATETIME"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="RequestNumber" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="INTEGER"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="ActionsPerformed" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="ImpactAnalysisResult" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="RiskAnalysisResult" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="Code" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="RFCDescription" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="Description" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="CostAnalysisResult" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="PlannedActions" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="Notes" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="FlowStatus" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Lookup"/>
+                    </xpdl:DataType>
+                </xpdl:DataField>
+                <xpdl:DataField Id="RFCStatus" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Lookup"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+                <xpdl:DataField Id="Category" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Lookup"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+                <xpdl:DataField Id="FormalEvaluation" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Lookup"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+                <xpdl:DataField Id="RFCPriority" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Lookup"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+                <xpdl:DataField Id="Decision" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Lookup"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+                <xpdl:DataField Id="FinalResult" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Lookup"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+                <xpdl:DataField Id="Requester" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:DeclaredType Id="Reference"/>
+                    </xpdl:DataType>
+                    <xpdl:Length>Requester</xpdl:Length>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+            </xpdl:DataFields>
+            <xpdl:Activities>
+                <xpdl:Activity Id="RegisterRFC" Name="Register RFC">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Helpdesk</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="RFCDescription"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="135" YCoordinate="42"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS010" Name="SYS010">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">RFCStartDate = Calendar.getInstance();
+RequestNumber = cmdb.callFunction("cmwf_getRFCNumber").execute().get("RFCNumber");
+Description = "RFC n. " + RequestNumber.toString() + " created by " + Requester.getDescription() + " date " + RFCStartDate.getTime().toString();
+RFCStatus = cmdb.selectLookupByCode("RFC status", "REC_RFC");</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="262" YCoordinate="41"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="FormalEvaluation" Name="Formal evaluation">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>ChangeManager</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="FormalEvaluation"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATE" Value="ImpactAnalysisRequest"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATE" Value="CostAnalysisRequest"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATE" Value="RiskAnalysisRequest"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                        <xpdl:ExtendedAttribute Name="createModifyCard" Value="ButtonLabel=&quot;Requester card&quot;&#13;&#10;Reference=Requester&#13;&#10;ReadOnly=1"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="261" YCoordinate="67"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act2">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="Package_requestforchange_pool1_lan2" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="1658" YCoordinate="84"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act1">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="Package_requestforchange_pool1_lan1" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="68" YCoordinate="54"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS020" Name="SYS020">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">CurrentUser = cmdb.cardFrom(_CurrentUser);
+Employees = cmdb.queryClass("Employee").with("Email", CurrentUser.get("Email")).fetch();
+if (Employees.size() &gt; 0) {
+	Employee = Employees.get(0);
+	cmdb.newRelation("RFCChangeManager").withCard1("RequestForChange", ProcessId.intValue()).withCard2("Employee", Employee.getId()).create();
+}
+RFCStatus = cmdb.selectLookupByCode("RFC status", "REQ_DOC");</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Parallel">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra9"/>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra5"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="385" YCoordinate="66"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="RFCImpactAnalysis" Name="RFC impact analysis">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Specialist</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="ImpactAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="635" YCoordinate="8"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="RFCRiskAnalysis" Name="RFC risk analysis">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Specialist</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="RiskAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="633" YCoordinate="254"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="RFCCostAnalysis" Name="RFC cost analysis">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Specialist</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="CostAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="634" YCoordinate="123"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS030.1">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">RFCStatus = cmdb.selectLookupByCode("RFC status", "PRE_DOC");</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="771" YCoordinate="10"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS030.2">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">RFCStatus = cmdb.selectLookupByCode("RFC status", "PRE_DOC");</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="771" YCoordinate="125"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS030.3">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">RFCStatus = cmdb.selectLookupByCode("RFC status", "PRE_DOC");</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="768" YCoordinate="253"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="FinalEvaluation" Name="Final evaluation">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>ChangeManager</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Exclusive"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ImpactAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="CostAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RiskAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ActionsPerformed"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ExecutionEndDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="FinalResult"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1400" YCoordinate="67"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act8">
+                    <xpdl:Route GatewayType="Parallel"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Parallel"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="1008" YCoordinate="201"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Decision" Name="Decision">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>ChangeManager</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Parallel">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra18"/>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra17"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ImpactAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="CostAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RiskAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="Decision"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="984" YCoordinate="73"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS040" Name="SYS040">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">RFCStatus = cmdb.selectLookupByCode("RFC status", "REQ_EXE");</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1150" YCoordinate="72"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="StartExecution" Name="Start execution">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Specialist</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ImpactAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="CostAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RiskAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="PlannedActions"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1150" YCoordinate="186"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS050" Name="SYS050">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">RFCStatus = cmdb.selectLookupByCode("RFC status", "IN_EXE");
+ExecutionStartDate = Calendar.getInstance();</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1280" YCoordinate="18"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="EndExecution" Name="End execution">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Specialist</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RequestNumber"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Requester"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCDescription"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="Category"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RFCPriority"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ImpactAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="CostAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="RiskAnalysisResult"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ExecutionStartDate"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="PlannedActions"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATEREQUIRED" Value="ActionsPerformed"/>
+                        <xpdl:ExtendedAttribute Name="openAttachment" Value="ButtonLabel=&quot;Attachments&quot;"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1279" YCoordinate="190"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS060" Name="SYS060">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">CurrentUser = cmdb.cardFrom(_CurrentUser);
+Employees = cmdb.queryClass("Employee").with("Email", CurrentUser.get("Email")).fetch();
+if (Employees.size() &gt; 0) {
+	Employee = Employees.get(0); 
+	cmdb.newRelation("RFCExecutor").withCard1("RequestForChange", ProcessId.intValue()).withCard2("Employee", Employee.getId()).create();
+}
+RFCStatus = cmdb.selectLookupByCode("RFC status", "OUT_EXE");
+ExecutionEndDate = Calendar.getInstance();</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1402" YCoordinate="22"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SYS070" Name="SYS070">
+                    <xpdl:Implementation>
+                        <xpdl:Task>
+                            <xpdl:TaskScript>
+                                <xpdl:Script ScriptType="text/java">RFCEndDate = Calendar.getInstance();
+RFCStatus = cmdb.selectLookupByCode("RFC status", "CLOSED");</xpdl:Script>
+                            </xpdl:TaskScript>
+                        </xpdl:Task>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer/>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,204" Height="60" IsVisible="true" LaneId="Package_requestforchange_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1531" YCoordinate="67"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act5">
+                    <xpdl:Route GatewayType="Exclusive"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Exclusive">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra6"/>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra26"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="525" YCoordinate="79"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act6">
+                    <xpdl:Route GatewayType="Exclusive"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Exclusive">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra7"/>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra27"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="534" YCoordinate="199"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act7">
+                    <xpdl:Route GatewayType="Exclusive"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Exclusive">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra8"/>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra28"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="537" YCoordinate="343"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act4">
+                    <xpdl:Route GatewayType="Parallel"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Split Type="Parallel">
+                                <xpdl:TransitionRefs>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra13"/>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra14"/>
+                                    <xpdl:TransitionRef Id="Process_requestforchange_tra15"/>
+                                </xpdl:TransitionRefs>
+                            </xpdl:Split>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="406" YCoordinate="199"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act3">
+                    <xpdl:Route GatewayType="Exclusive"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Exclusive"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="904" YCoordinate="77"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act9">
+                    <xpdl:Route GatewayType="Exclusive"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Exclusive"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="902" YCoordinate="200"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Process_requestforchange_act10">
+                    <xpdl:Route GatewayType="Exclusive"/>
+                    <xpdl:TransitionRestrictions>
+                        <xpdl:TransitionRestriction>
+                            <xpdl:Join Type="Exclusive"/>
+                        </xpdl:TransitionRestriction>
+                    </xpdl:TransitionRestrictions>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,229,124" Height="43" IsVisible="true" LaneId="Package_requestforchange_pool1_lan3" ToolId="JaWE" Width="43">
+                            <xpdl:Coordinates XCoordinate="888" YCoordinate="343"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="RegisterRFC" Id="Process_requestforchange_tra2" To="SYS010">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS010" Id="Process_requestforchange_tra3" To="FormalEvaluation">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act1" Id="Process_requestforchange_tra1" To="RegisterRFC">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="FormalEvaluation" Id="Process_requestforchange_tra4" To="SYS020">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS020" Id="Process_requestforchange_tra5" Name="Accepted" To="Process_requestforchange_act4">
+                    <xpdl:Condition Type="CONDITION">"ACCEPTED".equalsIgnoreCase(FormalEvaluation.Code)</xpdl:Condition>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act5" Id="Process_requestforchange_tra6" Name="Impact" To="RFCImpactAnalysis">
+                    <xpdl:Condition Type="CONDITION">ImpactAnalysisRequest.booleanValue()</xpdl:Condition>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act6" Id="Process_requestforchange_tra7" Name="Cost" To="RFCCostAnalysis">
+                    <xpdl:Condition Type="CONDITION">CostAnalysisRequest.booleanValue()</xpdl:Condition>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act7" Id="Process_requestforchange_tra8" Name="Risk" To="RFCRiskAnalysis">
+                    <xpdl:Condition Type="CONDITION">RiskAnalysisRequest.booleanValue()</xpdl:Condition>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS020" Id="Process_requestforchange_tra9" Name="Rejected" To="FinalEvaluation">
+                    <xpdl:Condition Type="CONDITION">"REJECTED".equalsIgnoreCase(FormalEvaluation.Code)</xpdl:Condition>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="255,0,0" IsVisible="true" Style="NO_ROUTING_ORTHOGONAL" ToolId="JaWE">
+                            <xpdl:Coordinates XCoordinate="561" YCoordinate="166"/>
+                            <xpdl:Coordinates XCoordinate="1407" YCoordinate="164"/>
+                        </xpdl:ConnectorGraphicsInfo>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="RFCImpactAnalysis" Id="Process_requestforchange_tra10" To="SYS030.1">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="RFCCostAnalysis" Id="Process_requestforchange_tra11" To="SYS030.2">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="RFCRiskAnalysis" Id="Process_requestforchange_tra12" To="SYS030.3">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act8" Id="Process_requestforchange_tra16" To="Decision">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Decision" Id="Process_requestforchange_tra17" Name="Execution" To="SYS040">
+                    <xpdl:Condition Type="CONDITION">"APPROVED".equalsIgnoreCase(Decision.Code)</xpdl:Condition>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Decision" Id="Process_requestforchange_tra18" Name="Not approved" To="FinalEvaluation">
+                    <xpdl:Condition Type="CONDITION">"NOT_APPROVED".equalsIgnoreCase(Decision.Code)</xpdl:Condition>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="255,0,0" IsVisible="true" Style="NO_ROUTING_ORTHOGONAL" ToolId="JaWE">
+                            <xpdl:Coordinates XCoordinate="1143" YCoordinate="187"/>
+                            <xpdl:Coordinates XCoordinate="1394" YCoordinate="188"/>
+                        </xpdl:ConnectorGraphicsInfo>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS040" Id="Process_requestforchange_tra19" To="StartExecution">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="StartExecution" Id="Process_requestforchange_tra20" To="SYS050">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS050" Id="Process_requestforchange_tra21" To="EndExecution">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="EndExecution" Id="Process_requestforchange_tra22" To="SYS060">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS060" Id="Process_requestforchange_tra23" To="FinalEvaluation">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="FinalEvaluation" Id="Process_requestforchange_tra24" To="SYS070">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS070" Id="Process_requestforchange_tra25" To="Process_requestforchange_act2">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act4" Id="Process_requestforchange_tra13" To="Process_requestforchange_act5">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act4" Id="Process_requestforchange_tra14" To="Process_requestforchange_act6">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act4" Id="Process_requestforchange_tra15" To="Process_requestforchange_act7">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act5" Id="Process_requestforchange_tra26" To="Process_requestforchange_act3">
+                    <xpdl:Condition Type="OTHERWISE"/>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="255,128,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act6" Id="Process_requestforchange_tra27" To="Process_requestforchange_act9">
+                    <xpdl:Condition Type="OTHERWISE"/>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="255,128,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act7" Id="Process_requestforchange_tra28" To="Process_requestforchange_act10">
+                    <xpdl:Condition Type="OTHERWISE"/>
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="255,128,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS030.1" Id="Process_requestforchange_tra29" To="Process_requestforchange_act3">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS030.2" Id="Process_requestforchange_tra30" To="Process_requestforchange_act9">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SYS030.3" Id="Process_requestforchange_tra31" To="Process_requestforchange_act10">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act10" Id="Process_requestforchange_tra32" To="Process_requestforchange_act8">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act9" Id="Process_requestforchange_tra33" To="Process_requestforchange_act8">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Process_requestforchange_act3" Id="Process_requestforchange_tra34" To="Process_requestforchange_act8">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="cmdbuildBindToClass" Value="RequestForChange"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+    </xpdl:WorkflowProcesses>
+    <xpdl:ExtendedAttributes>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL" Value="Together Workflow Editor"/>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL_VERSION" Value="4.4-1-20120111-0622"/>
+        <xpdl:ExtendedAttribute Name="JaWE_CONFIGURATION" Value="shark"/>
+    </xpdl:ExtendedAttributes>
+</xpdl:Package>

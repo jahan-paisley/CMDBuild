@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CMDBuild schema" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="class" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select system_classcatalog.classname as classname, _cm_read_comment(system_classcatalog.classcomment, 'DESCR') as classdescription,
+	case when _cm_is_process(system_classcatalog.classname) then 'true' else null end as classisprocess,
+	case when system_classcatalog1.classname = 'Class' then '' else system_classcatalog1.classname end as classsuperclass,
+	case when _cm_is_superclass(system_classcatalog.classname) then 'true' else null end as classissuperclass
+from system_classcatalog
+left outer join system_inheritcatalog on system_inheritcatalog.childid = system_classcatalog.classid
+left outer join system_classcatalog as system_classcatalog1 on system_classcatalog1.classid = system_inheritcatalog.parentid
+where system_classcatalog.classname = case when $P{class} = '' then system_classcatalog.classname else $P{class} end
+        and _cm_read_comment(system_classcatalog.classcomment, 'MODE') in ('read', 'write')
+order by system_classcatalog.classname;]]>
+	</queryString>
+	<field name="classname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="classdescription" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="classisprocess" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="classsuperclass" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="classissuperclass" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="129" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="6" width="95" height="24"/>
+				<imageExpression class="java.lang.String"><![CDATA["CMDBuild-logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="103" y="0" width="353" height="36"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CMDBuild database schema]]></text>
+			</staticText>
+			<image>
+				<reportElement x="482" y="6" width="95" height="24"/>
+				<imageExpression class="java.lang.String"><![CDATA["CMDBuild-logo.png"]]></imageExpression>
+			</image>
+			<subreport>
+				<reportElement x="0" y="46" width="554" height="40">
+					<printWhenExpression><![CDATA[new Boolean ($P{class}.equals(""))]]></printWhenExpression>
+				</reportElement>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["CMDBuild_dbschema_classi.jasper"]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement positionType="Float" x="0" y="93" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="2" y="96" width="115" height="27" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class detail]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="125" width="555" height="1"/>
+			</line>
+			<break>
+				<reportElement positionType="Float" x="0" y="89" width="100" height="1">
+					<printWhenExpression><![CDATA[new Boolean ($P{class}.equals(""))]]></printWhenExpression>
+				</reportElement>
+			</break>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="2" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="186" splitType="Stretch">
+			<subreport>
+				<reportElement x="2" y="99" width="553" height="37"/>
+				<subreportParameter name="classe">
+					<subreportParameterExpression><![CDATA[$F{classname}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["CMDBuild_dbschema_attributi.jasper"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="2" y="4" width="257" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{classname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="27" width="71" height="16" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="87" y="27" width="257" height="16"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{classdescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="81" width="71" height="16" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Is superclass]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="87" y="81" width="257" height="16"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{classissuperclass}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement positionType="Float" x="2" y="139" width="553" height="38"/>
+				<subreportParameter name="classe">
+					<subreportParameterExpression><![CDATA[$F{classname}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["CMDBuild_dbschema_domini.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="45" width="71" height="16" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Is process]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="87" y="45" width="257" height="16"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{classisprocess}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="63" width="71" height="16" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Superclass]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="87" y="63" width="257" height="16"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{classsuperclass}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="3" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement key="textField" x="0" y="0" width="209" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement key="textField" x="474" y="0" width="52" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page " + $V{PAGE_NUMBER} + " of "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="" isBlankWhenNull="false">
+				<reportElement key="textField" x="529" y="0" width="25" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="47" splitType="Stretch">
+			<subreport>
+				<reportElement x="2" y="4" width="552" height="38">
+					<printWhenExpression><![CDATA[new Boolean ($P{class}.equals(""))]]></printWhenExpression>
+				</reportElement>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["CMDBuild_dbschema_lookup.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

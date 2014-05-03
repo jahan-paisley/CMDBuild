@@ -1,0 +1,1412 @@
+{
+	"description": "Hrvatski",
+	"release": "2.2-dev",
+	"administration": {
+		"description": "Upravljački modul",
+		"email": {
+			"title": "<em>Email</em>",
+			"accounts": {
+				"account": "<em>Account</em>",
+				"active": "<em>Active</em>",
+				"add": "<em>Add account</em>",
+				"address": "<em>Address</em>",
+				"credentials": "<em>Credentials</em>",
+				"enableMoveRejectedNotMatching": "<em>Enable move rejected not matching</em>",
+				"enableSsl": "<em>Enable SSL</em>",
+				"imapPort": "<em>IMAP port</em>",
+				"imapServer": "<em>IMAP server</em>",
+				"incoming": "<em>Incoming</em>",
+				"incomingFolder": "<em>Incoming folder</em>",
+				"isDefault": "<em>Default</em>",
+				"modify": "<em>Modify account</em>",
+				"outgoing": "<em>Outgoing</em>",
+				"password": "<em>Password</em>",
+				"processedFolder": "<em>Processed folder</em>",
+				"rejectedFolder": "<em>Rejected folder</em>",
+				"remove": "<em>Remove account</em>",
+				"setDefault": "<em>Set as default</em>",
+				"smtpPort": "<em>SMTP Port</em>",
+				"smtpServer": "<em>SMTP server</em>",
+				"title": "<em>Accounts</em>",
+				"username": "<em>Username</em>"
+			},
+			"templates": {
+				"add": "<em>Add template</em>",
+				"body": "<em>Body</em>",
+				"modify": "<em>Modify template</em>",
+				"remove": "<em>Remove template</em>",
+				"template": "<em>Template</em>",
+				"title": "<em>Templates</em>"
+			}
+		},
+		"modClass": {
+			"add_class": "Dodaj klasu",
+			"attributeProperties": {
+				"add_attribute": "Dodaj atribut",
+				"baseProperties": "Osnovna obilježja",
+				"criterion": "Uvjet",
+				"delete_attribute": "Ukloni atribut",
+				"description": "Opis",
+				"destination": "Odredište",
+				"direction": {
+					"asc": "U rastućem nizu",
+					"desc": "U opadajućem nizu"
+				},
+				"domain": "Domena",
+				"editorType": {
+					"html": "Html",
+					"label": "Vrsta editora",
+					"plain": "Obični tekst"
+				},
+				"field_hidden": "Skriven",
+				"field_read": "Samo za čitanje",
+				"field_visibility": "Način pristupa",
+				"field_write": "Dozvoljene izmjene",
+				"group": "Grupa",
+				"inherited": "Naslijeđen",
+				"isactive": "Aktivan",
+				"isbasedsp": "Prikaži u listi",
+				"isdefault": "Zadana vrijednost",
+				"isnotnull": "Obavezan",
+				"isunique": "Jedinstven",
+				"length": "Dužina",
+				"lookup": "Šifarnik",
+				"meta": {
+					"add": "Dodaj metapodatak",
+					"key": "Ključ",
+					"remove": "Ukloni metapodatak",
+					"title": "Izmjeni metapodatke",
+					"value": "Vrijednost"
+				},
+				"modify_attribute": "Izmjeni atribut",
+				"msg_warning_drop_row": "Atribute je moguće sortirati samo ako su prikazani i naslijeđeni",
+				"name": "Naziv",
+				"not_in_use": "Ne koristi se",
+				"pipeNotAllowed": "Molimo koristite OR umjesto |",
+				"precision": "Preciznost",
+				"referencequery": "Filter",
+				"scale": "Skala",
+				"set_sorting_criteria": "Podesi sortiranje",
+				"type": "Tip",
+				"typeProperties": "Obilježja tipa"
+			},
+			"attributes_title": "Upravljanje atributima",
+			"classProperties": {
+				"active": "Aktivna",
+				"description": "Opis",
+				"inherits": "Nasljednik",
+				"modify_class": "Izmijeni klasu",
+				"name": "Naziv",
+				"print_class": "Ispiši klasu",
+				"remove_class": "Ukloni klasu",
+				"simple": "Jednostavna",
+				"standard": "Standardna",
+				"superclass": "Superklasa",
+				"type": "Tip",
+				"wait_msg": "Šaljem podatke ...",
+				"wait_title": "Povezivanje na server"
+			},
+			"class_property": "Obilježje",
+			"classtype": {
+				"simpletable": "Jednostavna",
+				"standard": "Standardna"
+			},
+			"domainProperties": {
+				"add_domain": "Dodaj domenu",
+				"cardinality": "Kardinalnost",
+				"class_destination": "Odredišna klasa",
+				"class_target": "Početna klasa",
+				"delete_domain": "Ukloni domenu",
+				"description": "Opis",
+				"description_direct": "Izravni opis",
+				"description_inverse": "Inverzni opis",
+				"domain": "Domena",
+				"is_active": "Aktivan",
+				"m_d": "M/D",
+				"master_detail": "Nadređeni/podređeni (Master/Detail)",
+				"md_label": "Naziv veze nadređeni/podređeni (Master/Detail)",
+				"modify_domain": "Izmijeni domenu",
+				"name": "Naziv",
+				"title_add": "Dodaj domenu",
+				"title_modify": "Izmjeni domenu \"{0}\""
+			},
+			"domains_title": "Upravljanje domenama",
+			"errors": {
+				"table": {
+					"cast": "Nije moguće izmijeniti obilježje \"superklasa\", jer sadrži podatke ili podklase",
+					"duplicate": "Klasa sa tim nazivom već postoji",
+					"parent_not_found": "Klasa koju pokušavate naslijediti ne postoji"
+				}
+			},
+			"geo_attributes": {
+				"card_binding": "Povezivanje kartice",
+				"externalGraphic": "Ikona",
+				"fillColor": "Boja površine",
+				"fillOpacity": "Prozirnost površine",
+				"graphicHeight": "Visina ikone",
+				"graphicOpacity": "Prozirnost ikone",
+				"graphicWidth": "Širina ikone",
+				"master": "Referentna klasa",
+				"max_zoom": "Maksimalno povećanje",
+				"min_zoom": "Minimalno povećanje",
+				"pointRadius": "Poluprečnik oko točke",
+				"strokeColor": "Boja linije",
+				"strokeDashstyle": "Stil linije",
+				"strokeOpacity": "Prozirnost linije",
+				"strokeStyles": {
+					"dash": "Crtice",
+					"dashdot": "Crta - točka",
+					"dot": "Točkice",
+					"longdash": "Duge crtice",
+					"longdashdot": "Duga crta - točka",
+					"solid": "Puna linija"
+				},
+				"strokeWidth": "Debljina linije",
+				"style": "Stil",
+				"type": {
+					"line": "Linija",
+					"point": "Točka",
+					"polygon": "Poligon"
+				},
+				"visibility": "Vidljivost"
+			},
+			"include_inherited": "Uključujući naslijeđene",
+			"layers": "Sloj",
+			"print_schema": "Ispiši shemu",
+			"tabs": {
+				"attributes": "Atributi",
+				"domains": "Domene",
+				"geo_attributes": "Zemljopisni atributi",
+				"properties": "Obilježja"
+			},
+			"title": "Upravljanje klasama",
+			"tree_title": "Klase",
+			"widgets": {
+				".OpenReport": {
+					"fields": {
+						"force": "Prinudno formatiranje",
+						"presets": "Atributi izvještaja",
+						"report": "Izvještaj"
+					},
+					"presetGrid": {
+						"attribute": "Atribut",
+						"value": "Vrijednost"
+					},
+					"title": "Napravi izvještaj"
+				},
+				".Calendar": {
+					"fields": {
+						"target": "Ciljana klasa",
+						"start": "Datum početka",
+						"end": "Datum završetka",
+						"title": "Naziv događaja",
+						"filter": "CQL filter",
+						"defaultDate": "Zadani datum otvaranja"
+					},
+					"title": "Kalendar"
+				},
+				".Ping": {
+					"fields": {
+						"address": "Adresa na koju se šalje ping",
+						"count": "Broj ping pokušaja",
+						"templates": "Predlošci"
+					},
+					"title": "Ping"
+				},
+				".Workflow": {
+					"title": "<em>Start workflow</em>"
+				},
+				".NavigationTree": {
+					"title": "<em>Navigation tree</em>"
+				},
+				".CreateModifyCard": {
+					"fields": {
+						"target": "Ciljana klasa",
+						"cql": "CQL selektor kartice",
+						"readOnly": "Samo čitanje (read-only)"
+					},
+					"title": "Napravi ili uredi karticu"
+				},
+				"commonFields": {
+					"active": "Aktivan",
+					"alwaysenabled": "Uvijek uključen",
+					"buttonLabel": "Naslov tipke",
+					"type": "Tip"
+				},
+				"title": "Komponenta (Widget)"
+			}
+		},
+		"modDashboard": {
+			"charts": {
+				"alert": {
+					"wrongConfiguration": "Grafikon nije pravilno podešen"
+				},
+				"availableCharts": {
+					"gauge": "Mjerilo",
+					"pie": "Pita",
+					"bar": "Kolumne",
+					"line": "Linije"
+				},
+				"buttons": {
+					"add": "Dodaj grafikon",
+					"modify": "Uredi grafikon",
+					"remove": "Ukloni grafikon",
+					"preview": "Pregled"
+				},
+				"fields": {
+					"active": "Aktivan",
+					"autoload": "Učitaj automatski",
+					"background": "Boja pozadine",
+					"categoryFieldset": "Osa kategorija",
+					"chartType": "Tip grafikona",
+					"dataSource": "Izvor podataka",
+					"defaultValue": "Zadana vrijednost",
+					"description": "Opis",
+					"fieldType": "Tip polja",
+					"foreground": "Boja",
+					"fromClass": "Od klase",
+					"legend": "Pokaži legendu",
+					"labelField": "Polje naziva",
+					"lookupType": "Šifarnički tip",
+					"max": "Maksimum",
+					"min": "Minimum",
+					"name": "Naziv",
+					"orientation": {
+						"label": "Orijentacija",
+						"values": {
+							"horizontal": "Horizontalna",
+							"vertical": "Vertikalna"
+						}
+					},
+					"required": "Obavezno",
+					"steps": "Koraci",
+					"title": "Naslov",
+					"valueField": "polje vrijednosti",
+					"valueFieldset": "Osa vrijednosti"
+				},
+				"inputTypes": {
+					"BOOLEAN": "Logički (Boolean)",
+					"DECIMAL": "Decimalni",
+					"INTEGER": "Cjelobrojni",
+					"DOUBLE": "Realni (Double)",
+					"DATE": "Datum",
+					"TIMESTAMP": "Vremenska odrednica (timestamp)",
+					"TIME": "Vrijeme",
+					"STRING": "String",
+					"TEXT": "Tekst",
+					"CHAR": "Karakter",
+					"INET": "Mrežna adresa"
+				},
+				"title": "Grafikoni",
+				"typeFieldOptions": {
+					"card": "Kartica",
+					"classes": "odaberi iz svih CMDBuild klasa",
+					"freeInt": "Slobodna cjelobrojna vrijednost",
+					"freeString": "Slobodan tekstualni unos",
+					"group": "Trenutna grupa",
+					"lookup": "Odaberi iz šifarnika",
+					"user": "Trenutni korisnik"
+				}
+			},
+			"layout": {
+				"add": "Dodaj kolonu",
+				"remove": "Ukloni prazne kolone",
+				"title": "Izgled"
+			},
+			"properties": {
+				"add": "Dodaj kontrolnu ploču (dashboard)",
+				"modify": "Izmjeni kontrolnu ploču",
+				"remove": "Ukloni kontrolnu ploču",
+				"fields": {
+					"name": "Naziv",
+					"description": "Opis",
+					"groups": "Dostupno grupama"
+				}
+			},
+			"title": "Kontrolna ploča"
+		},
+		"modLookup": {
+			"add_lookuptype": "Dodaj tip u šifarnik",
+			"lookupForm": {
+				"active": "Aktivan",
+				"code": "Kod",
+				"description": "Opis",
+				"disable_lookup": "Isključi stavku šifarnika",
+				"enable_lookup": "Uključi stavku šifarnika",
+				"isdefault": "Zadana vrijednost",
+				"notes": "Napomena",
+				"parentdescription": "Opis roditelja",
+				"update_lookup": "Izmjeni stavku šifarnika"
+			},
+			"lookupGrid": {
+				"active": "Aktivan",
+				"add_lookup": "Dodaj stavku u šifarnik",
+				"code": "Kod",
+				"description": "Opis",
+				"isdefault": "Zadan",
+				"notes": "Napomena",
+				"parentdescription": "Opis roditelja"
+			},
+			"lookupType": "Tip u šifarniku",
+			"lookupTypeForm": {
+				"active": "Aktivan",
+				"delete_lookuptype": "Ukloni tip iz šifarnika",
+				"description": "Opis",
+				"modify_lookuptype": "Izmjeni tip u šifarniku",
+				"parent": "Roditelj",
+				"title": "Upravljanje sadržajima šifarnika"
+			},
+			"lookupTypes": "Šifarnici",
+			"tabs": {
+				"lookuplist": "Lista stavki",
+				"properties": "Obilježje"
+			},
+			"title": "Upravljanje sadržajima šifarnika"
+		},
+		"modWorkflow": {
+			"add_process": "Dodaj proces",
+			"attributes_title": "Upravljanje atributima",
+			"domains_title": "Upravljanje domenama",
+			"errors": {
+				"table": {
+					"cast": "Obilježje \"superklasa\" ne može biti izmjenjeno, klasa sadrži podatke i/ili podklase",
+					"duplicate": "Klasa sa tim imenom već postoji",
+					"parent_not_found": "Klasa procesa koju pokušavate naslijediti ne postoji"
+				}
+			},
+			"include_inherited": "Uključi naslijeđene",
+			"process_property": "Obilježje",
+			"tabs": {
+				"attributes": "Atributi",
+				"domains": "Domene",
+				"properties": "Obilježja",
+				"xpdl": "XPDL"
+			},
+			"title": "Upravljanje procesima",
+			"tree_title": "Procesi",
+			"xpdlDownload": {
+				"download_tamplete": "Preuzmi predložak (template)",
+				"download_xpdl_tamplete": "Preuzmi XPDL predložak (template)",
+				"package_version": "Verzija",
+				"process_name": "Naziv procesa",
+				"user_stoppable": "Korisnik može prekinuti proces"
+			},
+			"xpdlUpload": {
+				"deleted_image": "Datoteka sa grafom se uklanja jer nije usklađena sa XPDL datotekom",
+				"error": "Greška prilikom pokušaja postavljanja XPDL datoteke na server",
+				"jpg_file": "Graf procesa",
+				"saved_image": "Graf procesa postavljen na server",
+				"saved_xpdl": "XPDL datoteka postavljena na server",
+				"upload_template": "Postavi na server",
+				"upload_xpdl_tamplete": "Postavi XPDL na server",
+				"xpdl_file": "XPDL datoteka"
+			}
+		},
+		"modcartography": {
+			"external_services": {
+				"admin_password": "Administratorska lozinka",
+				"admin_user": "Administratorski nalog",
+				"description": {
+					"geoserver": "GeoServer",
+					"google": "Google Maps",
+					"osm": "Open Street Map",
+					"yahoo": "Yahoo! Maps"
+				},
+				"key": "Ključ",
+				"title": "Vanjski servisi",
+				"url": "URL",
+				"workspace": "Radni prostor"
+			},
+			"geoserver": {
+				"add_layer": "Doodaj novi sloj",
+				"delete_layer": "Obriši sloj",
+				"file": "Datoteka",
+				"modify_layer": "Izmjeni sloj",
+				"service_not_available": "Geoserver nije uključen. Za aktivaciju idite na {0}",
+				"title": "Geoserver slojevi"
+			},
+			"icons": {
+				"alert": {
+					"msg": "Da li ste sigurni?",
+					"title": "Upozorenje"
+				},
+				"description": "Opis",
+				"file": "Datoteka",
+				"title": "Upravljanje ikonama"
+			},
+			"layermanager": {
+				"title": "Redoslijed slojeva"
+			},
+			"navigationTree": {
+				"title": "GIS navigacija"
+			},
+			"title": "GIS"
+		},
+		"modconnectors": {
+			"title": "Vezni programi"
+		},
+		"modmenu": {
+			"add_menu": "Dodaj meni",
+			"available_elements": "Dostupni elementi",
+			"availabletree": {
+				"class": "Klase",
+				"dashboard": "Kontrolne ploče",
+				"processclass": "Aktivnosti",
+				"report": "Izvještaji",
+				"view": "Pogledi"
+			},
+			"custom_menu": "Osobni meni",
+			"custom_menus": "Osobni meniji",
+			"delete_menu": "Ukloni meni",
+			"menu_root": "Meni",
+			"modify_menu": "Izmjeni meni",
+			"new_folder": "Novi direktorij",
+			"title": "Upravljanje menijima"
+		},
+		"modreport": {
+			"add": "Dodaj izvještaj",
+			"importJRFormStep1": {
+				"description": "Opis izvještaja",
+				"enabled_groups": "Odobrene grupe",
+				"fieldset": "Uvoz Jasper izvještaja",
+				"master_report_jrxml": "Izbor Glavnog izvještaja (.jrxml datokeke)",
+				"menuTitle": "Jasper Reports izvještaji",
+				"name": "Naziv izvještaja"
+			},
+			"importJRFormStep2": {
+				"duplicate_images": "Pažnja! Nije moguće obaviti radnju - Izvještaj sadrži duple slike sa istim imenom.",
+				"fieldset_generic": "Uvoz Jasper izvještaja",
+				"fieldset_images": "Uvoz slika definiranih glavnim izvještajem",
+				"fieldset_subreports": "Uvoz podizveštaja definiranih glavnim izvještajem",
+				"menuTitle": "Jasper-reports izvještaj",
+				"nothing_to_import": "Nema referenciranih slika ili podizvještaja; Potvrdite za pokretanje postupka dodavanja.",
+				"success": {
+					"description": {
+						"add": "Izvještaj je uspješno uvežen",
+						"modify": "Izvještaj je uspješno izmijenjen"
+					},
+					"title": "Slanje na server završeno"
+				}
+			},
+			"importOpenofficeTemplateForm": {
+				"menuTitle": "OpenOffice izvještaj"
+			},
+			"modify": "Izjmeni izvještaj",
+			"remove": "Ukloni izvještaj",
+			"title": "Izvještaji"
+		},
+		"modsecurity": {
+			"defaultgroup": "* Zadana grupa*",
+			"group": {
+				"add_group": "Dodaj grupu",
+				"administrator": "Administrator",
+				"availableusers": "Dostupni korisnici",
+				"delete_group": "Isključi grupu",
+				"email": "Email",
+				"enable_group": "Uključi grupu",
+				"group_description": "Opis",
+				"group_name": "Naziv grupe",
+				"groupchoice": "Korisnici u grupi",
+				"is_active": "Aktivna",
+				"is_administrator": "Administrator",
+				"limited_admin": "Administrator s ograničenim pravima",
+				"modify_group": "Izmjeni grupu",
+				"normal": "Normalno",
+				"starting_class": "Početna stranica",
+				"title": "Upravljanje grupama",
+				"usermanagement": "Upravljanje pripadajućim korisnicima"
+			},
+			"groups": "Grupe",
+			"privilege": {
+				"add_privilege": "Dodaj prava",
+				"classname": " Klasa",
+				"delete_privilege": "Ukloni prava",
+				"modify_privilege": "Imeni prava",
+				"none_privilege": "Bez ikakvih prava",
+				"privilege_mode": "Privilegiran",
+				"read_privilege": "Čitanje",
+				"write_privilege": "Pisanje"
+			},
+			"tabs": {
+				"permissions": "Prava",
+				"properties": "Obilježja"
+			},
+			"title": "Korisnici i grupe",
+			"uiconfiguration": {
+				"disabled_class_tabs": "Neaktivne kartice u modulu klasa",
+				"disabled_modules": "Neaktivni moduli",
+				"disabled_process_tabs": "Neaktivne kartice u modulu procesa",
+				"generic_properties": {
+					"always_enabled_widgets": "Procesni dodaci uvijek aktivni",
+					"card_simple_history": "Pojednostavljena povijest kartica",
+					"full_screen_navigation": "Navigacija preko cijelog ekrana",
+					"hide_side_panel": "Sakrij bočni panel",
+					"process_simple_history": "Pojednostavljena povijest procesa"
+				},
+				"other": "Ostale opcije",
+				"title": "Podešavanje IO"
+			},
+			"user": {
+				"add_user": "Dodaj korisnika",
+				"availablegroups": "Dostupne grupe",
+				"change_password": "Promijeni lozinku",
+				"confirmation": "Potvrdi lozinku",
+				"defaultgroup": "Zadana grupa",
+				"defaultonlogin": "* Login *",
+				"description": "Opis",
+				"disable_user": "Isključi korisnika",
+				"email": "Email",
+				"enable_user": "Uključi korisnika",
+				"groupmanagement": "Upravljanje korisničkim grupama",
+				"isactive": "Aktivan",
+				"modify_user": "Izmjeni korisnika",
+				"password": "Lozinka",
+				"title": "Upravljanje korisnicima",
+				"user_info": "Informacije o korisniku",
+				"usergroups": "Korisničke grupe",
+				"username": "Korisničko ime"
+			},
+			"users": "Korisnici"
+		},
+		"setup": {
+			"cmdbuild": {
+				"cardpanelheight": "Visina (u postocima) panela za kartice ",
+				"fieldsetgeneraltitle": "Opće",
+				"fieldsetlanguageltitle": "Jezik",
+				"fieldsetpopupwindowtitle": "popup prozor",
+				"instancename": "Naziv instance",
+				"language": "Zadani jezik",
+				"languagePrompt": "Prikaži izbor jezika",
+				"menuTitle": "Opće postavke",
+				"popupheightlabel": "Visina (u postocima) popup prozora",
+				"popupwidthlabel": "Širina (u postocima) popup prozora",
+				"referencecombolimit": "Ograničenje broja stavki u padajućim menijima za reference i šifarnike",
+				"relationlimit": "Broj prikazanih relacija",
+				"rowlimit": "Broj redova na jednoj stranici",
+				"sessiontimeout": "Sesija je istekla (seconds)",
+				"startingClass": "Podrazumijevana klasa",
+				"tabs_position": {
+					"bottom": "Pri dnu",
+					"label": "Smještaj tab-a u panelu kartice",
+					"top": "Pri vrhu"
+				},
+				"title": "CMDBuild postavke"
+			},
+			"dms": {
+				"categoryLookup": "CMDBuild kategorija",
+				"credential": "Podaci za pristup",
+				"credentialPassword": "Lozinka",
+				"credentialUser": "Korisničko ime",
+				"delay": "Kašnjenje operacija",
+				"enabled": "Uključen",
+				"fileserver": "Datotečni server",
+				"fileserverPort": "Port",
+				"fileserverType": "Tip",
+				"fileserverUrl": "Host",
+				"general": "Opće",
+				"menuTitle": "Alfresco",
+				"repository": "Arhiva",
+				"repositoryApp": "Aplikacija",
+				"repositoryFSPath": "Putanja na datotečnom serveru",
+				"repositoryWSPath": "Putanja web servisa",
+				"serverUrl": "Adresa (Url) servisa",
+				"title": "Alfresco postavke"
+			},
+			"gis": {
+				"center_lat": "Početna zemljopisna širina",
+				"center_lon": "Početna zemljopisna dužina",
+				"enable": "Uključen",
+				"initial_zoom": "Početno uvećanje",
+				"serverurl": "Adresa servera - URL",
+				"title": "GIS"
+			},
+			"graph": {
+				"baseLevel": "Zadani broj razina",
+				"clusteringThreshold": "Prag za pregrupiranje čvorova",
+				"enabled": "Uključen",
+				"expandingThreshold": "Maksimalan broj čvorova u grupi",
+				"extensionMaximumLevel": "Maksimalan broj nivoa koji se mogu odabrati",
+				"menuTitle": "Graf relacija",
+				"title": "POstavke grafa relacija"
+			},
+			"modify": "Izmjeni",
+			"save": "Potvrdi",
+			"server": {
+				"cache_management": "Postavke cache memorije",
+				"clear_cache": "Isprazni cache memoriju",
+				"menuTitle": "Postavke servera",
+				"servicesync": "Sinkronizacija servisa",
+				"title": "Postavke servera",
+				"wfsync": "Ukloni nekonzistentne procese"
+			},
+			"setupTitle": "Postavke",
+			"workflow": {
+				"credential": "Podaci za pristup",
+				"enabled": "Uključen",
+				"endpoint": "Adresa (URL) servisa",
+				"engine": "Naziv sistema za upravljanje procesima",
+				"general": "Opće",
+				"menuTitle": "Radni procesi (Workflow)",
+				"password": "Lozinka",
+				"scope": "Opseg (scope)",
+				"title": "Podešavanje sustava za upravljanje radnim procesima",
+				"user": "Korisničko ime"
+			}
+		},
+		"welcome": {
+			"body": "Upravljački modul.",
+			"title": "Dobro došli"
+		}
+	},
+	"common": {
+		"buttons": {
+			"abort": "Odustani",
+			"add": "Dodaj",
+			"apply": "Primjeni",
+			"as": "kao",
+			"clone": "Kloniraj",
+			"close": "Zatvori",
+			"confirm": "Potvrdi",
+			"export": "Izvezi",
+			"import": "Uvezi",
+			"load": "Učitaj",
+			"modify": "Izmjeni",
+			"next": "<em>Next</em>",
+			"previous": "<em>Previous</em>",
+			"print": "Ispiši",
+			"remove": "Ukloni",
+			"save": "Potvrdi",
+			"update": "Ažuriraj",
+			"upload": "Postavi na server",
+			"workflow": {
+				"advance": "Dalje",
+				"back": "Povratak",
+				"save": "Snimi"
+			}
+		},
+		"confirmpopup": {
+			"areyousure": "Da li ste sigurni?",
+			"title": "Potvrdi"
+		},
+		"credits": "Info &amp; Support",
+		"display_topic": "Prikaz objekata",
+		"display_topic_none": "Nema objekata za prikaz",
+		"display_topic_of": "objekti",
+		"failure": "Greška",
+		"group": "Grupa",
+		"loading": "Učitavanje u tijeku...",
+		"loading_mask": {
+			"classes": "Učitavanje klasa",
+			"configuration": "Učitavanje konfiguracije",
+			"domain": "Učitavanje domena",
+			"group": "Učitavanje liste grupa i korisnika",
+			"lookup": "Učitavanje listi šifarnika",
+			"menu": "Učitavanje menija",
+			"report": "Učitavanje izvještaja",
+			"workflow": "Učitavanje procesa"
+		},
+		"logout": "Izađi",
+		"remove": "Ukloni",
+		"splash": {
+			"consultant": "ITIL savjetnik i podrška",
+			"design": "dizajn",
+			"implementation": "implementacija",
+			"maintainer": "održava",
+			"municipality": "Općina Udine",
+			"principal": "nositelj osnovnog projekta"
+		},
+		"success": "Uspjeh",
+		"tbd_body": "U tijeku je izvršavanje operacije",
+		"tbd_title": "U tijeku je izvršavanje operacije",
+		"tooltip": {
+			"editParameters": "Izmjeni parametre",
+			"reload": "Ponovo učitaj",
+			"showData": "Prikaži podatke"
+		},
+		"tree_names": {
+			"class": "Standardne",
+			"process": "Aktivnost",
+			"simpletable": "Jednostavne"
+		},
+		"unknown_error": "Nepoznata greška",
+		"user": "Korisničko ime",
+		"wait_msg": "Šaljem podatke...",
+		"wait_title": "Pričekajte..."
+	},
+	"configure": {
+		"failure": {
+			"text": "Tijekom instalacije došlo je do slijedećih grešaka: ",
+			"title": "Greška tijekom instalacije"
+		},
+		"finish": "Kraj",
+		"next": "Dalje",
+		"previous": "Povratak",
+		"step1": {
+			"choose": "Izaberite zadani jezik",
+			"showLangChoose": "Prikaži izbor jezika u prozoru za prijavljivanje"
+		},
+		"step2": {
+			"create_shark": "Napravi i shemu baze za Shark",
+			"db_confirm_password": "Potvrdi lozinku",
+			"db_connection": "Veza prema bazi podataka",
+			"db_create": "CMDBuild baza podataka",
+			"db_create_name": "Naziv baze podataka",
+			"db_create_type": "Tip CMDBuild baze podataka",
+			"db_demo": "Demo",
+			"db_empty": "Prazna",
+			"db_existing": "Postojeća",
+			"db_host": "Host",
+			"db_password": "Lozinka",
+			"db_port": "Port",
+			"db_superUser": "Administrator (Super user)",
+			"db_test_connection": "Testiraj vezu",
+			"db_type": "Tip baze podataka",
+			"db_user": "Korisnik",
+			"db_user_create": "Napravi korisnika sa ograničenim pravima",
+			"limited_user": "Korisnik sa ograničenim pravima",
+			"msg": {
+				"msg": "Veza uspješno uspostavljena",
+				"pswnomatch": "Ponovljena lozinka je pogrešna",
+				"title": "Testiraj vezu"
+			},
+			"new_limited_user": "Napravi korisnika sa ograničenim pravima",
+			"user_type": "Tip korisnika"
+		},
+		"step3": {
+			"admin": "Administratorski nalog",
+			"admin_password": "Lozinka",
+			"admin_user": "Korisničko ime",
+			"confirm_password": "Potvrdi lozinku"
+		},
+		"success": {
+			"text": "Instalacija je uspješno završena. Pritiskom na tipku U REDU pokrenuti će se aplikacija",
+			"title": "Postavljanje završeno"
+		},
+		"title": "Postavke"
+	},
+	"errors": {
+		"busy_wf_widgets": "Vizualne kontrole su nedostupne, provjerite status servera prije ponovnog pokušaja.",
+		"detail": "Detalji",
+		"error_message": "Greška",
+		"error_moving_row": "Došlo je do greške prilikom obrade reda",
+		"invalid_attributes": "Slijedeća polja nisu redno popunjena:",
+		"invalid_extended_attributes": "Slijedeće vizualne kontrole nisu uredno popunjene:",
+		"invalid_fields": "Određena polja nisu uredno popunjena",
+		"no_driver": "Nedostaje odgovarajući JDBC upravljački program (driver).<br />Odgovarajući driver možete pronaći u CMDBuild instalacijskom direktoriju i kopirati u <b>lib<\/b> direktorij Tomcat servera.",
+		"no_selections": "Niste izabrali karticu podataka koja će biti ažurirana",
+		"reasons": {
+			"ATTRIBUTE_NOTFOUND": "Atribut {1} ne postoji u {0}",
+			"AUTH_CLASS_NOT_AUTHORIZED": "Nedovoljne privilegije nad klasom {0}",
+			"AUTH_DEMO_MODE": "Operacija nije dozvoljena u demo načinu rada",
+			"AUTH_DOMAIN_NOT_AUTHORIZED": "Nedovoljne privilegije nad domenom {0}",
+			"AUTH_LOGIN_WRONG": "Pogrešno korisničko ime i/ili lozinka",
+			"AUTH_MULTIPLE_GROUPS": "Korisnik se pojavljuje u više grupa",
+			"AUTH_NOT_AUTHORIZED": "Nemate odgovarajuće privilegije za izvršenje operacije",
+			"AUTH_NOT_CONFIGURED": "Greška prilikom konfiguracije autentikacije",
+			"AUTH_NOT_LOGGED_IN": "Korisnik nije prijavljen",
+			"AUTH_NO_GROUPS": "Korisnik nije član nijedne grupe",
+			"AUTH_UNKNOWN_GROUP": "Nepostojeća grupa",
+			"AUTH_WRONG_PASSWORD": "Pogrešna lozinka",
+			"CARD_NOTFOUND": "Kartica nije pronađena u {0}",
+			"CLASS_NOTFOUND": "Klasa {0} ne postoji",
+			"CQL_COMPILATION_FAILED": "CQL upit nije validan",
+			"DMS_ATTACHMENT_DELETE_ERROR": "Brisanje priloga nije uspjelo",
+			"DMS_ATTACHMENT_NOTFOUND": "Prilog {0} za objekat {2} u {1} ne postoji",
+			"DMS_ATTACHMENT_UPLOAD_ERROR": "Dodavanje priloga nije uspjelo",
+			"DMS_DOCUMENT_TYPE_DEFINITION_ERROR": "Nije moguće učitati definiciju kategorije {0}",
+			"DMS_AUTOCOMPLETION_RULES_ERROR": "Nije moguće učitati pravila za automatsko dovršavanje za priloge {0}",
+			"DMS_UPDATE_ERROR": "Ažuriranje priloga nije uspjelo",
+			"DOMAIN_NOTFOUND": "Domena {0} ne postoji",
+			"ILLEGAL_CRON_EXPRESSION": "Nevažeći cron izraz",
+			"LOCKED_CARD": "Korisnik {0} ažurira karticu {1} sekundi",
+			"LOOKUP_NOTFOUND": "Šifarnik {0} ne postoji",
+			"LOOKUP_TYPE_NOTFOUND": "Tip {0} ne postoji u šifarniku",
+			"MENU_NOTFOUND": "Meni ne postoji",
+			"NOTFOUND": "Element nije pronađen",
+			"ORM_AMBIGUOUS_DIRECTION": "Smjer relacije nije moguće automatski utvrditi",
+			"ORM_CANT_CREATE_DATABASE": "Kreiranje baze podataka nije uspjelo.",
+			"ORM_CANT_CREATE_USER": "Kreiranje korisnika nije uspjelo",
+			"ORM_CANT_DELETE_CARD_WITH_RELATION": "Nije moguće obrisati kartice sa aktivnim relacijama",
+			"ORM_CHANGE_LOOKUPTYPE_ERROR": "Promjena tipa veze prema šifarniku nije uspjela",
+			"ORM_CONTAINS_DATA": "Nemoguće je obrisati klasu ili atribut iz tablice ili domene koji sadrži podatke",
+			"ORM_CQL_COMPILATION_FAILED": "CQL upit nije valjan",
+			"ORM_CSV_INVALID_ATTRIBUTES": "Snimanje kartice nije uspjelo: postoje nevažeće vrijednosti podataka",
+			"ORM_DATABASE_CONNECTION_ERROR": "Greška prilikom povezivanja na bazu podataka. Provjerite parametre za povezivanje na bazu podataka.",
+			"ORM_DBNOTCONFIGURED": "Baza podataka nije podešena",
+			"ORM_DOMAIN_HAS_REFERENCE": "Nije moguće ukloniti domenu u kojoj postoje reference",
+			"ORM_DUPLICATE_ATTRIBUTE": "Atribut sa tim imenom već postoji",
+			"ORM_DUPLICATE_TABLE": "Klasa sa tim imenom već postoji",
+			"ORM_DUPLICATE_USER": "Korisnik sa danim imenom već postoji",
+			"ORM_ERROR_CARD_SELECT": "Učitavanje kartice nije uspjelo",
+			"ORM_ERROR_CARD_UPDATE": "Ažuriranje kartice nije uspjelo",
+			"ORM_ERROR_DOMAIN_CREATE": "Kreiranje domene nije uspjelo",
+			"ORM_ERROR_DOMAIN_DELETE": "Brisanje domene nije uspjelo",
+			"ORM_ERROR_DOMAIN_MODIFY": "Izmena domene nije uspjela",
+			"ORM_ERROR_GENERIC_SQL": "SQL greška: {0}",
+			"ORM_ERROR_GETTING_PK": "Nemoguće utvrđivanje primarnog ključa",
+			"ORM_ERROR_INCOMPATIBLE_CLASS": "Nekompatibilna klasa: {0}",
+			"ORM_ERROR_LOOKUP_CREATE": "Kreiranje veze prema šifarniku nije uspjelo",
+			"ORM_ERROR_LOOKUP_DELETE": "Uklanjanje veze prema šifarniku nije uspjelo",
+			"ORM_ERROR_LOOKUP_MODIFY": "Izmjena veze sa šifarnikom nije uspjela",
+			"ORM_ERROR_RELATION_CREATE": "Kreiranje relacije nije uspjelo",
+			"ORM_ERROR_RELATION_MODIFY": "Izmjena relacije nije uspjela",
+			"ORM_FILTER_CONFLICT": "Konflikt prilikom definicije filtera",
+			"ORM_FULLCARDS_MULTIPLEDOMAINS": "Nije moguće učitati kartice iz više domena",
+			"ORM_GENERIC_ERROR": "Dogodila se greška prilikom učitavanja/snimanja podataka",
+			"ORM_ICONS_FILE_ALREADY_EXISTS": "Datoteka {0} već postoji",
+			"ORM_ICONS_FILE_NOT_FOUND": "Ne postoji datoteka",
+			"ORM_ICONS_UNSUPPORTED_TYPE": "Tip datoteke nije podržan",
+			"ORM_ILLEGAL_NAME_ERROR": "Nedozvoljeno ime: {0}",
+			"ORM_LOOKUPTYPE_ALREADY_EXISTS": "U šifarniku već postoji tip sa istim opisom",
+			"ORM_MALFORMED_PATCH": "Neodgovarajuća ispravka/dopuna (patch)",
+			"ORM_NOT_NULL_VIOLATION": "Narušeno ograničenje: nedozvoljena null vrijednost",
+			"ORM_POSTGIS_NOT_FOUND": "PostGIS nije instaliran",
+			"ORM_READ_ONLY_RELATION": "Relacija je dostupna samo za čitanje",
+			"ORM_READ_ONLY_TABLE": "Tablica je dostupna samo za čitanje",
+			"ORM_SQL_PATCH": "SQL greška u patch datoteci",
+			"ORM_TABLE_HAS_CHILDREN": "Klasa koja sadrži izvedene klase ne može biti uklonjena",
+			"ORM_TABLE_HAS_DOMAIN": "Klasa za koju je definirana i domena ne može biti uklonjena",
+			"ORM_TYPE_ERROR": "Neodgovarajući tip",
+			"ORM_UNIQUE_VIOLATION": "Narušeno ograničenje: jedinstvenost vrijednosti",
+			"OUT_OF_DATE_PROCESS": "Proces nije podudaran, ponovno učitaj listu",
+			"PARAMETER_CLASS_UNAVAILABLE": "Instanciranje objekta Java klase {0} nije moguće",
+			"PRIVILEGE_GROUP_NOTFOUND": "Ne postoje privilegije za grupu {0}",
+			"PRIVILEGE_NOTFOUND": "Grupa {0} nema privilegije nad klasom {1}",
+			"REPORT_COMPILE_ERROR": "Greška prilikom pripreme izvještaja",
+			"REPORT_GROUPNOTALLOWED": "Grupa {0} nema potrebna prava za pripremu izvještaja {1}",
+			"REPORT_IMPORT_ERROR": "Pojavila se greška prilikom dodavanja u izvještaj",
+			"REPORT_INVALID_FILE": "Izveštaj nije valjan",
+			"REPORT_INVALID_PARAMETER_CLASS": "Java klasa parametra definiranog u izvještaju nije valjana! Radnja je prekinuta.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_ATTRIBUTE": "Parametri u izvještaju sadrže naziv nepostojećeg CMDBuild atributa! Radnja je prekinuta.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_CLASS": "Parametri u izvještaju sadrže naziv nepostojeće CMDBuild klase! Radnja je prekinuta.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_LOOKUP": "Parametri u izvještaju sadrže naziv nepostojećeg objekta CMDBuild šifarnika! Radnja je prekinuta.",
+			"REPORT_INVALID_PARAMETER_FORMAT": "Format naziva jednog od parametara u izvještaju nije valjan! Valjani formati: \"naziv\", \"naziv.klasa.atribut\", \"naziv.lookup.nazivlookupa\"",
+			"REPORT_INVALID_PARAMETER_LOOKUP_CLASS": "Java klasa šifarnika u izvještaju nije valjana! Potrebna klasa:\"java.lang.Integer\". Radnja je prekinuta.",
+			"REPORT_INVALID_PARAMETER_REFERENCE_CLASS": "Java klasa referencirana u izvještaju nije valjana! Potrebna klasa:\"java.lang.Integer\". Radnja je prekinuta.",
+			"REPORT_INVALID_PARAMETER_VALUE": "Vrijednost nekog od parametara u izvještaju nije valjana! Radnja je prekinuta.",
+			"REPORT_INVISIBLE_PARAMETER": "Jedan od parametara izvještaja referencira nevidljivi atribut! Radnja je prekinuta.",
+			"REPORT_LOAD_DESIGN_ERROR": "Greška prilikom učitavanja definicije izgleda izvještaja",
+			"REPORT_NOCLASS_ERROR": "Klasa potrebna za pripremu izveštaja nije pronađena : {0}",
+			"REPORT_NOTFOUND": "Izvještaj {0} nije pronađen",
+			"REPORT_UPLOAD_ERROR": "Pojavila se greška prilikom postavljanja izvještaja na server",
+			"SCHEDULER_INTERNAL_ERROR": "Interna greška u raspoređivaču poslova: {0}",
+			"SERVICE_UNAVAILABLE": "Servis je nedostupan",
+			"WF_CANNOT_ABORT_PROCESS": "Nemoguće je prekinuti proces",
+			"WF_CANNOT_ACCEPT_WORKITEM": "Prihvaćanje zadatka nije uspjelo",
+			"WF_CANNOT_COMPLETE_WORKITEM": "Pokušaj završetka korisničkog zadatka nije uspio",
+			"WF_CANNOT_CONFIGURE_CMDBEXTATTR": "Podešavanje proširenog atributa {0} nije moguće",
+			"WF_CANNOT_FIND_XPDL": "XPDL datoteka nije pronađena",
+			"WF_CANNOT_GETWAPI_CONNECTION": "Povezivanje na sistem za upravljanje izvršavanjem procesa nije uspjelo",
+			"WF_CANNOT_GET_PROCESSCARDID": "Učitavanje identifikacijskog atributa kartice nije uspjelo",
+			"WF_CANNOT_GET_PROCESS_VARIABLES": "Učitavanje procesnih varijabli nije uspjelo",
+			"WF_CANNOT_GET_WORKITEM": "Preuzimanje korisničkog zadatka nije uspjelo",
+			"WF_CANNOT_GET_WORKITEMS": "Preuzimanje liste zadataka za korisnika nije uspjelo",
+			"WF_CANNOT_GET_WORKITEM_VARIABLES": "Učitavanje varijabli za korisnički zadatak nije uspjelo",
+			"WF_CANNOT_LOAD_ACTIVITIES": "Učitavanje zadataka za proces {0} nije uspjelo",
+			"WF_CANNOT_REACT_CMDBEXTATTR": "Dopunjavanje proširenog atributa {0} nije moguće",
+			"WF_CANNOT_REASSIGN_WORKITEM": "Prosljeđivanje zadatka drugom korisniku nije uspjelo",
+			"WF_CANNOT_RESOLVE_PARTICIPANT": "Nije moguće utvrditi naziv grupe ",
+			"WF_CANNOT_RESUME_WORKITEM": "Pokušaj nastavka izvršavanja zadatka nije uspio",
+			"WF_CANNOT_START": "Pokretanje procesa nije uspjelo",
+			"WF_CANNOT_SUSPEND_PROCESS": "Nemoguće je suspendirati proces",
+			"WF_CANNOT_UPDATE_WORKITEM_VARIABLES": "Ažuriranje varijabli u korisničkom zadatku nije uspjelo",
+			"WF_CANNOT_UPLOAD_PACKAGE": "Paket nije bilo moguće postaviti na server",
+			"WF_EMAIL_CANNOT_RETRIEVE_MAIL": "Email trenutno nije moguće preuzeti",
+			"WF_EMAIL_NOT_CONFIGURED": "Podrška za email nije podešena",
+			"WF_EMAIL_NOT_SENT": "Email nije poslan",
+			"WF_EXTATTR_CREATEREPORT_FACTORYNOTINSESSION": "Kreiranje izvještaja nije moguće",
+			"WF_GENERIC_ERROR": "Greška u radnom procesu",
+			"WF_PACKAGE_ERROR": "Greška u XPDL paketu",
+			"WF_PROCESSINFO_NOT_FOUND": "XPDL datoteka procesa ne postoji.",
+			"WF_START_ACTIVITY_NOT_FOUND": "Ne mogu pronaći početnu aktivnost za proces {0}",
+			"WF_WAPI_CONNECTION_ERROR": "Nije moguće uspostaviti vezu sa serverom",
+			"WF_WORKITEM_VARIABLES_REQUIRED": "Obavezno polje: {0}",
+			"WF_WRONG_CREDENTIALS": "Nedovoljna prava",
+			"WF_WRONG_XPDL_CLASSNAME": " Pogrešna klasa za zadani XPDL",
+			"WF_XPDL_CLASSNAME_MISSING": "Nemoguće je utvrditi CMDBuild klasu povezanu sa traženim procesom",
+			"WF_XPDL_USERSTOP_MISSING": "Polje userStoppable nije pronađeno u XPDL datoteci",
+			"WIDGET_SERVICE_CONNECTION_ERROR": "Slanje poruke nije uspjelo. Mogući uzroci: 1) Servis nije implementiran; 2) URL i/ili broj porta nije točan",
+			"WIDGET_SERVICE_MALFORMED_REQUEST": "Provjerite jesu li prostor imena, naziv metode i parametri web servisa točni."
+		},
+		"reference_invalid": "Vrijednost ne zadovoljava postavljeni filter",
+		"server_error": "Server je trenutno nedostupan",
+		"server_error_code": "Došlo je do greške prilikom obrade podataka na serveru: ",
+		"show_detail": "Prikaži detalje",
+		"template_error": "Greška u predlošku (templateu)",
+		"unknown_error": "Došlo je do greške",
+		"wrong_wf_widgets": "Došlo je do greške prilikom snimanja slijedeće vizualne kotrole: "
+	},
+	"info": {
+		"card_not_found": "Kartica ne odgovara trenutnim uvjetima filtriranja"
+	},
+	"login": {
+		"change_user": "Promijeni korisnika",
+		"failed": "Prijava nije uspjela",
+		"language": "Jezik",
+		"login": "Prijavi se",
+		"multi_group": "Izaberite grupu",
+		"password": "Lozinka",
+		"relogin_message": "Vaša sesija je istekla. Potrebno je ponovo unijeti lozinku.",
+		"relogin_title": "Sesija je istekla",
+		"title": "Unesite podatke za pristup",
+		"username": "Korisnik",
+		"waitMsg": "Šaljem podatke ...",
+		"waitTitle": "Povezivanje na server"
+	},
+	"management": {
+		"description": "Modul za upravljanje podacima",
+		"findfilter": {
+			"add": "Dodaj",
+			"all": "Bilo koji",
+			"attachments": "Prilozi",
+			"attribute": "Atribut",
+			"attributes": "Atributi",
+			"apply": "Primjeni",
+			"begin": "Koji počinju sa",
+			"between": "Između",
+			"clear_filter": "Očisti filter",
+			"copyof": "Kopija",
+			"different": "Različite od",
+			"direction": "Smjer",
+			"dontbegin": "Koji ne počinju sa",
+			"dontend": "Ne završava sa",
+			"dontlike": "Koji ne sadrže",
+			"end": "Završava sa",
+			"equals": "Jednake",
+			"filter": "Filter",
+			"fromSelection": "Iz odabira",
+			"functions" : "<em>Function</em>",
+			"go_filter": "Filtriraj",
+			"like": "Koji sadrže",
+			"list": "Lista",
+			"major": "Veće",
+			"minor": "Manje",
+			"msg": {
+				"attention": "Pažnja",
+				"error": "Greška",
+				"no_removed": "Filter nije uklonjen",
+				"no_server": "Server nedostupan",
+				"no_set": "Filter nije postavljen",
+				"question_sure": "Da li ste sigurni?"
+			},
+			"notinrel": "Nijedan",
+			"notnull": "Ne može biti null",
+			"nullo": "Sa null vrijednošću",
+			"newfilter": "Novi filter za pretraživanje",
+			"relations": "Relacije",
+			"remove": "Ukloni",
+			"save_filter": "Snimi filter",
+			"selectedAttr": "Izabrani atributi",
+			"saveandapply": "Snimi i primjeni",
+			"set_filter": "Filter za pretragu",
+			"setted": "Postavljen filter",
+			"show_all": "Prikaži sve",
+			"title": "Izaberi atribut",
+			"window_title": "Filter za pretragu"
+		},
+		"graph": {
+			"action": "Graf relacija",
+			"icon_tooltip": "Otvori graf relacija",
+			"title": "Graf relacija"
+		},
+		"modcard": {
+			"add_attachment": "Dodaj prilog",
+			"add_attachment_window": {
+				"category": "Kategorija",
+				"description": "Opis",
+				"load_attachment": "Izaberi datoteku",
+				"select_category": "Izaberite kategoriju...",
+				"window_title": "Dodaj prilog"
+			},
+			"add_card": "Dodaj karticu",
+			"add_relations": "Dodaj relaciju",
+			"add_relations_window": {
+				"domain": "Domena",
+				"filter_tab": "Filter",
+				"list_tab": "Lista",
+				"select_domain": "Izaberite domenu...",
+				"window_title": "Dodaj relacije"
+			},
+			"attachment_columns": {
+				"author": "Autor",
+				"category": "Kategorija",
+				"creation_date": "Datum izrade",
+				"description": "Opis",
+				"filename": "Naziv datoteke",
+				"item": "prilog",
+				"items": "prilozi",
+				"modification_date": "Datum izmjene",
+				"version": "Verzija"
+			},
+			"clone_card": "Kloniraj karticu",
+			"delete_attachment": "Ukloni prilog",
+			"delete_attachment_confirm": "Sigurni ste da želite ukloniti ovaj prilog?",
+			"delete_card": "Ukloni karticu",
+			"delete_card_confirm": "Sigurno želite ukloniti ovu karticu?",
+			"delete_relation": "Ukloni relaciju",
+			"delete_relation_confirm": "Sigurni ste da želite ukloniti ovu relaciju?",
+			"detail_window": {
+				"detail_attributes": "Atributi detalja",
+				"relation_attributes": "Atributi veze"
+			},
+			"download_attachment": "Preuzmi prilog",
+			"edit_attachment": "Izmjeni prilog",
+			"edit_relation": "Izmjeni relaciju",
+			"gis": {
+				"geo_attributes": "Zemljopisni atributi",
+				"gisNavigation": "GIS Navigacija",
+				"position": "Pozicija",
+				"zoom": "Povećanje"
+			},
+			"history_columns": {
+				"activity_name": "Naziv aktivnosti",
+				"attributes": "Atributi",
+				"begin_date": "Datum početka",
+				"code": "Kod",
+				"description": "Opis",
+				"destclass": "Klasa",
+				"domain": "Domena",
+				"end_date": "Datum završetka",
+				"performer": "Izvršitelj aktivnosti",
+				"relation": "Relacije",
+				"user": "Korisnik"
+			},
+			"maptoolbar": {
+				"add": "Dodaj",
+				"drag": "Izmjeni",
+				"drag_map": "Pomakni mapu",
+				"zoom_in": "Povećaj",
+				"zoom_out": "Smanji"
+			},
+			"modify_card": "Izmjeni karticu",
+			"modify_note": "Izmjeni napomenu",
+			"modify_relation_window": {
+				"window_title": "Izmjena relacije"
+			},
+			"open_relation": "Otvori pripadajuću karticu ",
+			"other_fields": "Ostala",
+			"relation_columns": {
+				"begin_date": "Datum početka",
+				"code": "Kod",
+				"description": "Opis",
+				"destclass": "Klasa",
+				"domain": "Domena",
+				"item": "element",
+				"items": "elementi"
+			},
+			"search_reference_window": {
+				"window_title": "Traži u "
+			},
+			"subclass": "Podklase",
+			"tabs": {
+				"attachments": "Prilozi",
+				"card": "Kartica",
+				"detail": "Detalji",
+				"history": "Povijest",
+				"map": "Mapa",
+				"notes": "Napomene",
+				"relations": "Relacije"
+			},
+			"title": "Lista - ",
+			"treetitle": "Kartice podataka",
+			"view_relation": "Prikaži pripadajuću karticu"
+		},
+		"moddetail": {
+			"adddetail": "Dodaj detalje",
+			"deletedetail": "Ukloni detalj",
+			"detail": "Detalji",
+			"editdetail": "Izmjeni detalje",
+			"showattach": "Prikaži priloge",
+			"showdetail": "Prikaži detalje",
+			"showgraph": "Prikaži u grafu",
+			"shownotes": "Prikaži napomene"
+		},
+		"modmenu": {
+			"menu": "Navigacija"
+		},
+		"modreport": {
+			"add_report": "Dodaj izvještaj",
+			"delete_report": "Ukloni izvještaj",
+			"modify_report": "Izmeni izvještaj",
+			"reportForm": {
+				"description": "Opis",
+				"name": "Naziv",
+				"report": "Izvještaj"
+			},
+			"report_parameters": "Parametri izvještaja",
+			"title": "Lista - ",
+			"treetitle": "Izvještaj"
+		},
+		"modutilities": {
+			"bulkupdate": {
+				"title": "Grupna izmjena kartica",
+				"countMessage": "{0} kartica će biti izmjenjeno"
+			},
+			"changepassword": {
+				"newpw": "Nova lozinka",
+				"oldpw": "Stara lozinka",
+				"repnew": "Ponovi novu lozinku",
+				"successmsgtext": "Promjena lozinke uspješno izvršena",
+				"title": "Promijeni lozinku",
+				"validationtext": "Unešene lozinke se razlikuju"
+			},
+			"csv": {
+				"csvfile": "CSV datoteka",
+				"error": "Greška",
+				"exportfile": "Izvezi",
+				"importfailure": "Uvoz podataka nije uspio",
+				"importsuccess": "Uvoz podataka uspješno izvršen",
+				"info": "Informacija",
+				"noupdate": "Nijedna kartica nije izmjenjena",
+				"selectaclass": "Izaberite klasu",
+				"separator": "Separator",
+				"shownonvalid": "Prikaži samo nevaljane zapise",
+				"title": "Uvezi CSV datoteku",
+				"title_export": "Izvezi CSV datoteku",
+				"warning": "Pažnja"
+			},
+			"title": "Alati"
+		},
+		"modutility": {
+			"title": "Alati"
+		},
+		"modview": {
+			"title": "Prikazi"
+		},
+		"modworkflow": {
+			"abort_card": "Prekini proces",
+			"abort_card_confirm": "Da li ste sigurni da želite prekinuti proces?",
+			"activitydocumentation": "Dokumentacija o izvršenim aktivnostima",
+			"add_card": "Napravi proces",
+			"completed": "Završen",
+			"custom_steps": "Dodatni koraci",
+			"delete_card": "Ukloni proces",
+			"delete_card_confirm": "Da li ste sigurni da želite ukloniti proces?",
+			"extattrs": {
+				"attachments": {
+					"must_save_to_add": "Ne možete postaviti prilog prije snimanja aktivnosti"
+				},
+				"calendar": {
+					"wrong_config": "Kalendar nije dobro postavljen"
+				},
+				"createreport": {
+					"format_label": "Formatiraj"
+				},
+				"linkcards": {
+					"required": "Morate izabrati karticu - "
+				},
+				"manageemail": {
+					"addresshdr": "Adresa",
+					"ccfld": "CC",
+					"compose": "Pripremi email",
+					"datehdr": "Archiving date",
+					"deleteicon": "Ukloni",
+					"editicon": "Izmjeni",
+					"fromfld": "Pošiljatelj",
+					"lookup": {
+						"Draft": "Započete",
+						"New": "Nove",
+						"Outgoing": "Za slanje",
+						"Received": "Primljene",
+						"Sent": "Poslane"
+					},
+					"subjectfld": "Naslov poruke",
+					"subjecthdr": "Naslov poruke",
+					"tofld": "Primatelj",
+					"updateTemplateConfirm": "Ovo će obrisati sve neisporučene poruke e-pošte.",
+					"viewicon": "Prikaži",
+					"mailsAreChanged": "Napravljena e-pošta je izmjenjena",
+					"regenerates": "Iznova napravi e-poštu"
+				},
+				"managerelation": {
+					"required": "Morate izabrati relacije - "
+				},
+				"notes": {
+					"must_save_to_modify": "Ne možete urediti napomenu prije nego što snimite aktivnost"
+				}
+			},
+			"history_columns": {
+				"attributes": "Atributi",
+				"begin_date": "Datum početka",
+				"description": "Opis",
+				"domain": "Domena",
+				"end_date": "Datum završetka",
+				"relation": "Relacije",
+				"user": "Korisnik"
+			},
+			"interrupted": "Prekinut",
+			"modify_card": "Izmjeni aktivnost",
+			"modify_note": "Izmjeni napomenu",
+			"open_attachment": "Otvori prilog",
+			"open_note": "Otvori napomenu",
+			"started": " Pokrenut",
+			"status": " Stanje",
+			"statuses": {
+				"all": "Sva",
+				"closed.aborted": "Prekinut",
+				"closed.completed": "Završen",
+				"open.not_running.suspended": "Suspendiran",
+				"open.running": "Aktivan"
+			},
+			"tabs": {
+				"attachments": "Prilozi",
+				"card": "Aktivnost",
+				"detail": "Detalji",
+				"history": "Povijest",
+				"notes": "Napomena",
+				"options": "Mogućnosti",
+				"relations": "Relacije",
+				"sketch": "Graf"
+			},
+			"title": "Lista - ",
+			"treetitle": "Kartice procesa"
+		},
+		"welcome": {
+			"body": "Modul za upravljanje podacima.",
+			"title": "Dobro došli"
+		}
+	},
+	"patch": {
+		"patch_list": "Lista dostupnih ispravki (patch)"
+	},
+	"vtype_text": {
+		"cmdbcomment": "Apostrof i/ili vertikalna crtica su nedozvoljeni",
+		"cmdbcommentrelaxed": "Vertikalna crtica je nedozvoljen znak",
+		"invalid_character": "Nedozvoljeni znak",
+		"wrong_decimal_part": "Maksimalno je dozvoljeno {0} decimalnih mjesta",
+		"wrong_integer_part": "Maksimalno je dozvoljeno {0} znakova za cjelobrojni dio",
+		"wrong_ip_address": "Nevažeća IP adresa",
+		"wrong_time": "{0} je nedozvoljena vrijednost. Vrijednost mora biti u formatu {1}"
+	},
+	"warnings": {
+		"link_cards_changed_values": "Izabrani(a) \"{0}\" je ažuriran(a)",
+		"only_filtered": "Izjmene će biti primjenjene samo na kartice podataka koje zadovoljavaju postavljeni filter.",
+		"popup_block": "Detektiran je program za blokiranje popup prozora, isključite ga kako biste mogli nastaviti operaciju",
+		"warning_message": "Pažnja"
+	},
+	"active": "Aktivan",
+	"addFilter": "Dodaj filter",
+	"addProject": "<em>Add Project</em>",
+	"addTemplate": "Dodaj Predložak",
+	"addView": "Dodaj pogled",
+	"add_attachment_from_db": "<em>Add attachments from database</em>",
+	"attachfile": "<em>Attach File</em>",
+	"attachmentsLookup": "Pretraživanje e-mail priloga",
+	"attention": "Pažnja",
+	"attribute": "<em>Attribute</em>",
+	"availableFilters": "Dostupni filteri",
+	"bcc": "Bcc",
+	"bim": "<em>BIM</em>",
+	"buttons_to_disable": "<em>Buttons to disable</em>",
+	"camera": "<em>Camera</em>",
+	"cc": "Cc",
+	"checkFrequency": "Učestalost provjere (u minutama)",
+	"choose_attachment_from_db": "<em>Choose attachments from Database</em>",
+	"class": "<em>Class</em>",
+	"clean_word_pasted_text": "<em>Clean the text pasted from Word or other Rich Text applications</em>",
+	"clearFilter": "Očisti Filter",
+	"clear_row_and_colun_privilege": "Obriši prava pristupa na redove i kolumne",
+	"container": "<em>Container</em>",
+	"controls": "<em>Controls</em>",
+	"cql_filter": "<em>CQL filter</em>",
+	"description_": "Opis",
+	"disable": "<em>Disable</em>",
+	"display_less_attributes": "<em>Display less attributes</em>",
+	"display_more_attributes": "<em>Display more attributes</em>",
+	"download_ifc_file": "<em>Download Ifc file</em>",
+	"emailBody": "Body",
+	"emailTemplate": "Email Predložak",
+	"enable": "<em>Enable</em>",
+	"enabled": "Uključen",
+	"error": "Greška",
+	"error_bimserver_connection": "<em>I'm not able to connect to Bimserver</em>",
+	"export": "<em>Export</em>",
+	"expose": "<em>Expose</em>",
+	"file_name": "<em>File name</em>",
+	"filter": "Filter",
+	"filterView": "Filter od",
+	"filters_for_groups": "Grupni filter",
+	"format_csv": "<em>CSV</em>",
+	"format_odt": "<em>OpenOffice Odt</em>",
+	"format_pdf": "<em>Adobe Pdf</em>",
+	"format_rtf": "<em>Rich Text Format</em>",
+	"from": "<em>From<em>",
+	"front": "<em>Front</em>",
+	"global": "Global",
+	"ifc_file": "<em>File IFC</em>",
+	"itIsNotAllowedFilterWithCalculatedParams": "Nije dozvoljeno koristiti filter za izračunatim parametrima",
+	"itIsNotAllowedFilterWithRuntimeParams": "Nije dozvoljeno koristiti filter sa korisnički odabranim parametrima",
+	"last_checkin": "<em>Last checkin</em>",
+	"layers": "<em>Layers</em>",
+	"lock_cards_in_edit": "Zaključaj kartice pri ažuriranju",
+	"lock_timeout": "Istek zaključavanja (sekundi)",
+	"loggedGroup": "Prijavljena Grupa",
+	"loggedUser": "Prijavljeni Korisnik",
+	"mode": "<em>Mode</em>",
+	"modifyFilter": "Uredi filter",
+	"modifyProject": "<em>Modify Project</em>",
+	"modifyTemplate": "Uredi Predložak",
+	"modifyView": "Uredi prikaz",
+	"multiGroup": "Višestruka grupa",
+	"name": "Naziv",
+	"no_bim_project_for_card": "<em>There is no BIM project for this card</em>",
+	"not_set": "Nije postavljeno",
+	"open_3d_viewer": "<em>Open 3D viewer</em>",
+	"pan": "<em>Pan</em>",
+	"password": "<em>Password</em>",
+	"privileges_on_columns": "Prava nad kolumnama",
+	"privileges_on_rows": "Prava nad redovima",
+	"projects": "Projects",
+	"reference_to_root": "<em>Reference to Root</em>",
+	"removeFilter": "Ukloni filter",
+	"removeProject": "<em>Remove Project</em>",
+	"removeTemplate": "Ukloni Predložak",
+	"removeView": "Ukloni prikaz",
+	"remove_formatting": "<em>Remove formatting</em>",
+	"reset": "<em>Reset</em>",
+	"root": "<em>Root</em>",
+	"rotate": "<em>Rotate</em>",
+	"row_and_column_privileges": "Prava nad redovima i kolumnama",
+	"row_add": "<em>Add row</em>",
+	"row_delete": "<em>Delete row</em>",
+	"row_edit": "<em>Edit row</em>",
+	"search_filters": "Filteri za pretraživanje",
+	"select_a_class": "<em>Select a Class</em>",
+	"selected_object": "<em>Selected Object</em>",
+	"set": "Postavi",
+	"setFilter": "Podesi Filter",
+	"setLater": "Ulazni Parametar",
+	"show_name_of_locker_user": "Prikaži ime korisnika koji je zaključao",
+	"side": "<em>Side</em>",
+	"sqlView": "Iz SQL-a",
+	"subject": "Subject",
+	"targetClass": "Ciljna klasa",
+	"to": "To",
+	"top": "<em>Top</em>",
+	"translations" : "<em>Translations</em>",
+	"translations_enabled" : "<em>Enabled languages</em>",
+	"transparent": "<em>Transparent</em>",
+	"tree": "<em>Tree</em>",
+	"tree_navigation": "<em>Navigation tree</em>",
+	"tree_navigation_add": "<em>Add navigation tree</em>",
+	"tree_navigation_attributes": "<em>Navigation tree attributes</em>",
+	"tree_modify": "<em>Modify tree</em>",
+	"tree_remove": "<em>Remove tree</em>",
+	"tree_root_cql": "<em>Root CQL filter</em>",
+	"trees_navigation": "<em>Navigation trees</em>",
+	"ui_configuration_for_groups": "<em>UI configuration for group</em>",
+	"unlock_all_cards": "Otključaj sve kartice",
+	"uploading_attachment": "<em>Uploading attachment...</em>",
+	"url": "<em>URL</em>",
+	"username": "<em>Username</em>",
+	"value": "<em>Value</em>",
+	"views": "Prikazi",
+	"workflow": "<em>Workflow</em>",
+	"workflow_attributes": "<em>Workflow attributes</em>",
+	"workflow_by_cql": "<em>by Cql</em>",
+	"workflow_by_name": "<em>by name</em>",
+	"workflow_cql_filter": "<em>Cql filter</em>",
+	"workflow_query_tipology": "<em>Selection</em>",
+	"you_have_not_set_a_filter": "Niste postavili filter",
+	"zoom": "<em>Zoom</em>"
+}

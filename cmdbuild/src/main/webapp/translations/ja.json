@@ -1,0 +1,1412 @@
+{
+	"description": "日本語",
+	"release": "2.2-dev",
+	"administration": {
+		"description": "アドミニストレーションモジュール",
+		"email": {
+			"title": "<em>Email</em>",
+			"accounts": {
+				"account": "<em>Account</em>",
+				"active": "<em>Active</em>",
+				"add": "<em>Add account</em>",
+				"address": "<em>Address</em>",
+				"credentials": "<em>Credentials</em>",
+				"enableMoveRejectedNotMatching": "<em>Enable move rejected not matching</em>",
+				"enableSsl": "<em>Enable SSL</em>",
+				"imapPort": "<em>IMAP port</em>",
+				"imapServer": "<em>IMAP server</em>",
+				"incoming": "<em>Incoming</em>",
+				"incomingFolder": "<em>Incoming folder</em>",
+				"isDefault": "<em>Default</em>",
+				"modify": "<em>Modify account</em>",
+				"outgoing": "<em>Outgoing</em>",
+				"password": "<em>Password</em>",
+				"processedFolder": "<em>Processed folder</em>",
+				"rejectedFolder": "<em>Rejected folder</em>",
+				"remove": "<em>Remove account</em>",
+				"setDefault": "<em>Set as default</em>",
+				"smtpPort": "<em>SMTP Port</em>",
+				"smtpServer": "<em>SMTP server</em>",
+				"title": "<em>Accounts</em>",
+				"username": "<em>Username</em>"
+			},
+			"templates": {
+				"add": "<em>Add template</em>",
+				"body": "<em>Body</em>",
+				"modify": "<em>Modify template</em>",
+				"remove": "<em>Remove template</em>",
+				"template": "<em>Template</em>",
+				"title": "<em>Templates</em>"
+			}
+		},
+		"modClass": {
+			"add_class": "クラス追加",
+			"attributeProperties": {
+				"add_attribute": "属性追加",
+				"baseProperties": "基本プロパティ",
+				"criterion": "基準",
+				"delete_attribute": "属性削除",
+				"description": "説明",
+				"destination": "宛先",
+				"direction": {
+					"asc": "昇順",
+					"desc": "降順"
+				},
+				"domain": "ドメイン",
+				"editorType": {
+					"html": "Html",
+					"label": "エディタタイプ",
+					"plain": "プレーンテキスト"
+				},
+				"field_hidden": "非表示",
+				"field_read": "読み取り専用",
+				"field_visibility": "編集モード",
+				"field_write": "編集可能",
+				"group": "グループ",
+				"inherited": "継承された",
+				"isactive": "アクティブ",
+				"isbasedsp": "リスト表示",
+				"isdefault": "既定値",
+				"isnotnull": "必須",
+				"isunique": "ユニーク",
+				"length": "長さ",
+				"lookup": "検索",
+				"meta": {
+					"add": "メタ追加",
+					"key": "キー",
+					"remove": "メタ削除",
+					"title": "メタデータ編集",
+					"value": "値"
+				},
+				"modify_attribute": "属性修正",
+				"msg_warning_drop_row": "再並び替えは継承属性が表示されている場合のみ有効です",
+				"name": "名前",
+				"not_in_use": "未使用",
+				"pipeNotAllowed": "| の代わりに OR をお使いください",
+				"precision": "精度",
+				"referencequery": "フィルタ",
+				"scale": "スケール",
+				"set_sorting_criteria": "並び替えセット",
+				"type": "タイプ",
+				"typeProperties": "タイププロパティ"
+			},
+			"attributes_title": "属性管理",
+			"classProperties": {
+				"active": "アクティブ",
+				"description": "説明",
+				"inherits": "継承元",
+				"modify_class": "クラス更新",
+				"name": "名前",
+				"print_class": "クラス印刷",
+				"remove_class": "クラス削除",
+				"simple": "単純",
+				"standard": "標準",
+				"superclass": "スーパークラス",
+				"type": "タイプ",
+				"wait_msg": "データ送信中...",
+				"wait_title": "接続中"
+			},
+			"class_property": "プロパティ",
+			"classtype": {
+				"simpletable": "単純",
+				"standard": "標準"
+			},
+			"domainProperties": {
+				"add_domain": "ドメイン追加",
+				"cardinality": "関係性",
+				"class_destination": "終点",
+				"class_target": "ターゲット（起点)",
+				"delete_domain": "ドメイン削除",
+				"description": "ドメイン説明",
+				"description_direct": "順方向の説明",
+				"description_inverse": "逆方向の説明",
+				"domain": "ドメイン",
+				"is_active": "アクティブ",
+				"m_d": "M/D",
+				"master_detail": "マスタ/ディテール",
+				"md_label": "マスタ/ディテールラベル",
+				"modify_domain": "ドメイン修正",
+				"name": "名前",
+				"title_add": "ドメイン追加",
+				"title_modify": "ドメイン \"{0}\"の修正"
+			},
+			"domains_title": "ドメイン管理",
+			"errors": {
+				"table": {
+					"cast": "エラー：データまたは子クラスを含む \"superclass\" のプロパティを変更しようとしています。",
+					"duplicate": "クラス名が重複しています",
+					"parent_not_found": "親クラスは存在していません"
+				}
+			},
+			"geo_attributes": {
+				"card_binding": "カードバインディング",
+				"externalGraphic": "アイコン",
+				"fillColor": "着色",
+				"fillOpacity": "不透明化",
+				"graphicHeight": "アイコンの高さ",
+				"graphicOpacity": "アイコンの不透明度",
+				"graphicWidth": "アイコンの幅",
+				"master": "参照クラス",
+				"max_zoom": "最大ズーム",
+				"min_zoom": "最小ズーム",
+				"pointRadius": "半径",
+				"strokeColor": "線の色",
+				"strokeDashstyle": "線の種類",
+				"strokeOpacity": "線の不透明度",
+				"strokeStyles": {
+					"dash": "ダッシュ",
+					"dashdot": "ダッシュ　ドット",
+					"dot": "ドット",
+					"longdash": "長いダッシュ",
+					"longdashdot": "長いダッシュ　ドット",
+					"solid": "実線"
+				},
+				"strokeWidth": "線幅",
+				"style": "スタイル",
+				"type": {
+					"line": "線",
+					"point": "点",
+					"polygon": "多角形"
+				},
+				"visibility": "表示"
+			},
+			"include_inherited": "継承を含む",
+			"layers": "レイヤ",
+			"print_schema": "スキーマ印刷",
+			"tabs": {
+				"attributes": "属性",
+				"domains": "ドメイン",
+				"geo_attributes": "地理的属性",
+				"properties": "プロパティ"
+			},
+			"title": "クラス管理",
+			"tree_title": "クラスリスト",
+			"widgets": {
+				".OpenReport": {
+					"fields": {
+						"force": "フォーマットに合わせる",
+						"presets": "アトリビュートレポート",
+						"report": "レポート"
+					},
+					"presetGrid": {
+						"attribute": "属性",
+						"value": "値"
+					},
+					"title": "レポート作成"
+				},
+				".Calendar": {
+					"fields": {
+						"target": "ターゲットクラス",
+						"start": "開始日",
+						"end": "終了日",
+						"title": "イベント名",
+						"filter": "CQL フィルタ",
+						"defaultDate": "オープン時の日付"
+					},
+					"title": "カレンダ"
+				},
+				".Ping": {
+					"fields": {
+						"address": "pingアドレス",
+						"count": "pings回数",
+						"templates": "テンプレート"
+					},
+					"title": "Ping"
+				},
+				".Workflow": {
+					"title": "<em>Start workflow</em>"
+				},
+				".NavigationTree": {
+					"title": "<em>Navigation tree</em>"
+				},
+				".CreateModifyCard": {
+					"fields": {
+						"target": "ターゲットクラス",
+						"cql": "カード CQL 選択",
+						"readOnly": "読み取り専用"
+					},
+					"title": "カードの作成または修正"
+				},
+				"commonFields": {
+					"active": "アクティブ",
+					"alwaysenabled": "常時可能",
+					"buttonLabel": "ボタンラベル",
+					"type": "タイプ"
+				},
+				"title": "ウィジェット"
+			}
+		},
+		"modDashboard": {
+			"charts": {
+				"alert": {
+					"wrongConfiguration": "グラフは正しく構成されていません"
+				},
+				"availableCharts": {
+					"gauge": "ゲージ",
+					"pie": "円",
+					"bar": "棒",
+					"line": "線"
+				},
+				"buttons": {
+					"add": "追加",
+					"modify": "修正",
+					"remove": "削除",
+					"preview": "プレビュー"
+				},
+				"fields": {
+					"active": "アクティブ",
+					"autoload": "自動ロード",
+					"background": "背景色",
+					"categoryFieldset": "カテゴリ軸",
+					"chartType": "グラフのタイプ",
+					"dataSource": "データソース",
+					"defaultValue": "既定値",
+					"description": "説明",
+					"fieldType": "フィールドタイプ",
+					"foreground": "前景色",
+					"fromClass": "クラスから",
+					"labelField": "ラベルフィールド",
+					"legend": "凡例を表示",
+					"lookupType": "ルックアップタイプ",
+					"max": "最大",
+					"min": "最小",
+					"name": "名前",
+					"orientation": {
+						"label": "方向",
+						"values": {
+							"horizontal": "水平",
+							"vertical": "垂直"
+						}
+					},
+					"required": "必要",
+					"steps": "ステップ",
+					"title": "タイトル",
+					"valueField": "値フィールド",
+					"valueFieldset": "値軸"
+				},
+				"inputTypes": {
+					"BOOLEAN": "ブーリアン",
+					"DECIMAL": "小数",
+					"INTEGER": "整数",
+					"DOUBLE": "倍精度",
+					"DATE": "日付",
+					"TIMESTAMP": "タイムスタンプ",
+					"TIME": "時間",
+					"STRING": "文字列",
+					"TEXT": "テキスト",
+					"CHAR": "文字",
+					"INET": "ネットワークアドレス"
+				},
+				"title": "グラフ",
+				"typeFieldOptions": {
+					"card": "カード",
+					"classes": "すべてのCMDBuildクラスから選択",
+					"freeInt": "任意の整数",
+					"freeString": "任意の文字列",
+					"group": "現在のグループ",
+					"lookup": "ルックアップから選択",
+					"user": "現在のユーザ"
+				}
+			},
+			"layout": {
+				"add": "列を追加",
+				"remove": "空の列削除",
+				"title": "レイアウト"
+			},
+			"properties": {
+				"add": "ダッシュボード追加",
+				"modify": "タッシュボード修正",
+				"remove": "ダッシュボード削除",
+				"fields": {
+					"name": "名前",
+					"description": "説明",
+					"groups": "利用可能なグループ"
+				}
+			},
+			"title": "ダッシュボード"
+		},
+		"modLookup": {
+			"add_lookuptype": "ルックアップタイプ追加",
+			"lookupForm": {
+				"active": "アクティブ",
+				"code": "コード",
+				"description": "説明",
+				"disable_lookup": "ルックアップ不可",
+				"enable_lookup": "ルックアップ可能",
+				"isdefault": "既定値",
+				"notes": "ノート",
+				"parentdescription": "親の説明",
+				"update_lookup": "ルックアップ更新"
+			},
+			"lookupGrid": {
+				"active": "アクティブ",
+				"add_lookup": "ルックアップ追加",
+				"code": "コード",
+				"description": "説明",
+				"isdefault": "既定値",
+				"notes": "ノート",
+				"parentdescription": "親の説明"
+			},
+			"lookupType": "ルックアップタイプ",
+			"lookupTypeForm": {
+				"active": "アクティブ",
+				"delete_lookuptype": "ルックアップタイプ削除",
+				"description": "説明",
+				"modify_lookuptype": "ルックアップタイプ更新",
+				"parent": "親",
+				"title": "ルックアップ管理"
+			},
+			"lookupTypes": "ルックアップタイプ",
+			"tabs": {
+				"lookuplist": "ルックアップリスト",
+				"properties": "プロパティ"
+			},
+			"title": "ルックアップ管理"
+		},
+		"modWorkflow": {
+			"add_process": "プロセス追加",
+			"attributes_title": "属性管理",
+			"domains_title": "ドメイン管理",
+			"errors": {
+				"table": {
+					"cast": "データまたはサブクラスを持つスパークラスの属性は変更できません",
+					"duplicate": "同じ名前のクラスが既に存在しています",
+					"parent_not_found": "指定されたプロセスのサブクラスは存在しません"
+				}
+			},
+			"include_inherited": "継承を含む",
+			"process_property": "プロパティ",
+			"tabs": {
+				"attributes": "属性",
+				"domains": "ドメイン",
+				"properties": "プロパティ",
+				"xpdl": "XPDL"
+			},
+			"title": "プロセス管理",
+			"tree_title": "プロセス",
+			"xpdlDownload": {
+				"download_tamplete": "テンプレートダウンロード",
+				"download_xpdl_tamplete": "XPDL テンプレートダウンロード",
+				"package_version": "バージョン",
+				"process_name": "プロセス名",
+				"user_stoppable": "ユーザによる中断可能"
+			},
+			"xpdlUpload": {
+				"deleted_image": "スケッチファイルは、削除されました。XPDLファイルとは同期されません。",
+				"error": "XPDL ファイルアップロードでエラーが発生",
+				"jpg_file": "スケッチ",
+				"saved_image": "スケッチアップロード",
+				"saved_xpdl": "XPDL ファイルアップロード",
+				"upload_template": "テンプレートアップロード",
+				"upload_xpdl_tamplete": "XPDLテンプレートアップロード",
+				"xpdl_file": "XPDL ファイル"
+			}
+		},
+		"modcartography": {
+			"external_services": {
+				"admin_password": "管理者パスワード",
+				"admin_user": "管理者ユーザ名",
+				"description": {
+					"geoserver": "Geoサーバ",
+					"google": "Googleマップ",
+					"osm": "オープンストリートマップ",
+					"yahoo": "Yahoo!マップ"
+				},
+				"key": "キー",
+				"title": "外部サービス",
+				"url": "URL",
+				"workspace": "ワークスペース"
+			},
+			"geoserver": {
+				"add_layer": "レイヤ追加",
+				"delete_layer": "レイヤ削除",
+				"file": "ファイル",
+				"modify_layer": "レイヤ更新",
+				"service_not_available": "Geoサーバは、利用できません。利用するにはこちらへ {0}",
+				"title": "Geoサーバレイヤ"
+			},
+			"icons": {
+				"alert": {
+					"msg": "本当にいいですか?",
+					"title": "警告"
+				},
+				"description": "説明",
+				"file": "ファイル",
+				"title": "アイコン管理"
+			},
+			"layermanager": {
+				"title": "レイヤ順序"
+			},
+			"navigationTree": {
+				"title": "GIS ナビゲーション"
+			},
+			"title": "GIS"
+		},
+		"modconnectors": {
+			"title": "コネクタ"
+		},
+		"modmenu": {
+			"add_menu": "メニュー追加",
+			"available_elements": "利用可能なエレメント",
+			"availabletree": {
+				"class": "クラス",
+				"dashboard": "ダッシュボード",
+				"processclass": "アクティビティ",
+				"report": "レポート",
+				"view": "ビュー"
+			},
+			"custom_menu": "カスタムメニュー",
+			"custom_menus": "カスタムメニュー",
+			"delete_menu": "メニュー削除",
+			"menu_root": "メニュー",
+			"modify_menu": "メニュー更新",
+			"new_folder": "新しいフォルダ",
+			"title": "メニュー管理"
+		},
+		"modreport": {
+			"add": "レポート追加",
+			"importJRFormStep1": {
+				"description": "レポートの説明",
+				"enabled_groups": "可能なグループ",
+				"fieldset": "jasper レポートインポート",
+				"master_report_jrxml": "マスタレポート(.jrxml)",
+				"menuTitle": "Jasper-reports レポート",
+				"name": "レポート名"
+			},
+			"importJRFormStep2": {
+				"duplicate_images": "警告: 同名のレポートイメージがあります。処理を継続できません。",
+				"fieldset_generic": "jasperレポートをインポート",
+				"fieldset_images": "必要なイメージ",
+				"fieldset_subreports": "必要なサブレポート",
+				"menuTitle": "レポート Jasper-reports",
+				"nothing_to_import": "イメージまたはサブレポートが見つかりません。インポートを続けるにはご確認ください。",
+				"success": {
+					"description": {
+						"add": "インポート完了",
+						"modify": "レポート更新完了"
+					},
+					"title": "成功"
+				}
+			},
+			"importOpenofficeTemplateForm": {
+				"menuTitle": "オープンオフィス　レポート"
+			},
+			"modify": "レポート更新",
+			"remove": "レポート削除",
+			"title": "レポート"
+		},
+		"modsecurity": {
+			"defaultgroup": "* 既定 *",
+			"group": {
+				"add_group": "グループ追加",
+				"administrator": "アドミニストレータ",
+				"availableusers": "利用可能なユーザ",
+				"delete_group": "グループ無効化",
+				"email": "電子メール",
+				"enable_group": "グループの有効化",
+				"group_description": "説明",
+				"group_name": "グループ名",
+				"groupchoice": "ルックアップユーザ",
+				"is_active": "アクティブ",
+				"is_administrator": "はアドミニストレータ",
+				"limited_admin": "制限されたアドミニストレータ",
+				"modify_group": "グループ修正",
+				"normal": "通常",
+				"starting_class": "初期ページ",
+				"title": "グループ管理",
+				"usermanagement": "関連ユーザ管理"
+			},
+			"groups": "グループ",
+			"privilege": {
+				"add_privilege": "権限追加",
+				"classname": "クラス名",
+				"delete_privilege": "権限削除",
+				"modify_privilege": "権限変更",
+				"none_privilege": "権限なし",
+				"privilege_mode": "権限",
+				"read_privilege": "読取権限",
+				"write_privilege": "書込権限"
+			},
+			"tabs": {
+				"permissions": "許可",
+				"properties": "プロパティ"
+			},
+			"title": "ユーザとグループ",
+			"uiconfiguration": {
+				"disabled_class_tabs": "クラスモジュールでは無効なタブ",
+				"disabled_modules": "無効なモジュール",
+				"disabled_process_tabs": "プロセスモジュールでは無効なタブ",
+				"generic_properties": {
+					"always_enabled_widgets": "プロセスのウィジェットは、常に有効",
+					"card_simple_history": "カードの単純な履歴",
+					"full_screen_navigation": "フルスクリーンナビゲーション",
+					"hide_side_panel": "サイドパネルを隠す",
+					"process_simple_history": "プロセスの単純な履歴"
+				},
+				"other": "他のオプション",
+				"title": "UIの構成"
+			},
+			"user": {
+				"add_user": "ユーザ追加",
+				"availablegroups": "可能なグループ",
+				"change_password": "パスワード変更",
+				"confirmation": "確認",
+				"defaultgroup": "既定のグループ",
+				"defaultonlogin": "* ログイン *",
+				"description": "説明",
+				"disable_user": "無効なユーザ",
+				"email": "電子メール",
+				"enable_user": "可能なユーザ",
+				"groupmanagement": "ユーザグループ管理",
+				"isactive": "アクティブ",
+				"modify_user": "ユーザ更新",
+				"password": "パスワード",
+				"title": "ユーザ管理",
+				"user_info": "ユーザ情報",
+				"usergroups": "グループ",
+				"username": "ユーザ名"
+			},
+			"users": "ユーザ"
+		},
+		"setup": {
+			"cmdbuild": {
+				"cardpanelheight": "カードパネルの高さ(%)",
+				"fieldsetgeneraltitle": "一般",
+				"fieldsetlanguageltitle": "言語",
+				"fieldsetpopupwindowtitle": "ポップアップウインドウ",
+				"instancename": "インスタンプ名",
+				"language": "既定の言語",
+				"languagePrompt": "言語選択",
+				"menuTitle": "一般オプション",
+				"popupheightlabel": "ポップアップのパーセント高さ",
+				"popupwidthlabel": "ポップアップのパーセント幅",
+				"referencecombolimit": "<em>References combobox limit</em>",
+				"relationlimit": "リレーション制限",
+				"rowlimit": "行制限",
+				"sessiontimeout": "セッションタイムアウト（秒)",
+				"startingClass": "既定のクラス",
+				"tabs_position": {
+					"bottom": "ボトム",
+					"label": "カードパネル中のタブ位置",
+					"top": "トップ"
+				},
+				"title": "CMDBuild セットアップ"
+			},
+			"dms": {
+				"categoryLookup": "CMDBuild カテゴリ",
+				"credential": "資格",
+				"credentialPassword": "パスワード",
+				"credentialUser": "ユーザ名",
+				"delay": "オペレーション遅延",
+				"enabled": "有効",
+				"fileserver": "ファイルサーバ",
+				"fileserverPort": "ポート",
+				"fileserverType": "タイプ",
+				"fileserverUrl": "ホスト",
+				"general": "一般",
+				"menuTitle": "Alfresco",
+				"repository": "リポジトリ",
+				"repositoryApp": "アプリケーション",
+				"repositoryFSPath": "ファイルサーバへのパス",
+				"repositoryWSPath": "Webサービスへのパス",
+				"serverUrl": "サーバ URL",
+				"title": "Alfresco セットアップ"
+			},
+			"gis": {
+				"center_lat": "初期緯度",
+				"center_lon": "初期経度",
+				"enable": "有効",
+				"initial_zoom": "初期ズームレベル",
+				"serverurl": "サーバ URL",
+				"title": "GIS"
+			},
+			"graph": {
+				"baseLevel": "既定のレベル",
+				"clusteringThreshold": "クラスタノードの閾値",
+				"enabled": "有効",
+				"expandingThreshold": "拡張クラスタノードの数の最大値",
+				"extensionMaximumLevel": "最大値",
+				"menuTitle": "リレーショングラフ",
+				"title": "リレーショングラフアップ"
+			},
+			"modify": "更新",
+			"save": "保存",
+			"server": {
+				"cache_management": "キャッシュ管理",
+				"clear_cache": "キャッシュのクリア",
+				"menuTitle": "サーバ管理",
+				"servicesync": "サービス同期化",
+				"title": "サーバ管理",
+				"wfsync": "整合しないプロセスの削除"
+			},
+			"setupTitle": "セットアップ",
+			"workflow": {
+				"credential": "資格",
+				"enabled": "有効化",
+				"endpoint": "サーバ URL",
+				"engine": "エンジン名",
+				"general": "一般",
+				"menuTitle": "ワークフロー",
+				"password": "パスワード",
+				"scope": "スコープ",
+				"title": "ワークフローエンジン",
+				"user": "ユーザ名"
+			}
+		},
+		"welcome": {
+			"body": "管理モジュール.",
+			"title": "ようこそ"
+		}
+	},
+	"common": {
+		"buttons": {
+			"abort": "キャンセル",
+			"add": "追加",
+			"apply": "適用",
+			"as": "as",
+			"clone": "クローン",
+			"close": "クローズ",
+			"confirm": "確認",
+			"export": "エキスポート",
+			"import": "インポート",
+			"load": "ロード",
+			"modify": "更新",
+			"next": "<em>Next</em>",
+			"previous": "<em>Previous</em>",
+			"print": "印刷",
+			"remove": "削除",
+			"save": "保存",
+			"update": "更新",
+			"upload": "アップロード",
+			"workflow": {
+				"advance": "次へ",
+				"back": "戻る",
+				"save": "保存"
+			}
+		},
+		"confirmpopup": {
+			"areyousure": "本当にいいですか?",
+			"title": "確認"
+		},
+		"credits": "Info &amp; Support",
+		"display_topic": "トピックス表示中",
+		"display_topic_none": "表示するトピックスはありません",
+		"display_topic_of": "of ",
+		"failure": "失敗",
+		"group": "グループ",
+		"loading": "ロード中...",
+		"loading_mask": {
+			"classes": "クラスをロード中",
+			"configuration": "ロードの設定",
+			"domain": "ドメインロード中",
+			"group": "ユーザとグループをロード中",
+			"lookup": "ルックアップタイプをロード中",
+			"menu": "メニューをロード中",
+			"report": "レポートをロード中",
+			"workflow": "アクティビティをロード中"
+		},
+		"logout": "ログアウト",
+		"remove": "削除",
+		"splash": {
+			"consultant": "　ITILのコンサルタントとサポート",
+			"design": "　デザイン",
+			"implementation": "　実装",
+			"maintainer": "　メンテナンス",
+			"municipality": "ウディーネ市(Municipality of Udine)",
+			"principal": "　初期プロジェクトの主要メンバ"
+		},
+		"success": "成功",
+		"tbd_body": "進行中",
+		"tbd_title": "進行中",
+		"tooltip": {
+			"editParameters": "パラメータを編集",
+			"reload": "再ロード",
+			"showData": "データ表示"
+		},
+		"tree_names": {
+			"class": "標準",
+			"process": "アクティビティ",
+			"simpletable": "単純"
+		},
+		"unknown_error": "不明のエラー",
+		"user": "ユーザ",
+		"wait_msg": "データ送信中...",
+		"wait_title": "お待ちください..."
+	},
+	"configure": {
+		"failure": {
+			"text": "セットアップウイザードは、エラーで停止しました: ",
+			"title": "セットアップエラー"
+		},
+		"finish": "完了",
+		"next": "次へ",
+		"previous": "前へ",
+		"step1": {
+			"choose": "既定の言語を選択",
+			"showLangChoose": "ログイン画面に言語選択を表示"
+		},
+		"step2": {
+			"create_shark": "Sharkスキーマを作成",
+			"db_confirm_password": "パスワード確認",
+			"db_connection": "データベース接続",
+			"db_create": "CMDBuild データベース",
+			"db_create_name": "CMDBuild データベース名",
+			"db_create_type": "CMDBuild データベースタイプ",
+			"db_demo": "デモ",
+			"db_empty": "空",
+			"db_existing": "存在している",
+			"db_host": "ホスト",
+			"db_password": "パスワード",
+			"db_port": "ポート",
+			"db_superUser": "スーパーユーザ",
+			"db_test_connection": "テスト接続",
+			"db_type": "データベースタイプ",
+			"db_user": "ユーザ",
+			"db_user_create": "データベースユーザの作成",
+			"limited_user": "制限付きユーザ",
+			"msg": {
+				"msg": "接続成功",
+				"pswnomatch": "パスワードが一致しません",
+				"title": "テスト接続"
+			},
+			"new_limited_user": "制限付きユーザ作成",
+			"user_type": "ユーザタイプ"
+		},
+		"step3": {
+			"admin": "管理者アカウント",
+			"admin_password": "管理者パスワード",
+			"admin_user": "管理者名",
+			"confirm_password": "パスワード確認"
+		},
+		"success": {
+			"text": "セットアップウィザードは正常に完了しました。OKをクリックするとアプリケーションへリダイレクトされます。",
+			"title": "セットアップ完了"
+		},
+		"title": "構成"
+	},
+	"errors": {
+		"busy_wf_widgets": "画面コントロールがビジーです、再実行する前にサーバのステータスをチェックください。",
+		"detail": "詳細",
+		"error_message": "エラー",
+		"error_moving_row": "行の移動時にエラーが発生しました",
+		"invalid_attributes": "これらのフィールドには正しくデータが格納されていません:",
+		"invalid_extended_attributes": "これらのビジュアルコントロールは正しく設定されていません:",
+		"invalid_fields": "いくつかのフィールドは正しく設定されていません",
+		"no_driver": "JDBCドライバーが見つかりません。<br />CMDBuild リリースパッケージに含まれており、 Tomcatライブラリにコピーできます。",
+		"no_selections": "更新するカードが選択されていません",
+		"reasons": {
+			"ATTRIBUTE_NOTFOUND": "{0}の属性{1}が見つかりません",
+			"AUTH_CLASS_NOT_AUTHORIZED": "クラス{0}へアクセスする十分な権限がありません",
+			"AUTH_DEMO_MODE": "デモモードでは許可されていません",
+			"AUTH_DOMAIN_NOT_AUTHORIZED": "ドメイン{0}にアクセスする十分な権限がありません",
+			"AUTH_LOGIN_WRONG": "ユーザ名またはパスワードに誤りがあります",
+			"AUTH_MULTIPLE_GROUPS": "ユーザは複数のグループに参加しています",
+			"AUTH_NOT_AUTHORIZED": "権限がない操作",
+			"AUTH_NOT_CONFIGURED": "認証設定のエラー",
+			"AUTH_NOT_LOGGED_IN": "ユーザはログインしていません",
+			"AUTH_NO_GROUPS": "ユーザはどのグループにも参加していません",
+			"AUTH_UNKNOWN_GROUP": "誤ったグループ",
+			"AUTH_WRONG_PASSWORD": "誤ったパスワード",
+			"CARD_NOTFOUND": "{0}中にはカードは見つかりません",
+			"CLASS_NOTFOUND": "クラス{0} は見つかりません",
+			"CQL_COMPILATION_FAILED": "CQL クエリのコンパイルに失敗",
+			"DMS_ATTACHMENT_DELETE_ERROR": "添付の削除に失敗",
+			"DMS_ATTACHMENT_NOTFOUND": "{1}のカード{2}への添付{0}が見つかりません",
+			"DMS_ATTACHMENT_UPLOAD_ERROR": "添付のアップロードに失敗",
+			"DMS_DOCUMENT_TYPE_DEFINITION_ERROR": "カテゴリ {0}の定義を読み取ることができません",
+			"DMS_AUTOCOMPLETION_RULES_ERROR": "クラス {0} の添付ファイルの自動補完ルールを読み取ることができません",
+			"DMS_UPDATE_ERROR": "添付のアップデートに失敗しました",
+			"DOMAIN_NOTFOUND": "ドメイン{0}は在りません",
+			"ILLEGAL_CRON_EXPRESSION": "不正なクローン表示",
+			"LOCKED_CARD": "ユーザ {0} は、{1} 秒カードを編集しています。",
+			"LOOKUP_NOTFOUND": "タイプ{0}でのルックアップは見つかりません",
+			"LOOKUP_TYPE_NOTFOUND": "ルックアップタイプ{0} は見つかりません",
+			"MENU_NOTFOUND": "メニューが見つかりません",
+			"NOTFOUND": "アイテムが見つかりません",
+			"ORM_AMBIGUOUS_DIRECTION": "リレーションの方向は自動的には決まりません",
+			"ORM_CANT_CREATE_DATABASE": "データベースを作成できません",
+			"ORM_CANT_CREATE_USER": "ユーザを作成できませんr",
+			"ORM_CANT_DELETE_CARD_WITH_RELATION": "リレーションを持つカードは削除できません",
+			"ORM_CHANGE_LOOKUPTYPE_ERROR": "ルックアップタイプは変更できません",
+			"ORM_CONTAINS_DATA": "レコードを含むクラス、テーブルの属性、ドメインは削除できません",
+			"ORM_CQL_COMPILATION_FAILED": "無効なCQLクエリ",
+			"ORM_CSV_INVALID_ATTRIBUTES": "カードは保存できません: 無効なデータが見つかりました",
+			"ORM_DATABASE_CONNECTION_ERROR": "データベース接続エラー、接続情報を確認ください",
+			"ORM_DBNOTCONFIGURED": "データベースが設定されていません",
+			"ORM_DOMAIN_HAS_REFERENCE": "参照されているドメインが見つかりません",
+			"ORM_DUPLICATE_ATTRIBUTE": "この属性は既に存在しています",
+			"ORM_DUPLICATE_TABLE": "この名前をもつクラスは既に存在しています",
+			"ORM_DUPLICATE_USER": "このユーザ名はすでに存在しています",
+			"ORM_ERROR_CARD_SELECT": "カードを探すことが出来ません",
+			"ORM_ERROR_CARD_UPDATE": "カードを更新出来ません",
+			"ORM_ERROR_DOMAIN_CREATE": "ドメインを作成できません",
+			"ORM_ERROR_DOMAIN_DELETE": "ドメインを削除できません",
+			"ORM_ERROR_DOMAIN_MODIFY": "ドメインを修正できません",
+			"ORM_ERROR_GENERIC_SQL": "SQL エラー: {0}",
+			"ORM_ERROR_GETTING_PK": "主キーを取得できません",
+			"ORM_ERROR_INCOMPATIBLE_CLASS": "不整合クラス: {0}",
+			"ORM_ERROR_LOOKUP_CREATE": "ルックアップを作成できません",
+			"ORM_ERROR_LOOKUP_DELETE": "ルックアップを削除できません",
+			"ORM_ERROR_LOOKUP_MODIFY": "ルックアップを修正できません",
+			"ORM_ERROR_RELATION_CREATE": "リレーションを作成できません",
+			"ORM_ERROR_RELATION_MODIFY": "リレーションを修正できません",
+			"ORM_FILTER_CONFLICT": "フィルタの定義が競合しています",
+			"ORM_FULLCARDS_MULTIPLEDOMAINS": "多ドメインのすべてのカードを取得できません",
+			"ORM_GENERIC_ERROR": "データのロード／保存時にエラーが発生しました",
+			"ORM_ICONS_FILE_ALREADY_EXISTS": "ファイル {0} は既に存在しています",
+			"ORM_ICONS_FILE_NOT_FOUND": "ファイルが見つかりません",
+			"ORM_ICONS_UNSUPPORTED_TYPE": "サポートされていないファイル形式です",
+			"ORM_ILLEGAL_NAME_ERROR": "不正な名前: {0}",
+			"ORM_LOOKUPTYPE_ALREADY_EXISTS": "同じ説明の別のルックアップが既に在ります",
+			"ORM_MALFORMED_PATCH": "届かないパッチ",
+			"ORM_NOT_NULL_VIOLATION": "Not null 制約違反",
+			"ORM_POSTGIS_NOT_FOUND": "PostGIS インストールされていません",
+			"ORM_READ_ONLY_RELATION": "読み取り専用リレーション",
+			"ORM_READ_ONLY_TABLE": "読み取り専用クラス",
+			"ORM_SQL_PATCH": "エラー SQL パッチ",
+			"ORM_TABLE_HAS_CHILDREN": "サブクラスを持つクラスは削除できません",
+			"ORM_TABLE_HAS_DOMAIN": "ドメインを持つクラスは削除できません",
+			"ORM_TYPE_ERROR": "タイプが一致しません",
+			"ORM_UNIQUE_VIOLATION": "ユニーク制約違反",
+			"OUT_OF_DATE_PROCESS": "<em>Process was not congruent, reload the list</em>",
+			"PARAMETER_CLASS_UNAVAILABLE": "Java クラス {0} のインスタンスを作成できません",
+			"PRIVILEGE_GROUP_NOTFOUND": "グループ {0} の権限が見つかりません",
+			"PRIVILEGE_NOTFOUND": "クラス {1} 上のグループ {0} の権限が見つかりません。",
+			"REPORT_COMPILE_ERROR": "レポートコンパイルエラー",
+			"REPORT_GROUPNOTALLOWED": "{1}の立ち上げは、Group {0} には許可されていません",
+			"REPORT_IMPORT_ERROR": "レポートインポートエラー",
+			"REPORT_INVALID_FILE": "不正なレポートファイル",
+			"REPORT_INVALID_PARAMETER_CLASS": "Java クラスに無効なパラメータが見つかりませした! 操作は中止されました。",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_ATTRIBUTE": "パラメータ中に無効なCMDbuild属性名が見つかりました!。操作は中止されました。",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_CLASS": "パラメータ中に無効なCMDBuildクラス名が見つかりました!。操作は中止されました。",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_LOOKUP": "パラメータ中に無効なCMDbuildルックアップ名が見つかりました!。 操作は中止されました。",
+			"REPORT_INVALID_PARAMETER_FORMAT": "レポートパラメータ名のフォーマットが無効です!。有効なフォーマット: \"name\", \"name.cmdbuildClass.attribute\", \"name.lookup.lookupname\"",
+			"REPORT_INVALID_PARAMETER_LOOKUP_CLASS": "無効なルックアップパラメータ Java クラスが見つかりました!。 \"java.lang.Integer\" が必要です。操作は中止されました。",
+			"REPORT_INVALID_PARAMETER_REFERENCE_CLASS": "無効なリファレンスパラメータJava クラスが見つかりました!。 \"java.lang.Integer\" が必要です。操作は中止されました。",
+			"REPORT_INVALID_PARAMETER_VALUE": "無効なパラメータ値が見つかりました!。操作は中止されました。",
+			"REPORT_INVISIBLE_PARAMETER": "レポートパラメータが非表示属性を参照しています!。操作は中止されました。",
+			"REPORT_LOAD_DESIGN_ERROR": "jasper デザインがロード出来ません。",
+			"REPORT_NOCLASS_ERROR": "コンパイルエラー - クラスをロード出来ません。: {0}",
+			"REPORT_NOTFOUND": "レポート {0} をロード出来ません。",
+			"REPORT_UPLOAD_ERROR": "アップロードエラー",
+			"SCHEDULER_INTERNAL_ERROR": "スケジューラ内部エラー: {0}",
+			"SERVICE_UNAVAILABLE": "サービスが利用できません",
+			"WF_CANNOT_ABORT_PROCESS": "プロセスを中止出来ません",
+			"WF_CANNOT_ACCEPT_WORKITEM": "ユーザアクティビティを受け入れできません",
+			"WF_CANNOT_COMPLETE_WORKITEM": "ユーザアクティビティを完了出来ません",
+			"WF_CANNOT_CONFIGURE_CMDBEXTATTR": "拡張属性 {0} を設定出来ません",
+			"WF_CANNOT_FIND_XPDL": "XPDL 定義が見つかりません",
+			"WF_CANNOT_GETWAPI_CONNECTION": "ワークフローエンジンへの接続を取得出来ません",
+			"WF_CANNOT_GET_PROCESSCARDID": "プロセスカードid を取得出来ません",
+			"WF_CANNOT_GET_PROCESS_VARIABLES": "プロセス変数を取得出来ません",
+			"WF_CANNOT_GET_WORKITEM": "ユーザアクティビティを取得出来ません",
+			"WF_CANNOT_GET_WORKITEMS": "ユーザアクティビティリストを取得出来ません",
+			"WF_CANNOT_GET_WORKITEM_VARIABLES": "ユーザアクティビティ変数を取得出来ません",
+			"WF_CANNOT_LOAD_ACTIVITIES": "プロセス {0} のアクティビティをロードできません",
+			"WF_CANNOT_REACT_CMDBEXTATTR": "拡張属性 {0} を完了できません",
+			"WF_CANNOT_REASSIGN_WORKITEM": "ユーザアクティビティを再割り当て出来ません",
+			"WF_CANNOT_RESOLVE_PARTICIPANT": "参加者を解決できません",
+			"WF_CANNOT_RESUME_WORKITEM": "ユーザアクティビティを再開出来ません",
+			"WF_CANNOT_START": "プロセスを開始出来ません",
+			"WF_CANNOT_SUSPEND_PROCESS": "プロセスを中断出来ません",
+			"WF_CANNOT_UPDATE_WORKITEM_VARIABLES": "ユーザアクティビティ変数を更新出来ません",
+			"WF_CANNOT_UPLOAD_PACKAGE": "パッケージをアップロードできません",
+			"WF_EMAIL_CANNOT_RETRIEVE_MAIL": "電子メールを取得出来ません",
+			"WF_EMAIL_NOT_CONFIGURED": "電子メールの管理が設定されていません",
+			"WF_EMAIL_NOT_SENT": "電子メールは送信されませんでした",
+			"WF_EXTATTR_CREATEREPORT_FACTORYNOTINSESSION": "レポート作成中にエラーが発生しました。: the factory need is not in session",
+			"WF_GENERIC_ERROR": "ワークフローの一般的なエラー",
+			"WF_PACKAGE_ERROR": "パッケージでのエラー",
+			"WF_PROCESSINFO_NOT_FOUND": "プロセスのためのXPDLファイルが見つかりません",
+			"WF_START_ACTIVITY_NOT_FOUND": "<em>I have not found a start activity for process {0}</em>",
+			"WF_WAPI_CONNECTION_ERROR": "ワークフローサーバに接続できません",
+			"WF_WORKITEM_VARIABLES_REQUIRED": "フィールドに必要: {0}",
+			"WF_WRONG_CREDENTIALS": "ワークフロー使用時の間違った資格情報",
+			"WF_WRONG_XPDL_CLASSNAME": "間違ったXPDLクラス名",
+			"WF_XPDL_CLASSNAME_MISSING": "XPDLでCMDBuildクラスが見つかりません",
+			"WF_XPDL_USERSTOP_MISSING": "XPDLファイルに ユーザが停止可能なフィールドが見つかりません",
+			"WIDGET_SERVICE_CONNECTION_ERROR": "メッセージ送信に失敗しました。考えられる原因：1）サービスが展開されていない、2）URLおよび/またはエンドポイントのポート番号が正しくありません",
+			"WIDGET_SERVICE_MALFORMED_REQUEST": "名前空間、メソッド名とWebサービスのパラメータが正しいかどうかをチェックしてください>"
+		},
+		"reference_invalid": "値がフィルタと一致しません",
+		"server_error": "サーバに接続出来ません",
+		"server_error_code": "サーバへデータ送信中にエラーが発生しました: ",
+		"show_detail": "詳細表示",
+		"template_error": "テンプレートエラー",
+		"unknown_error": "未知のエラーが発生しました",
+		"wrong_wf_widgets": "以下のビジュアルコントロールを保存中にエラーが発生しました: "
+	},
+	"info": {
+		"card_not_found": "カードは現在のフィルタと一致しません"
+	},
+	"login": {
+		"change_user": "ユーザー変更",
+		"failed": "ログイン失敗",
+		"language": "言語",
+		"login": "ログイン",
+		"multi_group": "グループを選択",
+		"password": "パスワード",
+		"relogin_message": "認証されたセッションの有効期限が過ぎました。パスワードを再入力ください。",
+		"relogin_title": "セッション時間切れ",
+		"title": "ログインください",
+		"username": "ユーザネーム",
+		"waitMsg": "データ送信中...",
+		"waitTitle": "接続中"
+	},
+	"management": {
+		"description": "データ管理モジュール",
+		"findfilter": {
+			"add": "追加",
+			"all": "すべての",
+			"attachments": "添付",
+			"attribute": "属性",
+			"attributes": "属性",
+			"apply": "適用",
+			"begin": "開始する",
+			"between": "間",
+			"clear_filter": "フィルタクリア",
+			"copyof": "コピー",
+			"different": "異なる",
+			"direction": "方向",
+			"dontbegin": "開始しない",
+			"dontend": "終了しない",
+			"dontlike": "含まない",
+			"end": "終了する",
+			"equals": "同じ",
+			"filter": "フィルタ",
+			"fromSelection": "選択から",
+			"functions" : "<em>Function</em>",
+			"go_filter": "フィルタ",
+			"like": "含む",
+			"list": "リスト",
+			"major": "大きい",
+			"minor": "小さい",
+			"msg": {
+				"attention": "注意",
+				"error": "エラー",
+				"no_removed": "フィルタは削除されていません",
+				"no_server": "サーバが見つかりません",
+				"no_set": "フィルタはセットされていません",
+				"question_sure": "本当にいいですか?"
+			},
+			"notinrel": "何もない",
+			"notnull": "null値でない",
+			"nullo": "null値",
+			"newfilter": "新しい検索フィルター",
+			"relations": "リレーション",
+			"remove": "削除",
+			"save_filter": "フィルタ保存",
+			"selectedAttr": "選択された属性",
+			"saveandapply": "保存して適用",
+			"set_filter": "検索フィルタ",
+			"setted": "フィルタはセットされています",
+			"show_all": "すべて表示",
+			"title": "属性を選択",
+			"window_title": "検索フィルタ"
+		},
+		"graph": {
+			"action": "リレーショングラフ",
+			"icon_tooltip": "リレーショングラフを開く",
+			"title": "リレーショングラフ"
+		},
+		"modcard": {
+			"add_attachment": "添付追加",
+			"add_attachment_window": {
+				"category": "カテゴリ",
+				"description": "説明",
+				"load_attachment": "添付をロード",
+				"select_category": "カテゴリ選択...",
+				"window_title": "添付追加"
+			},
+			"add_card": "カード追加",
+			"add_relations": "リレーション追加",
+			"add_relations_window": {
+				"domain": "ドメイン",
+				"filter_tab": "フィルタ",
+				"list_tab": "リスト",
+				"select_domain": "ドメイン選択...",
+				"window_title": "リレーション追加"
+			},
+			"attachment_columns": {
+				"author": "著者",
+				"category": "カテゴリ",
+				"creation_date": "作成日",
+				"description": "説明",
+				"filename": "ファイル名",
+				"item": "添付",
+				"items": "添付",
+				"modification_date": "更新日",
+				"version": "バージョン"
+			},
+			"clone_card": "カードをクローン",
+			"delete_attachment": "添付削除",
+			"delete_attachment_confirm": "本当にこの添付を削除しますか?",
+			"delete_card": "カード削除",
+			"delete_card_confirm": "本当にこのカードを削除しますか?",
+			"delete_relation": "リレーション削除",
+			"delete_relation_confirm": "本当にこのリレーションを削除しますか?",
+			"detail_window": {
+				"detail_attributes": "詳細の属性",
+				"relation_attributes": "リレーションの属性"
+			},
+			"download_attachment": "添付をダウンロード",
+			"edit_attachment": "添付を編集",
+			"edit_relation": "リレーションを編集",
+			"gis": {
+				"geo_attributes": "地理的属性",
+				"gisNavigation": "GIS ナビゲーション",
+				"position": "位置",
+				"zoom": "ズーム"
+			},
+			"history_columns": {
+				"activity_name": "アクティビティ名",
+				"attributes": "アクティビティ",
+				"begin_date": "開始日",
+				"code": "コード",
+				"description": "説明",
+				"destclass": "クラス",
+				"domain": "ドメイン",
+				"end_date": "終了日",
+				"performer": "アクティビティの実施者",
+				"relation": "リレーション",
+				"user": "ユーザ"
+			},
+			"maptoolbar": {
+				"add": "追加",
+				"drag": "修正",
+				"drag_map": "マップをドラッグ",
+				"zoom_in": "ズームイン",
+				"zoom_out": "ズームアウト"
+			},
+			"modify_card": "カード更新",
+			"modify_note": "ノート更新",
+			"modify_relation_window": {
+				"window_title": "リレーション更新"
+			},
+			"open_relation": "関連するカードを開く",
+			"other_fields": "その他",
+			"relation_columns": {
+				"begin_date": "開始日",
+				"code": "コード",
+				"description": "説明",
+				"destclass": "クラス",
+				"domain": "ドメイン",
+				"item": "アイテム",
+				"items": "アイテム"
+			},
+			"search_reference_window": {
+				"window_title": "検索"
+			},
+			"subclass": "サブクラス",
+			"tabs": {
+				"attachments": "添付",
+				"card": "カード",
+				"detail": "詳細",
+				"history": "履歴",
+				"map": "マップ",
+				"notes": "ノート",
+				"relations": "リレーション"
+			},
+			"title": "リスト - ",
+			"treetitle": "カード",
+			"view_relation": "関連カードビュー"
+		},
+		"moddetail": {
+			"adddetail": "詳細追加",
+			"deletedetail": "詳細削除",
+			"detail": "詳細",
+			"editdetail": "詳細編集",
+			"showattach": "添付表示",
+			"showdetail": "詳細表示",
+			"showgraph": "グラフ表示",
+			"shownotes": "ノート表示"
+		},
+		"modmenu": {
+			"menu": "ナビゲーション"
+		},
+		"modreport": {
+			"add_report": "レポート追加",
+			"delete_report": "レポート削除",
+			"modify_report": "レポート編集",
+			"reportForm": {
+				"description": "説明",
+				"name": "名前",
+				"report": "レポート"
+			},
+			"report_parameters": "レポートパラメータ",
+			"title": "リスト - ",
+			"treetitle": "レポート"
+		},
+		"modutilities": {
+			"bulkupdate": {
+				"title": "多重更新",
+				"countMessage": "{0} カードが更新されます"
+			},
+			"changepassword": {
+				"newpw": "新しいパスワード",
+				"oldpw": "古いパスワード",
+				"repnew": "再　新しいパスワード",
+				"successmsgtext": "パスワードは変更されました",
+				"title": "パスワード変更",
+				"validationtext": "パスワードが一致しません"
+			},
+			"csv": {
+				"csvfile": "CSV ファイル",
+				"error": "エラー",
+				"exportfile": "エキスポート",
+				"importfailure": "インポート失敗",
+				"importsuccess": "インポート成功",
+				"info": "情報",
+				"noupdate": "更新されるカードはありません",
+				"selectaclass": "クラスを選択",
+				"separator": "セパレータ",
+				"shownonvalid": "無効なレコードのみ表示",
+				"title": "CSV ファイルインポート",
+				"title_export": "CSV ファイルエキスポート",
+				"warning": "警告"
+			},
+			"title": "ユーティリティ"
+		},
+		"modutility": {
+			"title": "ユーティリティ"
+		},
+		"modview": {
+			"title": "ビュー"
+		},
+		"modworkflow": {
+			"abort_card": "プロセスを中止",
+			"abort_card_confirm": "本当にこのプロセスを中止しますか?",
+			"activitydocumentation": "操作説明",
+			"add_card": "スタート",
+			"completed": "完了",
+			"custom_steps": "カスタムステップ",
+			"delete_card": "プロセス中止",
+			"delete_card_confirm": "本当にこのプロセスを削除していいですか?",
+			"extattrs": {
+				"attachments": {
+					"must_save_to_add": "アクティビティを保存する前に添付の追加は出来ません。"
+				},
+				"calendar": {
+					"wrong_config": "カレンダは正しく設定されていません"
+				},
+				"createreport": {
+					"format_label": "フォーマット"
+				},
+				"linkcards": {
+					"required": "カードを選択ください - "
+				},
+				"manageemail": {
+					"addresshdr": "アドレス",
+					"ccfld": "CC",
+					"compose": "電子メール作成",
+					"datehdr": "<em>Archiving date</em>",
+					"deleteicon": "削除",
+					"editicon": "修正",
+					"fromfld": "From",
+					"lookup": {
+						"Draft": "下書き",
+						"New": "新規",
+						"Outgoing": "送信中",
+						"Received": "受信",
+						"Sent": "送信"
+					},
+					"subjectfld": "件名",
+					"subjecthdr": "件名",
+					"tofld": "To",
+					"updateTemplateConfirm": "これは、全ての未送信メールを削除します。",
+					"viewicon": "ビュー",
+					"mailsAreChanged": "作成された電子メールは変更されました",
+					"regenerates": "電子メール再作成"
+				},
+				"managerelation": {
+					"required": "リレーションを選択ください - "
+				},
+				"notes": {
+					"must_save_to_modify": "アクティビティの保存前は、ノートを修正出来ません。"
+				}
+			},
+			"history_columns": {
+				"attributes": "属性",
+				"begin_date": "開始日",
+				"description": "説明",
+				"domain": "ドメイン",
+				"end_date": "終了日",
+				"relation": "リレーション",
+				"user": "ユーザ"
+			},
+			"interrupted": "中断",
+			"modify_card": "アクティビティ編集",
+			"modify_note": "ノート編集",
+			"open_attachment": "添付を開く",
+			"open_note": "ノートを開く",
+			"started": "開始",
+			"status": "ステータス",
+			"statuses": {
+				"all": "すべて",
+				"closed.aborted": "中止",
+				"closed.completed": "完了",
+				"open.not_running.suspended": "中断",
+				"open.running": "開いています"
+			},
+			"tabs": {
+				"attachments": "添付",
+				"card": "アクティビティ",
+				"detail": "詳細",
+				"history": "履歴",
+				"notes": "ノート",
+				"options": "オプション",
+				"relations": "リレーション",
+				"sketch": "スケッチ"
+			},
+			"title": "リスト - ",
+			"treetitle": "プロセス"
+		},
+		"welcome": {
+			"body": "データ管理モジュール",
+			"title": "ようこそ"
+		}
+	},
+	"patch": {
+		"patch_list": "利用可能なパッチのリスト"
+	},
+	"vtype_text": {
+		"cmdbcomment": "パイプまたはアポストロフィは使用できません",
+		"cmdbcommentrelaxed": "パイプは使用できません",
+		"invalid_character": "無効な文字",
+		"wrong_decimal_part": "最大 {0} 小数桁",
+		"wrong_integer_part": "最大 {0} 整数桁",
+		"wrong_ip_address": "正しくないIPアドレス",
+		"wrong_time": "{0} は有効な値ではありません。フォーマットに従ってください。"
+	},
+	"warnings": {
+		"link_cards_changed_values": "\"{0}\" の選択は更新されました",
+		"only_filtered": "現在のフィルターに一致しているカードにのみ変更は適用されます",
+		"popup_block": "ポップアップブロックが有効になっています。操作と行うためにはそれを無効にしてください。",
+		"warning_message": "警告"
+	},
+	"active": "アクティブ",
+	"addFilter": "フィルタを追加",
+	"addProject": "<em>Add Project</em>",
+	"addTemplate": "<em>Add Template</em>",
+	"addView": "ビューを追加",
+	"add_attachment_from_db": "<em>Add attachments from database</em>",
+	"attachfile": "<em>Attach File</em>",
+	"attachmentsLookup": "<em>Email attachments Lookup</em>",
+	"attention": "注意",
+	"attribute": "<em>Attribute</em>",
+	"availableFilters": "使用可能なフィルタ",
+	"bcc": "<em>Bcc</em>",
+	"bim": "<em>BIM</em>",
+	"buttons_to_disable": "<em>Buttons to disable</em>",
+	"camera": "<em>Camera</em>",
+	"cc": "<em>Cc</em>",
+	"checkFrequency": "<em>Check frequency (minutes)</em>",
+	"choose_attachment_from_db": "<em>Choose attachments from Database</em>",
+	"class": "<em>Class</em>",
+	"clean_word_pasted_text": "<em>Clean the text pasted from Word or other Rich Text applications</em>",
+	"clearFilter": "<em>Clear Filter</em>",
+	"clear_row_and_colun_privilege": "行と列の特権をクリア",
+	"container": "<em>Container</em>",
+	"controls": "<em>Controls</em>",
+	"cql_filter": "<em>CQL filter</em>",
+	"description_": "説明",
+	"disable": "<em>Disable</em>",
+	"display_less_attributes": "<em>Display less attributes</em>",
+	"display_more_attributes": "<em>Display more attributes</em>",
+	"download_ifc_file": "<em>Download Ifc file</em>",
+	"emailBody": "<em>Body</em>",
+	"emailTemplate": "<em>Email Template</em>",
+	"enable": "<em>Enable</em>",
+	"enabled": "有効",
+	"error": "エラー",
+	"error_bimserver_connection": "<em>I'm not able to connect to Bimserver</em>",
+	"export": "<em>Export</em>",
+	"expose": "<em>Expose</em>",
+	"file_name": "<em>File name</em>",
+	"filter": "フィルタ",
+	"filterView": "フィルタから",
+	"filters_for_groups": "グループへのフィルタ",
+	"format_csv": "<em>CSV</em>",
+	"format_odt": "<em>OpenOffice Odt</em>",
+	"format_pdf": "<em>Adobe Pdf</em>",
+	"format_rtf": "<em>Rich Text Format</em>",
+	"from": "<em>From<em>",
+	"front": "<em>Front</em>",
+	"global": "<em>Global</em>",
+	"ifc_file": "<em>File IFC</em>",
+	"itIsNotAllowedFilterWithCalculatedParams": "<em>It's not allowed to use a filter with calculated parameters</em>",
+	"itIsNotAllowedFilterWithRuntimeParams": "<em>It's not allowed to use a filter with user selectable parameters</em>",
+	"last_checkin": "<em>Last checkin</em>",
+	"layers": "<em>Layers</em>",
+	"lock_cards_in_edit": "編集中カードをロック",
+	"lock_timeout": "ロックタイムアウト",
+	"loggedGroup": "<em>Logged Group</em>",
+	"loggedUser": "<em>Logged User</em>",
+	"mode": "<em>Mode</em>",
+	"modifyFilter": "ビューを変更",
+	"modifyProject": "<em>Modify Project</em>",
+	"modifyTemplate": "<em>Modify Template</em>",
+	"modifyView": "ビューを変更",
+	"multiGroup": "<em>Multi group</em>",
+	"name": "名前",
+	"no_bim_project_for_card": "<em>There is no BIM project for this card</em>",
+	"not_set": "設定されていません",
+	"open_3d_viewer": "<em>Open 3D viewer</em>",
+	"pan": "<em>Pan</em>",
+	"password": "<em>Password</em>",
+	"privileges_on_columns": "列の権限",
+	"privileges_on_rows": "行の権限",
+	"projects": "Projects",
+	"reference_to_root": "<em>Reference to Root</em>",
+	"removeFilter": "ビューを削除",
+	"removeProject": "<em>Remove Project</em>",
+	"removeTemplate": "<em>Remove Template</em>",
+	"removeView": "ビューを削除",
+	"remove_formatting": "<em>Remove formatting</em>",
+	"reset": "<em>Reset</em>",
+	"root": "<em>Root</em>",
+	"rotate": "<em>Rotate</em>",
+	"row_and_column_privileges": "行と列の権限",
+	"row_add": "<em>Add row</em>",
+	"row_delete": "<em>Delete row</em>",
+	"row_edit": "<em>Edit row</em>",
+	"search_filters": "検索フィルタ",
+	"select_a_class": "<em>Select a Class</em>",
+	"selected_object": "<em>Selected Object</em>",
+	"set": "設定",
+	"setFilter": "<em>Set Filter</em>",
+	"setLater": "<em>Input Parameter</em>",
+	"show_name_of_locker_user": "ロックしているユーザ名を表示",
+	"side": "<em>Side</em>",
+	"sqlView": "SQL から",
+	"subject": "<em>Subject</em>",
+	"targetClass": "ターゲットクラス",
+	"to": "<em>To</em>",
+	"top": "<em>Top</em>",
+	"translations" : "<em>Translations</em>",
+	"translations_enabled" : "<em>Enabled languages</em>",
+	"transparent": "<em>Transparent</em>",
+	"tree": "<em>Tree</em>",
+	"tree_navigation": "<em>Navigation tree</em>",
+	"tree_navigation_add": "<em>Add navigation tree</em>",
+	"tree_navigation_attributes": "<em>Navigation tree attributes</em>",
+	"tree_modify": "<em>Modify tree</em>",
+	"tree_remove": "<em>Remove tree</em>",
+	"tree_root_cql": "<em>Root CQL filter</em>",
+	"trees_navigation": "<em>Navigation trees</em>",
+	"ui_configuration_for_groups": "<em>UI configuration for group</em>",
+	"unlock_all_cards": "すべてのカードをアンロック",
+	"uploading_attachment": "<em>Uploading attachment...</em>",
+	"url": "<em>URL</em>",
+	"username": "<em>Username</em>",
+	"value": "<em>Value</em>",
+	"views": "ビュー",
+	"workflow": "<em>Workflow</em>",
+	"workflow_attributes": "<em>Workflow attributes</em>",
+	"workflow_by_cql": "<em>by Cql</em>",
+	"workflow_by_name": "<em>by name</em>",
+	"workflow_cql_filter": "<em>Cql filter</em>",
+	"workflow_query_tipology": "<em>Selection</em>",
+	"you_have_not_set_a_filter": "フィルタを設定していません",
+	"zoom": "<em>Zoom</em>"
+}

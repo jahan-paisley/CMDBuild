@@ -1,0 +1,11 @@
+<datasources>
+    <datasource jta="false" jndi-name="java:jboss/postgresDS" pool-name="postgresDS" enabled="true" use-ccm="false">
+        <connection-url>jdbc:postgresql://localhost:5432/cmdbuild</connection-url>
+        <driver-class>org.postgresql.Driver</driver-class>
+        <driver>postgresql</driver>
+        <security>
+            <user-name>shark</user-name>
+            <password>shark</password>
+        </security>
+    </datasource>
+</datasources>

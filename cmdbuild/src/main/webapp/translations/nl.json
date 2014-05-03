@@ -1,0 +1,1412 @@
+{
+	"description": "Nederlands",
+	"release": "2.2-dev",
+	"administration": {
+		"description": "Administratie module",
+		"email": {
+			"title": "<em>Email</em>",
+			"accounts": {
+				"account": "<em>Account</em>",
+				"active": "<em>Active</em>",
+				"add": "<em>Add account</em>",
+				"address": "<em>Address</em>",
+				"credentials": "<em>Credentials</em>",
+				"enableMoveRejectedNotMatching": "<em>Enable move rejected not matching</em>",
+				"enableSsl": "<em>Enable SSL</em>",
+				"imapPort": "<em>IMAP port</em>",
+				"imapServer": "<em>IMAP server</em>",
+				"incoming": "<em>Incoming</em>",
+				"incomingFolder": "<em>Incoming folder</em>",
+				"isDefault": "<em>Default</em>",
+				"modify": "<em>Modify account</em>",
+				"outgoing": "<em>Outgoing</em>",
+				"password": "<em>Password</em>",
+				"processedFolder": "<em>Processed folder</em>",
+				"rejectedFolder": "<em>Rejected folder</em>",
+				"remove": "<em>Remove account</em>",
+				"setDefault": "<em>Set as default</em>",
+				"smtpPort": "<em>SMTP Port</em>",
+				"smtpServer": "<em>SMTP server</em>",
+				"title": "<em>Accounts</em>",
+				"username": "<em>Username</em>"
+			},
+			"templates": {
+				"add": "<em>Add template</em>",
+				"body": "<em>Body</em>",
+				"modify": "<em>Modify template</em>",
+				"remove": "<em>Remove template</em>",
+				"template": "<em>Template</em>",
+				"title": "<em>Templates</em>"
+			}
+		},
+		"modClass": {
+			"add_class": "Klas toevoegen",
+			"attributeProperties": {
+				"add_attribute": "Attribuut toevoegen",
+				"baseProperties": "Basis Eigenschappen",
+				"criterion": "Kriteria",
+				"delete_attribute": "Attribuut verwijderen",
+				"description": "Omschrijving",
+				"destination": "Omschrijving",
+				"direction": {
+					"asc": "Aflopend",
+					"desc": "Oplopend"
+				},
+				"domain": "Domein",
+				"editorType": {
+					"html": "Html",
+					"label": "Editor type",
+					"plain": "Platte tekst"
+				},
+				"field_hidden": "Verborgen",
+				"field_read": "Alleen lezen",
+				"field_visibility": "Bewerkings modus",
+				"field_write": "Aanpasbaar",
+				"group": "Groep",
+				"inherited": "Ge-erfte",
+				"isactive": "Aktief",
+				"isbasedsp": "Toon in lijst",
+				"isdefault": "Standaard",
+				"isnotnull": "Verplicht",
+				"isunique": "Uniek",
+				"length": "Lengte",
+				"lookup": "Opzoeken",
+				"meta": {
+					"add": "Metadata toevoegen",
+					"key": "Sleutel",
+					"remove": "Metadata verwijderen",
+					"title": "Aanpassen metadata",
+					"value": "Waarde"
+				},
+				"modify_attribute": "Aanpassen attribuut",
+				"msg_warning_drop_row": "Herordering werkt alleen indien ge-erfte attributen worden getoond",
+				"name": "Naam",
+				"not_in_use": "Niet in gebruik",
+				"pipeNotAllowed": "Gebruik aub OR in plaats van |",
+				"precision": "Nauwkeurigheid",
+				"referencequery": "Filter",
+				"scale": "Schaal",
+				"set_sorting_criteria": "Bepaal sortering",
+				"type": "Soort",
+				"typeProperties": "Soort eigenschappen"
+			},
+			"attributes_title": "Attributen beheren",
+			"classProperties": {
+				"active": "Aktief",
+				"description": "Omschrijving",
+				"inherits": "Ge-erft van",
+				"modify_class": "Klas aanpassen",
+				"name": "Naam",
+				"print_class": "Klas afdrukken",
+				"remove_class": "Klas verwijderen",
+				"simple": "Eenvoudig",
+				"standard": "Standaard",
+				"superclass": "Superklas",
+				"type": "Soort",
+				"wait_msg": "Gegevens versturen ...",
+				"wait_title": "Verbinden"
+			},
+			"class_property": "Eigenschap",
+			"classtype": {
+				"simpletable": "Eenvoudig",
+				"standard": "Standaard"
+			},
+			"domainProperties": {
+				"add_domain": "Domein toevoegen",
+				"cardinality": "Cardinaliteit",
+				"class_destination": "Bestemming",
+				"class_target": "Beginpunt",
+				"delete_domain": "Domein verwijderen",
+				"description": "Domein omschrijving",
+				"description_direct": "Directe omschrijving",
+				"description_inverse": "Omgekeerde omschrijving",
+				"domain": "Domein",
+				"is_active": "Aktief",
+				"m_d": "M/D",
+				"master_detail": "Meester/Detail",
+				"md_label": "Meester/Detail Label",
+				"modify_domain": "Domein aanpassen",
+				"name": "Naam",
+				"title_add": "Domein toevoegen",
+				"title_modify": "Domein aanpassen \"{0}\""
+			},
+			"domains_title": "Domein beheren",
+			"errors": {
+				"table": {
+					"cast": "Fout tijdens aanpassing \"superklas\" eigenschappen, klas bevat gegevens of heeft sub klassen",
+					"duplicate": "Dubbele klas naam",
+					"parent_not_found": "Bovenliggende klas bestaat niet"
+				}
+			},
+			"geo_attributes": {
+				"card_binding": "Kaart relatie",
+				"externalGraphic": "Ikoon",
+				"fillColor": "Vulling kleur",
+				"fillOpacity": "Vul dekking",
+				"graphicHeight": "Ikoon hoogte",
+				"graphicOpacity": "Ikoon dekking",
+				"graphicWidth": "Ikoon breedte",
+				"master": "Referentie klas",
+				"max_zoom": "Maximum zoom",
+				"min_zoom": "Minimum zoom",
+				"pointRadius": "Punt straal",
+				"strokeColor": "Lijn kleur",
+				"strokeDashstyle": "Lijn streepstijl",
+				"strokeOpacity": "Lijn dekking",
+				"strokeStyles": {
+					"dash": "Streep",
+					"dashdot": "StreepPunt",
+					"dot": "Punt",
+					"longdash": "DubbeleStreep",
+					"longdashdot": "DubbeleStreepPunt",
+					"solid": "Ononderbroken"
+				},
+				"strokeWidth": "Lijn dikte",
+				"style": "Stijl",
+				"type": {
+					"line": "Lijn",
+					"point": "Punt",
+					"polygon": "Polygoon"
+				},
+				"visibility": "Zichtbaarheid"
+			},
+			"include_inherited": "Inclusief ge-erfte",
+			"layers": "Lagen",
+			"print_schema": "Schema afdrukken",
+			"tabs": {
+				"attributes": "Attributen",
+				"domains": "Domeinen",
+				"geo_attributes": "Geografische attributen",
+				"properties": "Eigenschappen"
+			},
+			"title": "Beheer klassen",
+			"tree_title": "Klassen Lijst",
+			"widgets": {
+				".OpenReport": {
+					"fields": {
+						"force": "Forceer formaat",
+						"presets": "Rapport attributen",
+						"report": "Rapport"
+					},
+					"presetGrid": {
+						"attribute": "Attribuut",
+						"value": "Waarde"
+					},
+					"title": "Ontwerp rapport"
+				},
+				".Calendar": {
+					"fields": {
+						"target": "Doel Klas",
+						"start": "Start datum",
+						"end": "Eind datum",
+						"title": "Aktiviteit titel",
+						"filter": "CQL Filter",
+						"defaultDate": "Standaard datum om te starten"
+					},
+					"title": "Kalender"
+				},
+				".Ping": {
+					"fields": {
+						"address": "Adres om te pingen",
+						"count": "Aantal pings",
+						"templates": "Sjabloon"
+					},
+					"title": "Ping"
+				},
+				".Workflow": {
+					"title": "<em>Start workflow</em>"
+				},
+				".NavigationTree": {
+					"title": "<em>Navigation tree</em>"
+				},
+				".CreateModifyCard": {
+					"fields": {
+						"target": "Doel Klas",
+						"cql": "Kaart CQL kiezer",
+						"readOnly": "Alleen lezen"
+					},
+					"title": "Ontwerp of aanpassen van kaart"
+				},
+				"commonFields": {
+					"active": "Aktief",
+					"alwaysenabled": "Altijd toegestaan",
+					"buttonLabel": "Knop label",
+					"type": "Soort"
+				},
+				"title": "Widget"
+			}
+		},
+		"modDashboard": {
+			"charts": {
+				"alert": {
+					"wrongConfiguration": "De grafiek is niet goed geconfigureerd"
+				},
+				"availableCharts": {
+					"gauge": "Meter",
+					"pie": "Cirkel",
+					"bar": "Staaf",
+					"line": "Lijn"
+				},
+				"buttons": {
+					"add": "Grafiek toevoegen",
+					"modify": "Grafiek aanpassen",
+					"remove": "Grafiek verwijderen",
+					"preview": "Tussenresultaat"
+				},
+				"fields": {
+					"active": "Aktief",
+					"autoload": "Laad automatisch",
+					"background": "Achtergrond kleur",
+					"categoryFieldset": "Kategorie as",
+					"chartType": "Grafiek type",
+					"dataSource": "Gegevens bron",
+					"defaultValue": "Default waarde",
+					"description": "Omschrijving",
+					"fieldType": "Veld type",
+					"foreground": "Voorgrond kleur",
+					"fromClass": "Van klas",
+					"labelField": "Label veld",
+					"legend": "Toon legenda",
+					"lookupType": "Zoeklijst type",
+					"max": "Maximum",
+					"min": "Minimum",
+					"name": "Naam",
+					"orientation": {
+						"label": "Orientatie",
+						"values": {
+							"horizontal": "Horizontaal",
+							"vertical": "Verticaal"
+						}
+					},
+					"required": "Verplicht",
+					"steps": "Stappen",
+					"title": "Titel",
+					"valueField": "Waarde veld",
+					"valueFieldset": "Waarde as"
+				},
+				"inputTypes": {
+					"BOOLEAN": "Boolean",
+					"DECIMAL": "Decimaal",
+					"INTEGER": "Integer",
+					"DOUBLE": "Dubbel",
+					"DATE": "Datum",
+					"TIMESTAMP": "Tijdstempel",
+					"TIME": "Tijd",
+					"STRING": "Regel",
+					"TEXT": "Tekst",
+					"CHAR": "Karakter",
+					"INET": "Netwerk adres"
+				},
+				"title": "Grafieken",
+				"typeFieldOptions": {
+					"card": "Kaart",
+					"classes": "Selecteer uit alle CMDBuild klassen",
+					"freeInt": "Vrije Integer",
+					"freeString": "Vrije Regel",
+					"group": "Huidige groep",
+					"lookup": "Selecteer uit een zoeklijst",
+					"user": "Huidige gebruiker"
+				}
+			},
+			"layout": {
+				"add": "Kolom toevoegen",
+				"remove": "Verwijder lege kolommen",
+				"title": "Indeling"
+			},
+			"properties": {
+				"add": "Dashboard toevoegen",
+				"modify": "Dashboard aanpassen",
+				"remove": "Dashboard verwijderen",
+				"fields": {
+					"name": "Naam",
+					"description": "Omschrijving",
+					"groups": "Beschikbaar voor groepen"
+				}
+			},
+			"title": "Dashboard"
+		},
+		"modLookup": {
+			"add_lookuptype": "Zoeklijst soort toevoegen",
+			"lookupForm": {
+				"active": "Aktief",
+				"code": "Kode",
+				"description": "Omschrijving",
+				"disable_lookup": "Blokkeer zoeklijst",
+				"enable_lookup": "Deblokkeer zoeklijst",
+				"isdefault": "Standaard",
+				"notes": "Notities",
+				"parentdescription": "Bovenliggende omschrijving",
+				"update_lookup": "Aanpassen zoeklijst"
+			},
+			"lookupGrid": {
+				"active": "Aktief",
+				"add_lookup": "Zoeklijst toevoegen",
+				"code": "Kode",
+				"description": "Omschrijving",
+				"isdefault": "Standaard",
+				"notes": "Notities",
+				"parentdescription": "Bovenliggende omschrijving"
+			},
+			"lookupType": "Zoeklijst soort",
+			"lookupTypeForm": {
+				"active": "Aktief",
+				"delete_lookuptype": "Verwijderen zoeklijst soort",
+				"description": "Omschrijving",
+				"modify_lookuptype": "Aanpassen zoeklijst soort",
+				"parent": "Bovenliggend",
+				"title": "Zoeklijst beheer"
+			},
+			"lookupTypes": "Zoeklijst soorten",
+			"tabs": {
+				"lookuplist": "Zoeklijst Lijst",
+				"properties": "Eigenschap"
+			},
+			"title": "Zoeklijst beheer"
+		},
+		"modWorkflow": {
+			"add_process": "Proces toevoegen",
+			"attributes_title": "Beheer attributen",
+			"domains_title": "Beheer domeinen",
+			"errors": {
+				"table": {
+					"cast": "Het is niet mogelijk om de \"superklas\" eigenschappen aan te passen, de klas bevat gegevens of is subklas",
+					"duplicate": "Een klas met identieke naam bestaat al",
+					"parent_not_found": "Het aangegeven proces superklas bestaat niet"
+				}
+			},
+			"include_inherited": "Inclusief ge-erfte",
+			"process_property": "Eigenschap",
+			"tabs": {
+				"attributes": "Attributen",
+				"domains": "Domeinen",
+				"properties": "Eigenschappen",
+				"xpdl": "XPDL"
+			},
+			"title": "Proces beheer",
+			"tree_title": "Processen",
+			"xpdlDownload": {
+				"download_tamplete": "Ophalen sjabloon",
+				"download_xpdl_tamplete": "Ophalen XPDL sjabloon",
+				"package_version": "Versie",
+				"process_name": "Proces naam",
+				"user_stoppable": "Stopbare gebruiker"
+			},
+			"xpdlUpload": {
+				"deleted_image": "Het schets bestand is verwijderd omdat het niet is gesynchroniseerd met het XPDL bestand",
+				"error": "Fout tijdens ophalen XPDL bestand",
+				"jpg_file": "Schets",
+				"saved_image": "Schets ophalen",
+				"saved_xpdl": "XPDL bestand ophalen",
+				"upload_template": "Ophalen",
+				"upload_xpdl_tamplete": "Ophalen XPDL",
+				"xpdl_file": "XPDL bestand"
+			}
+		},
+		"modcartography": {
+			"external_services": {
+				"admin_password": "Admin wachtwoord",
+				"admin_user": "Admin gebruikersnaam",
+				"description": {
+					"geoserver": "GeoServer",
+					"google": "Google Maps",
+					"osm": "Open Street Map",
+					"yahoo": "Yahoo! Maps"
+				},
+				"key": "Sleutel",
+				"title": "Externe Services",
+				"url": "URL",
+				"workspace": "Werkruimte"
+			},
+			"geoserver": {
+				"add_layer": "Laag toevoegen",
+				"delete_layer": "Laag verwijderen",
+				"file": "Bestand",
+				"modify_layer": "Laag aanpassen",
+				"service_not_available": "Geoserver is niet aktief, om te aktiveren ga naar {0}",
+				"title": "Geoserver lagen"
+			},
+			"icons": {
+				"alert": {
+					"msg": "Weet je het zeker ?",
+					"title": "Alarm"
+				},
+				"description": "Omschrijving",
+				"file": "Bestand",
+				"title": "Beheer Iconen"
+			},
+			"layermanager": {
+				"title": "Laag volgorde"
+			},
+			"navigationTree": {
+				"title": "GIS navigatie"
+			},
+			"title": "GIS"
+		},
+		"modconnectors": {
+			"title": "Connectoren"
+		},
+		"modmenu": {
+			"add_menu": "Menu toevoegen",
+			"available_elements": "Beschikbare elementen",
+			"availabletree": {
+				"class": "Klassen",
+				"dashboard": "Dashboards",
+				"processclass": "Aktiviteiten",
+				"report": "Rapporten",
+				"view": "Views"
+			},
+			"custom_menu": "Aangepast Menu",
+			"custom_menus": "Aangepaste Menus",
+			"delete_menu": "Menu verwijderen",
+			"menu_root": "Menu",
+			"modify_menu": "Menu beheren",
+			"new_folder": "Nieuwe map",
+			"title": "Menu beheer"
+		},
+		"modreport": {
+			"add": "Rapport toevoegen",
+			"importJRFormStep1": {
+				"description": "Rapport omschrijving",
+				"enabled_groups": "Groepen toestaan",
+				"fieldset": "Importeer jasper rapport",
+				"master_report_jrxml": "Meester Rapport (.jrxml)",
+				"menuTitle": "Jasper-reports rapport",
+				"name": "Rapport naam"
+			},
+			"importJRFormStep2": {
+				"duplicate_images": "Waarschuwing: rapport samenstelling gevonden met gelijke bestandsnaam - kan niet doorgaan.",
+				"fieldset_generic": "Ophalen jasper rapport",
+				"fieldset_images": "Benodigde samenstellingen",
+				"fieldset_subreports": "Benodigde subrapporten",
+				"menuTitle": "Rapport Jasper-reports",
+				"nothing_to_import": "Geen samenstellingen of subrapporten gevonden, aub bevestigen om verder te gaan met importeren.",
+				"success": {
+					"description": {
+						"add": "Ophalen afgerond",
+						"modify": "Rapport aangepast"
+					},
+					"title": "Succes"
+				}
+			},
+			"importOpenofficeTemplateForm": {
+				"menuTitle": "Openoffice rapport"
+			},
+			"modify": "Rapport aanpassen",
+			"remove": "Rapport verwijderen",
+			"title": "Rapport"
+		},
+		"modsecurity": {
+			"defaultgroup": "* Standaard *",
+			"group": {
+				"add_group": "Groep toevoegen",
+				"administrator": "Beheerder",
+				"availableusers": "Beschikbare gebruikers",
+				"delete_group": "Blokkeer Groep",
+				"email": "Email",
+				"enable_group": "Deblokkeer Groep",
+				"group_description": "Omschrijving",
+				"group_name": "Groep Naam",
+				"groupchoice": "Geselecteerde gebruikers",
+				"is_active": "Aktief",
+				"is_administrator": "Is administrateur",
+				"limited_admin": "Beperkte beheerder",
+				"modify_group": "Groep aanpassen",
+				"normal": "Normaal",
+				"starting_class": "Start pagina bij",
+				"title": "Groep beheer",
+				"usermanagement": "Beheer geassocieerde gebruikers"
+			},
+			"groups": "Groepen",
+			"privilege": {
+				"add_privilege": "Privilege toevoegen",
+				"classname": "Klasnaam",
+				"delete_privilege": "Privilege verwijderen",
+				"modify_privilege": "Privilege aanpassen",
+				"none_privilege": "Geen ",
+				"privilege_mode": "Privilege",
+				"read_privilege": "Lees",
+				"write_privilege": "Schrijf"
+			},
+			"tabs": {
+				"permissions": "Permissies",
+				"properties": "Eigenschappen"
+			},
+			"title": "Gebruikers en Groepen",
+			"uiconfiguration": {
+				"disabled_class_tabs": "Uitgeschakelde tabs in Klassen module",
+				"disabled_modules": "Geblokkeerde opties",
+				"disabled_process_tabs": "Uitgeschakelde tabs in Processen module",
+				"generic_properties": {
+					"always_enabled_widgets": "Proces widgets altijd ingeschakeld",
+					"card_simple_history": "Eenvoudige geschiedenis voor kaarten",
+					"full_screen_navigation": "Volledig scherm navigatie",
+					"hide_side_panel": "Verberg zijpaneel",
+					"process_simple_history": "Eenvoudige geschiedenis voor processen"
+				},
+				"other": "Andere opties",
+				"title": "UI configuratie"
+			},
+			"user": {
+				"add_user": "Gebruiker toevoegen",
+				"availablegroups": "Beschikbare groepen",
+				"change_password": "Wachtwoord veranderen",
+				"confirmation": "Bevestiging",
+				"defaultgroup": "Standaard Groep",
+				"defaultonlogin": "* Login *",
+				"description": "Omschrijving",
+				"disable_user": "Blokkeer gebruiker",
+				"email": "Email",
+				"enable_user": "Deblokkeer gebruiker",
+				"groupmanagement": "Beheer gebruiker groep",
+				"isactive": "Aktief",
+				"modify_user": "Gebruiker aanpassen",
+				"password": "Wachtwoord",
+				"title": "Gebruikers beheer",
+				"user_info": "Gebruiker info",
+				"usergroups": "groepen",
+				"username": "Gebruikersnaam"
+			},
+			"users": "Gebruikers"
+		},
+		"setup": {
+			"cmdbuild": {
+				"cardpanelheight": "Hoogte van het kaart paneel in procenten",
+				"fieldsetgeneraltitle": "Algemeen",
+				"fieldsetlanguageltitle": "Taal",
+				"fieldsetpopupwindowtitle": "Popup vensters",
+				"instancename": "Database naam",
+				"language": "Standaard Taal",
+				"languagePrompt": "Toon taal keuze",
+				"menuTitle": "Algemene Opties",
+				"popupheightlabel": "Popup percentage hoogte",
+				"popupwidthlabel": "Popup percentage breedte",
+				"referencecombolimit": "<em>References combobox limit</em>",
+				"relationlimit": "Relatie limiet",
+				"rowlimit": "Rij limiet",
+				"sessiontimeout": "Sessie timeout (seconds)",
+				"startingClass": "Standaard klas",
+				"tabs_position": {
+					"bottom": "Bodem",
+					"label": "Tabs positie in kaart paneel",
+					"top": "Top"
+				},
+				"title": "CMDBuild Configuratie"
+			},
+			"dms": {
+				"categoryLookup": "CMDBuild kategorie",
+				"credential": "Rechten",
+				"credentialPassword": "Wachtwoord",
+				"credentialUser": "Gebruikersnaam",
+				"delay": "Uitvoeringsvertraging",
+				"enabled": "Geaktiveerd",
+				"fileserver": "File Server",
+				"fileserverPort": "Poort",
+				"fileserverType": "Soort",
+				"fileserverUrl": "Server",
+				"general": "Algemeen",
+				"menuTitle": "Alfresco",
+				"repository": "Bewaarplaats",
+				"repositoryApp": "Applikatie",
+				"repositoryFSPath": "Bestandsserver pad",
+				"repositoryWSPath": "Web service pad",
+				"serverUrl": "Server URL",
+				"title": "Alfresco Configuratie"
+			},
+			"gis": {
+				"center_lat": "Initiele latitude",
+				"center_lon": "Initiele longitude",
+				"enable": "Geaktiveerd",
+				"initial_zoom": "Initieel zoom niveau",
+				"serverurl": "Server URL",
+				"title": "GIS"
+			},
+			"graph": {
+				"baseLevel": "Standaard niveau",
+				"clusteringThreshold": "Drempelwaarde voor samenvoegen nodes",
+				"enabled": "Geaktiveerd",
+				"expandingThreshold": "Max aantal nodes in een uitbreidbaar cluster",
+				"extensionMaximumLevel": "Maximum niveau",
+				"menuTitle": "Relatie Grafiek",
+				"title": "Relatie Grafiek Configuratie"
+			},
+			"modify": "Aanpassen",
+			"save": "Bewaren",
+			"server": {
+				"cache_management": "Cache beheer",
+				"clear_cache": "Cache leegmaken",
+				"menuTitle": "Server beheer",
+				"servicesync": "Service synchronisatie",
+				"title": "Server beheer",
+				"wfsync": "Verwijder inconsistente processen"
+			},
+			"setupTitle": "Configuratie",
+			"workflow": {
+				"credential": "Rechten",
+				"enabled": "Geaktiveerd",
+				"endpoint": "Server URL",
+				"engine": "Machine naam",
+				"general": "Algemeen",
+				"menuTitle": "Werkvolgorde",
+				"password": "Wachtwoord",
+				"scope": "Bereik",
+				"title": "Werkvolgorde machine",
+				"user": "Gebruikernaam"
+			}
+		},
+		"welcome": {
+			"body": "Administratie module.",
+			"title": "Welkom"
+		}
+	},
+	"common": {
+		"buttons": {
+			"abort": "Annuleren",
+			"add": "Toevoegen",
+			"apply": "Toepassen",
+			"as": "als",
+			"clone": "Dupliceer",
+			"close": "Sluiten",
+			"confirm": "OK",
+			"export": "Export",
+			"import": "Import",
+			"load": "Laad",
+			"modify": "Aanpassen",
+			"next": "<em>Next</em>",
+			"previous": "<em>Previous</em>",
+			"print": "Afdrukken",
+			"remove": "Verwijderen",
+			"save": "Opslaan",
+			"update": "Bijwerken",
+			"upload": "Ophalen",
+			"workflow": {
+				"advance": "Doorschuiven",
+				"back": "Terug",
+				"save": "Opslaan"
+			}
+		},
+		"confirmpopup": {
+			"areyousure": "Weet je het zeker ?",
+			"title": "Bevestigen"
+		},
+		"credits": "Info &amp; Support",
+		"display_topic": "Toon onderwerpen",
+		"display_topic_none": "Geen onderwerpen om te tonen",
+		"display_topic_of": "of ",
+		"failure": "Fout",
+		"group": "Groep",
+		"loading": "Laden ...",
+		"loading_mask": {
+			"classes": "Laden klassen",
+			"configuration": "Laden configuratie",
+			"domain": "Laden domeinen",
+			"group": "Laden gebruikers en groepen",
+			"lookup": "Laden zoeklijst soorten",
+			"menu": "Laden menus",
+			"report": "Laden rapporten",
+			"workflow": "Laden aktiviteiten"
+		},
+		"logout": "Uitloggen",
+		"remove": "Verwijderen",
+		"splash": {
+			"consultant": "ITIL consultant en support",
+			"design": "Ontwerp",
+			"implementation": "Implementatie",
+			"maintainer": "Beheerder",
+			"municipality": "Municipality of Udine",
+			"principal": "principal for the initial project"
+		},
+		"success": "Succes",
+		"tbd_body": "Werk in uitvoering",
+		"tbd_title": "Werk in uitvoering",
+		"tooltip": {
+			"editParameters": "Modificeer de parameters",
+			"reload": "Herladen",
+			"showData": "Toon gegevens"
+		},
+		"tree_names": {
+			"class": "Standaard",
+			"process": "Activiteit",
+			"simpletable": "Eenvoudig"
+		},
+		"unknown_error": "Onbekende fout",
+		"user": "Gebruiker",
+		"wait_msg": "Versturen van gegevens ...",
+		"wait_title": "Even geduld aub ..."
+	},
+	"configure": {
+		"failure": {
+			"text": "Setup wizard geeindigd met fout: ",
+			"title": "Configuratie fout"
+		},
+		"finish": "Finish",
+		"next": "Volgende",
+		"previous": "Vorige",
+		"step1": {
+			"choose": "Kies standaard taal",
+			"showLangChoose": "Toon taal selectie in login box"
+		},
+		"step2": {
+			"create_shark": "Maak een Shark schema",
+			"db_confirm_password": "Bevestig Wachtwoord",
+			"db_connection": "Database verbinding",
+			"db_create": "CMDBuild Database",
+			"db_create_name": "CMDBuild Database naam",
+			"db_create_type": "CMDBuild Database soort",
+			"db_demo": "Demo",
+			"db_empty": "Leeg",
+			"db_existing": "Bestaand",
+			"db_host": "Host",
+			"db_password": "Wachtwoord",
+			"db_port": "Poort",
+			"db_superUser": "Super gebruiker",
+			"db_test_connection": "Test verbinding",
+			"db_type": "Database soort",
+			"db_user": "Gebruiker",
+			"db_user_create": "Maak beperkte database gebruiker",
+			"limited_user": "Beperkte gebruiker",
+			"msg": {
+				"msg": "Connectie successvol",
+				"pswnomatch": "Wachtwoorden zijn niet gelijk",
+				"title": "Test verbinding"
+			},
+			"new_limited_user": "Maak beperkte gebruiker",
+			"user_type": "Gebruiker soort"
+		},
+		"step3": {
+			"admin": "Administratief account",
+			"admin_password": "Wachtwoord",
+			"admin_user": "Gebruiker naam",
+			"confirm_password": "Bevestig wachtwoord"
+		},
+		"success": {
+			"text": "Setup wizard is succesvol afgelopen, klik OK om verder te gaan naar de applikatie",
+			"title": "Setup is klaar"
+		},
+		"title": "Instellen"
+	},
+	"errors": {
+		"busy_wf_widgets": "The visual controls are busy, check the status of the server before trying again.",
+		"detail": "Details",
+		"error_message": "Fout",
+		"error_moving_row": "Er is een fout ontstaan tijdens het verplaatsen van de rij",
+		"invalid_attributes": "De volgende velden zijn niet correct ingevuld:",
+		"invalid_extended_attributes": "De volgende visuele controls zijn niet correct ingevuld:",
+		"invalid_fields": "Sommige velden zijn niet correct ingevuld",
+		"no_driver": "Geen JDBC driver gevonden.<br />je kunt het vinden in het CMDBuild release pakket en kopieren naar de Tomcat bibliotheken.",
+		"no_selections": "Je hebt geen kaart geselecteerd voor bijwerken",
+		"reasons": {
+			"ATTRIBUTE_NOTFOUND": "Attribuut {1} van {0} niet gevonden",
+			"AUTH_CLASS_NOT_AUTHORIZED": "Niet genoeg rechten voor toegang tot klas {0}",
+			"AUTH_DEMO_MODE": "Handeling niet toegestaan in demonstratie mode",
+			"AUTH_DOMAIN_NOT_AUTHORIZED": "Niet genoeg rechten voor toegang tot domein {0}",
+			"AUTH_LOGIN_WRONG": "Verkeerde gebruikersnaam of wachtwoord",
+			"AUTH_MULTIPLE_GROUPS": "De gebruiker is geassocieerd met meerdere groepen",
+			"AUTH_NOT_AUTHORIZED": "Verboden handeling",
+			"AUTH_NOT_CONFIGURED": "Fout tijdens configuratie van authentificatie",
+			"AUTH_NOT_LOGGED_IN": "gebruiker is niet ingelogd",
+			"AUTH_NO_GROUPS": "De gebruiker is niet lid van een groep",
+			"AUTH_UNKNOWN_GROUP": "Verkeerde groep",
+			"AUTH_WRONG_PASSWORD": "Verkeerd wachtwoord",
+			"CARD_NOTFOUND": "Kaart niet gevonden in {0}",
+			"CLASS_NOTFOUND": "Klas {0} niet gevonden",
+			"CQL_COMPILATION_FAILED": "Compilatie van CQL query mislukt",
+			"DMS_ATTACHMENT_DELETE_ERROR": "Bijlage verwijderen mislukt",
+			"DMS_ATTACHMENT_NOTFOUND": "Bijlage {0} voor kaart {2} van {1} niet gevonden",
+			"DMS_ATTACHMENT_UPLOAD_ERROR": "Bijlage ophalen mislukt",
+			"DMS_DOCUMENT_TYPE_DEFINITION_ERROR": "Kan definitie voor categorie {0} niet lezen",
+			"DMS_AUTOCOMPLETION_RULES_ERROR": "Kan auto-aanvullings regels voor aanhangsel van klas {0} niet lezen",
+			"DMS_UPDATE_ERROR": "Aanhangsel bijwerken is mislukt",
+			"DOMAIN_NOTFOUND": "Domein {0} niet gevonden",
+			"ILLEGAL_CRON_EXPRESSION": "Niet geldige cron expressie",
+			"LOCKED_CARD": "Gebruiker {0} is de kaart aan het bijwerken sinds {1} seconde",
+			"LOOKUP_NOTFOUND": "Zoeklijst niet gevonden voor type {0}",
+			"LOOKUP_TYPE_NOTFOUND": "Zoeklijst type {0} niet gevonden",
+			"MENU_NOTFOUND": "Menu niet gevonden",
+			"NOTFOUND": "Item niet gevonden",
+			"ORM_AMBIGUOUS_DIRECTION": "Kan niet automatisch de richting van de relatie bepalen",
+			"ORM_CANT_CREATE_DATABASE": "Kan geen database maken",
+			"ORM_CANT_CREATE_USER": "Kan de gebruiker niet maken",
+			"ORM_CANT_DELETE_CARD_WITH_RELATION": "Kan geen kaarten met relaties verwijderen",
+			"ORM_CHANGE_LOOKUPTYPE_ERROR": "Kan het zoeklijst type niet veranderen",
+			"ORM_CONTAINS_DATA": "Kan geen klassen of attributen van tabellen of domeinen verwijderen welke nog records bevatten",
+			"ORM_CQL_COMPILATION_FAILED": "Niet geldige CQL query",
+			"ORM_CSV_INVALID_ATTRIBUTES": "Kan de kaart niet opslaan: ongeldige waarde gevonden",
+			"ORM_DATABASE_CONNECTION_ERROR": "Database connectie fout, probeer een reset van de connectie parameters",
+			"ORM_DBNOTCONFIGURED": "Database niet geconfigureerd",
+			"ORM_DOMAIN_HAS_REFERENCE": "Kan geen domein met geassocieerde referenties verwijderen",
+			"ORM_DUPLICATE_ATTRIBUTE": "Deze attribuut bestaat al",
+			"ORM_DUPLICATE_TABLE": "Een klas met deze naam bestaat al",
+			"ORM_DUPLICATE_USER": "Deze gebruikersnaam bestaat al",
+			"ORM_ERROR_CARD_SELECT": "Kan de kaarten niet ophalen",
+			"ORM_ERROR_CARD_UPDATE": "Kan de kaarten niet bijwerken",
+			"ORM_ERROR_DOMAIN_CREATE": "Kan het domein niet maken",
+			"ORM_ERROR_DOMAIN_DELETE": "Kan het domein niet verwijderen",
+			"ORM_ERROR_DOMAIN_MODIFY": "Kan het domein niet bijwerken",
+			"ORM_ERROR_GENERIC_SQL": "SQL fout: {0}",
+			"ORM_ERROR_GETTING_PK": "Kan de primaire sleutel niet krijgen",
+			"ORM_ERROR_INCOMPATIBLE_CLASS": "Niet compatibele klas: {0}",
+			"ORM_ERROR_LOOKUP_CREATE": "Kan de zoeklijst niet maken",
+			"ORM_ERROR_LOOKUP_DELETE": "kan de zoeklijst niet verwijderen",
+			"ORM_ERROR_LOOKUP_MODIFY": "Kan de zoeklijst niet bijwerken",
+			"ORM_ERROR_RELATION_CREATE": "Kan de relatie niet maken",
+			"ORM_ERROR_RELATION_MODIFY": "kan de relatie niet bijwerken",
+			"ORM_FILTER_CONFLICT": "Conflicterende filter definitie",
+			"ORM_FULLCARDS_MULTIPLEDOMAINS": "Krijg geen volledige kaarten bij meerdere domeinen",
+			"ORM_GENERIC_ERROR": "Fout ontstaan tijdens ophalen/versturen van gegevens",
+			"ORM_ICONS_FILE_ALREADY_EXISTS": "Bestand {0} bestaat al",
+			"ORM_ICONS_FILE_NOT_FOUND": "Bestand niet gevonden",
+			"ORM_ICONS_UNSUPPORTED_TYPE": "Bestand type wordt niet ondersteund",
+			"ORM_ILLEGAL_NAME_ERROR": "Illegale naam: {0}",
+			"ORM_LOOKUPTYPE_ALREADY_EXISTS": "Er bestaat al een zoeklijst type met dezelfde omschrijving",
+			"ORM_MALFORMED_PATCH": "Niet-leesbare fix",
+			"ORM_NOT_NULL_VIOLATION": "Niet null constraint geschonden",
+			"ORM_POSTGIS_NOT_FOUND": "PostGIS is niet geinstalleerd",
+			"ORM_READ_ONLY_RELATION": "Alleen-Lezen relatie",
+			"ORM_READ_ONLY_TABLE": "Alleen-Lezen klas",
+			"ORM_SQL_PATCH": "Fout in SQL fix",
+			"ORM_TABLE_HAS_CHILDREN": "Kan geen klas met subklassen verwijderen",
+			"ORM_TABLE_HAS_DOMAIN": "Kan geen klas welke een domein bezit verwijderen",
+			"ORM_TYPE_ERROR": "Type mismatch",
+			"ORM_UNIQUE_VIOLATION": "Unieke constraint geschonden",
+			"OUT_OF_DATE_PROCESS": "<em>Process was not congruent, reload the list</em>",
+			"PARAMETER_CLASS_UNAVAILABLE": "Kan Java klas {0} niet initialiseren",
+			"PRIVILEGE_GROUP_NOTFOUND": "Privilege niet gevonden voor groep {0}",
+			"PRIVILEGE_NOTFOUND": "Privilege niet gevonden voor groep {0} van klas {0}",
+			"REPORT_COMPILE_ERROR": "Rapport compilatie fout",
+			"REPORT_GROUPNOTALLOWED": "Groep {0} heeft geen rechten om {1} te starten",
+			"REPORT_IMPORT_ERROR": "Invoeg fout",
+			"REPORT_INVALID_FILE": "Ongeldig rapport bestand",
+			"REPORT_INVALID_PARAMETER_CLASS": "Ongeldige Java klas parameter gevonden! Operatie afgebroekn.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_ATTRIBUTE": "Ongeldige CMDBuild attribuut naam in parameters gevonden! Operatie afgebroken.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_CLASS": "Ongeldige CMDBuild klas naam in parameters gevonden! Operatie afgebroken.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_LOOKUP": "Ongeldige CMDBuild zoeklijst naam in parameter gevonden! Operatie afgebroken.",
+			"REPORT_INVALID_PARAMETER_FORMAT": "Rapport parameter naam formaat niet correct! Beschikbare formaten: \"name\", \"name.cmdbuildClass.attribute\", \"name.lookup.lookupname\"",
+			"REPORT_INVALID_PARAMETER_LOOKUP_CLASS": "Ongeldige zoeklijst parameter in Java klas gevonden! Vereist \"java.lang.Integer\". Operatie afgebroken.",
+			"REPORT_INVALID_PARAMETER_REFERENCE_CLASS": "Ongeldige referentie parameter in Java klas gevonden! Vereist \"java.lang.Integer\". Operatie afgebroken.",
+			"REPORT_INVALID_PARAMETER_VALUE": "Ongeldige parameter waarde gevonden! Operatie afgebroken.",
+			"REPORT_INVISIBLE_PARAMETER": "Een rapport parameter verwijst naar een verborgen attribuut! Operatie afgebroken.",
+			"REPORT_LOAD_DESIGN_ERROR": "Kan jasper design niet laden",
+			"REPORT_NOCLASS_ERROR": "Compilatie fout - kan klas niet laden: {0}",
+			"REPORT_NOTFOUND": "Kan rapport {0} niet laden",
+			"REPORT_UPLOAD_ERROR": "Fout tijdens ophalen",
+			"SCHEDULER_INTERNAL_ERROR": "Interne Scheduler fout: {0}",
+			"SERVICE_UNAVAILABLE": "Service niet beschikbaar",
+			"WF_CANNOT_ABORT_PROCESS": "Kan het proces niet afbreken",
+			"WF_CANNOT_ACCEPT_WORKITEM": "Kan gebruiker aktiviteit niet accepteren",
+			"WF_CANNOT_COMPLETE_WORKITEM": "Kan gebruiker aktiviteit niet afronden",
+			"WF_CANNOT_CONFIGURE_CMDBEXTATTR": "Kan het uitgebreide attribuut {0} niet instellen",
+			"WF_CANNOT_FIND_XPDL": "Kan de XPDL definitie niet vinden",
+			"WF_CANNOT_GETWAPI_CONNECTION": "Kan geen verbinding maken met de werkstroom machine",
+			"WF_CANNOT_GET_PROCESSCARDID": "Kan het proces kaart id niet krijgen",
+			"WF_CANNOT_GET_PROCESS_VARIABLES": "Kan de proces variabelen niet krijgen",
+			"WF_CANNOT_GET_WORKITEM": "Krijg geen gebruiker aktiviteit",
+			"WF_CANNOT_GET_WORKITEMS": "Krijg geen gebruikers aktiviteiten lijst",
+			"WF_CANNOT_GET_WORKITEM_VARIABLES": "Krijg geen gebruiker aktiviteiten variabelen",
+			"WF_CANNOT_LOAD_ACTIVITIES": "Kan geen aktiviteiten laden voor proces {0}",
+			"WF_CANNOT_REACT_CMDBEXTATTR": "Kan het uitgebreide attribuut {0} niet afronden",
+			"WF_CANNOT_REASSIGN_WORKITEM": "Kan de gebruikers aktiviteit niet opnieuw toekennen",
+			"WF_CANNOT_RESOLVE_PARTICIPANT": "Kan de deelnemer niet vinden",
+			"WF_CANNOT_RESUME_WORKITEM": "Kan de gebruikers aktiviteit niet voortzetten",
+			"WF_CANNOT_START": "Kan het proces niet starten",
+			"WF_CANNOT_SUSPEND_PROCESS": "Kan het proces niet onderbreken",
+			"WF_CANNOT_UPDATE_WORKITEM_VARIABLES": "Kan gebruiker aktiviteit variabelen niet bijwerken",
+			"WF_CANNOT_UPLOAD_PACKAGE": "Kan het pakket niet ophalen",
+			"WF_EMAIL_CANNOT_RETRIEVE_MAIL": "Kan geen berichten ontvangen",
+			"WF_EMAIL_NOT_CONFIGURED": "Berichten beheer niet geconfigureerd",
+			"WF_EMAIL_NOT_SENT": "Bericht niet verstuurd",
+			"WF_EXTATTR_CREATEREPORT_FACTORYNOTINSESSION": "Fout tijdens bouwen van rapport: de generator is niet in bedrijf",
+			"WF_GENERIC_ERROR": "Algemene Werkstroom fout",
+			"WF_PACKAGE_ERROR": "Fout in pakket",
+			"WF_PROCESSINFO_NOT_FOUND": "XPDL bestand ontbreekt voor proces",
+			"WF_START_ACTIVITY_NOT_FOUND": "<em>I have not found a start activity for process {0}</em>",
+			"WF_WAPI_CONNECTION_ERROR": "Kan geen verbinding maken met de werkstroom server",
+			"WF_WORKITEM_VARIABLES_REQUIRED": "Veld vereist: {0}",
+			"WF_WRONG_CREDENTIALS": "Verkeerde kredenties voor gebruik werkstroom",
+			"WF_WRONG_XPDL_CLASSNAME": "Verkeerde klas naam voor gespecificeerde XPDL",
+			"WF_XPDL_CLASSNAME_MISSING": "Ontbrekende koppeling met CMDBuild klas in XPDL",
+			"WF_XPDL_USERSTOP_MISSING": "Ontbrekend userStoppable veld in het XPDL bestand",
+			"WIDGET_SERVICE_CONNECTION_ERROR": "Bericht versturen mislukt. Mogelijke oorzaken: 1) De service is niet ingericht; 2) De URL en/of het poortnummer van de bestemming is niet juist",
+			"WIDGET_SERVICE_MALFORMED_REQUEST": "Controleer of de naamgeving, de methode naam en de parameters van de web service juist zijn"
+		},
+		"reference_invalid": "De waarde komt niet overeen met het filter",
+		"server_error": "Server onbereikbaar",
+		"server_error_code": "Fout onstaan tijdens verzenden van gegevens naar de server: ",
+		"show_detail": "Toon details",
+		"template_error": "Sjabloon fout",
+		"unknown_error": "Er is een fout opgetreden",
+		"wrong_wf_widgets": "Er was een fout tijdens de opslag van de volgende visual controls: "
+	},
+	"info": {
+		"card_not_found": "De kaart past niet bij het huidige filter"
+	},
+	"login": {
+		"change_user": "Andere gebruiker",
+		"failed": "Login Mislukt",
+		"language": "Taal",
+		"login": "Login",
+		"multi_group": "Kies een groep",
+		"password": "Wachtwoord",
+		"relogin_message": "De authentificatie sessie is verlopen. Alstublieft uw wachtwoord opnieuw invoeren.",
+		"relogin_title": "Sessie verlopen",
+		"title": "Login alstublieft",
+		"username": "Gebruikernaam",
+		"waitMsg": "Gegevens versturen ...",
+		"waitTitle": "Verbinden"
+	},
+	"management": {
+		"description": "Gegevens beheer module",
+		"findfilter": {
+			"add": "Toevoegen",
+			"all": "Alle",
+			"attachments": "Bijlage",
+			"attribute": "Attribuut",
+			"attributes": "Attributen",
+			"apply": "Toepassen",
+			"begin": "Begin met",
+			"between": "Tussen",
+			"clear_filter": "Filter legen",
+			"copyof": "Kopie van",
+			"different": "Verschillend",
+			"direction": "Richting",
+			"dontbegin": "Begint niet met ",
+			"dontend": "Eindigd niet op ",
+			"dontlike": "Bevat geen",
+			"end": "Eindigd op",
+			"equals": "Gelijk",
+			"filter": "Filter",
+			"fromSelection": "VanSelectie",
+			"functions" : "<em>Function</em>",
+			"go_filter": "Filter",
+			"like": "Bevat",
+			"list": "Lijst",
+			"major": "Grooter dan",
+			"minor": "Kleiner dan",
+			"msg": {
+				"attention": "Attentie",
+				"error": "Fout",
+				"no_removed": "Het filter is niet verwijderd",
+				"no_server": "Server onbereikbaar",
+				"no_set": "Het filter is niet ingesteld",
+				"question_sure": "Weet U het zeker?"
+			},
+			"notinrel": "Geen enkele",
+			"notnull": "Is niet leeg",
+			"nullo": "Is leeg",
+			"newfilter": "Nieuw zoek filter",
+			"relations": "Relatie",
+			"remove": "Verwijderen",
+			"save_filter": "Filter bewaren",
+			"selectedAttr": "Geselecteerde attributen",
+			"saveandapply": "Opslaan en toepassen",
+			"set_filter": "Zoek filter",
+			"setted": "Filter ingesteld",
+			"show_all": "Toon alles",
+			"title": "Kies een attribuut",
+			"window_title": "Zoek filter"
+		},
+		"graph": {
+			"action": "Relatie grafiek",
+			"icon_tooltip": "Open relatie grafiek",
+			"title": "Relatie grafiek"
+		},
+		"modcard": {
+			"add_attachment": "Bijlage toevoegen",
+			"add_attachment_window": {
+				"category": "Kategorie",
+				"description": "Omschrijving",
+				"load_attachment": "Bijlage laden",
+				"select_category": "Selecteer een kategorie ...",
+				"window_title": "Bijlage toevoegen"
+			},
+			"add_card": "Kaart toevoegen",
+			"add_relations": "Relaties toevoegen",
+			"add_relations_window": {
+				"domain": "Domein",
+				"filter_tab": "Filter",
+				"list_tab": "Lijst",
+				"select_domain": "Selecteer een domein...",
+				"window_title": "Relaties toevoegen"
+			},
+			"attachment_columns": {
+				"author": "Schrijver",
+				"category": "Kategorie",
+				"creation_date": "Begin datum",
+				"description": "Omschrijving",
+				"filename": "Bestandsnaam",
+				"item": "bijlage",
+				"items": "bijlagen",
+				"modification_date": "Modificatie datum",
+				"version": "Versie"
+			},
+			"clone_card": "Kopieer kaart",
+			"delete_attachment": "verwijder bijlage",
+			"delete_attachment_confirm": "Weet je zeker dat je deze bijage wilt verwijderen ?",
+			"delete_card": "Verwijder kaart",
+			"delete_card_confirm": "Weet je zeker dat je deze kaart wilt verwijderen ?",
+			"delete_relation": "Verwijder relatie",
+			"delete_relation_confirm": "Weet je zeker dat je deze relatie wilt verwijderen ?",
+			"detail_window": {
+				"detail_attributes": "Detail's attributen",
+				"relation_attributes": "Relatie's attributen"
+			},
+			"download_attachment": "Ophalen bijlage",
+			"edit_attachment": "Aanpassen bijlage",
+			"edit_relation": "Aanpassen relatie",
+			"gis": {
+				"geo_attributes": "Geografische attributen",
+				"gisNavigation": "GIS Navigatie",
+				"position": "Positie",
+				"zoom": "Zoom"
+			},
+			"history_columns": {
+				"activity_name": "Aktiviteit naam",
+				"attributes": "Attributen",
+				"begin_date": "Begin datum",
+				"code": "Kode",
+				"description": "Omschrijving",
+				"destclass": "Klas",
+				"domain": "Domein",
+				"end_date": "Eind datum",
+				"performer": "Activiteit uitvoerder",
+				"relation": "Relatie",
+				"user": "Gebruiker"
+			},
+			"maptoolbar": {
+				"add": "Toevoegen",
+				"drag": "Aanpassen",
+				"drag_map": "Verschuif kaart",
+				"zoom_in": "Zoom in",
+				"zoom_out": "Zoom uit"
+			},
+			"modify_card": "Kaart aanpassen",
+			"modify_note": "Notitie aanpassen",
+			"modify_relation_window": {
+				"window_title": "Relatie aanpassen"
+			},
+			"open_relation": "Open gerelateerde kaart",
+			"other_fields": "Andere",
+			"relation_columns": {
+				"begin_date": "Begin datum",
+				"code": "Kode",
+				"description": "Omschrijving",
+				"destclass": "Klas",
+				"domain": "Domein",
+				"item": "Item",
+				"items": "Items"
+			},
+			"search_reference_window": {
+				"window_title": "Zoek in "
+			},
+			"subclass": "Subklas",
+			"tabs": {
+				"attachments": "Bijlage",
+				"card": "Kaart",
+				"detail": "Detail",
+				"history": "Geschiedenis",
+				"map": "Kaart",
+				"notes": "Notities",
+				"relations": "Relaties"
+			},
+			"title": "Lijst - ",
+			"treetitle": "Kaarten",
+			"view_relation": "Toon gerelateerde kaarten"
+		},
+		"moddetail": {
+			"adddetail": "Detail toevoegen",
+			"deletedetail": "Detail verwijderen",
+			"detail": "Detail",
+			"editdetail": "Detail aanpassen",
+			"showattach": "Toon bijlage",
+			"showdetail": "Toon detail",
+			"showgraph": "Toon grafiek",
+			"shownotes": "Toon notities"
+		},
+		"modmenu": {
+			"menu": "Navigatie"
+		},
+		"modreport": {
+			"add_report": "Rapport toevoegen",
+			"delete_report": "Rapport verwijderen",
+			"modify_report": "Rapport aanpassen",
+			"reportForm": {
+				"description": "Omschrijving",
+				"name": "Naam",
+				"report": "Rapport"
+			},
+			"report_parameters": "Rapport parameters",
+			"title": "Lijst - ",
+			"treetitle": "Rapport"
+		},
+		"modutilities": {
+			"bulkupdate": {
+				"title": "Meerdere aanpassingen",
+				"countMessage": "{0} kaarten worden aangepast"
+			},
+			"changepassword": {
+				"newpw": "Nieuw wachtwoord",
+				"oldpw": "Oud wachtwoord",
+				"repnew": "Herhaal nieuw wachtwoord",
+				"successmsgtext": "Wachtwoord gewijzigd",
+				"title": "Verander wachtwoord",
+				"validationtext": "Wachtwoorden komen niet overeen"
+			},
+			"csv": {
+				"csvfile": "CSV bestand",
+				"error": "Fout",
+				"exportfile": "Export",
+				"importfailure": "Importeren mislukt",
+				"importsuccess": "Importeren is succesvol verlopen",
+				"info": "Info",
+				"noupdate": "Geen kaarten bij te werken",
+				"selectaclass": "Selecteer een klas",
+				"separator": "Scheidingsteken",
+				"shownonvalid": "Toon alleen ongeldige records",
+				"title": "Importeer CSV bestand",
+				"title_export": "Exporteer CSV bestand",
+				"warning": "Waarschuwing"
+			},
+			"title": "Hulpprogramma's"
+		},
+		"modutility": {
+			"title": "Hulpprogramma's"
+		},
+		"modview": {
+			"title": "Views"
+		},
+		"modworkflow": {
+			"abort_card": "Proces afbreken",
+			"abort_card_confirm": "Weet je zeker dat je dit proces wilt afbreken?",
+			"activitydocumentation": "Operatieve Instructie",
+			"add_card": "Start",
+			"completed": "Klaar",
+			"custom_steps": "Gebruiker gedefinieerde stappen",
+			"delete_card": "Proces afbreken",
+			"delete_card_confirm": "Weet je zeker dat je dit proces wilt afbreken?",
+			"extattrs": {
+				"attachments": {
+					"must_save_to_add": "Je kan geen bijlage toevoegen voordat de aktiviteit is opgeslagen"
+				},
+				"calendar": {
+					"wrong_config": "De kalender is niet goed geconfigureerd"
+				},
+				"createreport": {
+					"format_label": "Formaat"
+				},
+				"linkcards": {
+					"required": "Selecteer alstublieft een aantal kaarten - "
+				},
+				"manageemail": {
+					"addresshdr": "Adres",
+					"ccfld": "CC",
+					"compose": "Email samenstellen",
+					"datehdr": "<em>Archiving date</em>",
+					"deleteicon": "Verwijder",
+					"editicon": "Aanpassen",
+					"fromfld": "Van",
+					"lookup": {
+						"Draft": "Klad",
+						"New": "Nieuw",
+						"Outgoing": "Uitgaand",
+						"Received": "Ontvangen",
+						"Sent": "verstuurd"
+					},
+					"subjectfld": "Onderwerp",
+					"subjecthdr": "Onderwerp",
+					"tofld": "Aan",
+					"updateTemplateConfirm": "Dit zal alle niet-verstuurde emails verwijderen.",
+					"viewicon": "Bekijken",
+					"mailsAreChanged": "De gegenereerde e-mails zijn varanderd",
+					"regenerates": "Regenereer e-mails"
+				},
+				"managerelation": {
+					"required": "Selecteer alstublieft een aantal relaties - "
+				},
+				"notes": {
+					"must_save_to_modify": "Je kan geen notities aanpassen voordat de aktiviteiten zijn opgeslagen."
+				}
+			},
+			"history_columns": {
+				"attributes": "Attributen",
+				"begin_date": "Begin datum",
+				"description": "Omschrijving",
+				"domain": "Domein",
+				"end_date": "Eind datum",
+				"relation": "Relatie",
+				"user": "Gebruiker"
+			},
+			"interrupted": "Onderbroken",
+			"modify_card": "Aktiviteit aanpassen",
+			"modify_note": "Notitie aanpassen",
+			"open_attachment": "Open bijlagen",
+			"open_note": "Open notitie",
+			"started": "Gestart",
+			"status": "Status",
+			"statuses": {
+				"all": "Alles",
+				"closed.aborted": "Afgebroken",
+				"closed.completed": "Afgerond",
+				"open.not_running.suspended": "Onderbroken",
+				"open.running": "Open"
+			},
+			"tabs": {
+				"attachments": "Bijlage",
+				"card": "Aktiviteit",
+				"detail": "Details",
+				"history": "Geschiedenis",
+				"notes": "Notitie",
+				"options": "Opties",
+				"relations": "Relaties",
+				"sketch": "Schets"
+			},
+			"title": "Lijst - ",
+			"treetitle": "Processen"
+		},
+		"welcome": {
+			"body": "Gegevens beheer module.",
+			"title": "Welkom"
+		}
+	},
+	"patch": {
+		"patch_list": "Lijst met beschikbare correcties"
+	},
+	"vtype_text": {
+		"cmdbcomment": "Pijp of apostrophe niet toegestaan",
+		"cmdbcommentrelaxed": "Pijp niet toegestaan",
+		"invalid_character": "Ongeldig karakter",
+		"wrong_decimal_part": "Max {0} decimal digits",
+		"wrong_integer_part": "Max {0} integer digits",
+		"wrong_ip_address": "Ongeldig IP adres",
+		"wrong_time": "{0} is geen geldige waarde. Het moet in het volgende formaat {1}"
+	},
+	"warnings": {
+		"link_cards_changed_values": "De selectie van \"{0}\" is bijgewerkt",
+		"only_filtered": "De wijzigingen worden alleen toegepast bij kaarten welke bij het huidige filter passen",
+		"popup_block": "We hebben ontdekt dat u popup blokkeer software gebruikt, schakel deze uit om dit programma te draaien",
+		"warning_message": "Waarschuwing"
+	},
+	"active": "Aktief",
+	"addFilter": "Filter toevoegen",
+	"addProject": "<em>Add Project</em>",
+	"addTemplate": "<em>Add Template</em>",
+	"addView": "Venster toevoegen",
+	"add_attachment_from_db": "<em>Add attachments from database</em>",
+	"attachfile": "<em>Attach File</em>",
+	"attachmentsLookup": "<em>Email attachments Lookup</em>",
+	"attention": "Attentie",
+	"attribute": "<em>Attribute</em>",
+	"availableFilters": "Beschikbare Filters",
+	"bcc": "<em>Bcc</em>",
+	"bim": "<em>BIM</em>",
+	"buttons_to_disable": "<em>Buttons to disable</em>",
+	"camera": "<em>Camera</em>",
+	"cc": "<em>Cc</em>",
+	"checkFrequency": "<em>Check frequency (minutes)</em>",
+	"choose_attachment_from_db": "<em>Choose attachments from Database</em>",
+	"class": "<em>Class</em>",
+	"clean_word_pasted_text": "<em>Clean the text pasted from Word or other Rich Text applications</em>",
+	"clearFilter": "<em>Clear Filter</em>",
+	"clear_row_and_colun_privilege": "Verwijder rij en kolom rechten",
+	"container": "<em>Container</em>",
+	"controls": "<em>Controls</em>",
+	"cql_filter": "<em>CQL filter</em>",
+	"description_": "Omschrijving",
+	"disable": "<em>Disable</em>",
+	"display_less_attributes": "<em>Display less attributes</em>",
+	"display_more_attributes": "<em>Display more attributes</em>",
+	"download_ifc_file": "<em>Download Ifc file</em>",
+	"emailBody": "<em>Body</em>",
+	"emailTemplate": "<em>Email Template</em>",
+	"enable": "<em>Enable</em>",
+	"enabled": "Geaktiveerd",
+	"error": "Fout",
+	"error_bimserver_connection": "<em>I'm not able to connect to Bimserver</em>",
+	"export": "<em>Export</em>",
+	"expose": "<em>Expose</em>",
+	"file_name": "<em>File name</em>",
+	"filter": "Filter",
+	"filterView": "Van Filter",
+	"filters_for_groups": "Filters for groepen",
+	"format_csv": "<em>CSV</em>",
+	"format_odt": "<em>OpenOffice Odt</em>",
+	"format_pdf": "<em>Adobe Pdf</em>",
+	"format_rtf": "<em>Rich Text Format</em>",
+	"from": "<em>From<em>",
+	"front": "<em>Front</em>",
+	"global": "<em>Global</em>",
+	"ifc_file": "<em>File IFC</em>",
+	"itIsNotAllowedFilterWithCalculatedParams": "<em>It's not allowed to use a filter with calculated parameters</em>",
+	"itIsNotAllowedFilterWithRuntimeParams": "<em>It's not allowed to use a filter with user selectable parameters</em>",
+	"last_checkin": "<em>Last checkin</em>",
+	"layers": "<em>Layers</em>",
+	"lock_cards_in_edit": "Blokkeer kaarten tijdens bewerken",
+	"lock_timeout": "Blokkeer afloop (seconden)",
+	"loggedGroup": "<em>Logged Group</em>",
+	"loggedUser": "<em>Logged User</em>",
+	"mode": "<em>Mode</em>",
+	"modifyFilter": "Bijwerken Filter",
+	"modifyProject": "<em>Modify Project</em>",
+	"modifyTemplate": "<em>Modify Template</em>",
+	"modifyView": "Bijwerken Venster",
+	"multiGroup": "<em>Multi group</em>",
+	"name": "Naam",
+	"no_bim_project_for_card": "<em>There is no BIM project for this card</em>",
+	"not_set": "Niet gezet",
+	"open_3d_viewer": "<em>Open 3D viewer</em>",
+	"pan": "<em>Pan</em>",
+	"password": "<em>Password</em>",
+	"privileges_on_columns": "Kolom rechten",
+	"privileges_on_rows": "Rij rechten",
+	"projects": "Projects",
+	"reference_to_root": "<em>Reference to Root</em>",
+	"removeFilter": "Verwijder Filter",
+	"removeProject": "<em>Remove Project</em>",
+	"removeTemplate": "<em>Remove Template</em>",
+	"removeView": "Verwijder Venster",
+	"remove_formatting": "<em>Remove formatting</em>",
+	"reset": "<em>Reset</em>",
+	"root": "<em>Root</em>",
+	"rotate": "<em>Rotate</em>",
+	"row_and_column_privileges": "Rij en kolom rechten",
+	"row_add": "<em>Add row</em>",
+	"row_delete": "<em>Delete row</em>",
+	"row_edit": "<em>Edit row</em>",
+	"search_filters": "Zoek Filters",
+	"select_a_class": "<em>Select a Class</em>",
+	"selected_object": "<em>Selected Object</em>",
+	"set": "Instellen",
+	"setFilter": "<em>Set Filter</em>",
+	"setLater": "<em>Input Parameter</em>",
+	"show_name_of_locker_user": "Toon blokkeerder gebruikersnaam",
+	"side": "<em>Side</em>",
+	"sqlView": "Van SQL",
+	"subject": "<em>Subject</em>",
+	"targetClass": "Doel Klas",
+	"to": "<em>To</em>",
+	"top": "<em>Top</em>",
+	"translations" : "<em>Translations</em>",
+	"translations_enabled" : "<em>Enabled languages</em>",
+	"transparent": "<em>Transparent</em>",
+	"tree": "<em>Tree</em>",
+	"tree_navigation": "<em>Navigation tree</em>",
+	"tree_navigation_add": "<em>Add navigation tree</em>",
+	"tree_navigation_attributes": "<em>Navigation tree attributes</em>",
+	"tree_modify": "<em>Modify tree</em>",
+	"tree_remove": "<em>Remove tree</em>",
+	"tree_root_cql": "<em>Root CQL filter</em>",
+	"trees_navigation": "<em>Navigation trees</em>",
+	"ui_configuration_for_groups": "<em>UI configuration for group</em>",
+	"unlock_all_cards": "Deblokkeer alle kaarten",
+	"uploading_attachment": "<em>Uploading attachment...</em>",
+	"url": "<em>URL</em>",
+	"username": "<em>Username</em>",
+	"value": "<em>Value</em>",
+	"views": "Vensters",
+	"workflow": "<em>Workflow</em>",
+	"workflow_attributes": "<em>Workflow attributes</em>",
+	"workflow_by_cql": "<em>by Cql</em>",
+	"workflow_by_name": "<em>by name</em>",
+	"workflow_cql_filter": "<em>Cql filter</em>",
+	"workflow_query_tipology": "<em>Selection</em>",
+	"you_have_not_set_a_filter": "U heeft geen filter ingesteld",
+	"zoom": "<em>Zoom</em>"
+}

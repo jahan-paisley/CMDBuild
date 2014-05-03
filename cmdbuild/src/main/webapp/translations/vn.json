@@ -1,0 +1,1412 @@
+{
+	"description": "Tiếng Việt",
+	"release": "2.2-dev",
+	"administration": {
+		"description": "Mô-đun Quản lý",
+		"email": {
+			"title": "<em>Email</em>",
+			"accounts": {
+				"account": "<em>Account</em>",
+				"active": "<em>Active</em>",
+				"add": "<em>Add account</em>",
+				"address": "<em>Address</em>",
+				"credentials": "<em>Credentials</em>",
+				"enableMoveRejectedNotMatching": "<em>Enable move rejected not matching</em>",
+				"enableSsl": "<em>Enable SSL</em>",
+				"imapPort": "<em>IMAP port</em>",
+				"imapServer": "<em>IMAP server</em>",
+				"incoming": "<em>Incoming</em>",
+				"incomingFolder": "<em>Incoming folder</em>",
+				"isDefault": "<em>Default</em>",
+				"modify": "<em>Modify account</em>",
+				"outgoing": "<em>Outgoing</em>",
+				"password": "<em>Password</em>",
+				"processedFolder": "<em>Processed folder</em>",
+				"rejectedFolder": "<em>Rejected folder</em>",
+				"remove": "<em>Remove account</em>",
+				"setDefault": "<em>Set as default</em>",
+				"smtpPort": "<em>SMTP Port</em>",
+				"smtpServer": "<em>SMTP server</em>",
+				"title": "<em>Accounts</em>",
+				"username": "<em>Username</em>"
+			},
+			"templates": {
+				"add": "<em>Add template</em>",
+				"body": "<em>Body</em>",
+				"modify": "<em>Modify template</em>",
+				"remove": "<em>Remove template</em>",
+				"template": "<em>Template</em>",
+				"title": "<em>Templates</em>"
+			}
+		},
+		"modClass": {
+			"add_class": "Thêm Lớp mới",
+			"attributeProperties": {
+				"add_attribute": "Thêm thuộc tính",
+				"baseProperties": "Ðặc tính cơ bản",
+				"criterion": "Tiêu chuẩn",
+				"delete_attribute": "Xóa thuộc tính ",
+				"description": "Mô tả",
+				"destination": "Ðiểm đến",
+				"direction": {
+					"asc": "Tăng dần",
+					"desc": "Giảm dần"
+				},
+				"domain": "Tên miền",
+				"editorType": {
+					"html": "Html",
+					"label": " Trình soạn thảo thường",
+					"plain": "Văn bản đơn giản"
+				},
+				"field_hidden": "Ẩn",
+				"field_read": "Chỉ đọc",
+				"field_visibility": "Chế độ chỉnh sửa",
+				"field_write": "Có thể chỉnh sửa",
+				"group": "Nhóm",
+				"inherited": "Được Kế thừa",
+				"isactive": "Đang sử dụng",
+				"isbasedsp": "Hiển thị theo danh sách",
+				"isdefault": "Mặc định",
+				"isnotnull": "Bắt buộc",
+				"isunique": "Duy nhất",
+				"length": "Ðộ dài",
+				"lookup": "Tra cứu",
+				"meta": {
+					"add": "Thêm mô tả dữ liệu",
+					"key": "Từ khóa",
+					"remove": "Xóa mô tả dữ liệu ",
+					"title": "Sửa mô tả dữ liệu",
+					"value": "Giá trị"
+				},
+				"modify_attribute": "Sửa đổi thuộc tính",
+				"msg_warning_drop_row": "Sắp xếp lại chỉ áp dụng khi các thuộc tính kế thừa được hiển thị",
+				"name": "Tên",
+				"not_in_use": "Không sử dụng",
+				"pipeNotAllowed": "Vui lòng sử dụng OR thay vì |",
+				"precision": "Ðộ chính xác",
+				"referencequery": "Bộ lọc",
+				"scale": "Thang chia",
+				"set_sorting_criteria": "Thiết lập tiêu chuẩn phân loại",
+				"type": "Loại",
+				"typeProperties": "Các loại đặc tính"
+			},
+			"attributes_title": "Quản lý thuộc tính",
+			"classProperties": {
+				"active": "Đang sử dụng",
+				"description": "Mô tả",
+				"inherits": "Kế thừa từ",
+				"modify_class": "Chỉnh sửa Lớp",
+				"name": "Tên",
+				"print_class": "In Lớp",
+				"remove_class": "Xóa Lớp",
+				"simple": "Ðơn giản",
+				"standard": "Tiêu chuẩn",
+				"superclass": "Cao cấp",
+				"type": "Loại",
+				"wait_msg": "Đang gửi dữ liệu...",
+				"wait_title": "Ðang kết nối"
+			},
+			"class_property": "Ðặc tính",
+			"classtype": {
+				"simpletable": "Ðơn giản",
+				"standard": "Tiêu chuẩn"
+			},
+			"domainProperties": {
+				"add_domain": "Thêm tên miền",
+				"cardinality": "Số lượng",
+				"class_destination": "Ðiểm đến",
+				"class_target": "Ðiểm bắt đầu",
+				"delete_domain": "Xóa tên miền",
+				"description": "Mô tả tên miền",
+				"description_direct": "Mô tả trực tiếp",
+				"description_inverse": "Mô tả ngược",
+				"domain": "Tên miền",
+				"is_active": "Đang sử dụng ",
+				"m_d": "T/C",
+				"master_detail": "Tổng thể/Chi tiết",
+				"md_label": "Nhãn Tổng thể/Chi tiết",
+				"modify_domain": "Sửa đổi tên miền",
+				"name": "Tên",
+				"title_add": "Thêm tên miền",
+				"title_modify": "Sửa đổi tên miền \"{0}\""
+			},
+			"domains_title": "Quản lý tên miền",
+			"errors": {
+				"table": {
+					"cast": "Lỗi khi sửa đổi đặc tính \"superclass\", Lớp đang có chứa dữ liệu hay có các Lớp con",
+					"duplicate": "Trùng lặp tên Lớp",
+					"parent_not_found": "Lớp cha không tồn tại"
+				}
+			},
+			"geo_attributes": {
+				"card_binding": "Thẻ liên kết",
+				"externalGraphic": "Biểu tượng",
+				"fillColor": "Thay màu",
+				"fillOpacity": "Thay độ trong suốt",
+				"graphicHeight": "Ðộ cao biểu tượng",
+				"graphicOpacity": "Ðộ mờ biểu tượng",
+				"graphicWidth": "Bề rộng biểu tượng",
+				"master": "Lớp tham khảo",
+				"max_zoom": "Phóng lớn tối đa",
+				"min_zoom": "Thu nhỏ nhất ",
+				"pointRadius": "Bán kính điểm",
+				"strokeColor": "Màu đường viền",
+				"strokeDashstyle": "Kiểu đường viền",
+				"strokeOpacity": "Độ mờ đường viền",
+				"strokeStyles": {
+					"dash": "Gạch ngang",
+					"dashdot": "Nét đứt",
+					"dot": "Dấu chấm",
+					"longdash": "Gạch dài",
+					"longdashdot": "Đường đứt dài",
+					"solid": "đường thẳng"
+				},
+				"strokeWidth": "Bề rộng đường viền",
+				"style": "Cột",
+				"type": {
+					"line": "Dòng",
+					"point": "Ðiểm",
+					"polygon": "Đa giác"
+				},
+				"visibility": "Hiển thị"
+			},
+			"include_inherited": "Bao gồm các kế thừa",
+			"layers": "Các Lớp",
+			"print_schema": "In lược đồ",
+			"tabs": {
+				"attributes": "Thuộc tính",
+				"domains": "Tên miền",
+				"geo_attributes": "Thuộc tính địa lí",
+				"properties": "Đặc tính"
+			},
+			"title": "Quản lý Lớp",
+			"tree_title": "Danh sách Lớp",
+			"widgets": {
+				".OpenReport": {
+					"fields": {
+						"force": "Ðịnh dạng bắt buộc",
+						"presets": "Báo cáo thuộc tính",
+						"report": "Báo cáo"
+					},
+					"presetGrid": {
+						"attribute": "Thuộc tính",
+						"value": "Giá trị"
+					},
+					"title": "Tạo báo cáo"
+				},
+				".Calendar": {
+					"fields": {
+						"target": "Lớp mục tiêu",
+						"start": "Ngày bắt đầu",
+						"end": "Ngày kết thúc",
+						"title": "Tên sự kiện",
+						"filter": "Bộ lọc CQL",
+						"defaultDate": "Ngày mặc định bắt đầu hoạt động"
+					},
+					"title": "Lịch"
+				},
+				".Ping": {
+					"fields": {
+						"address": "Địa chỉ Ping",
+						"count": "Số lần Ping",
+						"templates": "Mẫu"
+					},
+					"title": "Ping"
+				},
+				".Workflow": {
+					"title": "<em>Start workflow</em>"
+				},
+				".NavigationTree": {
+					"title": "<em>Navigation tree</em>"
+				},
+				".CreateModifyCard": {
+					"fields": {
+						"target": "Lớp mục tiêu",
+						"cql": "Bộ chọn thẻ CQL",
+						"readOnly": "Chỉ đọc"
+					},
+					"title": "Tạo mới hoặc sửa đổi thẻ"
+				},
+				"commonFields": {
+					"active": "Đang sử dụng",
+					"alwaysenabled": "Luôn được kích hoạt",
+					"buttonLabel": "Nhãn ",
+					"type": "Loại"
+				},
+				"title": "Tiện ích"
+			}
+		},
+		"modDashboard": {
+			"charts": {
+				"alert": {
+					"wrongConfiguration": "Cấu hình biểu đồ không đúng"
+				},
+				"availableCharts": {
+					"gauge": "Biểu đồ thang đo",
+					"pie": "Biểu đồ hình tròn",
+					"bar": "Biểu đồ hình cột",
+					"line": "Biểu đồ đường thẳng"
+				},
+				"buttons": {
+					"add": "Thêm biểu đồ",
+					"modify": "Sửa đổi biểu đồ",
+					"remove": "Xóa biểu đồ",
+					"preview": "Xem trước"
+				},
+				"fields": {
+					"active": "Đang sử dụng",
+					"autoload": "Tự động tải dữ liệu",
+					"background": "Màu nền",
+					"categoryFieldset": "Trục phân loại",
+					"chartType": "Loại biểu đồ",
+					"dataSource": "Dữ liệu gốc",
+					"defaultValue": "Giá trị mặc định",
+					"description": "Mô tả",
+					"fieldType": "Loại trường",
+					"foreground": "Màu chữ",
+					"fromClass": "Từ lớp",
+					"labelField": "Nhãn ",
+					"legend": "Hiện chú thích",
+					"lookupType": "Loại tra cứu",
+					"max": "Tối đa",
+					"min": "Tối thiểu",
+					"name": "Tên",
+					"orientation": {
+						"label": "Chiều",
+						"values": {
+							"horizontal": "Nằm ngang",
+							"vertical": "Thẳng đứng"
+						}
+					},
+					"required": "Bắt buộc",
+					"steps": "Các bước",
+					"title": "Tiêu đề",
+					"valueField": "Giá trị",
+					"valueFieldset": "Trục giá trị"
+				},
+				"inputTypes": {
+					"BOOLEAN": "Kiểu nhị phân",
+					"DECIMAL": "Kiểu thập phân",
+					"INTEGER": "Số nguyên",
+					"DOUBLE": "Gấp đôi",
+					"DATE": "Ngày tháng",
+					"TIMESTAMP": "Đánh dấu thời gian",
+					"TIME": "Thời gian",
+					"STRING": "Chuỗi",
+					"TEXT": "Văn bản",
+					"CHAR": "Ký tự",
+					"INET": "Địa chỉ mạng"
+				},
+				"title": "Biểu đồ",
+				"typeFieldOptions": {
+					"card": "Thẻ",
+					"classes": "Chọn từ tất cả các Lớp",
+					"freeInt": "Số nguyên tự do",
+					"freeString": "Chuỗi tự do",
+					"group": "Nhóm hiện tại",
+					"lookup": "Tìm và chọn",
+					"user": "Người dùng hiện tại"
+				}
+			},
+			"layout": {
+				"add": "Thêm cột",
+				"remove": "Xóa cột trống",
+				"title": "Bố cục"
+			},
+			"properties": {
+				"add": "Thêm bảng điểu khiển",
+				"modify": "Sửa đổi bảng điều khiển",
+				"remove": "Xóa bỏ bảng điều khiển",
+				"fields": {
+					"name": "Tên",
+					"description": "Mô tả",
+					"groups": "Các nhóm sử dụng được"
+				}
+			},
+			"title": "Bảng điều khiển"
+		},
+		"modLookup": {
+			"add_lookuptype": "Thêm loại tra cứu",
+			"lookupForm": {
+				"active": "Đang sử dụng",
+				"code": "Mã",
+				"description": "Mô tả",
+				"disable_lookup": "Vô hiệu hóa tra cứu",
+				"enable_lookup": "Cho phép tra cứu",
+				"isdefault": "Mặc định",
+				"notes": "Ghi chú",
+				"parentdescription": "Mô tả trước",
+				"update_lookup": "Sửa đổi tra cứu"
+			},
+			"lookupGrid": {
+				"active": "Đang sử dụng",
+				"add_lookup": "Thêm tra cứu ",
+				"code": "Mã",
+				"description": "Mô tả",
+				"isdefault": "Mặc định",
+				"notes": "Ghi chú",
+				"parentdescription": "Mô tả trước đó"
+			},
+			"lookupType": "Loại tra cứu",
+			"lookupTypeForm": {
+				"active": "Đang sử dụng",
+				"delete_lookuptype": "Xóa loại tra cứu",
+				"description": "Mô tả",
+				"modify_lookuptype": "Sửa đổi loại tra cứu",
+				"parent": "Trước đó",
+				"title": "Quản lý tra cứu"
+			},
+			"lookupTypes": "Các loại tra cứu",
+			"tabs": {
+				"lookuplist": "Danh sách tra cứu",
+				"properties": "Đặc tính"
+			},
+			"title": "Quản lí tra cứu"
+		},
+		"modWorkflow": {
+			"add_process": "Thêm quy trình",
+			"attributes_title": "Quản lí thuộc tính",
+			"domains_title": "Quản lí tên miền",
+			"errors": {
+				"table": {
+					"cast": "Không thể thay đổi thuộc tính của \"superclass\", lớp có chứa dữ liệu hoặc lớp con ",
+					"duplicate": "Một lớp trùng tên đã tồn tại",
+					"parent_not_found": "Quá trình được chỉ định của superclass không tồn tại"
+				}
+			},
+			"include_inherited": "Kế thừa bao gồm",
+			"process_property": "Đặc tính",
+			"tabs": {
+				"attributes": "Thuộc tính",
+				"domains": "Tên miền",
+				"properties": "Đặc tính",
+				"xpdl": "XPDL"
+			},
+			"title": "Quản lý quá trình",
+			"tree_title": "Quá trình",
+			"xpdlDownload": {
+				"download_tamplete": "Tải mẫu về",
+				"download_xpdl_tamplete": "Tải mẫu XPDL về",
+				"package_version": "Phiên bản",
+				"process_name": "Tên quá trình",
+				"user_stoppable": "Người dùng có thể ngưng sử dụng"
+			},
+			"xpdlUpload": {
+				"deleted_image": "Các tập tin phác thảo được xóa bỏ, vì không đồng bộ với tập tin XPDL",
+				"error": "Lỗi trong khi tải lên tập tin XPDL",
+				"jpg_file": "Phác thảo",
+				"saved_image": "Phác thảo đã được tải lên",
+				"saved_xpdl": "Tập tin XPDL đã được tải lên",
+				"upload_template": "Tải lên",
+				"upload_xpdl_tamplete": "Tải lên tập tin XPDL",
+				"xpdl_file": "Tập tin XPDL"
+			}
+		},
+		"modcartography": {
+			"external_services": {
+				"admin_password": "Mật khẩu quản trị",
+				"admin_user": "Tên người quản trị",
+				"description": {
+					"geoserver": "GeoServer",
+					"google": "Bản đồ Google",
+					"osm": "Mở bản đồ đường",
+					"yahoo": "Bản đồ Yahoo!"
+				},
+				"key": "Từ khóa",
+				"title": "Các dịch vụ ngoài",
+				"url": "URL",
+				"workspace": "Workspace"
+			},
+			"geoserver": {
+				"add_layer": "Thêm lớp",
+				"delete_layer": "Xóa lớp",
+				"file": "Tập tin",
+				"modify_layer": "Sửa đổi lớp",
+				"service_not_available": "Geoserver không được kích hoạt, để kích hoạt, vui lòng đi đến {0}",
+				"title": "Các lớp Geoserver"
+			},
+			"icons": {
+				"alert": {
+					"msg": "Vui lòng xác nhận?",
+					"title": "Cảnh báo"
+				},
+				"description": "Mô tả",
+				"file": "Tập tin",
+				"title": "Quản lý biểu tượng"
+			},
+			"layermanager": {
+				"Tiêu đề": "Thứ tự Lớp "
+			},
+			"navigationTree": {
+				"title": "Định vị GIS"
+			},
+			"title": "GIS"
+		},
+		"modconnectors": {
+			"Tiêu đề": "Kết nối"
+		},
+		"modmenu": {
+			"add_menu": "Thêm Menu",
+			"available_elements": "Các thành tố có sẵn",
+			"availabletree": {
+				"class": "Các lớp",
+				"dashboard": "Các bảng điểu khiển",
+				"processclass": "Các hoạt động",
+				"report": "Các bảng báo cáo",
+				"view": "Lượt xem"
+			},
+			"custom_menu": "Menu tùy chỉnh",
+			"custom_menus": "Các menu tùy chỉnh",
+			"delete_menu": "Xóa menu",
+			"menu_root": "Menu",
+			"modify_menu": "Sửa đổi menu",
+			"new_folder": "Thư mục mới",
+			"title": "Quản lý menu"
+		},
+		"modreport": {
+			"add": "Thêm báo cáo",
+			"importJRFormStep1": {
+				"description": "Mô tả Báo cáo",
+				"enabled_groups": "Những nhóm được cho phép",
+				"fieldset": "Báo cáo nhập Jasper",
+				"master_report_jrxml": "Báo cáo tổng thể (.jrxml)",
+				"menuTitle": "Báo cáo kiểu Jasper ",
+				"name": "Tên báo cáo"
+			},
+			"importJRFormStep2": {
+				"duplicate_images": "Cảnh báo: báo cáo hình ảnh được tìm thấy trùng tên với một tập tin khác- không thể tiến hành.",
+				"fieldset_generic": "Nhập báo cáo Jasper",
+				"fieldset_images": "Hình ảnh cần thiết",
+				"fieldset_subreports": "Báo cáo phụ cần thiết",
+				"menuTitle": "Báo cáo Jasper",
+				"nothing_to_import": "Không có hình ảnh hay báo cáo phụ được tìm thấy. Vui lòng xác nhận để tiến hành nhâp dữ liệu.",
+				"success": {
+					"description": {
+						"add": "Báo cáo hoàn tất",
+						"modify": "Báo cáo được sửa đổi"
+					},
+					"title": "Thành công"
+				}
+			},
+			"importOpenofficeTemplateForm": {
+				"Tiêu đề của lệnh đơn": "Openoffice report"
+			},
+			"modify": "Sửa đổi báo cáo",
+			"remove": "Xóa báo cáo",
+			"title": "Báo cáo"
+		},
+		"modsecurity": {
+			"defaultgroup": "* Mặc định *",
+			"group": {
+				"add_group": "Thêm nhóm",
+				"administrator": "Người quản trị",
+				"availableusers": "Các người dùng đang có",
+				"delete_group": "Vô hiệu hóa Nhóm",
+				"email": "Email",
+				"enable_group": "Kích hoạt Nhóm",
+				"group_description": "Mô tả",
+				"group_name": "Tên nhóm",
+				"groupchoice": "Những người dùng được chọn",
+				"is_active": "Đang sử dụng",
+				"is_administrator": "Là người quản trị",
+				"limited_admin": "Người quản trị cấp dưới",
+				"modify_group": "Sửa đổi Nhóm",
+				"normal": "Thông thường",
+				"starting_class": "Bắt đầu từ trang",
+				"title": "Quản lý Nhóm",
+				"usermanagement": "Quản lý người dùng liên quan"
+			},
+			"groups": "Các nhóm",
+			"privilege": {
+				"add_privilege": "Thêm đặc quyền",
+				"classname": "Tên lớp",
+				"delete_privilege": "Xóa đặc quyền",
+				"modify_privilege": "Sửa đổi đặc quyền",
+				"none_privilege": "Không có ",
+				"privilege_mode": "Đặc quyền",
+				"read_privilege": "Đọc",
+				"write_privilege": "Viết"
+			},
+			"tabs": {
+				"permissions": "Quyền truy cập",
+				"properties": "Đặc tính"
+			},
+			"title": "Người dùng và các nhóm",
+			"uiconfiguration": {
+				"disabled_class_tabs": "Các bảng bị vô hiệu hóa trong mô-đun Lớp ",
+				"disabled_modules": "Vô hiệu hóa các tính năng",
+				"disabled_process_tabs": " Các bảng bị vô hiệu hóa trong mô-đun Quy trình",
+				"generic_properties": {
+					"always_enabled_widgets": "Widgets tiến trình luôn được kích hoạt",
+					"card_simple_history": "Lịch sử bản ghi đơn giản",
+					"full_screen_navigation": "Chuyển hướng xem toàn màn hình",
+					"hide_side_panel": "Ẩn bảng điều khiển kế bên",
+					"process_simple_history": "Lịch sử quá trình đơn giản"
+				},
+				"other": "Những chọn lựa khác",
+				"title": "Cấu hình UI"
+			},
+			"user": {
+				"add_user": "Thêm người dùng",
+				"availablegroups": "Những nhóm có thể dùng",
+				"change_password": "Đổi mật khẩu",
+				"confirmation": "Xác nhận",
+				"defaultgroup": "Các nhóm mặc định",
+				"defaultonlogin": "* Đăng nhập *",
+				"description": "Mô tả",
+				"disable_user": "Vô hiệu hóa người dùng ",
+				"email": "Email",
+				"enable_user": "Kích hoạt người dùng",
+				"groupmanagement": "Quản lí các nhóm của người dùng",
+				"isactive": "Đang sử dụng",
+				"modify_user": "Sửa đổi người dùng ",
+				"password": "Mật khẩu",
+				"title": "Quản lý người dùng ",
+				"user_info": "Thông tin người dùng",
+				"usergroups": "Các nhóm",
+				"username": "Tên người dùng"
+			},
+			"users": "Người dùng"
+		},
+		"setup": {
+			"cmdbuild": {
+				"cardpanelheight": "Độ cao bảng điều khiển theo phần trăm",
+				"fieldsetgeneraltitle": "Tổng quát",
+				"fieldsetlanguageltitle": "Ngôn ngữ",
+				"fieldsetpopupwindowtitle": "Cửa sổ mới",
+				"instancename": "Tên thực thể",
+				"language": "Ngôn ngữ mặc định",
+				"languagePrompt": "Hiện thị phần lựa chọn ngôn ngữ",
+				"menuTitle": "Các lựa chọn tổng quát",
+				"popupheightlabel": "Chiều cao bản hiển thị theo phần trăm",
+				"popupwidthlabel": "Bề rộng bản hiển thị theo phần trăm",
+				"referencecombolimit": "<em>References combobox limit</em>",
+				"relationlimit": "Giới hạn các quan hệ",
+				"rowlimit": "Giới hạn hàng",
+				"sessiontimeout": "Hết hạn thời gian (giây)",
+				"startingClass": "Lớp mặc định",
+				"tabs_position": {
+					"bottom": "Bên dưới",
+					"label": "Vị trí các Tab trong bảng điều khiển thẻ",
+					"top": "Bên trên"
+				},
+				"title": "Cài đặt"
+			},
+			"dms": {
+				"categoryLookup": "Chỉ mục",
+				"credential": "Thông tin mật",
+				"credentialPassword": "Mật khẩu",
+				"credentialUser": "Tên người dùng",
+				"delay": "Trì hoãn tác vụ",
+				"enabled": "Được kích hoạt",
+				"fileserver": "File server",
+				"fileserverPort": "Cổng",
+				"fileserverType": "Kiểu",
+				"fileserverUrl": "Máy chủ",
+				"general": "Tổng quát",
+				"menuTitle": "Alfresco",
+				"repository": "Kho lưu trữ",
+				"repositoryApp": "Ứng dụng",
+				"repositoryFSPath": "Đường dẫn file server",
+				"repositoryWSPath": "Đường dẫn web service",
+				"serverUrl": "URL máy chủ",
+				"title": "Cài đặt Alfresco"
+			},
+			"gis": {
+				"center_lat": "Vĩ độ ban đầu",
+				"center_lon": "Kinh độ ban đầu",
+				"enable": "Kích hoạt",
+				"initial_zoom": "Mức độ phóng ban đầu",
+				"serverurl": "URL máy chủ",
+				"title": "GIS"
+			},
+			"graph": {
+				"baseLevel": "Cấp độ mặc định",
+				"clusteringThreshold": "Ngưỡng cho các nốt cluster",
+				"enabled": "Được kích hoạt",
+				"expandingThreshold": "Số lượng nốt tối đa trong một cluster mở rộng",
+				"extensionMaximumLevel": "Cấp độ cao nhất",
+				"menuTitle": "Đồ thị liên quan",
+				"title": "Thiết lập đồ thị liên quan"
+			},
+			"modify": "Sửa đổi",
+			"save": "Lưu",
+			"server": {
+				"cache_management": "Quản lý bộ nhớ cache",
+				"clear_cache": "Xóa bộ nhớ cache",
+				"menuTitle": "Quản lý máy chủ",
+				"servicesync": "Dịch vụ đồng bộ hóa",
+				"title": " Quản lý máy chủ ",
+				"wfsync": "Xóa các quy trình không phù hợp"
+			},
+			"setupTitle": "Cài đặt",
+			"workflow": {
+				"credential": "Thông tin mật",
+				"enabled": "Được kích hoạt",
+				"endpoint": "Máy chủ URL",
+				"engine": "Tên phương tiện",
+				"general": "Tổng quát",
+				"menuTitle": "Quy trình làm việc",
+				"password": "Mật khẩu",
+				"scope": "Phạm vi",
+				"title": "Thiết lập quy trình làm việc",
+				"user": "Tên người dùng"
+			}
+		},
+		"welcome": {
+			"body": "Mô-đun quản trị.",
+			"title": "Chào mừng"
+		}
+	},
+	"common": {
+		"buttons": {
+			"abort": "Hủy bỏ",
+			"add": "Thêm",
+			"apply": "Áp dụng",
+			"as": "như là",
+			"clone": "Sao chép",
+			"close": "Đóng",
+			"confirm": "OK",
+			"export": "Xuất",
+			"import": "Nhập",
+			"load": "Tải",
+			"modify": "Sửa đổi",
+			"next": "<em>Next</em>",
+			"previous": "<em>Previous</em>",
+			"print": "In",
+			"remove": "Gỡ bỏ",
+			"save": "Lưu",
+			"update": "Cập nhật",
+			"upload": "Tải lên",
+			"workflow": {
+				"advance": "Thành quả",
+				"back": "Trở về",
+				"save": "Lưu"
+			}
+		},
+		"confirmpopup": {
+			"areyousure": "Bạn chắc chắn không?",
+			"title": "Xác nhận"
+		},
+		"credits": "Info &amp; Support",
+		"display_topic": "Hiển thị các chủ đề",
+		"display_topic_none": "Không có các chủ đề để hiển thị",
+		"display_topic_of": "của",
+		"failure": "Thất bại",
+		"group": "Nhóm",
+		"loading": "Đang tải...",
+		"loading_mask": {
+			"classes": "Đang tải các Class",
+			"configuration": "Đang tải cấu hình",
+			"domain": "Đang tải tên miền",
+			"group": "Đang tải tên người dùng và các nhóm",
+			"lookup": "Đang tải các loại tra cứu",
+			"menu": "Đang tải các đơn lệnh ",
+			"report": "Đang tải các báo cáo",
+			"workflow": "Đang tải các hoạt động"
+		},
+		"logout": "Đăng xuất",
+		"remove": "Gỡ bỏ",
+		"splash": {
+			"consultant": "Tư vấn và hỗ trợ ITIL",
+			"design": "Thiết kế",
+			"implementation": "Hệ thống xử lý",
+			"maintainer": "Hệ thống bảo trì",
+			"municipality": "Municipality of Udine",
+			"principal": "Chủ yếu cho các dự án ban đầu"
+		},
+		"success": "Thành công",
+		"tbd_body": "Làm việc tiến triển",
+		"tbd_title": "Làm việc tiến triển",
+		"tooltip": {
+			"editParameters": "Chỉnh sửa các thông số",
+			"reload": "Tải lại",
+			"showData": "Hiện thị dữ liệu"
+		},
+		"tree_names": {
+			"class": "Tiêu chuẩn",
+			"process": "Hoạt động",
+			"simpletable": "Đơn giản"
+		},
+		"unknown_error": "Lỗi không rõ",
+		"user": "Người dùng",
+		"wait_msg": "Đang gửi dữ liệu...",
+		"wait_title": "Xin vui lòng chờt..."
+	},
+	"configure": {
+		"failure": {
+			"text": "Hướng dẫn cài đặt khác phục các lỗi: ",
+			"title": "Lỗi thiết lập"
+		},
+		"finish": "Kết thúc",
+		"next": "Tiếp theo",
+		"previous": "Trước đó",
+		"step1": {
+			"choose": "Chọn ngôn ngữ mặc định",
+			"showLangChoose": "Hiện thị ngôn ngữ được chọn trong ô đăng nhập"
+		},
+		"step2": {
+			"create_shark": "Tạo ra sơ đồ Shark",
+			"db_confirm_password": "Xác nhận mật khẩu",
+			"db_connection": "Kết nối cơ sở dữ liệu",
+			"db_create": "Cơ sở dữ liệu CMDBuild",
+			"db_create_name": "Tên cơ sở dữ liệu CMDBuild",
+			"db_create_type": "Loại cơ sở dữ liệu CMDBuild",
+			"db_demo": "Bản mẫu",
+			"db_empty": "Trống",
+			"db_existing": "Tồn tại",
+			"db_host": "Máy chủ",
+			"db_password": "Mật khẩu",
+			"db_port": "Cổng",
+			"db_superUser": "Người dùng cấp cao",
+			"db_test_connection": "Kiểm tra kết nối",
+			"db_type": "Loại cơ sở dữ liệu",
+			"db_user": "Người dùng",
+			"db_user_create": "Thiết lập những hạn chế cơ sở dữ liệu của người dùng",
+			"limited_user": "Giới hạn của người dùng",
+			"msg": {
+				"msg": "Kết nối thành công",
+				"pswnomatch": "Mật khẩu không trùng khớp",
+				"title": "Kiểm tra kết nối"
+			},
+			"new_limited_user": "Thiết lập giới hạn người dùng",
+			"user_type": "Loại người dùng"
+		},
+		"step3": {
+			"admin": "Quản lí tài khoản",
+			"admin_password": "Mật khẩu",
+			"admin_user": "Tên người dùng",
+			"confirm_password": "Xác nhận mật khẩu"
+		},
+		"success": {
+			"text": "Hướng dẫn cái đặt thành công, nhấn OK bạn sẽ được chuyển đến các ứng dụng",
+			"title": "Cài đặt thành công"
+		},
+		"title": "Cấu hình"
+	},
+	"errors": {
+		"busy_wf_widgets": "Các bộ điều khiển trực quan đang bận, kiểm tra tình trạng của máy chủ trước khi thử lại lần nữa.",
+		"detail": "Chi tiết",
+		"error_message": "Lỗi",
+		"error_moving_row": "Đã xảy ra lỗi trong khi chuyển",
+		"invalid_attributes": "Các trường sau đây đã không được điền đầy đủ một cách chính xác:",
+		"invalid_extended_attributes": "Các bộ điều khiển trực quan sau đây đã không được điền đầy đủ một cách chính xác:",
+		"invalid_fields": "Một vài trường đã không được điền đầy đủ một cách chính xác",
+		"no_driver": "Không có JDBC driver nào được tìm thấy.<br />Bạn có thể tìm thấy nó trong gói CMDBuild và copy nó vào thư viện Tomcat.",
+		"no_selections": "Bạn vẫn chưa chọn bất kỷ thẻ nào để cập nhật",
+		"reasons": {
+			"ATTRIBUTE_NOTFOUND": "Thuộc tính {1} of {0} không tìm thấy",
+			"AUTH_CLASS_NOT_AUTHORIZED": "Không đủ quyền để truy cập vào class này {0}",
+			"AUTH_DEMO_MODE": "Hoạt động không cho phép trong chế độ bản mẫu",
+			"AUTH_DOMAIN_NOT_AUTHORIZED": "Không đủ quyền để truy cập vào tên miền {0}",
+			"AUTH_LOGIN_WRONG": "Sai Tên người dùng hay Mật khẩu",
+			"AUTH_MULTIPLE_GROUPS": "Người dùng có nhiều nhóm liên quan",
+			"AUTH_NOT_AUTHORIZED": "Hoạt động không được phép",
+			"AUTH_NOT_CONFIGURED": "Xác thực lỗi cấu hình",
+			"AUTH_NOT_LOGGED_IN": "Người dùng không được phép đăng nhập",
+			"AUTH_NO_GROUPS": "Người dùng không phải là thành viên của bất cứ nhóm nào",
+			"AUTH_UNKNOWN_GROUP": "Sai nhóm",
+			"AUTH_WRONG_PASSWORD": "Sai mật khẩu",
+			"CARD_NOTFOUND": "Thẻ không được tìm thấy trong {0}",
+			"CLASS_NOTFOUND": "Class {0} không tìm thấy",
+			"CQL_COMPILATION_FAILED": "Truy vấn CQL thất bại",
+			"DMS_ATTACHMENT_DELETE_ERROR": "Xóa tập tin đính kèm đã thất bại",
+			"DMS_ATTACHMENT_NOTFOUND": "Tập tin đính kèm {0} thẻ {2} of {1} không tìm thấy",
+			"DMS_ATTACHMENT_UPLOAD_ERROR": "Tải lên tập tin đính kèm đã thất bại",
+			"DMS_DOCUMENT_TYPE_DEFINITION_ERROR": "Không thể đọc được chính xác kiểu {0}",
+			"DMS_AUTOCOMPLETION_RULES_ERROR": "Không thể đọc được các quy tắc tự động đính kèm tập tin cho class {0}",
+			"DMS_UPDATE_ERROR": "Tải lên tập tin đính kèm đã thất bại",
+			"DOMAIN_NOTFOUND": "Tên miền {0} không tìm thấ",
+			"ILLEGAL_CRON_EXPRESSION": "Biểu thức cron không hợp lệ",
+			"LOCKED_CARD": "Người dùng {0} chỉnh sửa thẻ {1} giây",
+			"LOOKUP_NOTFOUND": "Tra cứu không tìm thấy loại {0}",
+			"LOOKUP_TYPE_NOTFOUND": "Loại tra cứu {0} không tìm thấy",
+			"MENU_NOTFOUND": "Không tìm thấy lệnh đơn",
+			"NOTFOUND": "Mục không trùng khớp",
+			"ORM_AMBIGUOUS_DIRECTION": "Không thể tự động xác định hướng chó các mối lien ket",
+			"ORM_CANT_CREATE_DATABASE": "Không thể tạo ra cơ sở dữ liệu",
+			"ORM_CANT_CREATE_USER": "Người dùng không thể xác định",
+			"ORM_CANT_DELETE_CARD_WITH_RELATION": "Không thể xóa các thẻ có cac moi liên ket",
+			"ORM_CHANGE_LOOKUPTYPE_ERROR": "Không thể thay đổi kiểu tìm kiếm",
+			"ORM_CONTAINS_DATA": "Không thể cắt các class hay các thuộc tính của bảng điều khiển hay tên miền có chứa hồ sơ",
+			"ORM_CQL_COMPILATION_FAILED": "Truy vấn CQL không hợp lệ",
+			"ORM_CSV_INVALID_ATTRIBUTES": "Các thẻ không thể lưu: các giá trị tìm thấy không hợp lệ",
+			"ORM_DATABASE_CONNECTION_ERROR": "Lỗi kết nối cơ sở dữ liệu, thử kết nối lại các thông số ",
+			"ORM_DBNOTCONFIGURED": "Cơ sở dữ liệu không được cấu hình",
+			"ORM_DOMAIN_HAS_REFERENCE": "Tên miền không thể xóa vì những tham chiếu được liên kết với nhau",
+			"ORM_DUPLICATE_ATTRIBUTE": "Thuộc tính này đã tồn tại",
+			"ORM_DUPLICATE_TABLE": "Đã có một lớp cùng tên đã tồn tại",
+			"ORM_DUPLICATE_USER": "Tên người dùng này đã tồn tại",
+			"ORM_ERROR_CARD_SELECT": "Không thể lấy lại thẻ",
+			"ORM_ERROR_CARD_UPDATE": "Không thẻ cập nhật thẻ",
+			"ORM_ERROR_DOMAIN_CREATE": "Không thể tạo tên miền",
+			"ORM_ERROR_DOMAIN_DELETE": "Không thể xóa tên miền",
+			"ORM_ERROR_DOMAIN_MODIFY": "Không thể sửa đổi tên miền",
+			"ORM_ERROR_GENERIC_SQL": "Lỗi SQL: {0}",
+			"ORM_ERROR_GETTING_PK": "Không thể lấy được từ khóa chính",
+			"ORM_ERROR_INCOMPATIBLE_CLASS": "Class không tương thích: {0}",
+			"ORM_ERROR_LOOKUP_CREATE": "Không thể tra cứu",
+			"ORM_ERROR_LOOKUP_DELETE": "Không thể xóa tra cứu",
+			"ORM_ERROR_LOOKUP_MODIFY": "Không thể sửa đổi tra cứu",
+			"ORM_ERROR_RELATION_CREATE": "Không thể tạo nên mối quan hệ",
+			"ORM_ERROR_RELATION_MODIFY": "không thể sửa đổi mối quan hệ",
+			"ORM_FILTER_CONFLICT": "Xác định những bộ lọc xung đột với nhau",
+			"ORM_FULLCARDS_MULTIPLEDOMAINS": "Không thể nhận được đầy đủ thẻ trên nhiều miền",
+			"ORM_GENERIC_ERROR": "Xảy ra lỗi trong khi tải/lưu trữ dữ liệu",
+			"ORM_ICONS_FILE_ALREADY_EXISTS": "Tập tin {0} đã tồn tại",
+			"ORM_ICONS_FILE_NOT_FOUND": "Không tìm thấy tập tin",
+			"ORM_ICONS_UNSUPPORTED_TYPE": "Kiểu tập tin này không được hỗ trợ",
+			"ORM_ILLEGAL_NAME_ERROR": "Tên không hợp lệ: {0}",
+			"ORM_LOOKUPTYPE_ALREADY_EXISTS": "Thay đổi một kểu tra cứu khác với cùng một mô tả",
+			"ORM_MALFORMED_PATCH": "Không thể đọc được Patch",
+			"ORM_NOT_NULL_VIOLATION": "Not null constraint violated",
+			"ORM_POSTGIS_NOT_FOUND": "PostGIS không được cài được",
+			"ORM_READ_ONLY_RELATION": "Quan hệ chỉ được đọc",
+			"ORM_READ_ONLY_TABLE": "Class chỉ đọc",
+			"ORM_SQL_PATCH": "Error in SQL patch",
+			"ORM_TABLE_HAS_CHILDREN": "Không thể xóa một Class trong một tập hợp nhiều Class",
+			"ORM_TABLE_HAS_DOMAIN": "Không thể xóa một Class mà có tên miền",
+			"ORM_TYPE_ERROR": "Loại không phù hợp",
+			"ORM_UNIQUE_VIOLATION": "Điều kiện ràng buộc duy nhất bị vi phạm",
+			"OUT_OF_DATE_PROCESS": "Quá trình không thích hợp, tải lại dnah sách",
+			"PARAMETER_CLASS_UNAVAILABLE": "Không thể khởi tạo Java class {0}",
+			"PRIVILEGE_GROUP_NOTFOUND": "Những đặc quyền không tìm thấy cho nhóm {0}",
+			"PRIVILEGE_NOTFOUND": "Những đặc quyền không tìm thấy cho nhóm {0} trên class {0}",
+			"REPORT_COMPILE_ERROR": "Báo cáo lỗi bien soan",
+			"REPORT_GROUPNOTALLOWED": "Nhóm {0} không được phép khởi chạy {1}",
+			"REPORT_IMPORT_ERROR": "Chèn thêm lỗi",
+			"REPORT_INVALID_FILE": "Tập tin báo cáo không hợp lệ",
+			"REPORT_INVALID_PARAMETER_CLASS": "Tìm thấy thông số Java class không hợp lệ! Vận hành bị hủy bỏ.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_ATTRIBUTE": "Tìm thấy thuộc tính CMDBuild không hợp lệ trong các thông số! Vận hành bị hủy bỏ.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_CLASS": "Tìm thấy CMDBuild class không hợp lệ trong các thông số! Vận hành bị hủy bỏ.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_LOOKUP": "Tìm thấy tra cứu CMDBuild không hợp lệ trong các thông số! Vận hành bị hủy bỏ.",
+			"REPORT_INVALID_PARAMETER_FORMAT": "Tên thông số báo cáo định dạng không hợp lệ! Các định được sử dụng: \"name\", \"name.cmdbuildClass.attribute\", \"name.lookup.lookupname\"",
+			"REPORT_INVALID_PARAMETER_LOOKUP_CLASS": "Tìm thấy thông số tra cứu Java class không hợp lệ! Được yêu cầu \"java.lang.Integer\". Vận hành bị hủy bỏ.",
+			"REPORT_INVALID_PARAMETER_REFERENCE_CLASS": "Tìm thấy thông số tham chiếu Jave class không hợp lệ! Được yêu cầu \"java.lang.Integer\". Vận hành bị hủy bỏ.",
+			"REPORT_INVALID_PARAMETER_VALUE": "Tìm thấy những giá trị thông số không hợp lệ! Vận hành bị hủy bỏ.",
+			"REPORT_INVISIBLE_PARAMETER": "Một báo cáo về thông số đề cập đến một thuộc tính đã được ẩn! Vận hành bị hủy bỏ.",
+			"REPORT_LOAD_DESIGN_ERROR": "Thiết kế jasper không thể tải được",
+			"REPORT_NOCLASS_ERROR": "Biên soạn lỗi - không thể tải class: {0}",
+			"REPORT_NOTFOUND": "Không thể tải báo cáo{0}",
+			"REPORT_UPLOAD_ERROR": "Cập nhật lỗi",
+			"SCHEDULER_INTERNAL_ERROR": "Trình lập thời biểu các lỗi nội bộ: {0}",
+			"SERVICE_UNAVAILABLE": "Dịch vụ không thể sử dụng",
+			"WF_CANNOT_ABORT_PROCESS": "Không thể hủy bỏ quá trình",
+			"WF_CANNOT_ACCEPT_WORKITEM": "Không đồng ý các hoạt động của người dùng",
+			"WF_CANNOT_COMPLETE_WORKITEM": "Không thể hoàn thành hoạt động của người dùng",
+			"WF_CANNOT_CONFIGURE_CMDBEXTATTR": "Không thể thiết lập cấu hình cho các thuộc tính mở rộng {0}",
+			"WF_CANNOT_FIND_XPDL": "Khong the tim thay mac dinh cua XPDL",
+			"WF_CANNOT_GETWAPI_CONNECTION": "Không thể kết nối được với tiến trình làm việc",
+			"WF_CANNOT_GET_PROCESSCARDID": "Không lấy được Card ID",
+			"WF_CANNOT_GET_PROCESS_VARIABLES": "Không thể lấy được qua trình của các biến số",
+			"WF_CANNOT_GET_WORKITEM": "Không thể có được hoạt động của người dùng ",
+			"WF_CANNOT_GET_WORKITEMS": "Không thể có được danh sách hoạt động của người dùng",
+			"WF_CANNOT_GET_WORKITEM_VARIABLES": "Không thể lấy được biến số hoạt động của người dùng",
+			"WF_CANNOT_LOAD_ACTIVITIES": "Không thể tải được quá trình của các hoạt động{0}",
+			"WF_CANNOT_REACT_CMDBEXTATTR": "Không thể hoàn thành các thuộc tính mở rộng{0}",
+			"WF_CANNOT_REASSIGN_WORKITEM": "Không thể phân công lại hoạt động người dùng",
+			"WF_CANNOT_RESOLVE_PARTICIPANT": "Không thể tham gia giải quyết",
+			"WF_CANNOT_RESUME_WORKITEM": "Hoạt động của người dùng không thể tiếp tục",
+			"WF_CANNOT_START": "Không thể bắt đầu tiền trình",
+			"WF_CANNOT_SUSPEND_PROCESS": "Quá trình không thể tạm ngưng",
+			"WF_CANNOT_UPDATE_WORKITEM_VARIABLES": "Không thể cập nhật biến số hoạt động của người dùng",
+			"WF_CANNOT_UPLOAD_PACKAGE": "Không thể cập nhật toàn bộ",
+			"WF_EMAIL_CANNOT_RETRIEVE_MAIL": "Không thể khôi phục email",
+			"WF_EMAIL_NOT_CONFIGURED": "Quản lí Email không được cấu hình",
+			"WF_EMAIL_NOT_SENT": "Email không gửi được",
+			"WF_EXTATTR_CREATEREPORT_FACTORYNOTINSESSION": "Lỗi trong khi tạo báo cáo: the factory need is not in session",
+			"WF_GENERIC_ERROR": "Lỗi chung của tiến trình làm việc",
+			"WF_PACKAGE_ERROR": "Error in package",
+			"WF_PROCESSINFO_NOT_FOUND": "Tiến trình bỏ qua tập tin XPDL",
+			"WF_START_ACTIVITY_NOT_FOUND": "<em>I have not found a start activity for process {0}</em>",
+			"WF_WAPI_CONNECTION_ERROR": "Không thể kết nối được với mày chủ của tiến trình làm việc",
+			"WF_WORKITEM_VARIABLES_REQUIRED": "Những mục bắt buộc: {0}",
+			"WF_WRONG_CREDENTIALS": "Một số thông tin sai khi dùng workflow",
+			"WF_WRONG_XPDL_CLASSNAME": "Các tên class sai được đưa đến XPDL",
+			"WF_XPDL_CLASSNAME_MISSING": "Thiếu liên kết với CMDBuild class trong XPDL",
+			"WF_XPDL_USERSTOP_MISSING": "Thiếu mục userStoppable trong tập tin XPDL",
+			"WIDGET_SERVICE_CONNECTION_ERROR": "Thư gửi thất bại. Nguyên nhân có thể xảy ra: 1) Các dịch vụ không được triển khai; 2) URL và/hay số cổng của endpoint không chính xác",
+			"WIDGET_SERVICE_MALFORMED_REQUEST": "Kiểm tra namespace, tên phương thức và các thông số của dịch vụ web là chính xác"
+		},
+		"reference_invalid": "Giá trị không phù hợp với bộ lọc",
+		"server_error": "Máy chủ không thể kết nối",
+		"server_error_code": "Một lỗi đã xảy ra trong khi đang gửi dữ liệu đến máy chủ: ",
+		"show_detail": "Hiện thị chi tiết",
+		"template_error": "Lỗi xác định",
+		"unknown_error": "Một lỗi đã xảy ra",
+		"wrong_wf_widgets": "Một lỗi xảy ra khi đang lưu các visual control sau đây: "
+	},
+	"info": {
+		"card_not_found": "Thẻ không phù hợp với bộ lọc hiện tại"
+	},
+	"login": {
+		"change_user": "Thay đổi người dùng",
+		"failed": "Đăng nhập thất bại",
+		"language": "Ngôn ngữ",
+		"login": "Đăng nhập",
+		"multi_group": "Chọn một nhóm",
+		"password": "Mật khẩu",
+		"relogin_message": "Chứng thực đã hết hạn. Xin vui lòng chèn mật khẩu lần nữa.",
+		"relogin_title": "Phiên làm việc đã hết hạn",
+		"title": "Vui lòng đăng nhập",
+		"username": "Tên người dùng",
+		"waitMsg": "Đang gửi dữ liệu...",
+		"waitTitle": "Đang kết nối"
+	},
+	"management": {
+		"description": "Danh muc quản lí dữ liệu",
+		"findfilter": {
+			"add": "Thêm",
+			"all": "Tùy chọn",
+			"attachments": "Các tập tin đính kèm",
+			"attribute": "Thuộc tính",
+			"attributes": "Các thuộc tính",
+			"apply": "Áp dụng",
+			"begin": "Bắt đầu với",
+			"between": "Ở giữa",
+			"clear_filter": "Làm sách bộ lọc",
+			"copyof": "Sao chép của",
+			"different": "Khác biệt",
+			"direction": "loi chi dan",
+			"dontbegin": "Không bắt đầu với",
+			"dontend": "Không kết thúc tại",
+			"dontlike": "Không bao gồm",
+			"end": "Kết thúc tại",
+			"equals": "Cân bằng",
+			"filter": "Bộ lọc",
+			"fromSelection": "Lựa chọn từ",
+			"functions" : "<em>Function</em>",
+			"go_filter": "Bộ lọc",
+			"like": "Bao gồm",
+			"list": "Danh sách",
+			"major": "Nhiều hơn",
+			"minor": "Ít hơn",
+			"msg": {
+				"attention": "Chú ý",
+				"error": "Lỗi",
+				"no_removed": "Bộ lọc không bị xóa",
+				"no_server": "may chu không thể đọc",
+				"no_set": "Bộ lọc không được cái đặt",
+				"question_sure": "Bạn có chắc không?"
+			},
+			"notinrel": "Không có",
+			"notnull": "Co phai no vo hieu luc",
+			"nullo": "No vo hieu luc",
+			"newfilter": "Tìm bộ lọc mới",
+			"relations": "Các mối quan hệ",
+			"remove": "Hủy bỏ",
+			"save_filter": "Lưu bộ lọc",
+			"saveandapply": "Lưu và áp dụng",
+			"selectedAttr": "Các thuộc tính được chọn",
+			"set_filter": "Tìm bộ lọc",
+			"setted": "Bộ lọc được cài đặt",
+			"show_all": "Hiện thị tất cả",
+			"title": "Chọn một thuộc tính",
+			"window_title": "Tìm bộ lọc"
+		},
+		"graph": {
+			"action": "Đồ thị mối quan hệ",
+			"icon_tooltip": "Mở rộng đồ thị mối quan hệ",
+			"title": "Đồ thị mối quan hệ"
+		},
+		"modcard": {
+			"add_attachment": "Thêm tập tin đính kèm",
+			"add_attachment_window": {
+				"category": "Danh mục",
+				"description": "Mô tả",
+				"load_attachment": "Tải tập tin đính kèm",
+				"select_category": "Chọn danh mục...",
+				"window_title": "Them tập tin đính kèm"
+			},
+			"add_card": "Thêm thẻ",
+			"add_relations": "Thêm các mối quan hệ",
+			"add_relations_window": {
+				"domain": "Tiền miền",
+				"filter_tab": "Bộ lọc",
+				"list_tab": "Danh sách",
+				"select_domain": "Chọn tên miền...",
+				"window_title": "Thêm các mối quan hệ"
+			},
+			"attachment_columns": {
+				"author": "Người cài đặt",
+				"category": "Danh mục",
+				"creation_date": "Ngày bắt đầu",
+				"description": "Mô tả",
+				"filename": "Tên tập tin",
+				"item": "Tập tin đính kèm",
+				"items": "Các tập tin đính kèm",
+				"modification_date": " sửa đổi ngày thang",
+				"version": "Phiên bản"
+			},
+			"clone_card": "Bản sao thẻ",
+			"delete_attachment": "Xóa tập tin đính kèm",
+			"delete_attachment_confirm": "Bạn có chắc rằng bạn muốn xóa tập tin đính kèm?",
+			"delete_card": "Xóa thẻ",
+			"delete_card_confirm": "Bạn có chắc rằng bạn muốn xóa thẻ này?",
+			"delete_relation": "Xóa mối quan hệ",
+			"delete_relation_confirm": "Bạn có chắc rằng bạn muốn xóa mối quan hệ này?",
+			"detail_window": {
+				"detail_attributes": "Chi tiết của những thuộc tính",
+				"relation_attributes": "Mối quan hệ của các thuộc tính"
+			},
+			"download_attachment": "Tải xuống tập tin đính kèm",
+			"edit_attachment": "Chỉnh sữa tập tin đính kèm",
+			"edit_relation": "Chỉnh sửa mối quan hệ",
+			"gis": {
+				"geo_attributes": "Các thuộc tính địa lý",
+				"gisNavigation": "Chuyển hướng GIS",
+				"position": "Vị trí",
+				"zoom": "Phóng"
+			},
+			"history_columns": {
+				"activity_name": "Tên hoạt động",
+				"attributes": "Các thuộc tính",
+				"begin_date": "Ngày bắt đầu",
+				"code": "Mã",
+				"description": "Mô tả",
+				"destclass": "Class",
+				"domain": "Tên miền",
+				"end_date": "Ngày kết thúc",
+				"performer": "Hoạt động biểu diễn",
+				"relation": "Mối quan hệ",
+				"user": "Người dùng"
+			},
+			"maptoolbar": {
+				"add": "Thêm",
+				"drag": "Sửa đổi",
+				"drag_map": "Kéo bản đồ",
+				"zoom_in": "Phóng to",
+				"zoom_out": "Thu nhỏ"
+			},
+			"modify_card": "Sửa đổi thẻ",
+			"modify_note": "Sửa đổi ghi chú",
+			"modify_relation_window": {
+				"window_title": "Sửa đổi mối quan hệ"
+			},
+			"open_relation": "Mở thẻ liên quan",
+			"other_fields": "Khác",
+			"relation_columns": {
+				"begin_date": "Ngày bắt đầu",
+				"code": "Mã",
+				"description": "Mô tả",
+				"destclass": "Class",
+				"domain": "Tên miền",
+				"item": "Mục",
+				"items": "Các mục"
+			},
+			"search_reference_window": {
+				"window_title": "Search in "
+			},
+			"subclass": "Subclass",
+			"tabs": {
+				"attachments": "Các tập tin đính kèm",
+				"card": "Thẻ",
+				"detail": "Chi tiết",
+				"history": "Lich su",
+				"map": "Bản đồ",
+				"notes": "Các ghi chú",
+				"relations": "Các mối quan hệ"
+			},
+			"title": "Danh sách - ",
+			"treetitle": "Các thẻ",
+			"view_relation": "Xem các thẻ có liên quan"
+		},
+		"moddetail": {
+			"adddetail": "Thêm chi tiết",
+			"deletedetail": "Xóa chi tiết",
+			"detail": "Chi tiết",
+			"editdetail": "Chỉnh sửa chi tiết",
+			"showattach": "Hiện thị các tập tin đính kèm",
+			"showdetail": "Hiện thị chi tiết",
+			"showgraph": "Hiện thị đồ thị",
+			"shownotes": "Hiện thị các ghi chú"
+		},
+		"modmenu": {
+			"Lệnh đơn": "Hướng"
+		},
+		"modreport": {
+			"add_report": "Thêm báo cáo",
+			"delete_report": "Xóa báo cáo",
+			"modify_report": "Chỉnh sửa báo cáo",
+			"reportForm": {
+				"description": "Mô tả",
+				"name": "Tên",
+				"report": "Báo cáo"
+			},
+			"report_parameters": "Các bao cáo thông số",
+			"title": "Danh sách - ",
+			"treetitle": "Báo cáo"
+		},
+		"modutilities": {
+			"bulkupdate": {
+				"title": "Nhiều cập nhật",
+				"countMessage": "{0} Các thẻ sẽ được sửa đổi"
+			},
+			"changepassword": {
+				"newpw": "Mật khẩu mới",
+				"oldpw": "Mật khẩu cũ",
+				"repnew": "Gõ lại mật khẩu mới",
+				"successmsgtext": "Mật khẩu đã được thay đổi",
+				"title": "Thay đổi mật khẩu",
+				"validationtext": "Một số mật khẩu không khớp"
+			},
+			"csv": {
+				"csvfile": "Tập tin CSV",
+				"error": "Lỗi",
+				"exportfile": "Xuất",
+				"importfailure": "Nhập thất bại",
+				"importsuccess": "Nhập đã được thành công",
+				"info": "Thông tin",
+				"noupdate": "Không có thẻ nào để cập nhật",
+				"selectaclass": "Chọn một class",
+				"separator": "Phân cách",
+				"shownonvalid": "Chỉ hiện thị những báo cáo không phù hợp",
+				"title": "Nhập tập tin CSV",
+				"title_export": "Xuất tập tin CSV",
+				"warning": "Cảnh báo"
+			},
+			"title": "Tiện ích"
+		},
+		"modutility": {
+			"title": "Tiện ích"
+		},
+		"modview": {
+			"title": "Lượt xem"
+		},
+		"modworkflow": {
+			"abort_card": "Hủy bỏ quá trình",
+			"abort_card_confirm": "Bạn có chắc là bạn muốn hủy bỏ quá trình?",
+			"activitydocumentation": "Hướng dẫn có ích",
+			"add_card": "Bắt đầu",
+			"completed": "Hoàn thành",
+			"custom_steps": "Các bước tùy chỉnh",
+			"delete_card": "Hủy bỏ quá trình",
+			"delete_card_confirm": "Bạn có chắc là bạn muốn xoa quá trình nay?",
+			"extattrs": {
+				"attachments": {
+					"must_save_to_add": "Bạn không thể đính kèm thêm tập tin trước khi lưu các hoạt động"
+				},
+				"calendar": {
+					"wrong_config": "Lịch không được cấu hình tốt"
+				},
+				"createreport": {
+					"format_label": "Mẫu"
+				},
+				"linkcards": {
+					"required": "Xin vui lòng chọn một vài thẻ- "
+				},
+				"manageemail": {
+					"addresshdr": "Địa chỉ",
+					"ccfld": "CC",
+					"compose": "Soạn email",
+					"datehdr": "Ngày lưu trữ",
+					"deleteicon": "Hủy bỏ",
+					"editicon": "Sửa đổi",
+					"fromfld": "Từ",
+					"lookup": {
+						"Draft": "Dự thảo",
+						"New": "Mới",
+						"Outgoing": "Hộp gửi đi",
+						"Received": "Nhận được",
+						"Sent": "Gửi"
+					},
+					"subjectfld": "Tiêu để",
+					"subjecthdr": "Tiêu để",
+					"tofld": "Đến",
+					"updateTemplateConfirm": "Xóa hết các email không gửi được.",
+					"viewicon": "Xem",
+					"mailsAreChanged": " e-mails duoc tạo ra đã thay đổi",
+					"regenerates": "Tái tạo e-mail"
+				},
+				"managerelation": {
+					"required": "Vui lòng chọn các mối quan hệ - "
+				},
+				"notes": {
+					"must_save_to_modify": "Bạn không thể sửa đổi các ghi chú trước khi lưu hoạt động"
+				}
+			},
+			"history_columns": {
+				"attributes": "Các thuộc tính",
+				"begin_date": "Ngày bắt đầu",
+				"description": "Mô tả",
+				"domain": "Tên miền",
+				"end_date": "Ngày kết thúc",
+				"relation": "Mối quan hệ",
+				"user": "Người dùng"
+			},
+			"interrupted": "Bị gián đoạn",
+			"modify_card": "Chỉnh sửa hoạt đọng",
+			"modify_note": "Chỉnh sửa ghi chú",
+			"open_attachment": "Mở các tập tin đính kèm",
+			"open_note": "Mở ghi chú",
+			"started": "Đã bắt đầu",
+			"status": "Tình trạng",
+			"statuses": {
+				"all": "Tất cả",
+				"closed.aborted": "Bị hủy bỏ",
+				"closed.completed": "Hoàn thành",
+				"open.not_running.suspended": "Bị đình chỉ",
+				"open.running": "Mở"
+			},
+			"tabs": {
+				"attachments": "Các tập tin đính kèm",
+				"card": "Hoạt động",
+				"detail": "Các chi tiết",
+				"history": "Lịch sử",
+				"notes": "Ghi chú",
+				"options": "Các sự lựa chọn",
+				"relations": "Các mối quan hệ",
+				"sketch": "Phác thảo"
+			},
+			"title": "Danh sách - ",
+			"treetitle": "Các quy trình"
+		},
+		"welcome": {
+			"body": "Module quản lí cơ sở dữ liệu.",
+			"title": "Chào mừng"
+		}
+	},
+	"patch": {
+		"patch_list": "Danh sách các bản chỉnh sữa lỗi có sẵn"
+	},
+	"vtype_text": {
+		"cmdbcomment": "Duong dan or apostrophe khong duoc phep",
+		"cmdbcommentrelaxed": "duong dan khong duoc phep",
+		"invalid_character": "Các ký tự không hợp lệ",
+		"wrong_decimal_part": "Tối đa {0} chữ số thập phân",
+		"wrong_integer_part": "Tối đa {0} số nguyên",
+		"wrong_ip_address": "Địa chỉ IP không hợp lệ",
+		"wrong_time": "{0} giá trị không hợp lệ. Nó cần phải có định dạng {1}"
+	},
+	"warnings": {
+		"link_cards_changed_values": "Sự lựa chọn của\"{0}\" đã được cập nhật",
+		"only_filtered": "Những thay đổi chỉ sẽ được áp dụng cho các thẻ đáp ứng được bộ lọc hiện tại",
+		"popup_block": "Chúng tôi phát hiện bạn đang sử dụng phần mềm chan cac cua so tu dong xuat hien, vui lòng tắt phan mem do để chạy hoạt động",
+		"warning_message": "Cảnh báo"
+	},
+	"active": "Hoạt động",
+	"addFilter": "Thêm bộ lọc",
+	"addProject": "<em>Add Project</em>",
+	"addTemplate": "<em>Add Template</em>",
+	"addView": "Thêm lượt xem",
+	"add_attachment_from_db": "<em>Add attachments from database</em>",
+	"attachfile": "<em>Attach File</em>",
+	"attachmentsLookup": "<em>Email attachments Lookup</em>",
+	"attention": "Chú ý",
+	"attribute": "<em>Attribute</em>",
+	"availableFilters": "Các bộ lọc sử dụng được",
+	"bcc": "<em>Bcc</em>",
+	"bim": "<em>BIM</em>",
+	"buttons_to_disable": "<em>Buttons to disable</em>",
+	"camera": "<em>Camera</em>",
+	"cc": "<em>Cc</em>",
+	"checkFrequency": "<em>Check frequency (minutes)</em>",
+	"choose_attachment_from_db": "<em>Choose attachments from Database</em>",
+	"class": "<em>Class</em>",
+	"clean_word_pasted_text": "<em>Clean the text pasted from Word or other Rich Text applications</em>",
+	"clearFilter": "Làm sạch bộ lọc",
+	"clear_row_and_colun_privilege": "Xoa các hàng và đặc quyền của các cột",
+	"container": "<em>Container</em>",
+	"controls": "<em>Controls</em>",
+	"cql_filter": "<em>CQL filter</em>",
+	"description_": "Mô tả",
+	"disable": "<em>Disable</em>",
+	"display_less_attributes": "<em>Display less attributes</em>",
+	"display_more_attributes": "<em>Display more attributes</em>",
+	"download_ifc_file": "<em>Download Ifc file</em>",
+	"emailBody": "<em>Body</em>",
+	"emailTemplate": "<em>Email Template</em>",
+	"enable": "<em>Enable</em>",
+	"enabled": " Kích hoạt",
+	"error": "Lỗi",
+	"error_bimserver_connection": "<em>I'm not able to connect to Bimserver</em>",
+	"export": "<em>Export</em>",
+	"expose": "<em>Expose</em>",
+	"file_name": "<em>File name</em>",
+	"filter": "Bộ lọc",
+	"filterView": "Bộ lọc từ",
+	"filters_for_groups": "Các bộ lọc của các nhóm",
+	"format_csv": "<em>CSV</em>",
+	"format_odt": "<em>OpenOffice Odt</em>",
+	"format_pdf": "<em>Adobe Pdf</em>",
+	"format_rtf": "<em>Rich Text Format</em>",
+	"from": "<em>From<em>",
+	"front": "<em>Front</em>",
+	"global": "<em>Global</em>",
+	"ifc_file": "<em>File IFC</em>",
+	"itIsNotAllowedFilterWithCalculatedParams": " Không được phép sử dụng  bộ lọc voi các thông số được tính toán ",
+	"itIsNotAllowedFilterWithRuntimeParams": " không được phép sử dụng bộ lọc với các thông số được chọn lựa boi Người dùng ",
+	"last_checkin": "<em>Last checkin</em>",
+	"layers": "<em>Layers</em>",
+	"lock_cards_in_edit": "Khóa thẻ khi chỉnh sửa",
+	"lock_timeout": "Thời gian chờ khóat (vài giây)",
+	"loggedGroup": "Đăng nhập nhóm",
+	"loggedUser": "Đăng nhập người dùng",
+	"mode": "<em>Mode</em>",
+	"modifyFilter": "Sửa đổi bộ lọc",
+	"modifyProject": "<em>Modify Project</em>",
+	"modifyTemplate": "<em>Modify Template</em>",
+	"modifyView": "Sửa đổi lượt xem",
+	"multiGroup": "<em>Multi group</em>",
+	"name": "Tên",
+	"no_bim_project_for_card": "<em>There is no BIM project for this card</em>",
+	"not_set": "Không cài đặt",
+	"open_3d_viewer": "<em>Open 3D viewer</em>",
+	"pan": "<em>Pan</em>",
+	"password": "<em>Password</em>",
+	"privileges_on_columns": "Các đặc quyền của các cột",
+	"privileges_on_rows": "Các đặc quyền của hàng ngang",
+	"projects": "Projects",
+	"reference_to_root": "<em>Reference to Root</em>",
+	"removeFilter": "Hủy bỏ bộ lọc",
+	"removeProject": "<em>Remove Project</em>",
+	"removeTemplate": "<em>Remove Template</em>",
+	"removeView": "Hủy bỏ lượt xem",
+	"remove_formatting": "<em>Remove formatting</em>",
+	"reset": "<em>Reset</em>",
+	"root": "<em>Root</em>",
+	"rotate": "<em>Rotate</em>",
+	"row_and_column_privileges": "Đặc quyền của các hàng và các cột",
+	"row_add": "<em>Add row</em>",
+	"row_delete": "<em>Delete row</em>",
+	"row_edit": "<em>Edit row</em>",
+	"search_filters": "Tìm kiềm các bộ lọc",
+	"select_a_class": "<em>Select a Class</em>",
+	"selected_object": "<em>Selected Object</em>",
+	"set": "Cài đặt",
+	"setFilter": "Cài bộ lọc",
+	"setLater": "Thông số đầu vào",
+	"show_name_of_locker_user": "Hiện thị tên người khóa",
+	"side": "<em>Side</em>",
+	"sqlView": "Từ SQL",
+	"subject": "<em>Subject</em>",
+	"targetClass": "Class mục tiêu",
+	"to": "<em>To</em>",
+	"top": "<em>Top</em>",
+	"translations" : "<em>Translations</em>",
+	"translations_enabled" : "<em>Enabled languages</em>",
+	"transparent": "<em>Transparent</em>",
+	"tree": "<em>Tree</em>",
+	"tree_navigation": "<em>Navigation tree</em>",
+	"tree_navigation_add": "<em>Add navigation tree</em>",
+	"tree_navigation_attributes": "<em>Navigation tree attributes</em>",
+	"tree_modify": "<em>Modify tree</em>",
+	"tree_remove": "<em>Remove tree</em>",
+	"tree_root_cql": "<em>Root CQL filter</em>",
+	"trees_navigation": "<em>Navigation trees</em>",
+	"ui_configuration_for_groups": "<em>UI configuration for group</em>",
+	"unlock_all_cards": "Mở tất cả các thẻ",
+	"uploading_attachment": "<em>Uploading attachment...</em>",
+	"url": "<em>URL</em>",
+	"username": "<em>Username</em>",
+	"value": "<em>Value</em>",
+	"views": "Lượt xem",
+	"workflow": "<em>Workflow</em>",
+	"workflow_attributes": "<em>Workflow attributes</em>",
+	"workflow_by_cql": "<em>by Cql</em>",
+	"workflow_by_name": "<em>by name</em>",
+	"workflow_cql_filter": "<em>Cql filter</em>",
+	"workflow_query_tipology": "<em>Selection</em>",
+	"you_have_not_set_a_filter": "Bạn không cần cài đặt thẻ",
+	"zoom": "<em>Zoom</em>"
+}

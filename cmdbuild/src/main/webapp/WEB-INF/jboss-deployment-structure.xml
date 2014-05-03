@@ -1,0 +1,21 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <deployment>
+        <exclude-subsystems>
+            <subsystem name="webservices" />
+        </exclude-subsystems>
+        <dependencies>
+            <system>
+                <paths>
+                    <path name="com/sun/net/ssl/internal/ssl"/>
+                </paths>
+            </system>
+            <module name="sun.jdk">
+                <imports>
+                    <include-set>
+                        <path name="com/sun/net/ssl/internal/ssl"/>
+                    </include-set>
+                </imports>
+            </module>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

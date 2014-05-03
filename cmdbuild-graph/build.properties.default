@@ -1,0 +1,5 @@
+flex.dir=../lib/flex
+flare.dir=../lib/prefuse.flare-alpha/build
+destination.dir=..
+debug=false
+

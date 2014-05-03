@@ -1,0 +1,55 @@
+<alfresco-config>
+
+	<config evaluator="string-compare" condition="Action Wizards">
+		<aspects>
+			<aspect name="cmdbuild:documentStatistics" />
+			<aspect name="cmdbuild:summary" />
+			<aspect name="cmdbuild:displayable" />
+			<aspect name="cmdbuild:imageFormat" />
+			<aspect name="cmdbuild:taggable" />
+			<aspect name="cmdbuild:creationDateTime" />
+		</aspects>
+	</config>
+
+	<config evaluator="aspect-name" condition="cmdbuild:documentStatistics">
+		<property-sheet>
+			<show-property name="cmdbuild:characters" />
+			<show-property name="cmdbuild:words" />
+		</property-sheet>
+	</config>
+
+	<config evaluator="aspect-name" condition="cmdbuild:summary">
+		<property-sheet>
+			<show-property name="cmdbuild:summary" />
+		</property-sheet>
+	</config>
+
+	<config evaluator="aspect-name" condition="cmdbuild:displayable">
+		<property-sheet>
+			<show-property name="cmdbuild:width" />
+			<show-property name="cmdbuild:height" />
+			<show-property name="cmdbuild:sizeRatio" />
+		</property-sheet>
+	</config>
+
+	<config evaluator="aspect-name" condition="cmdbuild:imageFormat">
+		<property-sheet>
+			<show-property name="cmdbuild:imageFormat" />
+			<show-property name="cmdbuild:colored" />
+		</property-sheet>
+	</config>
+
+	<config evaluator="aspect-name" condition="cmdbuild:taggable">
+		<property-sheet>
+			<show-property name="cmdbuild:tags" />
+		</property-sheet>
+	</config>
+
+	<config evaluator="aspect-name" condition="cmdbuild:creationDateTime">
+		<property-sheet>
+			<show-property name="cmdbuild:creationDate" />
+			<show-property name="cmdbuild:creationDateTime" />
+		</property-sheet>
+	</config>
+
+</alfresco-config>

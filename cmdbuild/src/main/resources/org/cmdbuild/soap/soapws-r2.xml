@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:soap="http://cxf.apache.org/bindings/soap"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://cxf.apache.org/jaxws
+		http://cxf.apache.org/schemas/jaxws.xsd
+		http://cxf.apache.org/bindings/soap
+		http://cxf.apache.org/schemas/configuration/soap.xsd
+	">
+
+	<bean id="privateProxyBuilder" class="org.cmdbuild.common.utils.NotifierProxy.Builder">
+		<property name="type" value="org.cmdbuild.services.soap.Private" />
+		<property name="delegate">
+			<bean class="org.cmdbuild.services.soap.PrivateImpl" />
+		</property>
+		<property name="notifier">
+			<bean class="org.cmdbuild.services.soap.utils.LoggingNotifier" />
+		</property>
+	</bean>
+
+	<bean id="privateProxy" factory-bean="privateProxyBuilder"
+		factory-method="build" />
+
+	<jaxws:endpoint address="/Private">
+		<jaxws:implementor>
+			<bean factory-bean="privateProxy" factory-method="get" />
+		</jaxws:implementor>
+		<jaxws:binding>
+			<soap:soapBinding mtomEnabled="true" version="1.2" />
+		</jaxws:binding>
+		<jaxws:inInterceptors>
+			<ref bean="operationUserInterceptor" />
+			<ref bean="cmdbuildPasswordCallbackInterceptor" />
+		</jaxws:inInterceptors>
+	</jaxws:endpoint>
+
+</beans>

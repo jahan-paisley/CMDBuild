@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Graph" default="all" basedir=".">
+
+    <!-- =================================================================== -->
+    <!-- Import Flex Ant Tasks, Set Flex Home and asdoc                      -->
+    <!-- =================================================================== -->
+    <property name="LOCALE" value="en_US"/>
+
+    <property file="build.properties"/>
+    <property file="build.properties.default"/>
+
+    <property name="FLEX_HOME" value="${flex.dir}/"/>
+    <property name="asdoc" value="${flex.dir}/bin/asdoc"/>
+    <taskdef resource="flexTasks.tasks" classpath="${flex.dir}/ant/lib/flexTasks.jar" />
+
+    <!-- =================================================================== -->
+    <!-- Properties                                                          -->
+    <!-- =================================================================== -->
+    <tstamp>
+        <format property="year" pattern="yyyy" locale="en"/>
+        <format property="datetime" pattern="EE MMM d yyyy h:mm aa"/>
+    </tstamp>
+
+    <property name="name" value="CMDBuild Graph"/>
+
+    <property name="src.dir" value="${basedir}/src"/>
+
+    <property name="build.dir" value="${basedir}/build"/>
+    <property name="support.dir" value="${basedir}/support"/>
+    <property name="docs.dir" value="${basedir}/docs"/>
+    <property name="api.dir" value="${docs.dir}/api/"/>
+
+    <!-- =================================================================== -->
+    <!-- Help on usage                                                       -->
+    <!-- =================================================================== -->
+    <target name="usage">
+        <echo message="   all --> builds all, puts it in ./build and copy to target}"/>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Prepares the build directory                                        -->
+    <!-- =================================================================== -->
+    <target name="prepare">
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+    <target name="graph" >
+        <!-- Now we build the .swf -->
+         <mxmlc file="${src.dir}/graph.mxml" output="${build.dir}/graph.swf" debug="${debug}">
+            <compiler.include-libraries dir="${flare.dir}">
+                <include name="flare.swc"/>
+            </compiler.include-libraries>
+        </mxmlc>
+    </target>
+
+    <target name="copy">
+        <copy file="${build.dir}/graph.swf" todir="${destination.dir}"/>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Build all in ./build and copy to target                             -->
+    <!-- =================================================================== -->
+    <target name="all" depends="prepare, graph, copy"/>
+
+    <!-- =================================================================== -->
+    <!-- Clean restores the distribution to original state                   -->
+    <!-- =================================================================== -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+</project>

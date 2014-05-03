@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model name="cmdbuild:customModule" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+	<!-- Optional meta-data about the model -->
+	<description>Custom Model for CMDBuild</description>
+	<author>Someone</author>
+	<version>1.0</version>
+
+	<imports>
+		<!-- Import Alfresco Dictionary Definitions -->
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+	</imports>
+
+	<!-- Introduction of new namespaces defined by this model -->
+	<namespaces>
+		<namespace uri="org.cmdbuild.dms.alfresco" prefix="cmdbuild" />
+	</namespaces>
+
+	<constraints>
+		<constraint name="cmdbuild:bazTextWithContraints" type="LIST">
+			<parameter name="allowedValues">
+				<list>
+					<value>foo</value>
+					<value>bar</value>
+					<value>baz</value>
+				</list>
+			</parameter>
+		</constraint>
+		<constraint name="cmdbuild:imageFormat" type="LIST">
+			<parameter name="allowedValues">
+				<list>
+					<value>bmp</value>
+					<value>jpg</value>
+					<value>raw</value>
+				</list>
+			</parameter>
+		</constraint>
+	</constraints>
+
+	<types>
+		<!-- dummy tests -->
+		<type name="cmdbuild:SuperType">
+			<title>CMDBuild SuperType</title>
+			<parent>cm:content</parent>
+		</type>
+		<type name="cmdbuild:aType">
+			<title>A type</title>
+			<parent>cmdbuild:SuperType</parent>
+			<mandatory-aspects>
+				<aspect>cmdbuild:foo</aspect>
+				<aspect>cmdbuild:bar</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="cmdbuild:anotherType">
+			<title>Another type</title>
+			<parent>cmdbuild:SuperType</parent>
+			<mandatory-aspects>
+				<aspect>cmdbuild:baz</aspect>
+			</mandatory-aspects>
+		</type>
+
+		<!-- more realistic tests -->
+		<type name="cmdbuild:Document">
+			<title>Document</title>
+			<mandatory-aspects>
+				<aspect>cmdbuild:documentStatistics</aspect>
+				<aspect>cmdbuild:taggable</aspect>
+				<aspect>cmdbuild:summary</aspect>
+			</mandatory-aspects>
+		</type>
+		<type name="cmdbuild:Image">
+			<title>Image</title>
+			<mandatory-aspects>
+				<aspect>cmdbuild:displayable</aspect>
+				<aspect>cmdbuild:taggable</aspect>
+				<aspect>cmdbuild:imageFormat</aspect>
+				<aspect>cmdbuild:creationDateTime</aspect>
+			</mandatory-aspects>
+		</type>
+	</types>
+
+	<aspects>
+		<!-- dummy tests -->
+		<aspect name="cmdbuild:SuperAspect">
+			<title>CMDBuild SuperAspect</title>
+		</aspect>
+		<aspect name="cmdbuild:foo">
+			<title>Foo</title>
+			<parent>cmdbuild:SuperAspect</parent>
+			<properties>
+				<property name="cmdbuild:fooText">
+					<title>Text</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+		<aspect name="cmdbuild:bar">
+			<title>Bar</title>
+			<parent>cmdbuild:SuperAspect</parent>
+			<properties>
+				<property name="cmdbuild:barInt">
+					<title>Int</title>
+					<type>d:int</type>
+				</property>
+				<property name="cmdbuild:barBoolean">
+					<title>Boolean</title>
+					<type>d:boolean</type>
+				</property>
+			</properties>
+		</aspect>
+		<aspect name="cmdbuild:baz">
+			<title>Baz</title>
+			<parent>cmdbuild:SuperAspect</parent>
+			<properties>
+				<property name="cmdbuild:bazText">
+					<title>text</title>
+					<type>d:text</type>
+				</property>
+				<property name="cmdbuild:bazInt">
+					<title>int</title>
+					<type>d:int</type>
+				</property>
+				<property name="cmdbuild:bazLong">
+					<title>long</title>
+					<type>d:long</type>
+				</property>
+				<property name="cmdbuild:bazFloat">
+					<title>float</title>
+					<type>d:float</type>
+				</property>
+				<property name="cmdbuild:bazDate">
+					<title>date</title>
+					<type>d:date</type>
+				</property>
+				<property name="cmdbuild:bazDatetime">
+					<title>datetime</title>
+					<type>d:datetime</type>
+				</property>
+				<property name="cmdbuild:bazBoolean">
+					<title>boolean</title>
+					<type>d:boolean</type>
+				</property>
+				<property name="cmdbuild:bazTextWithContraints">
+					<title>text with constraints</title>
+					<type>d:text</type>
+					<constraints>
+						<constraint ref="cmdbuild:bazTextWithContraints" />
+					</constraints>
+				</property>
+			</properties>
+		</aspect>
+
+		<!-- more realistic tests -->
+		<aspect name="cmdbuild:documentStatistics">
+			<title>Document Statistics</title>
+			<properties>
+				<property name="cmdbuild:characters">
+					<title>Number of characters</title>
+					<type>d:long</type>
+				</property>
+				<property name="cmdbuild:words">
+					<title>Number of words</title>
+					<type>d:long</type>
+				</property>
+			</properties>
+		</aspect>
+		<aspect name="cmdbuild:summary">
+			<title>Summarizable</title>
+			<properties>
+				<property name="cmdbuild:summary">
+					<title>Summary</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+		<aspect name="cmdbuild:displayable">
+			<title>Displayable</title>
+			<properties>
+				<property name="cmdbuild:width">
+					<title>Width</title>
+					<type>d:long</type>
+				</property>
+				<property name="cmdbuild:height">
+					<title>Height</title>
+					<type>d:int</type>
+				</property>
+				<property name="cmdbuild:sizeRatio">
+					<title>Size Ratio (width/height)</title>
+					<type>d:float</type>
+				</property>
+			</properties>
+		</aspect>
+		<aspect name="cmdbuild:imageFormat">
+			<title>Image format</title>
+			<properties>
+				<property name="cmdbuild:imageFormat">
+					<title>Format</title>
+					<type>d:text</type>
+					<constraints>
+						<constraint ref="cmdbuild:imageFormat"/>
+					</constraints>
+				</property>
+				<property name="cmdbuild:colored">
+					<title>Colored</title>
+					<type>d:boolean</type>
+				</property>
+			</properties>
+		</aspect>
+		<aspect name="cmdbuild:taggable">
+			<title>Tags</title>
+			<properties>
+				<property name="cmdbuild:tags">
+					<title>Tags</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+		<aspect name="cmdbuild:creationDateTime">
+			<title>Creation date/time</title>
+			<properties>
+				<property name="cmdbuild:creationDate">
+					<title>Creation date</title>
+					<type>d:date</type>
+				</property>
+				<property name="cmdbuild:creationDateTime">
+					<title>Creation date/time</title>
+					<type>d:datetime</type>
+				</property>
+			</properties>
+		</aspect>
+	</aspects>
+
+</model>

@@ -1,0 +1,1389 @@
+CMDBuild 2.1.8 (released 2014/03/17)
+
+
+NEW FEATURES
+
+ * Dynamic row filtering using functions
+
+ * Email templates in ManageEmail widget
+
+
+FIXES
+
+ * Card's details report shows all relations regardless of privileges
+
+ * The details table do not show all elements
+
+ * Cmdbf registration web service updates cards and relationships when nothing has changed
+
+ * SOAP method "getCardHistory" returns no more values when all elements are requested
+
+ * Error when apply 2.1.7-* patches due to some backup schemas
+
+ * Modify create card Widget does not save correctly the value of the target class
+
+ * The width of a cql filtered reference increase at every change of conditions
+
+ * Slow showing of buildings in GIS module
+
+ * Errors on save menu in administration when Shark is disabled
+
+ * Slow loading in Administration Layers Tab
+
+ * Missing scrollbars in SQL views
+
+ * No scrollbar in the filter popup
+
+ * Black border on report page
+
+
+
+
+
+CMDBuild 2.1.7 (released 2014/02/14)
+
+
+NEW FEATURES
+
+ * Views accordion can be disabled
+
+ * Start a workflow using card's widget
+
+ * Optimizations for queries - Patch for create indexes for default ordering conditions
+
+ * CMDBf improvements (XSD fix, gis attributes, better support for Reference and Lookup attributes)
+
+ * Updated Russian translations
+
+
+FIXES
+
+ * CQL ignore date attributes
+
+ * Refresh of the entire privileges page in administration when you check a privilege
+
+ * Relations on superclasses contain wrong IdClass
+
+ * Error on the layers view in GIS module
+
+ * Error showing SQL view
+
+ * Wrong user within scripts when starting a process from an external service
+
+ * UI freezes when selecting Alfresco setup within administration module
+
+ * Card details showed in a wrong order
+
+ * Corrupted columns after navigating between card'details
+
+ * Missing username when logged-in as admin and English translation
+
+ * Relation attributes not showed when relations starts collapsed
+
+ * When printing cards within grid, specific user-filters are not applied
+
+ * Slow GIS navigation tree
+
+ * Cannot disable reports accordion from Administration
+
+ * No geometric attributes defined after migration
+
+ * Wrong privileges/group using web services and impersonating another user
+
+
+
+
+
+CMDBuild 2.1.6 (released 2013/12/23)
+
+
+NEW FEATURES
+
+ * Query optimisation for row filters
+
+ * Optimizations for e-mails base access when advancing activity
+
+ * Attachments support in ManageEmail widget
+
+ * SOAP web service widget returning values in a single string
+
+ * Optimizations for queries
+
+ * New report management from navigation menu
+
+ * Activity performers defined externally from XPDL
+
+ * Updated Russian translations
+
+ * Specify from address in widget ManageEmail
+
+
+FIXES
+
+ * Applying a custom filter with "or" statement to processes, it doesn't work as expected
+
+ * Cannot change the timeout for the grid store
+
+ * Scheduled processes will not be started
+
+ * Error for workflow classes when workflow service is not enabled
+
+ * System in endless waiting when uploading a GIS layer
+
+ * Empty process list from an external service and with builtin filtering active
+
+ * Calendar widget does not work
+
+ * Error getting report parameters from an external service
+
+ * Failures when sending emails should not block activity advancements
+
+ * Filter behaviour when a card doesn't match anymore the filter
+
+ * Inverted cardinality for basic connector's relations
+
+ * Error getting card's history when target's class has no domains
+
+ * Error getting relations from CMDBf interface
+
+ * All attribute's metadata are completely missing from SOAP
+
+ * Error when saving lookup attributes on a domain
+
+ * Stored procedures returning timestamps do not work when called from workflow
+
+ * Text fields setted to undefined once saved
+
+ * Error when reordering attributes on a domain
+
+ * Fixed English translations.
+
+
+
+
+
+CMDBuild 2.1.5 (released 2013/10/31)
+
+
+NEW FEATURES
+
+ * Added Croatian translation
+
+ * Clean-up temporary files
+
+ * Clean-up text within HTML text areas
+
+ * Move Save Buttons in Procesess form
+
+ * Override attribute privileges
+
+ * Upload attachments from workflow API
+
+ * Workflow execution without specific privileges
+
+
+FIXES
+
+ * Activity class does not show subprocess attributes
+
+ * ActivityName shows the name of the previous activity
+
+ * Bad SQL grammar error using filters on subclasses
+
+ * Basic connector can't create new cards
+
+ * Cannot create new card when one of its domains has attributes
+
+ * CAS athentication doesn't work with Multiple group
+
+ * CMDBuild does not work if IE is in compatibility mode
+
+ * CMDBuild doesn't work after generating some reports
+
+ * CMDBuild's Portlet doesn't shows menu
+
+ * Dashbord descriptions couldn't be empty
+
+ * Domain "UserRole" must be visible in the Administration module in the demo database
+
+ * Empty form after realation navigation
+
+ * Error adding a report as attachment to an Email with Workflow API
+
+ * Error downloading reports within workflow scripts
+
+ * Error on CQL filter with metadata
+
+ * Error on dashboard with parameters that are references
+
+ * Error on SOAP authentication with a domain user
+
+ * Error renaming multi-level lookups
+
+ * Error when deleting all class privileges once
+
+ * Error when printing card's grid report when class have references or lookups
+
+ * Error while reading views based on SQL functions
+
+ * Extremely slow queries when class has a large number of nested sub-classes
+
+ * Fail sorting super class by subclass column
+
+ * Fail when start new process from history or note or relations tab
+
+ * Filtered reference will not be emptied
+
+ * First active row is selected when a process is just closed
+
+ * Fitered reference field were emptied when editing a process card
+
+ * Following relations on process doesn't work as expected
+
+ * Follow relation sometimes fails card position
+
+ * getClassName() method of the workflow API does not work correctly when fetching relations
+
+ * History tab shows modified entries for references even if they have not been modified
+
+ * HTML text fields are emptied advancing the process if in editing mode
+
+ * HTML text fields ignore mandatory when advancing processes
+
+ * IE freezes working with processes
+
+ * If nested SQL query return an empty recordset, the CQL returns all rows
+
+ * Import CSV does not show hidden attributes
+
+ * Import CSV slow down
+
+ * In simple classes the begin date attribute has no label
+
+ * Lookup and reference description not diplayed
+
+ * Manage relation load all the first time
+
+ * Multilevel LookUp visualization on grid
+
+ * No column description in "Print current view" report
+
+ * No domain on class B if disable it's super class A
+
+ * NullPointerException in workflow API using user with several groups
+
+ * Null pointer listing groups
+
+ * Object created by workflow must be created by the real user
+
+ * Pagination in the lookup list panel (administration) doesn't work
+
+ * Print card does not print references for subclasses for domains N:1
+
+ * Print card does not work on simple classes
+
+ * Relations of non-active domains should not be returned to the client
+
+ * Row filtering works only on subclasses
+
+ * Separate form configuration from attributes privileges
+
+ * SOAP authentication works even if the user has multiple groups (none default)
+
+ * SOAP - getCardList cannot filter on Id attribute
+
+ * SQL error while executing a query on a superclass when logged with a non-administrator role
+
+ * SQL queries fails because aliases' length is greater than PostgreSQL default
+
+ * SQL view does not display date attributes
+
+ * Stored procedures executes twice when calling web service method "callFunction"
+
+ * String attributes setted to null instead of empty or blank string
+
+ * TemplateResolver doesn't work evaluating complex text fields
+
+ * Too much entries for SELECT
+
+ * UnsopportedOperationException printing a report having parameters
+
+ * User truncated in card's history
+
+ * When applying a filter with an input parameter, if the parameter's attribute is read-only, the form is missing the input box
+
+ * When deleting a card that has active relations, no error/warning is showed
+
+ * widget manageEmail show the same date for all sent email
+
+ * Workflow API queryClass does not return filtered cards filtering on empty attributes
+
+ * Workflow cannot create a new empty card
+
+ * Wrong column order in Export CSV
+
+ * ws sync method doesn't valorize reference on details card
+
+
+
+
+
+CMDBuild 2.1.4 (released 2013/08/02)
+
+
+NEW FEATURES
+
+ * Email management with scheduled job
+
+
+FIXES
+
+ * Reference attribute value is lost after a process has been advanced
+
+ * FullTextQuery does not work in popup when creating/updating reference attributethat contains a cql filter
+
+ * Cannot query cards from SOAP interface specifying a parameter that is a LookUp's description
+
+ * Crash history panel after notes update
+
+ * Error updating card when a trigger changes a reference
+
+ * SOAP method getCardList does not work when a filter is applied
+
+ * Card does not display relation attributes for reference fields
+
+ * Does not open reference search window at second time
+
+ * Crash expanding a domain in tab relation for processes
+
+ * Error creating DB Demo with postgres 8.4
+
+ * CSV import not working when importing records containing references/lookups
+
+ * User is not set in relation when a relation is created/updated from Relations tab
+
+ * Error updating relation attributes on card creation
+
+ * Error applying custom filters with more than one attribute
+
+ * User is not set in Menu table - demo database modified with admin User
+
+ * Cannot create report with Workflow API
+
+ * Users should not be able to use e-mail for login
+
+ * Sort cards clicking to the header of a reference attribute
+
+ * Print grid render the Id of Lookup and Reference attributes instead of Descriptions
+
+ * Serialize only Id and description for references
+
+ * Create modify card widget crash if no presets are defined
+
+ * Calendar widget throws exception calling cards
+
+ * BulkUpdate does loose selection changing page
+
+ * Processes mantains all the IDs after a DB restore
+
+ * Time not set clicking Today in Date picker
+
+ * Create a Table with an existing name works as update
+
+ * Visualisation of boolean attributes
+
+ * Filter reference typing on it does now work
+
+ * Wrong Lock card alert
+
+ * Filter reference typing on it does now work
+
+ * Card navigation open wrong accordion
+
+ * Import CSV cell render the HTML source code
+
+ * CQL compilation error if a lookup attribute was not found
+
+
+
+
+
+CMDBuild 2.1.3.3 (released 2013/07/05)
+
+
+FIXES
+
+ * CQL filters and attribute groups are set to null (on comments) after reordering attributes from administration
+
+
+
+
+
+CMDBuild 2.1.3.2 (released 2013/07/05)
+
+
+NEW FEATURES
+
+ * Logging support for data definition: create/update/delete of classes, domains, attributes and lookup
+
+
+FIXES
+
+ * Null pointer exception when printing a report
+
+ * Import CSV not working when importing records containing references/lookups
+
+ * Does not check email if IMAP does not configured
+
+ * User not set by soap create/update operations
+
+ * Notes erased when advance process 2.1
+
+ * Users can view all processes
+
+
+
+
+
+CMDBuild 2.1.3.1 (released 2013/06/25)
+
+
+FIXES
+
+ * Class list is not fetched in administration module if workflow module is disabled
+
+ * Users can view processes even if the process is not assigned (or assigned in the past) to the current user group
+
+ * Login - Press enter on Group combo refresh the page
+
+ * Creation of card with a lookup attribute via SOAP does not work if the value is an empty string
+
+
+
+
+
+CMDBuild 2.1.3 (released 2013/06/21)
+
+
+FIXES
+
+ * Print grid ignores sorting and flow status
+
+ * Filters drop down menu will not shown when full screen
+
+ * Filter on "Current Group" does not work
+
+ * Reports with privileges are not displayed in the management module
+
+ * CQL compilation error when querying attribute by lookup description
+
+ * Administration mode - User stoppable flag in processes are not fetched correctly
+
+ * Error saving Notes with openNote widget
+
+ * Details tab does not work for Foreign Key on super-classes
+
+ * Can not use attribute id as field for WebService widget
+
+ * Wrong serialization of Time attribute in relation tab, if the value is set to null
+
+ * Processes without XPDL are displayed in the
+
+ * CAS authentication not working
+
+ * Widget manageEmail will not show some attributes
+
+
+
+
+
+CMDBuild 2.1.2.2 (released 2013/06/18)
+
+
+NEW FEATURES
+
+ * Compatibility with iReport 5.1.2
+
+ * CreateModifyCard widget with preset for creation
+
+
+FIXES
+
+ * Wrong serialization for Date/Time/Timestamp attributes in SOAP cards
+
+ * The Processes without XPDL are displayed in the
+
+ * More useful error message when deleting attribute that contains
+
+ * Wrong serialization for Date/Time/Timestamp attributes in SOAP cards
+
+ * Manage relation - edit referenced card function does not work
+
+ * SOAP getRelationList does not return correct result if the domain is defined on a superclass
+
+ * Error calling getCardList when performing a query for getting card(s) with a specific Id
+
+ * Cards query fails when specifying both class name and CQL query
+
+ * Delete domain over superclass with reference in a subclass is now
+
+ * SOAP getRelationList does not return correct result if the domain
+
+ * Disabled modules are not fetched correctly after migration from 2.0.x
+
+ * Boolean attribute not correctly displayed in history tab
+
+ * Privileges for process classes are ignored. All processes are displayed in the process tab
+
+ * Menu crash if delete a View o a Report
+
+ * Error serializing foreign keys from SOAP web services
+
+ * Demo database - User, Role and Email tables comments to sysread
+
+ * Administration UI shows reserved domains when is requested the list
+
+ * Cannot set lookup field from SOAP specifying lookup description
+
+ * OpenAttachment does not retrieve the attachments
+
+ * Conversion error when using a CreateModifyCard widget to populate a reference
+
+ * Enabling GIS navigation, no features are displayed
+
+ * Regular user does not see icon in the GIS map
+
+ * The GeoAttributes appear as simple table in classes tree
+
+ * After migration from 2.0.x, some fields are no more mandatory
+
+ * Auto completion not working for reference attributes
+
+ * Relation graph is empty when domain is defined on a superclass
+
+ * Cannot create LookUp from SOAP web services
+
+ * Custom sorting is ignored
+
+ * Relation graph not correctly displayed
+
+ * SOAP's method "getAttributeList" does not returns the lookup type
+
+ * Rendering issues switching cards when the activities tab is not active
+
+ * Report privileges not displayed
+
+ * Processes startup issues
+
+ * HTML text fields does not fire the mail template resolver
+
+ * Domain attributes values not saved when the card is created
+
+ * History tab does not display correct values when a card
+
+ * CQL for query domains always returns no results
+
+ * Process' activity can be advanced even if the user is logged with another group but without a default group
+
+ * HTML text fields are emptied advancing the process if in editing mode
+
+ * manageEmail widget does ot send e-mails
+
+ * Attribute values not converted to their own type when used within where clauses
+
+ * Cannot advance processes when select cards on linkCards widget
+
+ * WebService widget not working
+
+ * CQL compilation failed when getting cards list from SOAP web services
+
+ * Inherit function does not work when adding/removing attributes to superclasses in administration module
+
+ * Timestamp attribute not working correctly
+
+ * Cannot advance workflow when using an e-mail widget
+
+
+
+
+
+CMDBuild 2.1.2.1 (released 2013/05/31)
+
+
+FIXES
+
+ * Attachments cannot be uploaded using SOAP web services
+
+ * Cannot start/advance process when CMDBuild and Shark webapps are installed in the same Tomcat
+
+ * Demo mode doesn't work anymore
+
+ * Modifying an attribute having a default will reset the default
+
+ * Wrong values displayed for reference and lookup in relations graph
+
+
+
+
+
+CMDBuild 2.1.2 (released 2013/05/27)
+
+
+NEW FEATURES
+
+ * CMDBf web services
+
+ * Runtime parameters for search filter
+
+
+FIXES
+
+ * Attributes grid sorting after new attribute creation
+
+ * "Attributes" tab is enabled after "Add Domain"
+
+ * Cannot advance a process having references on User or/and Role classes
+
+ * Cannot advance demo workflow
+
+ * Cannot delete detail from details tab when the domain is reflective
+
+ * Client interface error defining search filters with conditions "From selection" on reflexive domains
+
+ * Create a domain with the same name of an existing domain
+
+ * Date fields not correctly rendered on createReport widget pop-up
+
+ * Description attribute size for Widgets' definition is not enough
+
+ * Domains over superclasses are not displayed when create a reference
+
+ * Each column of the processes' grid shows the same data
+
+ * Error applying patches with Postgres 8.4
+
+ * Error defining search filters with conditions on reflexive domains
+
+ * Error getting cards with an administrator for a superclass
+
+ * Error saving user without any change
+
+ * Error when domain attributes of type
+
+ * Error while getting e-mail list when clicking on widget
+
+ * HeaderAuthenticator not working
+
+ * Include inherited check in administration's domain grid
+
+ * Lost attachments
+
+ * PatchManager fails on existing database
+
+ * Search filter defined on reflexive domains does not work
+
+ * SOAP method "getRelationList" does not return correct Relation objects
+
+ * Superclasses with no children cannot be deleted
+
+ * Tab relations not working properly in some situations
+
+ * Users, Groups a Lookup List classes duplicated when assign permissions
+
+ * Various CQL compilation issues
+
+ * Wrong label for domain Description
+
+ * Wrong reference direction for N:1 Domains
+
+
+
+
+
+CMDBuild 2.1.1 (released 2013/05/13)
+
+
+FIXES
+
+ * Lookup form is not disabled after insert
+
+ * User not stored during card's creation/modification
+
+ * BeginDate attribute label on simple tables is not whown
+
+ * Server side check for class names that contain special characters
+
+
+
+
+
+CMDBuild 2.1.0 (released 2013/05/09)
+
+
+NEW FEATURES
+
+ * New Persistence Layer full integration
+
+ * Implemented views based on search filters and SQL functions
+
+ * Advanced search filters are now storable and shareable
+
+ * Privileges on rows and columns
+
+ * Lock card mechanism to manage concurrent editing
+
+
+
+
+
+CMDBuild 2.0.4 (released 2013/02/07)
+
+
+NEW FEATURES
+
+ * Cloud Administrator
+
+ * Group attribute in tab also for Processes
+
+ * Web Service Widget
+
+
+FIXES
+
+ * UI Crash switching closing add detail window
+
+ * Reference crash disabling the description attribute of reference class
+
+ * It's not possible to print the activities grid
+
+ * Upload GeoServer layer crash
+
+ * The lited admin is able to change the password of a Full administration
+
+ * reference output on createModifyCard
+
+ * Accordion random crash
+
+ * Card attributes not filled
+
+ * Advanced search filter on a CQL filtered Reference attribute does not work
+
+
+
+
+
+CMDBuild 2.0.3 (released 2012/12/21)
+
+
+NEW FEATURES
+
+ * Define domain tree structure
+
+
+FIXES
+
+ * Shark could not send mail using SSL
+
+ * SelectAttributeToolAgent returns integer values instead of string
+
+ * Cannot advance processes using SOAP web services
+
+ * Error when passing dates to CMDBuild SQL functions
+
+ * Missing datasources for Dashboard's charts
+
+ * manageRelation widget not handling object reference parameter
+
+ * Filtered reference issues
+
+ * IllegalArgumentException while fetching card from FluentApi
+
+ * Process variables are not updated when setted within a task script that is the last activity of the process
+
+ * manageRelation doesn't handle selected cards
+
+ * GIS navigation tree configuration: sort the class menu
+
+ * There is impossible to open the reference search window
+
+ * Display field ignore the line break characters
+
+ * Error saving a card (GEO server not enabled)
+
+ * Cannot sort activity attributes
+
+ * Alfresco delay parameter has no effect
+
+ * Files attached to fluent api emails
+
+ * Group email is not visible in administration module
+
+ * Illegal expression when the activity has ho assigned participants
+
+
+
+
+
+CMDBuild 2.0.2 (released 2012/10/08)
+
+
+NEW FEATURES
+
+ * Metadata management for attachments
+
+
+FIXES
+
+ * No relations showed in ManageRelations widget when specifying a supeclass
+
+ * Could not display the management module with IE7 (and newest if in compatibility mode)
+
+ * NullPointerException while listing relations (in relative tab) with an unprivileged group
+
+ * Report timeout if printed from Widget
+
+
+
+
+
+CMDBuild 2.0.1 (released 2012/09/17)
+
+
+NEW FEATURES
+
+ * Updated Dutch and Portuguese tranlations
+
+
+FIXES
+
+ * Is not possible to set more than 2 decimal in map center longitude and latitude
+
+ * Map popup does not display lookup and reference attribute values
+
+ * Map issues/enhancements
+
+ * Lookup does not load more than 25 items
+
+
+
+
+
+CMDBuild 2.0.0 (released 2012/08/31)
+
+
+NEW MAJOR FEATURES
+
+ * Rewrite of the workflow module for with support for Shark 4.4
+
+ * Dashbard definition with report charts
+
+
+NEW FEATURES
+
+ * Simplified navigation
+As a Generic User
+I want a full screen visualization
+So that I can see the whole grid
+
+ * Configure UI by group
+As an Administrator
+I want to configure some UI behaviours and aspects
+So that I can reduce the possibility of a user group
+
+ * Simplified History tab
+As a Generic User
+I want a simple history visualization
+So that I can consult it more quickly
+
+ * Update Extjs to 4.1
+
+
+FIXES
+
+ * It is not possible export a csv for reference to a card without description
+
+ * PostGis 2.0 does not work
+
+ * Open card from ManageRelation Widget not displayed
+
+ * Wrong label for foreignkey on master-detail tab
+
+ * Ugly scrollbars on browser zoom
+
+
+
+
+
+CMDBuild 1.5.4 (released 2012/05/11)
+
+
+NEW FEATURES
+
+ * Triggers to ignore inserts
+As a SQL Fanatic
+I want the system to allow blocked inserts
+So that I can stop operations in before triggers
+
+
+FIXES
+
+ * Two-digit years are mapped to the first century
+
+ * Could not select a domain when create a reference attribute
+
+ * Widget not loaded
+
+
+
+
+
+CMDBuild 1.5.3 (released 2012/04/04)
+
+
+NEW FEATURES
+
+ * CreateModifyCard widget also in classes
+As a generic user
+I want to modify a the card of a reference when I'm editing a card
+So that I have not to switch class to do that
+
+
+FIXES
+
+ * Superclass queries don't remove inactive subclasses
+
+ * Very long attribute names cannot be queried
+
+ * Slow html field rendering in IE
+
+ * Open Report configuration does not show all report attributes
+
+ * It is not possible to update the relation attributes on the EditRelationWindow
+
+
+
+
+
+CMDBuild 1.5.2 (released 2012/03/19)
+
+
+NEW FEATURES
+
+ * Dates with four-digit years
+As a user with cross-century tasks
+I want to fill dates with four-digit years
+So that I know what century they belong to
+
+
+FIXES
+
+ * The main grid loses the quick filter if an operation on the relation tab was done
+
+ * Advanced filter not displaying multilevel lookup
+
+ * CreateModifyCard does not the react
+
+ * Saving an activity causes the advancement to next step
+
+ * Release 1.5.1 breaks Web Service compatibility
+
+ * Very long attribute names cannot be queried
+
+ * Wrong activity modify privilege when viewing superclasses
+
+
+
+
+
+CMDBuild 1.5.1 (released 2012/03/01)
+
+
+NEW FEATURES
+
+ * Notes on card grid
+As a Generic User
+I want the notes to be visible in the grid
+So that I can export them in CSV
+
+ * Add attachments on closed activities
+As a generic user
+I want to attach files to closed activity
+So that I can still update the attachments
+
+
+FIXES
+
+ * Subreports not found if in JRGroups
+
+ * Management module does not work if use the compressed file
+
+ * Calendar wrong request
+
+ * Calendar definition: It is not possible set the attribute to use as Event title
+
+ * Latest executor wrong if "system / username"
+
+ * Old text attributes appear as HTML
+
+ * Reference attributes not showed
+
+ * AllowCardEditing on linkCards
+
+ * Extjs 4.0.7 still has problems with scrollbars
+
+ * CSV header repeated printing the card grid
+
+ * CreateModifyCard widget does not update the reference on activity form
+
+ * IE7 not starting
+
+ * IE7 does not display the header and footer of main interface
+
+
+
+
+
+CMDBuild 1.5.0 (released 2012/01/31)
+
+
+NEW FEATURES
+
+ * Use the paging selection on every grid
+As a Generic User
+I want to select the grid consistently
+So that I don't get confused
+
+ * Calendar widget
+As a Workflow Designer
+I want to use a Calendar widget
+So that the users can better understand scheduled activities
+
+ * Edit card from LinkCards
+As a Workflow User
+I want to edit the cards displayed by the LinkCards widget
+So that I can alter them more easily
+
+ * HTML editor for attributes with type TEXT
+As an Administrator
+I want to associate an HTML editor to a Text attribute
+So that the users could easily edit HTML
+
+ * Russian translations
+As a Russian user
+I want to use CMDBuild in my native language
+So that I don't need to learn a foreign language
+
+ * Print report when editing a card
+As an Generic User
+I want the possibility to print a report when I'm editing a card
+So that I don't lose the focus on the editing operation
+
+ * Brazilian Translations
+As a Brazilian user
+I want to use CMDBuild in my native language
+So that I don't need to learn a foreign language
+
+ * Calendar widget on card editing
+As a Generic User editing a card
+I want a widget that shows a calendar
+So that I can see related events
+
+ * Ping widget
+As a generic user
+I want to see the result of a ping on an IP address
+So that I know if a host is up
+
+ * Attachments on process
+As a Generic User
+I want the attachments tab always enabled
+So I can download attachment also when the activity is closed
+
+ * Notes on process
+As a Generic User
+I want the notes tab always enabled
+So I can read the notes also without openNote widget
+
+ * Bulk update confirmation after count
+As a Generic User using the bulk update utility
+I want to know how many cards would be updated
+So that I can catch potential mistakes
+
+
+FIXES
+
+ * Enable advanced filter on LinkCards if no other filter defined
+
+ * Lookup attributes are not displayed if set as attribute of a reference
+
+ * ReferenceField and server dependancies
+
+ * Multilevel lookup never fire blur event (TemplateResolver issues)
+
+ * NullPointerException on date/time attributes serialization using the detailed format
+
+ * ManageEmail widget looping on no mail
+
+ * ManageEmail will not generate emails
+
+ * OpenAttachement multiple action
+
+ * Disable module does not work
+
+ * The option to print the grid in csv format is missing
+
+ * Link cards not update CQL for filter
+
+ * The grid of report must be paginated
+
+ * Performance issues turning SQL logging to debug
+
+ * Quick filter not working with non-ASCII characters
+
+
+
+
+
+CMDBuild 1.4.0 (released 2011/09/19)
+
+
+NEW FEATURES
+
+ * Attributes for domains
+As a database designer
+I want to define attributes for the domains as I can do for the classes
+So that I can better define relations
+
+ * Ext 3.3 to 4 migration
+As a Generic User
+I want to use IE9 and FF4 with CMDBuild
+So that I can use the OS default browser
+
+ * Alfresco 3 integration
+As an System Administrator
+I want to upgrade Alfresco to a recent version
+So that I can have the community support
+
+ * Changed attributes marked in the history
+As a Generic User
+I want to see what has changed in a history row
+So that I don't need to compare the rows
+
+ * Not null filters
+As someone with several null values on a field
+I want to filter the cards that don't have that field set to null
+So that I can focus on the meaningful cards
+
+ * Master/Detail label
+As a Database Designer
+I want to specify a label for M/D domains
+So that it can be used in the details panel
+
+ * Use group name in templates
+As a Workflow Designer
+I want to use the current default group in templates
+So that I can filter resources based on it
+
+ * Hide graph option
+As a user not speaking Italian at all
+I want the graph buttons to be hidden everywhere
+So that I don't feel uncomfortable with unintelligible messages
+
+ * addDays tool agent
+As a workflow designer
+I want to have a default tool agent to add a number of days to a date
+So that I don't need to reimplement it
+
+ * Don't show the report grid from the navigation tree
+As a Generic User with only the navigation tree
+I want to execute reports without being shown the report grid
+So that I don't see them all and I don't get confused
+
+
+FIXES
+
+ * Form cleared following relations on the same class
+
+ * Fail modify passing empty geoattributes
+
+ * Shark stored procedure execution does not consider INOUT parameters
+
+
+
+
+
+CMDBuild 1.3.1 (released 2011/03/16)
+
+
+NEW FEATURES
+
+* Default selection for LinkCards widget
+As a workflow designer I want to define a default selection for a LinkCards
+widget, so that the users won't have to go through it unless needed. The
+selection will be defined by the usual template like in manageMail.
+
+* Map view for LinkCards widget
+As a workflow designer I want the possibility to enable a map view for a
+LinkCards widget, so that the users can link the cards using a map instead of
+the standard grid.
+
+* Huge lookup fields speedup
+As a user with lookup items in the number of thousands I want browsers with slow
+JS engines not to freeze, so that I can complete those fields without slowing
+down.
+
+* Email authentication for Liferay
+As the Liferay system administrator I want to authenticate the CMDBuild users
+with their email, so that it matches the portal credentials.
+
+* Email authentication
+As a system administrator I want the users to be able to login with their email,
+so that the company policies are enforced.
+
+* CAS Authentication
+As a system administrator I want to define a CAS server as an authentication
+agent, so that my users will be able to sign-on once in the network.
+
+* Bulk update to all the cards in the current filter
+As a user of the bulk update utility I want to check a box in the header of
+cards grid, so that the update considers all the cards in the current filter.
+Currently the selection is applied to the display page only.
+
+* Group attributes in filter menu
+As a generic user I want the attributes in the filter menu grouped, so that they
+reflect the tabbed division of the form.
+
+* Show info about a card in the map view
+As a user in the map view I want to show the base info about a card standing
+over it, so that I can choose the right one with less clicks on the map.
+
+* Customization of start/end connector log message
+As a system administrator I want to be able to customize the start and end
+message of the connector, so that I can use the same old grep line for
+diagnostics.
+
+* Update a report without uploading file
+As an administrator I want to update a report without uploading the jrxml file,
+so that it can be faster.
+
+* Change log levels without restarting the application
+As someone needing to debug a production instance of CMDBuild I want to change
+the log levels without restarting the applications, so that I can see what is
+happening without hassles for the connected users.
+
+* Support of new mime-types
+As a CMDBuild user I want to be able to configure the mime-types of the
+attachments, so all the browsers I'm using can correctly identify them when
+downloading.
+
+* Display installation identifier
+As a user of multiple instances of CMDBuild I want to identify the instance I am
+currently using, so that I don't make mistakes.
+
+* Report locale should be the webapp default, not the system default
+As a user printing a report with dates I want to see them formatted for my
+locale, so that I can print it without modifications. Now the system prints
+reports using the operating system default locale.
+
+* [Web Service] ActivityDescription filled in getCardList
+As a developer of an external service I want the activity list to be filled with
+ActivityDescription, so that the data are the same as in the main interface.
+
+* [Web Service] ActivityDescription filled in getCard
+As a developer of an external service I want the activity details in getCard to
+include the activity description, so that I don't have to call getProcessHelp to
+get it.
+
+* Create a new card from the create relation dialog window
+As a CMDBuild user I want to be able to create a card while I am creating a
+relation, so that the editing can be faster.
+
+* Tab view for details
+As a CMDBuild user I want to see the details list as tabs, so that the interface
+is coherent with the card presentation.
+
+* [Web Service] Resume process
+As a developer of an external service I want the possibility to resume a
+process, so that my application can do this task.
+
+
+FIXES
+
+* Attachments requested for new cards
+
+* The PDF reports do not display Unicode characters
+
+* It is not possible to upload icons with IE
+
+* The LDAP authentication breaks the authentication chain
+
+* [Web Service] getRelationList not working on superclasses
+
+* Reports disappear from the navigation menu with the migration to 1.3
+
+* The connector creates relations with invalid ids
+
+* Reference to a deleted file
+
+* Privilege loss at re-login if the default group is set
+
+* String values exceding 255 characters are not read
+
+* LookupAttribute throws a NullPointerException for invalid lookup id
+
+* Multiple relations between the same cards on new N:N domains
+
+* SQL error removing subclass with inherited reference
+
+* Map layers are visible only with administrator privileges
+
+* Print Schema not working
+
+* Layout problems in import/export csv
+
+* Invalid data conversion from Shark types
+
+* Reports with an empty query crash the system
+
+* Custom SQL exceptions are not translated anymore
+
+* Small UI issues
+
+* Unique constraint violation error is a generic SQL error
+
+* Cannot change the default group
+
+* Error exporting process with Time or Inet attributes
+
+* Rendering issues in Activity tabs
+
+* The notes tab of the workflow must be displayed like the notes tab in the
+  cards
+
+* UI crash changing attributes order
+
+* Wrong order in the combo-fields of classes after a insert
+
+* Cannot have more than one CreateReport workflow widget in one step
+
+* The map crashes if there aren't base layers configured
+
+* The current username is not set when deleting a relation
+
+* Workflow Tool Agent CreateCardRef uses the system user
+
+* Start an activity with the empty grid does not work
+
+* New lookup values not inserted by connector's update
+
+* Domains keep with dangling pointers to modified classes
+
+* ManageMail widget crashes if read only
+
+* Add Relation not working in ManageRelation widget
+
+* Card info in Map view works only for cards of the current class
+
+* Reference with invalid IDs should be considered null
+
+* Wrong name for authentication property
+

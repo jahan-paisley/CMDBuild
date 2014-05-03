@@ -1,0 +1,29 @@
+div.panelheader {
+	padding: 2xp;
+}
+
+.panelheader table, 
+.panelheader tbody, 
+.panelheader tr, 
+.panelheader div {
+	display:inline;
+}
+
+.panelheader td{
+	background-image: none;
+}
+.panelheader span.x-panel-header-text{
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin-top: -20px;
+	padding-bottom: 3px;
+}
+
+.panelheader div.headerleft{
+	float:left;
+}
+
+.panelheader div.headerright{
+	float:right;
+}

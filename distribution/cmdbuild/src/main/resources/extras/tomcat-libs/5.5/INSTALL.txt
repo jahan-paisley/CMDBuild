@@ -1,0 +1,9 @@
+[ITALIANO]
+Librerie aggiuntive per Tomcat 5.5
+* Copiare tomcat-dbcp.jar nella cartella common/lib di Tomcat 5.5 
+* Copiare postgresql-8.3-603.jdbc3.jar nella cartella common/lib di Tomcat 5.5 
+
+[ENGLISH]
+Tomcat 5.5 additional libraries
+* Copy tomcat-dbcp.jar in the Tomcat 5.5 common/lib directory
+* Copy postgresql-8.3-603.jdbc3.jar in the Tomcat 5.5 common/lib directory

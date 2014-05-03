@@ -1,0 +1,1412 @@
+{
+	"description": "Русский",
+	"release": "2.2-dev",
+	"administration": {
+		"description": "Администрирование",
+		"email": {
+			"title": "<em>Email</em>",
+			"accounts": {
+				"account": "<em>Account</em>",
+				"active": "<em>Active</em>",
+				"add": "<em>Add account</em>",
+				"address": "<em>Address</em>",
+				"credentials": "<em>Credentials</em>",
+				"enableMoveRejectedNotMatching": "<em>Enable move rejected not matching</em>",
+				"enableSsl": "<em>Enable SSL</em>",
+				"imapPort": "<em>IMAP port</em>",
+				"imapServer": "<em>IMAP server</em>",
+				"incoming": "<em>Incoming</em>",
+				"incomingFolder": "<em>Incoming folder</em>",
+				"isDefault": "<em>Default</em>",
+				"modify": "<em>Modify account</em>",
+				"outgoing": "<em>Outgoing</em>",
+				"password": "<em>Password</em>",
+				"processedFolder": "<em>Processed folder</em>",
+				"rejectedFolder": "<em>Rejected folder</em>",
+				"remove": "<em>Remove account</em>",
+				"setDefault": "<em>Set as default</em>",
+				"smtpPort": "<em>SMTP Port</em>",
+				"smtpServer": "<em>SMTP server</em>",
+				"title": "<em>Accounts</em>",
+				"username": "<em>Username</em>"
+			},
+			"templates": {
+				"add": "<em>Add template</em>",
+				"body": "<em>Body</em>",
+				"modify": "<em>Modify template</em>",
+				"remove": "<em>Remove template</em>",
+				"template": "<em>Template</em>",
+				"title": "<em>Templates</em>"
+			}
+		},
+		"modClass": {
+			"add_class": "Создать класс",
+			"attributeProperties": {
+				"add_attribute": "Создать атрибут",
+				"baseProperties": "Основные свойства",
+				"criterion": "Критерий",
+				"delete_attribute": "Удалить атрибут",
+				"description": "Описание",
+				"destination": "Назначение",
+				"direction": {
+					"asc": "По возрастанию",
+					"desc": "По убыванию"
+				},
+				"domain": "Связь",
+				"editorType": {
+					"html": "Html",
+					"label": "Тип редактора",
+					"plain": "Чистый текст"
+				},
+				"field_hidden": "Скрытый",
+				"field_read": "Только чтение",
+				"field_visibility": "Доступность",
+				"field_write": "Чтение/запись",
+				"group": "Группа",
+				"inherited": "Наследуемый",
+				"isactive": "Активный",
+				"isbasedsp": "Отображаемый",
+				"isdefault": "По умолчанию",
+				"isnotnull": "Обязательный",
+				"isunique": "Уникальный",
+				"length": "Длина",
+				"lookup": "Список",
+				"meta": {
+					"add": "Добавить метаданные",
+					"key": "Параметр",
+					"remove": "Удалить метаданные",
+					"title": "Редактировать метаданные",
+					"value": "Значение"
+				},
+				"modify_attribute": "Редактировать атрибут",
+				"msg_warning_drop_row": "Изменение порядка атрибутов возможно только, если отображены наследуемые атрибуты",
+				"name": "Имя",
+				"not_in_use": "Не используется",
+				"pipeNotAllowed": "Используйте OR вместо |",
+				"precision": "Точность",
+				"referencequery": "Фильтр",
+				"scale": "Масштаб",
+				"set_sorting_criteria": "Сортировка",
+				"type": "Тип",
+				"typeProperties": "Тип данных"
+			},
+			"attributes_title": "Настройка атрибутов",
+			"classProperties": {
+				"active": "Активный",
+				"description": "Описание",
+				"inherits": "Наследуется от",
+				"modify_class": "Редактировать класс",
+				"name": "Имя",
+				"print_class": "Распечатать",
+				"remove_class": "Удалить класс",
+				"simple": "Простой",
+				"standard": "Стандартный",
+				"superclass": "Суперкласс",
+				"type": "Тип",
+				"wait_msg": "Отправка данных...",
+				"wait_title": "Подключение"
+			},
+			"class_property": "Свойство",
+			"classtype": {
+				"simpletable": "Простой",
+				"standard": "Стандартный"
+			},
+			"domainProperties": {
+				"add_domain": "Создать связь",
+				"cardinality": "Тип связи",
+				"class_destination": "Связанная таблица",
+				"class_target": "Исходная таблица",
+				"delete_domain": "Удалить связь",
+				"description": "Описание связи",
+				"description_direct": "Прямое отношение",
+				"description_inverse": "Обратное отношение",
+				"domain": "Связь",
+				"is_active": "Активная",
+				"m_d": "Детал.",
+				"master_detail": "Детализированная связь",
+				"md_label": "Наименование детализации",
+				"modify_domain": "Редактировать связь",
+				"name": "Имя",
+				"title_add": "Создать связь",
+				"title_modify": "Редактировать связь \"{0}\""
+			},
+			"domains_title": "Настройка связей",
+			"errors": {
+				"table": {
+					"cast": "Ошибка изменения свойства \"Суперкласс\". Класс содержит данные или имеет дочерние классы",
+					"duplicate": "Дублирующееся имя класса",
+					"parent_not_found": "Класс-родитель не существует"
+				}
+			},
+			"geo_attributes": {
+				"card_binding": "Связанная карточка",
+				"externalGraphic": "Значок",
+				"fillColor": "Цвет заливки",
+				"fillOpacity": "Прозрачность заливки",
+				"graphicHeight": "Высота значка",
+				"graphicOpacity": "Прозрачность значка",
+				"graphicWidth": "Ширина значка",
+				"master": "Класс",
+				"max_zoom": "Наибольший масштаб",
+				"min_zoom": "Наименьший масштаб",
+				"pointRadius": "Радиус точки",
+				"strokeColor": "Цвет линии",
+				"strokeDashstyle": "Тип линии",
+				"strokeOpacity": "Прозрачность линии",
+				"strokeStyles": {
+					"dash": "Короткие штрихи",
+					"dashdot": "Короткие штрихи и точки",
+					"dot": "Точки",
+					"longdash": "Длинные штрихи",
+					"longdashdot": "Длинные штрихи и точки",
+					"solid": "Непрерывная линия"
+				},
+				"strokeWidth": "Толщина линии",
+				"style": "Стиль",
+				"type": {
+					"line": "Линия",
+					"point": "Точка",
+					"polygon": "Многоугольник"
+				},
+				"visibility": "Видимость"
+			},
+			"include_inherited": "Показывать наследуемые",
+			"layers": "Слои",
+			"print_schema": "Распечатать схему",
+			"tabs": {
+				"attributes": "Атрибуты",
+				"domains": "Связи",
+				"geo_attributes": "Гео. атрибуты",
+				"properties": "Свойства"
+			},
+			"title": "Настройка классов",
+			"tree_title": "Список классов",
+			"widgets": {
+				".OpenReport": {
+					"fields": {
+						"force": "Формат",
+						"presets": "Атрибуты отчета",
+						"report": "Отчет"
+					},
+					"presetGrid": {
+						"attribute": "Атрибут",
+						"value": "Значение"
+					},
+					"title": "Создать отчет"
+				},
+				".Calendar": {
+					"fields": {
+						"target": "Целевой класс",
+						"start": "Начальная дата",
+						"end": "Конечная дата",
+						"title": "Заголовок события",
+						"filter": "CQL фильтр",
+						"defaultDate": "Дата по умолчанию"
+					},
+					"title": "Календарь"
+				},
+				".Ping": {
+					"fields": {
+						"address": "Адрес",
+						"count": "Количество пакетов",
+						"templates": "Шаблоны"
+					},
+					"title": "Пинг"
+				},
+				".Workflow": {
+					"title": "<em>Start workflow</em>"
+				},
+				".NavigationTree": {
+					"title": "<em>Navigation tree</em>"
+				},
+				".CreateModifyCard": {
+					"fields": {
+						"target": "Целевой класс",
+						"cql": "CQL отбор",
+						"readOnly": "Только чтение"
+					},
+					"title": "Создать или редактировать карточку"
+				},
+				"commonFields": {
+					"active": "Активный",
+					"alwaysenabled": "Всегда включен",
+					"buttonLabel": "Метка кнопки",
+					"type": "Тип"
+				},
+				"title": "Виджет"
+			}
+		},
+		"modDashboard": {
+			"charts": {
+				"alert": {
+					"wrongConfiguration": "Ошибка в настройке диаграммы"
+				},
+				"availableCharts": {
+					"gauge": "Индикатор",
+					"pie": "Круговая",
+					"bar": "Гистограмма",
+					"line": "График"
+				},
+				"buttons": {
+					"add": "Создать диаграмму",
+					"modify": "Редактировать диаграмму",
+					"remove": "Удалить диаграмму",
+					"preview": "Предпросмотр"
+				},
+				"fields": {
+					"active": "Активно",
+					"autoload": "Загружать автоматически",
+					"background": "Цвет фона",
+					"categoryFieldset": "Ось категорий",
+					"chartType": "Тип диаграммы",
+					"dataSource": "Источник данных",
+					"defaultValue": "Значение по умолчанию",
+					"description": "Описание",
+					"fieldType": "Тип",
+					"foreground": "Цвет",
+					"fromClass": "Из класса",
+					"labelField": "Метка",
+					"legend": "Показывать легенду",
+					"lookupType": "Перечень",
+					"max": "Максимум",
+					"min": "Минимум",
+					"name": "Имя",
+					"orientation": {
+						"label": "Положение",
+						"values": {
+							"horizontal": "Горизонтально",
+							"vertical": "Вертикально"
+						}
+					},
+					"required": "Обязательное",
+					"steps": "Количество положений",
+					"title": "Заголовок",
+					"valueField": "Значение",
+					"valueFieldset": "Ось значений"
+				},
+				"inputTypes": {
+					"BOOLEAN": "Булево",
+					"DECIMAL": "Десятичная дробь",
+					"INTEGER": "Целое число",
+					"DOUBLE": "Число двойной точности",
+					"DATE": "Дата",
+					"TIMESTAMP": "Штамп времени",
+					"TIME": "Время",
+					"STRING": "Строка",
+					"TEXT": "Текст",
+					"CHAR": "Символ",
+					"INET": "Сетевой адрес"
+				},
+				"title": "Диаграммы",
+				"typeFieldOptions": {
+					"card": "Карточка",
+					"classes": "Класс CMDBuild",
+					"freeInt": "Целое число",
+					"freeString": "Строка",
+					"group": "Текущая группа",
+					"lookup": "Перечень",
+					"user": "Текущий пользователь"
+				}
+			},
+			"layout": {
+				"add": "Создать колонку",
+				"remove": "Удалить пустые колонки",
+				"title": "Расположение"
+			},
+			"properties": {
+				"add": "Создать панель",
+				"modify": "Редактировать панель",
+				"remove": "Удалить панель",
+				"fields": {
+					"name": "Имя",
+					"description": "Описание",
+					"groups": "Доступные группы"
+				}
+			},
+			"title": "Панель"
+		},
+		"modLookup": {
+			"add_lookuptype": "Добавить перечень",
+			"lookupForm": {
+				"active": "Активный",
+				"code": "Код",
+				"description": "Описание",
+				"disable_lookup": "Отключить элемент",
+				"enable_lookup": "Включить элемент",
+				"isdefault": "По умолчанию",
+				"notes": "Комментарии",
+				"parentdescription": "Родитель",
+				"update_lookup": "Редактировать элемент"
+			},
+			"lookupGrid": {
+				"active": "Активный",
+				"add_lookup": "Добавить элемент",
+				"code": "Код",
+				"description": "Описание",
+				"isdefault": "По умолчанию",
+				"notes": "Комментарии",
+				"parentdescription": "Родитель"
+			},
+			"lookupType": "Перечень",
+			"lookupTypeForm": {
+				"active": "Активный",
+				"delete_lookuptype": "Удалить перечень",
+				"description": "Описание",
+				"modify_lookuptype": "Редактировать перечень",
+				"parent": "Родитель",
+				"title": "Настройка перечней"
+			},
+			"lookupTypes": "Перечни",
+			"tabs": {
+				"lookuplist": "Перечень",
+				"properties": "Свойства"
+			},
+			"title": "Настройка перечней"
+		},
+		"modWorkflow": {
+			"add_process": "Добавить процесс",
+			"attributes_title": "Атрибуты",
+			"domains_title": "Связи",
+			"errors": {
+				"table": {
+					"cast": "Ошибка изменения свойства \"Суперкласс\". Класс содержит данные или имеет дочерние классы",
+					"duplicate": "Дублирующееся имя класса",
+					"parent_not_found": "Класс-родитель не существует"
+				}
+			},
+			"include_inherited": "Показывать наследуемые",
+			"process_property": "Свойство",
+			"tabs": {
+				"attributes": "Атрибуты",
+				"domains": "Связи",
+				"properties": "Свойства",
+				"xpdl": "XPDL"
+			},
+			"title": "Процессы",
+			"tree_title": "Процессы",
+			"xpdlDownload": {
+				"download_tamplete": "Выгрузить шаблон",
+				"download_xpdl_tamplete": "Выгрузить XPDL",
+				"package_version": "Версия",
+				"process_name": "Имя процесса",
+				"user_stoppable": "Может быть остановлен пользователем"
+			},
+			"xpdlUpload": {
+				"deleted_image": "Файл эскиза был удален, т.к. он не синхронизирован с XPDL файлом",
+				"error": "Ошибка загрузки XPDL файла",
+				"jpg_file": "Эскиз",
+				"saved_image": "Эскиз загружен",
+				"saved_xpdl": "XPDL файл загружен",
+				"upload_template": "Загрузить",
+				"upload_xpdl_tamplete": "Загрузить XPDL",
+				"xpdl_file": "XPDL файл"
+			}
+		},
+		"modcartography": {
+			"external_services": {
+				"admin_password": "Пароль администратора",
+				"admin_user": "Логин администратора",
+				"description": {
+					"geoserver": "GeoServer",
+					"google": "Google Maps",
+					"osm": "Open Street Map",
+					"yahoo": "Yahoo! Maps"
+				},
+				"key": "Ключ",
+				"title": "Внешние сервисы",
+				"url": "URL",
+				"workspace": "Рабочая область"
+			},
+			"geoserver": {
+				"add_layer": "Добавить слой",
+				"delete_layer": "Удалить слой",
+				"file": "File",
+				"modify_layer": "Редактировать слой",
+				"service_not_available": "Geoserver не активен. Для активации откройте меню {0}",
+				"title": "Слои Geoserver"
+			},
+			"icons": {
+				"alert": {
+					"msg": "Вы уверены?",
+					"title": "Предупреждение"
+				},
+				"description": "Описание",
+				"file": "Файл",
+				"title": "Значки"
+			},
+			"layermanager": {
+				"title": "Порядок слоев"
+			},
+			"navigationTree": {
+				"title": "Навигация"
+			},
+			"title": "ГИС"
+		},
+		"modconnectors": {
+			"title": "Соединители"
+		},
+		"modmenu": {
+			"add_menu": "Создать меню",
+			"available_elements": "Доступные элементы",
+			"availabletree": {
+				"class": "Классы",
+				"dashboard": "Панели",
+				"processclass": "Процессы",
+				"report": "Отчеты",
+				"view": "Виды"
+			},
+			"custom_menu": "Настраиваемое меню",
+			"custom_menus": "Настраиваемые меню",
+			"delete_menu": "Удалить меню",
+			"menu_root": "Меню",
+			"modify_menu": "Редактировать меню",
+			"new_folder": "Новая папка",
+			"title": "Настройка меню"
+		},
+		"modreport": {
+			"add": "Создать отчет",
+			"importJRFormStep1": {
+				"description": "Описание",
+				"enabled_groups": "Доступные группы",
+				"fieldset": "Импортировать отчет Jasper",
+				"master_report_jrxml": "Файл отчета (.jrxml)",
+				"menuTitle": "Отчет Jasper",
+				"name": "Название отчета"
+			},
+			"importJRFormStep2": {
+				"duplicate_images": "Невозможно выполнить: найдены изображения с дублирующимися именами файлов.",
+				"fieldset_generic": "Импортировать отчет Jasper",
+				"fieldset_images": "Требуемые изображения",
+				"fieldset_subreports": "Требуемые файлы",
+				"menuTitle": "Отчет Jasper",
+				"nothing_to_import": "Не найдено ни одного изображения или суботчета. Подтвердите выполнение процедуры импорта.",
+				"success": {
+					"description": {
+						"add": "Импорт выполнен",
+						"modify": "Отчет модифицирован"
+					},
+					"title": "Успешное выполнение"
+				}
+			},
+			"importOpenofficeTemplateForm": {
+				"menuTitle": "Отчет OpenOffice"
+			},
+			"modify": "Редактировать отчет",
+			"remove": "Удалить отчет",
+			"title": "Отчеты"
+		},
+		"modsecurity": {
+			"defaultgroup": "* По умолчанию *",
+			"group": {
+				"add_group": "Создать группу",
+				"administrator": "Администратор",
+				"availableusers": "Доступные пользователи",
+				"delete_group": "Отключить группу",
+				"email": "Email",
+				"enable_group": "Включить группу",
+				"group_description": "Описание",
+				"group_name": "Имя группы",
+				"groupchoice": "Выбранные пользователи",
+				"is_active": "Активная группа",
+				"is_administrator": "Административные права",
+				"limited_admin": "Администратор с ограниченным доступом",
+				"modify_group": "Редактировать группу",
+				"normal": "Обычный",
+				"starting_class": "Стартовая страница",
+				"title": "Настройка групп",
+				"usermanagement": "Настройка пользователей"
+			},
+			"groups": "Группы",
+			"privilege": {
+				"add_privilege": "Добавить доступ",
+				"classname": "Имя класса",
+				"delete_privilege": "Удалить доступ",
+				"modify_privilege": "Редактировать доступ",
+				"none_privilege": "Нет",
+				"privilege_mode": "Доступ",
+				"read_privilege": "Чтение",
+				"write_privilege": "Запись"
+			},
+			"tabs": {
+				"permissions": "Разрешения",
+				"properties": "Свойства"
+			},
+			"title": "Пользователи и группы",
+			"uiconfiguration": {
+				"disabled_class_tabs": "Отключенные закладки в модуле 'Классы'",
+				"disabled_modules": "Отключенные модули",
+				"disabled_process_tabs": "Отключенные закладки в модуле 'Процессы'",
+				"generic_properties": {
+					"always_enabled_widgets": "Всегда включенные виджеты",
+					"card_simple_history": "Простой формат истории для карточек",
+					"full_screen_navigation": "Полноэкранный режим окна навигации",
+					"hide_side_panel": "Скрыть боковую панель",
+					"process_simple_history": "Простой формат истории для процессов"
+				},
+				"other": "Другие настройки",
+				"title": "Конфигурация интерфейса"
+			},
+			"user": {
+				"add_user": "Добавить пользователя",
+				"availablegroups": "Доступные группы",
+				"change_password": "Изменить пароль",
+				"confirmation": "Подтверждение пароля",
+				"defaultgroup": "Основная группа",
+				"defaultonlogin": "* Имя входа *",
+				"description": "Описание",
+				"disable_user": "Отключить пользователя",
+				"email": "Email",
+				"enable_user": "Включить пользователя",
+				"groupmanagement": "Редактировать группу пользователя",
+				"isactive": "Активен",
+				"modify_user": "Редактировать пользователя",
+				"password": "Пароль",
+				"title": "Управление пользователями",
+				"user_info": "Информация о пользователе",
+				"usergroups": "Группы",
+				"username": "Имя пользователя"
+			},
+			"users": "Пользователи"
+		},
+		"setup": {
+			"cmdbuild": {
+				"cardpanelheight": "Высота панели карточек в процентах",
+				"fieldsetgeneraltitle": "Основные настройки",
+				"fieldsetlanguageltitle": "Язык",
+				"fieldsetpopupwindowtitle": "Всплывающие окна",
+				"instancename": "Имя инстанса",
+				"language": "Язык по умолчанию",
+				"languagePrompt": "Показывать окно выбора языка",
+				"menuTitle": "Настройки CMDBuild",
+				"popupheightlabel": "Высота всплывающего окна в процентах",
+				"popupwidthlabel": "Ширина всплывающего окна в процентах",
+				"referencecombolimit": "Лимит числа элементов в списках связей и перечней",
+				"relationlimit": "Лимит числа связей",
+				"rowlimit": "Число строк на экране",
+				"sessiontimeout": "Время бездействия сессии (сек)",
+				"startingClass": "Класс по умолчанию",
+				"tabs_position": {
+					"bottom": "В нижней части",
+					"label": "Положение закладок в панели карточек",
+					"top": "В верхней части"
+				},
+				"title": "Настройки CMDBuild"
+			},
+			"dms": {
+				"categoryLookup": "Категория CMDBuild",
+				"credential": "Учетные данные",
+				"credentialPassword": "Пароль",
+				"credentialUser": "Имя пользователя",
+				"delay": "Таймаут операций",
+				"enabled": "Включено",
+				"fileserver": "Файловый сервер",
+				"fileserverPort": "Порт",
+				"fileserverType": "Тип",
+				"fileserverUrl": "Имя сервера",
+				"general": "Основные настройки",
+				"menuTitle": "Документы Alfresco",
+				"repository": "Хранилище документов",
+				"repositoryApp": "Приложение",
+				"repositoryFSPath": "Путь на файловом сервере",
+				"repositoryWSPath": "Путь в веб-сервисах",
+				"serverUrl": "URL сервера",
+				"title": "Настройка Alfresco"
+			},
+			"gis": {
+				"center_lat": "Начальная широта",
+				"center_lon": "Начальная долгота",
+				"enable": "Включено",
+				"initial_zoom": "Начальный масштаб",
+				"serverurl": "URL сервера",
+				"title": "ГИС"
+			},
+			"graph": {
+				"baseLevel": "Уровень по умолчанию",
+				"clusteringThreshold": "Лимит числа отображаемых по отдельности узлов",
+				"enabled": "Включено",
+				"expandingThreshold": "Максимальное число узлов, при котором возможно разворачивание",
+				"extensionMaximumLevel": "Максимальный уровень",
+				"menuTitle": "Отображение связей",
+				"title": "Настройка отображения связей"
+			},
+			"modify": "Редактировать",
+			"save": "Сохранить",
+			"server": {
+				"cache_management": "Управление кэшем",
+				"clear_cache": "Очистить кэш",
+				"menuTitle": "Настройки сервера",
+				"servicesync": "Синхронизация сервисов",
+				"title": "Настройки сервера",
+				"wfsync": "Удалить сбойные процессы"
+			},
+			"setupTitle": "Параметры",
+			"workflow": {
+				"credential": "Учетные данные",
+				"enabled": "Включено",
+				"endpoint": "URL сервера",
+				"engine": "Имя движка",
+				"general": "Основные настройки",
+				"menuTitle": "Рабочие процессы",
+				"password": "Пароль",
+				"scope": "Область",
+				"title": "Настройки рабочих процессов",
+				"user": "Имя пользователя"
+			}
+		},
+		"welcome": {
+			"body": "Администрирование",
+			"title": "Добро пожаловать!"
+		}
+	},
+	"common": {
+		"buttons": {
+			"abort": "Отменить",
+			"add": "Добавить",
+			"apply": "Применить",
+			"as": "как",
+			"clone": "Дублировать",
+			"close": "Закрыть",
+			"confirm": "ОК",
+			"export": "Экспорт",
+			"import": "Импорт",
+			"load": "Загрузить",
+			"modify": "Редактировать",
+			"next": "<em>Next</em>",
+			"previous": "<em>Previous</em>",
+			"print": "Распечатать",
+			"remove": "Удалить",
+			"save": "Сохранить",
+			"update": "Обновить",
+			"upload": "Импорт",
+			"workflow": {
+				"advance": "Продолжить",
+				"back": "Назад",
+				"save": "Сохранить"
+			}
+		},
+		"confirmpopup": {
+			"areyousure": "Вы уверены?",
+			"title": "Запрос подтверждения"
+		},
+		"credits": "Info &amp; Support",
+		"display_topic": "Отображаемые записи",
+		"display_topic_none": "Нет записей для отображения",
+		"display_topic_of": "из ",
+		"failure": "Ошибка",
+		"group": "Группа",
+		"loading": "Загрузка...",
+		"loading_mask": {
+			"classes": "Загрузка классов",
+			"configuration": "Загрузка конфигурации",
+			"domain": "Загрузка связей",
+			"group": "Загрузка пользователей и групп",
+			"lookup": "Загрузка перечней",
+			"menu": "Загрузка меню",
+			"report": "Загрузка отчетов",
+			"workflow": "Загрузка рабочих процессов"
+		},
+		"logout": "Выход",
+		"remove": "Удалить",
+		"splash": {
+			"consultant": "ITIL consultant and support",
+			"design": "design",
+			"implementation": "implementation",
+			"maintainer": "maintainer",
+			"municipality": "Municipality of Udine",
+			"principal": "principal for the initial project"
+		},
+		"success": "Успешно выполнено",
+		"tbd_body": "Задача выполняется",
+		"tbd_title": "Задача выполняется",
+		"tooltip": {
+			"editParameters": "Редактировать параметры",
+			"reload": "Обновить",
+			"showData": "Показать данные"
+		},
+		"tree_names": {
+			"class": "Стандартный",
+			"process": "Процесс",
+			"simpletable": "Простой"
+		},
+		"unknown_error": "Неизвестная ошибка",
+		"user": "Пользователь",
+		"wait_msg": "Отправка данных...",
+		"wait_title": "Пожалуйста, подождите..."
+	},
+	"configure": {
+		"failure": {
+			"text": "Работа мастера установки была завершена с ошибкой: ",
+			"title": "Ошибка установки"
+		},
+		"finish": "Завершить",
+		"next": "Вперед",
+		"previous": "Назад",
+		"step1": {
+			"choose": "Выберите язык по умолчанию",
+			"showLangChoose": "Показывать окно выбора языка"
+		},
+		"step2": {
+			"create_shark": "Создать схему для Shark",
+			"db_confirm_password": "Подтверждение пароля",
+			"db_connection": "Подключение к БД",
+			"db_create": "База данных CMDBuild",
+			"db_create_name": "Имя БД CMDBuild",
+			"db_create_type": "Тип БД CMDBuild",
+			"db_demo": "Демо",
+			"db_empty": "Пустая",
+			"db_existing": "Существующая",
+			"db_host": "Сервер",
+			"db_password": "Пароль",
+			"db_port": "Порт",
+			"db_superUser": "Администратор",
+			"db_test_connection": "Протестировать подключение",
+			"db_type": "Тип БД",
+			"db_user": "Пользователь",
+			"db_user_create": "Создать пользователя с ограниченными правами в БД",
+			"limited_user": "Пользователь с ограниченными правами",
+			"msg": {
+				"msg": "Подключение установлено",
+				"pswnomatch": "Пароли не совпадают",
+				"title": "Тестирование подключения"
+			},
+			"new_limited_user": "Создать пользователя с ограниченными правами в БД",
+			"user_type": "Тип пользователя"
+		},
+		"step3": {
+			"admin": "Администратор",
+			"admin_password": "Пароль",
+			"admin_user": "Логин администратора",
+			"confirm_password": "Подтверждение пароля"
+		},
+		"success": {
+			"text": "Мастер установки успешно завершил работу. Нажмите ОК для запуска приложения.",
+			"title": "Установка завершена"
+		},
+		"title": "Конфигурирование"
+	},
+	"errors": {
+		"busy_wf_widgets": "Виджеты заняты. Проверьте состояние сервера перед повторной попыткой.",
+		"detail": "Подробно",
+		"error_message": "Ошибка",
+		"error_moving_row": "При перемещении строки произошла ошибка",
+		"invalid_attributes": "Данные поля были заполнены с ошибками:",
+		"invalid_extended_attributes": "Данные виджеты были заполнены с ошибками:",
+		"invalid_fields": "Некоторые поля были заполнены с ошибками",
+		"no_driver": "Драйвер JDBC не найден.<br>Вы можете установить его в Tomcat из дистрибутива CMDBuild.",
+		"no_selections": "Не выбрано ни одной карточки для заполнения",
+		"reasons": {
+			"ATTRIBUTE_NOTFOUND": "Атрибут {1} из {0} не найден",
+			"AUTH_CLASS_NOT_AUTHORIZED": "Нет доступа к классу {0}",
+			"AUTH_DEMO_MODE": "В демо режиме данная операция не разрешена",
+			"AUTH_DOMAIN_NOT_AUTHORIZED": "Нет доступа к связи {0}",
+			"AUTH_LOGIN_WRONG": "Неверное имя пользователя или пароль",
+			"AUTH_MULTIPLE_GROUPS": "Имени пользователя сопоставлено несколько групп",
+			"AUTH_NOT_AUTHORIZED": "Доступ запрещен",
+			"AUTH_NOT_CONFIGURED": "Ошибка в конфигурации",
+			"AUTH_NOT_LOGGED_IN": "Пользователь не выполнил вход в систему",
+			"AUTH_NO_GROUPS": "Пользователь не состоит ни в одной группе",
+			"AUTH_UNKNOWN_GROUP": "Неизвестная группа",
+			"AUTH_WRONG_PASSWORD": "Неверный пароль",
+			"CARD_NOTFOUND": "Карточка не найдена в {0}",
+			"CLASS_NOTFOUND": "Класс {0} не найден",
+			"CQL_COMPILATION_FAILED": "Ошибка компиляции CQL запроса",
+			"DMS_ATTACHMENT_DELETE_ERROR": "Ошибка удаления вложенного файла",
+			"DMS_ATTACHMENT_NOTFOUND": "Приложенный файл {0} для карточки {2} из {1} не найден",
+			"DMS_ATTACHMENT_UPLOAD_ERROR": "Ошибка загрузки вложенного файла",
+			"DMS_DOCUMENT_TYPE_DEFINITION_ERROR": "Невозможно прочитать определение для категории {0}",
+			"DMS_AUTOCOMPLETION_RULES_ERROR": "Невозможно прочитать правила автозаполнения вложенных файлов для класса {0}",
+			"DMS_UPDATE_ERROR": "Обновление вложенного файла завершилось с ошибкой",
+			"DOMAIN_NOTFOUND": "Связь {0} не найдена",
+			"ILLEGAL_CRON_EXPRESSION": "Неверное выражение для cron",
+			"LOCKED_CARD": "Пользователь {0} редактирует эту карточку в течение {1} секунд",
+			"LOOKUP_NOTFOUND": "Перечень не найден для {0}",
+			"LOOKUP_TYPE_NOTFOUND": "Перечень {0} не найден",
+			"MENU_NOTFOUND": "Меню не найдено",
+			"NOTFOUND": "Элемент не найден",
+			"ORM_AMBIGUOUS_DIRECTION": "Невозможно определить направление связи",
+			"ORM_CANT_CREATE_DATABASE": "Ошибка создания базы данных",
+			"ORM_CANT_CREATE_USER": "Ошибка создания пользователя",
+			"ORM_CANT_DELETE_CARD_WITH_RELATION": "Невозможно удалить записи с активными связями",
+			"ORM_CHANGE_LOOKUPTYPE_ERROR": "Невозможно изменить тип перечня",
+			"ORM_CONTAINS_DATA": "Невозможно удалить непустые классы, атрибуты или связи",
+			"ORM_CQL_COMPILATION_FAILED": "Ошибочный CQL запрос",
+			"ORM_CSV_INVALID_ATTRIBUTES": "Невозможно сохранить карточки: найдены неверные значения",
+			"ORM_DATABASE_CONNECTION_ERROR": "Ошибка подключения к БД, попробуйте переустановить параметры подключения",
+			"ORM_DBNOTCONFIGURED": "Не выполнена конфигурация БД",
+			"ORM_DOMAIN_HAS_REFERENCE": "Невозможно удалить связь, на которую ссылаются атрибуты REFERENCE",
+			"ORM_DUPLICATE_ATTRIBUTE": "Атрибут уже существует",
+			"ORM_DUPLICATE_TABLE": "Класс уже существует",
+			"ORM_DUPLICATE_USER": "Пользователь уже существует",
+			"ORM_ERROR_CARD_SELECT": "Ошибка чтения карточки",
+			"ORM_ERROR_CARD_UPDATE": "Ошибка обновления карточки",
+			"ORM_ERROR_DOMAIN_CREATE": "Ошибка при создании связи",
+			"ORM_ERROR_DOMAIN_DELETE": "Ошибка при удалении связи",
+			"ORM_ERROR_DOMAIN_MODIFY": "Ошибка при редактировании связи",
+			"ORM_ERROR_GENERIC_SQL": "Ошибка SQL: {0}",
+			"ORM_ERROR_GETTING_PK": "Ошибка получения первичного ключа",
+			"ORM_ERROR_INCOMPATIBLE_CLASS": "Несовместимый класс: {0}",
+			"ORM_ERROR_LOOKUP_CREATE": "Ошибка при создании перечня",
+			"ORM_ERROR_LOOKUP_DELETE": "Ошибка при удалении перечня",
+			"ORM_ERROR_LOOKUP_MODIFY": "Ошибка при редактировании перечня",
+			"ORM_ERROR_RELATION_CREATE": "Ошибка при создании связи",
+			"ORM_ERROR_RELATION_MODIFY": "Ошибка при редактировании связи",
+			"ORM_FILTER_CONFLICT": "Конфликт при определении фильтра",
+			"ORM_FULLCARDS_MULTIPLEDOMAINS": "Can't get full cards on multiple domains",
+			"ORM_GENERIC_ERROR": "Ошибка при загрузке/сохранении данных",
+			"ORM_ICONS_FILE_ALREADY_EXISTS": "Файл {0} уже существует",
+			"ORM_ICONS_FILE_NOT_FOUND": "Файл не найден",
+			"ORM_ICONS_UNSUPPORTED_TYPE": "Тип файла не поддерживается",
+			"ORM_ILLEGAL_NAME_ERROR": "Неверное имя: {0}",
+			"ORM_LOOKUPTYPE_ALREADY_EXISTS": "Перечень уже существует",
+			"ORM_MALFORMED_PATCH": "Пакет обновлений поврежден",
+			"ORM_NOT_NULL_VIOLATION": "Нарушение требования Not null",
+			"ORM_POSTGIS_NOT_FOUND": "PostGIS не установлен",
+			"ORM_READ_ONLY_RELATION": "Связь только для чтения",
+			"ORM_READ_ONLY_TABLE": "Класс только для чтения",
+			"ORM_SQL_PATCH": "Ошибка в SQL патче",
+			"ORM_TABLE_HAS_CHILDREN": "Невозможно удалить класс, содержащий подклассы",
+			"ORM_TABLE_HAS_DOMAIN": "Невозможно удалить класс, содержащий связи",
+			"ORM_TYPE_ERROR": "Несовпадение типов данных",
+			"ORM_UNIQUE_VIOLATION": "Неуникальное значение",
+			"OUT_OF_DATE_PROCESS": "Процесс устарел, перезагрузите список",
+			"PARAMETER_CLASS_UNAVAILABLE": "Ошибка создания инстанса Java класса {0}",
+			"PRIVILEGE_GROUP_NOTFOUND": "Не найдена привилегия группы {0}",
+			"PRIVILEGE_NOTFOUND": "Не найдена привилегия группы {0} для класса {0}",
+			"REPORT_COMPILE_ERROR": "Ошибка компиляции отчета",
+			"REPORT_GROUPNOTALLOWED": "Группе {0} не разрешен запуск {1}",
+			"REPORT_IMPORT_ERROR": "Ошибка вставки",
+			"REPORT_INVALID_FILE": "Неверный файл отчета",
+			"REPORT_INVALID_PARAMETER_CLASS": "Неверный параметр Java class! Операция прервана.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_ATTRIBUTE": "Неверное имя атрибута CMDBuild в параметрах! Операция прервана.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_CLASS": "Неверное имя класса CMDBuild в параметрах! Операция прервана.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_LOOKUP": "Неверное имя перечня CMDBuild в параметрах! Операция прервана.",
+			"REPORT_INVALID_PARAMETER_FORMAT": "Неверный формат имени параметра в отчете! Доступные форматы: \"name\", \"name.cmdbuildClass.attribute\", \"name.lookup.lookupname\"",
+			"REPORT_INVALID_PARAMETER_LOOKUP_CLASS": "Found invalid lookup parameter Java class! Required \"java.lang.Integer\". Operation aborted.",
+			"REPORT_INVALID_PARAMETER_REFERENCE_CLASS": "Found invalid reference parameter Java class! Required \"java.lang.Integer\". Operation aborted.",
+			"REPORT_INVALID_PARAMETER_VALUE": "Неверное значение параметра! Операция прервана.",
+			"REPORT_INVISIBLE_PARAMETER": "Параметр отчета ссылается на скрытый атрибут! Операция прервана.",
+			"REPORT_LOAD_DESIGN_ERROR": "Ошибка загрузки jasper шаблона",
+			"REPORT_NOCLASS_ERROR": "Ошибка компиляции - невозможно загрузить класс: {0}",
+			"REPORT_NOTFOUND": "Ошибка загрузки отчета {0}",
+			"REPORT_UPLOAD_ERROR": "Ошибка загрузки",
+			"SCHEDULER_INTERNAL_ERROR": "Внутренняя ошибка планировщика: {0}",
+			"SERVICE_UNAVAILABLE": "Сервис недоступен",
+			"WF_CANNOT_ABORT_PROCESS": "Невозможно прервать процесс",
+			"WF_CANNOT_ACCEPT_WORKITEM": "Cannot accept user activity",
+			"WF_CANNOT_COMPLETE_WORKITEM": "Cannot complete user activity",
+			"WF_CANNOT_CONFIGURE_CMDBEXTATTR": "Невозможно сконфигурировать расширенные атрибуты {0}",
+			"WF_CANNOT_FIND_XPDL": "XPDL определение не найдено",
+			"WF_CANNOT_GETWAPI_CONNECTION": "Нет подключения к движку Workflow",
+			"WF_CANNOT_GET_PROCESSCARDID": "Ошибка получения идентификатора карточки процесса",
+			"WF_CANNOT_GET_PROCESS_VARIABLES": "Ошибка получения переменных процесса",
+			"WF_CANNOT_GET_WORKITEM": "Ошибка загрузки шага процесса",
+			"WF_CANNOT_GET_WORKITEMS": "Ошибка загрузки списка шагов процесса",
+			"WF_CANNOT_GET_WORKITEM_VARIABLES": "Ошибка загрузки переменных шага процесса",
+			"WF_CANNOT_LOAD_ACTIVITIES": "Ошибка загрузки шагов для процесса {0}",
+			"WF_CANNOT_REACT_CMDBEXTATTR": "Невозможно заполнить расширенные атрибуты {0}",
+			"WF_CANNOT_REASSIGN_WORKITEM": "Ошибка переназначения шага процесса",
+			"WF_CANNOT_RESOLVE_PARTICIPANT": "Ошибка разыменовывания участника процесса",
+			"WF_CANNOT_RESUME_WORKITEM": "Ошибка перезапуска процесса",
+			"WF_CANNOT_START": "Ошибка запуска процесса",
+			"WF_CANNOT_SUSPEND_PROCESS": "Ошибка приостановки процесса",
+			"WF_CANNOT_UPDATE_WORKITEM_VARIABLES": "Ошибка обновления переменных шага процесса",
+			"WF_CANNOT_UPLOAD_PACKAGE": "Ошибка загрузки пакета",
+			"WF_EMAIL_CANNOT_RETRIEVE_MAIL": "Ошибка получения адреса электронной почты",
+			"WF_EMAIL_NOT_CONFIGURED": "Работа с электронной почтой не настроена",
+			"WF_EMAIL_NOT_SENT": "Электронная почта не отправлена",
+			"WF_EXTATTR_CREATEREPORT_FACTORYNOTINSESSION": "Error while creating report: the factory need is not in session",
+			"WF_GENERIC_ERROR": "Общая ошибка Workflow",
+			"WF_PACKAGE_ERROR": "Пакет поврежден",
+			"WF_PROCESSINFO_NOT_FOUND": "XPDL файл для процесса не найден",
+			"WF_START_ACTIVITY_NOT_FOUND": "Для процесса {0} не найдено начальное действие",
+			"WF_WAPI_CONNECTION_ERROR": "Ошибка подключения к серверу workflow",
+			"WF_WORKITEM_VARIABLES_REQUIRED": "Требуемое поле: {0}",
+			"WF_WRONG_CREDENTIALS": "Неверные учетные данные",
+			"WF_WRONG_XPDL_CLASSNAME": "Неверное имя класса для данного XPDL",
+			"WF_XPDL_CLASSNAME_MISSING": "Отсутствует привязка к классу CMDBuild в файле XPDL",
+			"WF_XPDL_USERSTOP_MISSING": "Отсутствует поле userStoppable в файле XPDL",
+			"WIDGET_SERVICE_CONNECTION_ERROR": "Отправка сообщения не выполнена. Возможные причины: 1) Сервис не настроен; 2) URL и/или номер порта указан неверно",
+			"WIDGET_SERVICE_MALFORMED_REQUEST": "Проверьте, что пространство имен, имя метода и параметры в вызове веб-процедуры указаны верно."
+		},
+		"reference_invalid": "Значение не совпадает с текущим фильтром",
+		"server_error": "Сервер недоступен",
+		"server_error_code": "При отправке данных на сервер произошла ошибка: ",
+		"show_detail": "Подробно",
+		"template_error": "Ошибка шаблона",
+		"unknown_error": "Неизвестная ошибка",
+		"wrong_wf_widgets": "При сохранении следующих виджетов произошла ошибка: "
+	},
+	"info": {
+		"card_not_found": "Данные не совпадают с текущим фильтром"
+	},
+	"login": {
+		"change_user": "Смена пользователя",
+		"failed": "Ошибка входа",
+		"language": "Язык",
+		"login": "Вход в систему",
+		"multi_group": "Выберите группу",
+		"password": "Пароль",
+		"relogin_message": "Сессия истекла. Повторно введите пароль.",
+		"relogin_title": "Сессия истекла",
+		"title": "Вход в систему",
+		"username": "Имя пользователя",
+		"waitMsg": "Отправка данных...",
+		"waitTitle": "Подключение"
+	},
+	"management": {
+		"description": "Управление данными",
+		"findfilter": {
+			"add": "Создать",
+			"all": "Любой",
+			"attachments": "Вложения",
+			"attribute": "Атрибут",
+			"attributes": "Атрибуты",
+			"apply": "Применить",
+			"begin": "начинается с",
+			"between": "между",
+			"clear_filter": "Сбросить фильтр",
+			"copyof": "Копия",
+			"different": "не равно",
+			"direction": "Отношение",
+			"dontbegin": "не начинается с ",
+			"dontend": "не заканчивается на",
+			"dontlike": "не содержит",
+			"end": "заканчиватся на",
+			"equals": "равно",
+			"filter": "Фильтр",
+			"fromSelection": "Из отбора",
+			"functions" : "<em>Function</em>",
+			"go_filter": "Применить фильтр",
+			"like": "содержит",
+			"list": "Список",
+			"major": "больше чем",
+			"minor": "меньше чем",
+			"msg": {
+				"attention": "Предупреждение",
+				"error": "Ошибка",
+				"no_removed": "Фильтр не был снят",
+				"no_server": "Сервер недоступен",
+				"no_set": "Фильтр не был установлен",
+				"question_sure": "Вы уверены?"
+			},
+			"notinrel": "Ни один из",
+			"notnull": "не null",
+			"nullo": "пустое",
+			"newfilter": "Новый фильтр",
+			"relations": "Связи",
+			"remove": "Удалить",
+			"save_filter": "Сохранить фильтр",
+			"selectedAttr": "Выбранные атрибуты",
+			"saveandapply": "Сохранить и применить",
+			"set_filter": "Установить фильтр",
+			"setted": "Фильтр установлен",
+			"show_all": "Показать все",
+			"title": "Выберите атрибут",
+			"window_title": "Фильтр"
+		},
+		"graph": {
+			"action": "Диаграмма связей",
+			"icon_tooltip": "Показать диаграмму связей",
+			"title": "Диаграмма связей"
+		},
+		"modcard": {
+			"add_attachment": "Вложить файл",
+			"add_attachment_window": {
+				"category": "Категория",
+				"description": "Описание",
+				"load_attachment": "Загрузить файл",
+				"select_category": "Выберите категорию...",
+				"window_title": "Вложить файл"
+			},
+			"add_card": "Добавить запись",
+			"add_relations": "Добавить связь",
+			"add_relations_window": {
+				"domain": "Связь",
+				"filter_tab": "Фильтр",
+				"list_tab": "Список",
+				"select_domain": "Выберите тип связи...",
+				"window_title": "Добавить связь"
+			},
+			"attachment_columns": {
+				"author": "Автор",
+				"category": "Категория",
+				"creation_date": "Дата создания",
+				"description": "Описание",
+				"filename": "Имя файла",
+				"item": "файл",
+				"items": "файла(ов)",
+				"modification_date": "Дата изменения",
+				"version": "Версия"
+			},
+			"clone_card": "Дублировать запись",
+			"delete_attachment": "Удалить вложенный файл",
+			"delete_attachment_confirm": "Действительно удалить вложенный файл?",
+			"delete_card": "Удалить запись",
+			"delete_card_confirm": "Действительно удалить запись?",
+			"delete_relation": "Удалить связь",
+			"delete_relation_confirm": "Действительно удалить связь?",
+			"detail_window": {
+				"detail_attributes": "Атрибуты элемента",
+				"relation_attributes": "Атрибуты связи"
+			},
+			"download_attachment": "Открыть вложенный файл",
+			"edit_attachment": "Изменить вложенный файл",
+			"edit_relation": "Редактировать связь",
+			"gis": {
+				"geo_attributes": "Географические атрибуты",
+				"gisNavigation": "Навигация",
+				"position": "Положение",
+				"zoom": "Масштаб"
+			},
+			"history_columns": {
+				"activity_name": "Действие",
+				"attributes": "Атрибуты",
+				"begin_date": "Начальная дата",
+				"code": "Код",
+				"description": "Описание",
+				"destclass": "Класс",
+				"domain": "Связь",
+				"end_date": "Конечная дата",
+				"performer": "Исполнитель",
+				"relation": "Отношение",
+				"user": "Пользователь"
+			},
+			"maptoolbar": {
+				"add": "Добавить",
+				"drag": "Редактировать",
+				"drag_map": "Переместить карту",
+				"zoom_in": "Увеличить масштаб",
+				"zoom_out": "Уменьшить масштаб"
+			},
+			"modify_card": "Редактировать запись",
+			"modify_note": "Редактировать комментарии",
+			"modify_relation_window": {
+				"window_title": "Редактировать связь"
+			},
+			"open_relation": "Открыть связанную запись",
+			"other_fields": "Прочее",
+			"relation_columns": {
+				"begin_date": "Начальная дата",
+				"code": "Код",
+				"description": "Описание",
+				"destclass": "Класс",
+				"domain": "Связь",
+				"item": "элемент",
+				"items": "элементы"
+			},
+			"search_reference_window": {
+				"window_title": "Искать в "
+			},
+			"subclass": "Подкласс",
+			"tabs": {
+				"attachments": "Вложенные файлы",
+				"card": "Данные",
+				"detail": "Дополнительно",
+				"history": "История",
+				"map": "Карта",
+				"notes": "Комментарии",
+				"relations": "Связи"
+			},
+			"title": "Список - ",
+			"treetitle": "Конфигурационные единицы",
+			"view_relation": "Просмотреть связанную запись"
+		},
+		"moddetail": {
+			"adddetail": "Добавить элемент",
+			"deletedetail": "Удалить элемент",
+			"detail": "Элемент",
+			"editdetail": "Редактировать элемент",
+			"showattach": "Показать вложенные файлы",
+			"showdetail": "Показать элемент",
+			"showgraph": "Показать диаграмму связей",
+			"shownotes": "Показать комментарии"
+		},
+		"modmenu": {
+			"menu": "Навигация"
+		},
+		"modreport": {
+			"add_report": "Добавить отчет",
+			"delete_report": "Удалить отчет",
+			"modify_report": "Редактировать отчет",
+			"reportForm": {
+				"description": "Описание",
+				"name": "Название",
+				"report": "Отчеты"
+			},
+			"report_parameters": "Параметры отчета",
+			"title": "Список - ",
+			"treetitle": "Отчеты"
+		},
+		"modutilities": {
+			"bulkupdate": {
+				"title": "Массовое обновление",
+				"countMessage": "Количество обновляемых карточек: {0}"
+			},
+			"changepassword": {
+				"newpw": "Новый пароль",
+				"oldpw": "Старый пароль",
+				"repnew": "Повтор нового пароля",
+				"successmsgtext": "Пароль был изменен",
+				"title": "Изменить пароль",
+				"validationtext": "Пароли не совпадают"
+			},
+			"csv": {
+				"csvfile": "Файл CSV",
+				"error": "Ошибка",
+				"exportfile": "Экспорт",
+				"importfailure": "Ошибка импорта",
+				"importsuccess": "Импорт выполнен успешно",
+				"info": "Информация",
+				"noupdate": "Нет обновляемых карточек",
+				"selectaclass": "Выберите класс",
+				"separator": "Разделитель",
+				"shownonvalid": "Показывать только неверные записи",
+				"title": "Импорт из CSV файла",
+				"title_export": "Экспорт в CSV файл",
+				"warning": "Предупреждение"
+			},
+			"title": "Инструменты"
+		},
+		"modutility": {
+			"title": "Инструменты"
+		},
+		"modview": {
+			"title": "Views"
+		},
+		"modworkflow": {
+			"abort_card": "Прервать процесс",
+			"abort_card_confirm": "Действительно удалить процесс?",
+			"activitydocumentation": "Оперативные инструкции",
+			"add_card": "Запуск",
+			"calendar": {
+				"wrong_config": "Календарь настроен некорректно"
+			},
+			"completed": "Выполнено",
+			"custom_steps": "Настраиваемые шаги",
+			"delete_card": "Прервать процесс",
+			"delete_card_confirm": "Действительно удалить процесс?",
+			"extattrs": {
+				"attachments": {
+					"must_save_to_add": "Нельзя добавлять вложенный файл в карточку до сохранения процесса"
+				},
+				"createreport": {
+					"format_label": "Формат"
+				},
+				"linkcards": {
+					"required": "Пожалуйста, выберите карточки - "
+				},
+				"manageemail": {
+					"addresshdr": "Адрес",
+					"ccfld": "Копия",
+					"compose": "Составление сообщения",
+					"datehdr": "Дата",
+					"deleteicon": "Удалить",
+					"editicon": "Редактировать",
+					"fromfld": "От",
+					"lookup": {
+						"Draft": "Черновики",
+						"New": "Создать",
+						"Outgoing": "Исходящие",
+						"Received": "Входящие",
+						"Sent": "Отправленные"
+					},
+					"subjectfld": "Тема",
+					"subjecthdr": "Тема",
+					"tofld": "Кому",
+					"updateTemplateConfirm": "Это действие удалит все неотправленные сообщения",
+					"viewicon": "Просмотреть",
+					"mailsAreChanged": "Сгенерированные почтовые сообщения изменены.",
+					"regenerates": "Повторить генерацию почтовых сообщений."
+				},
+				"managerelation": {
+					"required": "Пожалуйста, выберите связи - "
+				},
+				"notes": {
+					"must_save_to_modify": "Нельзя редактировать комментарии до сохранения процесса"
+				}
+			},
+			"history_columns": {
+				"attributes": "Атрибуты",
+				"begin_date": "Начальная дата",
+				"description": "Описание",
+				"domain": "Связь",
+				"end_date": "Конечная дата",
+				"relation": "Отношение",
+				"user": "Пользователь"
+			},
+			"interrupted": "Прерван",
+			"modify_card": "Редактировать процесс",
+			"modify_note": "Редактировать комментарий",
+			"open_attachment": "Открыть вложенные файлы",
+			"open_note": "Открыть комментарий",
+			"started": "Запущен",
+			"status": "Статус",
+			"statuses": {
+				"all": "Все",
+				"closed.aborted": "Прерванные",
+				"closed.completed": "Завершенные",
+				"open.not_running.suspended": "Приостановленные",
+				"open.running": "Открытые"
+			},
+			"tabs": {
+				"attachments": "Вложенные файлы",
+				"card": "Процесс",
+				"detail": "Дополнительно",
+				"history": "История",
+				"notes": "Комментарии",
+				"options": "Параметры",
+				"relations": "Отношения",
+				"sketch": "Диаграмма"
+			},
+			"title": "Список - ",
+			"treetitle": "Рабочие процессы"
+		},
+		"welcome": {
+			"body": "Управление данными.",
+			"title": "Добро пожаловать!"
+		}
+	},
+	"patch": {
+		"patch_list": "Список доступных обновлений"
+	},
+	"vtype_text": {
+		"cmdbcomment": "Использование вертикальной черты | или апострофа не разрешено",
+		"cmdbcommentrelaxed": "Использование вертикальной черты | не разрешено",
+		"invalid_character": "Неверный символ",
+		"wrong_decimal_part": "Не более {0} десятичных знаков",
+		"wrong_integer_part": "Не более {0} целочисленных знаков",
+		"wrong_ip_address": "Неверный IP адрес",
+		"wrong_time": "{0} не является верным значением. Требуемый формат {1}"
+	},
+	"warnings": {
+		"link_cards_changed_values": "The selection of \"{0}\" has been updated",
+		"only_filtered": "Изменения будут применены только к карточкам, совпадающим с текущим фильтром",
+		"popup_block": "Пожалуйста, отключите блокировку всплывающих окон в браузере для нормальной работы",
+		"warning_message": "Предупреждение"
+	},
+	"active": "Активный",
+	"addFilter": "Создать фильтр",
+	"addProject": "<em>Add Project</em>",
+	"addTemplate": "Создать шаблон",
+	"addView": "Создать представление",
+	"add_attachment_from_db": "Добавить вложения из базы данных",
+	"attachfile": "Вложить файл",
+	"attachmentsLookup": "Вложения",
+	"attention": "Внимание",
+	"attribute": "<em>Attribute</em>",
+	"availableFilters": "Доступные фильтры",
+	"bcc": "Скрытая копия",
+	"bim": "<em>BIM</em>",
+	"buttons_to_disable": "<em>Buttons to disable</em>",
+	"camera": "<em>Camera</em>",
+	"cc": "Копия",
+	"checkFrequency": "Периодичность проверки (мин)",
+	"choose_attachment_from_db": "Выберите вложение из базы данных",
+	"class": "<em>Class</em>",
+	"clean_word_pasted_text": "Текст без форматирования",
+	"clearFilter": "Сбросить фильтр",
+	"clear_row_and_colun_privilege": "Сбросить права для строк и колонок",
+	"container": "<em>Container</em>",
+	"controls": "<em>Controls</em>",
+	"cql_filter": "<em>CQL filter</em>",
+	"description_": "Описание",
+	"disable": "<em>Disable</em>",
+	"display_less_attributes": "<em>Display less attributes</em>",
+	"display_more_attributes": "<em>Display more attributes</em>",
+	"download_ifc_file": "<em>Download Ifc file</em>",
+	"emailBody": "Текст письма",
+	"emailTemplate": "Шаблон письма",
+	"enable": "<em>Enable</em>",
+	"enabled": "Включено",
+	"error": "Ошибка",
+	"error_bimserver_connection": "<em>I'm not able to connect to Bimserver</em>",
+	"export": "<em>Export</em>",
+	"expose": "<em>Expose</em>",
+	"file_name": "Имя файла",
+	"filter": "Фильтр",
+	"filterView": "На основе фильтра",
+	"filters_for_groups": "Фильтры для групп",
+	"format_csv": "Текст CSV",
+	"format_odt": "Документ OpenOffice",
+	"format_pdf": "Документ Adobe PDF",
+	"format_rtf": "Документ Rich Text",
+	"from": "<em>From<em>",
+	"front": "<em>Front</em>",
+	"global": "Глобальный",
+	"ifc_file": "<em>File IFC</em>",
+	"itIsNotAllowedFilterWithCalculatedParams": "Не допускается использовать фильтр с вычисляемыми параметрами",
+	"itIsNotAllowedFilterWithRuntimeParams": "Не допускается использовать фильтр с переменными параметрами",
+	"last_checkin": "<em>Last checkin</em>",
+	"layers": "<em>Layers</em>",
+	"lock_cards_in_edit": "Блокирование редактируемых карточек",
+	"lock_timeout": "Таймаут блокировки (секунд)",
+	"loggedGroup": "Группа",
+	"loggedUser": "Пользователь",
+	"mode": "<em>Mode</em>",
+	"modifyFilter": "Редактировать представление",
+	"modifyProject": "<em>Modify Project</em>",
+	"modifyTemplate": "Редактировать шаблон",
+	"modifyView": "Редактировать представление",
+	"multiGroup": "Несколько групп",
+	"name": "Имя",
+	"no_bim_project_for_card": "<em>There is no BIM project for this card</em>",
+	"not_set": "Не установлен",
+	"open_3d_viewer": "<em>Open 3D viewer</em>",
+	"pan": "<em>Pan</em>",
+	"password": "<em>Password</em>",
+	"privileges_on_columns": "Права доступа к колонкам",
+	"privileges_on_rows": "Права доступа к строкам",
+	"projects": "<em>Projects</em>",
+	"reference_to_root": "<em>Reference to Root</em>",
+	"removeFilter": "Удалить представление",
+	"removeProject": "<em>Remove Project</em>",
+	"removeTemplate": "Удалить шаблон",
+	"removeView": "Удалить представление",
+	"remove_formatting": "Очистить форматирование",
+	"reset": "<em>Reset</em>",
+	"root": "<em>Root</em>",
+	"rotate": "<em>Rotate</em>",
+	"row_and_column_privileges": "Права доступа к строкам и колонкам",
+	"row_add": "<em>Add row</em>",
+	"row_delete": "<em>Delete row</em>",
+	"row_edit": "<em>Edit row</em>",
+	"search_filters": "Поисковые фильтры",
+	"select_a_class": "Выберите класс",
+	"selected_object": "<em>Selected Object</em>",
+	"set": "Установлен",
+	"setFilter": "Установить фильтр",
+	"setLater": "Переменный параметр",
+	"show_name_of_locker_user": "Показать имя пользователя, заблокировавшего карточку",
+	"side": "<em>Side</em>",
+	"sqlView": "На основе SQL-запроса",
+	"subject": "Тема",
+	"targetClass": "Целевой класс",
+	"to": "Кому",
+	"top": "<em>Top</em>",
+	"translations" : "<em>Translations</em>",
+	"translations_enabled" : "<em>Enabled languages</em>",
+	"transparent": "<em>Transparent</em>",
+	"tree": "<em>Tree</em>",
+	"tree_navigation": "<em>Navigation tree</em>",
+	"tree_navigation_add": "<em>Add navigation tree</em>",
+	"tree_navigation_attributes": "<em>Navigation tree attributes</em>",
+	"tree_modify": "<em>Modify tree</em>",
+	"tree_remove": "<em>Remove tree</em>",
+	"tree_root_cql": "<em>Root CQL filter</em>",
+	"trees_navigation": "<em>Navigation trees</em>",
+	"ui_configuration_for_groups": "<em>UI configuration for group</em>",
+	"unlock_all_cards": "Разблокировать все карточки",
+	"uploading_attachment": "Загружается вложение...",
+	"url": "<em>URL</em>",
+	"username": "<em>Username</em>",
+	"value": "<em>Value</em>",
+	"views": "Представления",
+	"workflow": "<em>Workflow</em>",
+	"workflow_attributes": "<em>Workflow attributes</em>",
+	"workflow_by_cql": "<em>by Cql</em>",
+	"workflow_by_name": "<em>by name</em>",
+	"workflow_cql_filter": "<em>Cql filter</em>",
+	"workflow_query_tipology": "<em>Selection</em>",
+	"you_have_not_set_a_filter": "Фильтр не установлен",
+	"zoom": "<em>Zoom</em>"
+}

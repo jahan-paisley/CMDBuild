@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xpdl:Package xmlns:xpdl="http://www.wfmc.org/2008/XPDL2.1" xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="parent" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/docs/bpmnxpdl_31.xsd">
+    <xpdl:PackageHeader>
+        <xpdl:XPDLVersion>2.1</xpdl:XPDLVersion>
+        <xpdl:Vendor>Tecnoteca</xpdl:Vendor>
+        <xpdl:Created>2012-08-13 10:56:51</xpdl:Created>
+    </xpdl:PackageHeader>
+    <xpdl:Script Type="text/javascript"/>
+    <xpdl:ExternalPackages>
+        <xpdl:ExternalPackage Id="child" href="Child.xpdl"/>
+    </xpdl:ExternalPackages>
+    <xpdl:Participants>
+        <xpdl:Participant Id="ParentRole">
+            <xpdl:ParticipantType Type="ROLE"/>
+        </xpdl:Participant>
+    </xpdl:Participants>
+    <xpdl:Pools>
+        <xpdl:Pool BoundaryVisible="true" Id="parent_pool1" MainPool="true" Orientation="HORIZONTAL" Process="Parent">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="parent_pool1_lan1" Name="ParentRole">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="220,220,220" IsVisible="true" ToolId="JaWE"/>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>ParentRole</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,255,215" IsVisible="true" ToolId="JaWE"/>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+    </xpdl:Pools>
+    <xpdl:WorkflowProcesses>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" Id="Parent">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-08-13 11:00:31</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:DataFields>
+                <xpdl:DataField Id="ParentVariable" IsArray="false">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                    </xpdl:ExtendedAttributes>
+                </xpdl:DataField>
+            </xpdl:DataFields>
+            <xpdl:Activities>
+                <xpdl:Activity Id="ParentStart">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="102,204,51" Height="31" IsVisible="true" LaneId="parent_pool1_lan1" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="55" YCoordinate="60"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="GiveBirth">
+                    <xpdl:Implementation>
+                        <xpdl:SubFlow Execution="SYNCHR" Id="Child">
+                            <xpdl:ActualParameters>
+                                <xpdl:ActualParameter>ParentVariable</xpdl:ActualParameter>
+                                <xpdl:ActualParameter>ParentVariable</xpdl:ActualParameter>
+                                <xpdl:ActualParameter>true</xpdl:ActualParameter>
+                            </xpdl:ActualParameters>
+                        </xpdl:SubFlow>
+                    </xpdl:Implementation>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="255,106,106" Height="60" IsVisible="true" LaneId="parent_pool1_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="300" YCoordinate="45"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="ParentEnd">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="parent_pool1_lan1" ToolId="JaWE" Width="31">
+                            <xpdl:Coordinates XCoordinate="575" YCoordinate="60"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="SetVariable">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>ParentRole</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_UPDATE" Value="ParentVariable"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="parent_pool1_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="165" YCoordinate="45"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="VerifyVariable">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>ParentRole</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="XFORMS_FILE"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="ParentVariable"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="parent_pool1_lan1" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="435" YCoordinate="45"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="ParentStart" Id="Parent_tra1" To="SetVariable">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="SetVariable" Id="Parent_tra3" To="GiveBirth">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="GiveBirth" Id="Parent_tra2" To="VerifyVariable">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="VerifyVariable" Id="Parent_tra4" To="ParentEnd">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+            <xpdl:ExtendedAttributes>
+                <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+                <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="false"/>
+                <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+                <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+                <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+                <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+            </xpdl:ExtendedAttributes>
+        </xpdl:WorkflowProcess>
+    </xpdl:WorkflowProcesses>
+    <xpdl:ExtendedAttributes>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL" Value="Together Workflow Editor"/>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL_VERSION" Value="4.4-1-20120111-0622"/>
+        <xpdl:ExtendedAttribute Name="JaWE_CONFIGURATION" Value="shark"/>
+        <xpdl:ExtendedAttribute Name="ALLOW_UNDEFINED_VARIABLES" Value="false"/>
+        <xpdl:ExtendedAttribute Name="DYNAMIC_VARIABLE_HANDLING" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CHOOSE_NEXT_PERFORMER" Value="false"/>
+        <xpdl:ExtendedAttribute Name="USE_PROCESS_CONTEXT_ONLY" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CREATE_ASSIGNMENTS" Value="false"/>
+        <xpdl:ExtendedAttribute Name="TRANSIENT" Value="false"/>
+        <xpdl:ExtendedAttribute Name="DELETE_FINISHED" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CHECK_FOR_FIRST_ACTIVITY" Value="false"/>
+        <xpdl:ExtendedAttribute Name="CHECK_FOR_CONTINUATION" Value="false"/>
+        <xpdl:ExtendedAttribute Name="REDIRECT_AFTER_PROCESS_END"/>
+    </xpdl:ExtendedAttributes>
+</xpdl:Package>

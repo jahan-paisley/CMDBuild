@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:soap="http://cxf.apache.org/bindings/soap"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://cxf.apache.org/jaxws
+		http://cxf.apache.org/schemas/jaxws.xsd
+		http://cxf.apache.org/bindings/soap
+		http://cxf.apache.org/schemas/configuration/soap.xsd
+	">
+
+	<bean id="webservicesProxyBuilder" class="org.cmdbuild.common.utils.NotifierProxy.Builder">
+		<property name="type" value="org.cmdbuild.services.soap.Webservices" />
+		<property name="delegate">
+			<bean class="org.cmdbuild.services.soap.WebservicesImpl" />
+		</property>
+		<property name="notifier">
+			<bean class="org.cmdbuild.services.soap.utils.LoggingNotifier" />
+		</property>
+	</bean>
+
+	<bean id="webservicesProxy" factory-bean="webservicesProxyBuilder"
+		factory-method="build" />
+
+	<bean id="addDefaultNamespaceInterceptor"
+		class="org.cmdbuild.services.soap.AddDefaultNamespaceInterceptor" />
+
+	<jaxws:endpoint address="/Webservices">
+		<jaxws:implementor>
+			<bean factory-bean="webservicesProxy" factory-method="get" />
+		</jaxws:implementor>
+		<jaxws:binding>
+			<soap:soapBinding mtomEnabled="true" version="1.2" />
+		</jaxws:binding>
+		<jaxws:inInterceptors>
+			<ref bean="operationUserInterceptor" />
+			<!-- Fix for non-standard webservice clients <ref bean="addDefaultNamespaceInterceptor"/> -->
+			<ref bean="cmdbuildPasswordCallbackInterceptor" />
+		</jaxws:inInterceptors>
+	</jaxws:endpoint>
+
+</beans>

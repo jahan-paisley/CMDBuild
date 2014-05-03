@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="CMDBuild"
+	version="2.5">
+	<display-name>CMDBuild</display-name>
+
+	<context-param>
+		<param-name>modules</param-name>
+		<param-value>database,cmdbuild,dms,workflow,graph,gis,auth,bim</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>moduleLoaders</param-name>
+		<param-value>ParameterTransformerInit</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:application-context.xml</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.cmdbuild.plugins.ConfigurationListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+
+	<listener id="cmdbuildInit">
+		<listener-class>org.cmdbuild.plugins.CMDBInitListener</listener-class>
+	</listener>
+
+	<filter>
+		<filter-name>TranslationFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>TranslationFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>ConfCheckFilter</filter-name>
+		<filter-class>org.cmdbuild.filters.ConfCheckFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ConfCheckFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>PatchManagerFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>PatchManagerFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>AuthFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AuthFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>org.cmdbuild.listeners.RequestListener
+		</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>legacy-json</servlet-name>
+		<servlet-class>org.cmdbuild.servlets.JSONDispatcher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>legacy-json</servlet-name>
+		<url-pattern>/services/json/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>soapws</servlet-name>
+		<servlet-class>org.apache.cxf.transport.servlet.CXFServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>soapws</servlet-name>
+		<url-pattern>/services/soap/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>XsdSchema</servlet-name>
+		<servlet-class>org.cmdbuild.servlets.XsdSchema</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>XsdSchema</servlet-name>
+		<url-pattern>/services/cmdb-schema/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>

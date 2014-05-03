@@ -1,0 +1,7 @@
+[ITALIANO]
+Librerie aggiuntive per Tomcat 6.0
+* Copiare postgresql-8.3-603.jdbc3.jar nella cartella "lib" di Tomcat 6.0
+
+[ENGLISH]
+Tomcat 6.0 additional libraries
+* Copy postgresql-8.3-603.jdbc3.jar in the Tomcat 6.0 "lib" directory

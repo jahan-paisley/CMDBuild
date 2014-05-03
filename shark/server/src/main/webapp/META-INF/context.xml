@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource
+		auth="Container"
+		name="UserTransaction"
+		type="javax.transaction.UserTransaction"
+		jotm.timeout="180"
+		factory="org.objectweb.jotm.UserTransactionFactory"/>
+	<Resource
+		name="sharkdb"
+		type="javax.sql.DataSource"
+		driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://localhost/${cmdbuild}"
+		username="shark"
+		password="shark"
+		maxIdle="10"
+		maxActive="300"
+		maxWait="5000"
+		factory="org.enhydra.jndi.DataSourceFactory"/>
+</Context>
+

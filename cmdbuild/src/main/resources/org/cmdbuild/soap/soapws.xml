@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+	">
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-*.xml" />
+
+	<bean id="cmdbuildPasswordCallback" class="org.cmdbuild.services.soap.security.PasswordHandler" />
+	<bean id="cmdbuildPasswordCallbackInterceptor" class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">
+		<constructor-arg>
+			<map>
+				<entry key="action" value="UsernameToken" />
+				<entry key="passwordCallbackRef">
+					<ref bean="cmdbuildPasswordCallback" />
+				</entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	<bean id="operationUserInterceptor" class="org.cmdbuild.services.soap.OperationUserInterceptor" />
+
+</beans>

@@ -1,0 +1,1499 @@
+{
+	"description": "English",
+	"release": "2.2-dev",
+	"administration": {
+		"description": "Administration module",
+		"email": {
+			"title": "Email",
+			"accounts": {
+				"account": "Account",
+				"active": "Active",
+				"add": "Add account",
+				"credentials": "Credentials",
+				"enableMoveRejectedNotMatching": "Enable move rejected not matching",
+				"enableSsl": "Enable SSL",
+				"imapPort": "IMAP port",
+				"imapServer": "IMAP server",
+				"incoming": "Incoming",
+				"incomingFolder": "Incoming folder",
+				"isDefault": "Default",
+				"modify": "Modify account",
+				"outgoing": "Outgoing",
+				"password": "Password",
+				"processedFolder": "Processed folder",
+				"rejectedFolder": "Rejected folder",
+				"remove": "Remove account",
+				"setDefault": "Set as default",
+				"smtpPort": "SMTP Port",
+				"smtpServer": "SMTP server",
+				"title": "Accounts",
+				"username": "Username"
+			},
+			"templates": {
+				"add": "Add template",
+				"body": "Body",
+				"modify": "Modify template",
+				"remove": "Remove template",
+				"template": "Template",
+				"title": "Templates"
+			}
+		},
+		"modClass": {
+			"add_class": "Add Class",
+			"attributeProperties": {
+				"add_attribute": "Add attribute",
+				"baseProperties": "Base properties",
+				"criterion": "Criterion",
+				"delete_attribute": "Delete attribute",
+				"description": "Description",
+				"destination": "Destination",
+				"direction": {
+					"asc": "Ascending",
+					"desc": "Descending"
+				},
+				"domain": "Domain",
+				"editorType": {
+					"html": "Html",
+					"label": "Editor type",
+					"plain": "Plain text"
+				},
+				"field_hidden": "Hidden",
+				"field_read": "Read only",
+				"field_visibility": "Editing mode",
+				"field_write": "Editable",
+				"group": "Group",
+				"inherited": "Inherited",
+				"isactive": "Active",
+				"isbasedsp": "Display in list",
+				"isdefault": "Default",
+				"isnotnull": "Mandatory",
+				"isunique": "Unique",
+				"length": "Length",
+				"lookup": "Lookup",
+				"meta": {
+					"add": "Add meta",
+					"key": "Key",
+					"remove": "Delete meta",
+					"title": "Edit metadata",
+					"value": "Value"
+				},
+				"modify_attribute": "Modify Attribute",
+				"msg_warning_drop_row": "Reordering works only if inherited attributes are displayed",
+				"name": "Name",
+				"not_in_use": "Not in use",
+				"pipeNotAllowed": "Please use OR instead of |",
+				"precision": "Precision",
+				"referencequery": "Filter",
+				"scale": "Scale",
+				"set_sorting_criteria": "Set sorting",
+				"type": "Type",
+				"typeProperties": "Type Properties"
+			},
+			"attributes_title": "Manage attributes",
+			"classProperties": {
+				"active": "Active",
+				"description": "Description",
+				"inherits": "Inherits from",
+				"modify_class": "Modify Class",
+				"name": "Name",
+				"print_class": "Print Class",
+				"remove_class": "Remove Class",
+				"simple": "Simple",
+				"standard": "Standard",
+				"superclass": "Superclass",
+				"type": "Type",
+				"wait_msg": "Sending data...",
+				"wait_title": "Connecting"
+			},
+			"class_property": "Property",
+			"classtype": {
+				"simpletable": "Simple",
+				"standard": "Standard"
+			},
+			"domainProperties": {
+				"add_domain": "Add Domain",
+				"cardinality": "Cardinality",
+				"class_destination": "Destination",
+				"class_target": "Origin",
+				"delete_domain": "Delete Domain",
+				"description": "Domain description",
+				"description_direct": "Direct description",
+				"description_inverse": "Inverse description",
+				"domain": "Domain",
+				"is_active": "Active",
+				"m_d": "M/D",
+				"master_detail": "Master/Detail",
+				"md_label": "Master/Detail Label",
+				"modify_domain": "Modify Domain",
+				"name": "Name",
+				"title_add": "Add domain",
+				"title_modify": "Modify domain \"{0}\""
+			},
+			"domains_title": "Manage domain",
+			"errors": {
+				"table": {
+					"cast": "Error modifying \"superclass\" property, class either contains data or has child classes",
+					"duplicate": "Duplicate class name",
+					"parent_not_found": "Parent class does not exists"
+				}
+			},
+			"geo_attributes": {
+				"card_binding": "Cards Binding",
+				"externalGraphic": "Icon",
+				"fillColor": "Fill color",
+				"fillOpacity": "Fill opacity",
+				"graphicHeight": "Icon height",
+				"graphicOpacity": "Icon opacity",
+				"graphicWidth": "Icon width",
+				"master": "Reference class",
+				"max_zoom": "Maximum zoom",
+				"min_zoom": "Minimum zoom",
+				"pointRadius": "Point radius",
+				"strokeColor": "Stroke color",
+				"strokeDashstyle": "Stroke dashstyle",
+				"strokeOpacity": "Stroke opacity",
+				"strokeStyles": {
+					"dash": "Dash",
+					"dashdot": "Dashdot",
+					"dot": "Dot",
+					"longdash": "Longdash",
+					"longdashdot": "Longdashdot",
+					"solid": "Solid"
+				},
+				"strokeWidth": "Stroke width",
+				"style": "Stile",
+				"type": {
+					"line": "Line",
+					"point": "Point",
+					"polygon": "Polygon"
+				},
+				"visibility": "Visibility"
+			},
+			"include_inherited": "Include inherited",
+			"layers": "Layers",
+			"print_schema": "Print Schema",
+			"tabs": {
+				"attributes": "Attributes",
+				"domains": "Domains",
+				"geo_attributes": "Geographical attributes",
+				"properties": "Properties"
+			},
+			"title": "Manage classes",
+			"tree_title": "Class List",
+			"widgets": {
+				".OpenReport": {
+					"fields": {
+						"force": "Force format",
+						"presets": "Report attributes",
+						"report": "Report"
+					},
+					"presetGrid": {
+						"attribute": "Attribute",
+						"value": "Value"
+					},
+					"title": "Create report"
+				},
+				".Calendar": {
+					"fields": {
+						"target": "Target Class",
+						"start": "Start date",
+						"end": "End date",
+						"title": "Event title",
+						"filter": "CQL Filter",
+						"defaultDate": "Default date to open"
+					},
+					"title": "Calendar"
+				},
+				".Ping": {
+					"fields": {
+						"address": "Address to ping",
+						"count": "Number of pings",
+						"templates": "Templates"
+					},
+					"title": "Ping"
+				},
+				".Workflow": {
+					"title": "Start workflow"
+				},
+				".NavigationTree": {
+					"title": "Navigation tree"
+				},
+				".CreateModifyCard": {
+					"fields": {
+						"target": "Target Class",
+						"cql": "Card CQL selector",
+						"readOnly": "Read only"
+					},
+					"title": "Create or Modify Card"
+				},
+				"commonFields": {
+					"active": "Active",
+					"alwaysenabled": "Always enabled",
+					"buttonLabel": "Button label",
+					"type": "Type"
+				},
+				"title": "Widget"
+			}
+		},
+		"modDashboard": {
+			"charts": {
+				"alert": {
+					"wrongConfiguration": "The chart is not well configured"
+				},
+				"availableCharts": {
+					"gauge": "Gauge",
+					"pie": "Pie",
+					"bar": "Bar",
+					"line": "Line"
+				},
+				"buttons": {
+					"add": "Add Chart",
+					"modify": "Modify chart",
+					"remove": "Remove chart",
+					"preview": "Preview"
+				},
+				"fields": {
+					"active": "Active",
+					"autoload": "Load automatically",
+					"background": "Background color",
+					"categoryFieldset": "Category axis",
+					"chartType": "Chart type",
+					"dataSource": "Data source",
+					"defaultValue": "Default value",
+					"description": "Description",
+					"fieldType": "Field type",
+					"foreground": "Foreground color",
+					"fromClass": "From class",
+					"labelField": "Label field",
+					"legend": "Show legend",
+					"lookupType": "Lookup type",
+					"max": "Maximum",
+					"min": "Minimum",
+					"name": "Name",
+					"orientation": {
+						"label": "Orientation",
+						"values": {
+							"horizontal": "Horizontal",
+							"vertical": "Vertical"
+						}
+					},
+					"required": "Required",
+					"steps": "Steps",
+					"title": "Title",
+					"valueField": "Value field",
+					"valueFieldset": "Value axis"
+				},
+				"inputTypes": {
+					"BOOLEAN": "Boolean",
+					"DECIMAL": "Decimal",
+					"INTEGER": "Integer",
+					"DOUBLE": "Double",
+					"DATE": "Date",
+					"TIMESTAMP": "Timestamp",
+					"TIME": "Time",
+					"STRING": "String",
+					"TEXT": "Text",
+					"CHAR": "Char",
+					"INET": "Net address"
+				},
+				"title": "Charts",
+				"typeFieldOptions": {
+					"card": "Card",
+					"classes": "Select from all CMDBuild classes",
+					"freeInt": "Free Integer",
+					"freeString": "Free String",
+					"group": "Current group",
+					"lookup": "Select from a lookup",
+					"user": "Current user"
+				}
+			},
+			"layout": {
+				"add": "Add a column",
+				"remove": "Remove empty columns",
+				"title": "Layout"
+			},
+			"properties": {
+				"add": "Add Dashboard",
+				"modify": "Modify Dashboard",
+				"remove": "Remove Dashboard",
+				"fields": {
+					"name": "Name",
+					"description": "Description",
+					"groups": "Available for groups"
+				}
+			},
+			"title": "Dashboard"
+		},
+		"modLookup": {
+			"add_lookuptype": "Add Lookup Type",
+			"lookupForm": {
+				"active": "Active",
+				"code": "Code",
+				"description": "Description",
+				"disable_lookup": "Disable Lookup",
+				"enable_lookup": "Enable Lookup",
+				"isdefault": "Default",
+				"notes": "Notes",
+				"parentdescription": "Parent description",
+				"update_lookup": "Modify Lookup"
+			},
+			"lookupGrid": {
+				"active": "Active",
+				"add_lookup": "Add Lookup",
+				"code": "Code",
+				"description": "Description",
+				"isdefault": "Default",
+				"notes": "Notes",
+				"parentdescription": "Parent description"
+			},
+			"lookupType": "Lookup Type",
+			"lookupTypeForm": {
+				"active": "Active",
+				"delete_lookuptype": "Delete Lookup Type",
+				"description": "Description",
+				"modify_lookuptype": "Modify Lookup Type",
+				"parent": "Parent",
+				"title": "Lookup Management"
+			},
+			"lookupTypes": "Lookup Types",
+			"tabs": {
+				"lookuplist": "Lookup List",
+				"properties": "Property"
+			},
+			"title": "Lookup Management"
+		},
+		"modWorkflow": {
+			"add_process": "Add process",
+			"attributes_title": "Manage attributes",
+			"domains_title": "Manage domains",
+			"errors": {
+				"table": {
+					"cast": "It is not possible to change the \"superclass\" property, the class contains data or subclasses",
+					"duplicate": "A class with the same name already exists",
+					"parent_not_found": "The specified process superclass does not exist"
+				}
+			},
+			"include_inherited": "Include inherited",
+			"process_property": "Property",
+			"tabs": {
+				"attributes": "Attributes",
+				"domains": "Domains",
+				"properties": "Properties",
+				"xpdl": "XPDL"
+			},
+			"title": "Manage processes",
+			"tree_title": "Processes",
+			"xpdlDownload": {
+				"download_tamplete": "Download template",
+				"download_xpdl_tamplete": "Download XPDL template",
+				"package_version": "Version",
+				"process_name": "Process name",
+				"user_stoppable": "User Stoppable"
+			},
+			"xpdlUpload": {
+				"deleted_image": "The sketch file is been removed, because not synchronized with the XPDL file",
+				"error": "Error while uploading XPDL file",
+				"jpg_file": "Sketch",
+				"saved_image": "Sketch uploaded",
+				"saved_xpdl": "XPDL file uploaded",
+				"upload_template": "Upload",
+				"upload_xpdl_tamplete": "Upload XPDL",
+				"xpdl_file": "XPDL File"
+			}
+		},
+		"modcartography": {
+			"external_services": {
+				"admin_password": "Admin Password",
+				"admin_user": "Admin Username",
+				"description": {
+					"geoserver": "GeoServer",
+					"google": "Google Maps",
+					"osm": "Open Street Map",
+					"yahoo": "Yahoo! Maps"
+				},
+				"key": "Key",
+				"title": "External Services",
+				"url": "URL",
+				"workspace": "Workspace"
+			},
+			"geoserver": {
+				"add_layer": "Add layer",
+				"delete_layer": "Delete layer",
+				"file": "File",
+				"modify_layer": "Modify layer",
+				"service_not_available": "Geoserver is not enabled, to enable it go to {0}",
+				"title": "Geoserver layers"
+			},
+			"icons": {
+				"alert": {
+					"msg": "Are you sure?",
+					"title": "Alert"
+				},
+				"description": "Description",
+				"file": "File",
+				"title": "Manage Icons"
+			},
+			"layermanager": {
+				"title": "Layers order"
+			},
+			"navigationTree": {
+				"title": "GIS navigation"
+			},
+			"title": "GIS"
+		},
+		"modconnectors": {
+			"title": "Connectors"
+		},
+		"modmenu": {
+			"add_menu": "Add Menu",
+			"available_elements": "Available Elements",
+			"availabletree": {
+				"class": "Classes",
+				"dashboard": "Dashboards",
+				"processclass": "Activities",
+				"report": "Reports",
+				"view": "Views"
+			},
+			"custom_menu": "Custom Menu",
+			"custom_menus": "Custom Menus",
+			"delete_menu": "Delete Menu",
+			"menu_root": "Menu",
+			"modify_menu": "Modify Menu",
+			"new_folder": "New Folder",
+			"title": "Menu Management"
+		},
+		"modreport": {
+			"add": "Add report",
+			"importJRFormStep1": {
+				"description": "Report description",
+				"enabled_groups": "Enabled groups",
+				"fieldset": "Import jasper report",
+				"master_report_jrxml": "Master Report (.jrxml)",
+				"menuTitle": "Jasper-reports report",
+				"name": "Report name"
+			},
+			"importJRFormStep2": {
+				"duplicate_images": "Warning: found report images with same filename - cannot proceed.",
+				"fieldset_generic": "Import jasper report",
+				"fieldset_images": "Required images",
+				"fieldset_subreports": "Required subreports",
+				"menuTitle": "Report Jasper-reports",
+				"nothing_to_import": "No images or subreports found. Please confirm to proceed with the import.",
+				"success": {
+					"description": {
+						"add": "Import completed",
+						"modify": "Report modified"
+					},
+					"title": "Success"
+				}
+			},
+			"importOpenofficeTemplateForm": {
+				"menuTitle": "Openoffice report"
+			},
+			"modify": "Modify report",
+			"remove": "Remove report",
+			"title": "Report"
+		},
+		"modsecurity": {
+			"defaultgroup": "* Default *",
+			"group": {
+				"add_group": "Add Group",
+				"administrator": "Administrator",
+				"availableusers": "Available users",
+				"delete_group": "Disable Group",
+				"email": "Email",
+				"enable_group": "Enable Group",
+				"group_description": "Description",
+				"group_name": "Group Name",
+				"groupchoice": "Selected users",
+				"is_active": "Active",
+				"is_administrator": "Is administrator",
+				"limited_admin": "Limited administrator",
+				"modify_group": "Modify Group",
+				"normal": "Normal",
+				"starting_class": "Starting page at",
+				"title": "Group management",
+				"usermanagement": "Manage associated users"
+			},
+			"groups": "Groups",
+			"privilege": {
+				"add_privilege": "Add Privilege",
+				"classname": " Class name",
+				"delete_privilege": "Delete Privilege",
+				"modify_privilege": "Modify Privilege",
+				"none_privilege": "None ",
+				"privilege_mode": "Privilege",
+				"read_privilege": "Read",
+				"write_privilege": "Write"
+			},
+			"tabs": {
+				"permissions": "Permissions",
+				"properties": "Properties"
+			},
+			"title": "Users and Groups",
+			"uiconfiguration": {
+				"disabled_class_tabs": "Disabled tabs in Classes module",
+				"disabled_modules": "Disabled features",
+				"disabled_process_tabs": "Disabled tabs in Processes module",
+				"generic_properties": {
+					"always_enabled_widgets": "Process widgets always enabled",
+					"card_simple_history": "Simple history for cards",
+					"full_screen_navigation": "Full screen navigation",
+					"hide_side_panel": "Hide side panel",
+					"process_simple_history": "Simple history for processes"
+				},
+				"other": "Other options",
+				"title": "UI configuration"
+			},
+			"user": {
+				"add_user": "Add User",
+				"availablegroups": "Available groups",
+				"change_password": "Change password",
+				"confirmation": "Confirmation",
+				"defaultgroup": "Default Group",
+				"defaultonlogin": "* Login *",
+				"description": "Description",
+				"disable_user": "Disable User",
+				"email": "Email",
+				"enable_user": "Enable User",
+				"groupmanagement": "Manage User's Group",
+				"isactive": "Active",
+				"modify_user": "Modify User",
+				"password": "Password",
+				"title": "User management",
+				"user_info": "User info",
+				"usergroups": "groups",
+				"username": "Username"
+			},
+			"users": "Users"
+		},
+		"setup": {
+			"cmdbuild": {
+				"cardpanelheight": "Height of card panel in percentiles",
+				"fieldsetgeneraltitle": "General",
+				"fieldsetlanguageltitle": "Language",
+				"fieldsetpopupwindowtitle": "Popup windows",
+				"instancename": "Instance name",
+				"language": "Default Language",
+				"languagePrompt": "Show language choice",
+				"menuTitle": "General Options",
+				"popupheightlabel": "Popup percentage height",
+				"popupwidthlabel": "Popup percentage width",
+				"referencecombolimit": "References combobox limit",
+				"relationlimit": "Relations limit",
+				"rowlimit": "Row limit",
+				"sessiontimeout": "Session timeout (seconds)",
+				"startingClass": "Default class",
+				"tabs_position": {
+					"bottom": "Bottom",
+					"label": "Tabs position in card panel",
+					"top": "Top"
+				},
+				"title": "CMDBuild Setup"
+			},
+			"dms": {
+				"categoryLookup": "CMDBuild category",
+				"credential": "Credentials",
+				"credentialPassword": "Password",
+				"credentialUser": "Username",
+				"delay": "Operations delay",
+				"enabled": "Enabled",
+				"fileserver": "File Server",
+				"fileserverPort": "Port",
+				"fileserverType": "Type",
+				"fileserverUrl": "Host",
+				"general": "General",
+				"menuTitle": "Alfresco",
+				"repository": "Repository",
+				"repositoryApp": "Application",
+				"repositoryFSPath": "File server path",
+				"repositoryWSPath": "Web service path",
+				"serverUrl": "Server URL",
+				"title": "Alfresco Setup"
+			},
+			"gis": {
+				"center_lat": "Initial latitude",
+				"center_lon": "Initial longitude",
+				"enable": "Enable",
+				"initial_zoom": "Initial zoom level",
+				"serverurl": "Server URL",
+				"title": "GIS"
+			},
+			"graph": {
+				"baseLevel": "Default level",
+				"clusteringThreshold": "Threshold for clustering nodes",
+				"enabled": "Enabled",
+				"expandingThreshold": "Max number of nodes in an expandable cluster",
+				"extensionMaximumLevel": "Maximum level",
+				"menuTitle": "Relation Graph",
+				"title": "Relation Graph Setup"
+			},
+			"modify": "Modify",
+			"save": "Save",
+			"server": {
+				"cache_management": "Cache management",
+				"clear_cache": "Clear cache",
+				"menuTitle": "Server management",
+				"servicesync": "Service synchronization",
+				"title": "Server management",
+				"wfsync": "Delete inconsistent processes"
+			},
+			"setupTitle": "Setup",
+			"workflow": {
+				"credential": "Credentials",
+				"enabled": "Enabled",
+				"endpoint": "Server URL",
+				"engine": "Engine name",
+				"general": "General",
+				"menuTitle": "Workflow",
+				"password": "Password",
+				"scope": "Scope",
+				"title": "Workflow Engine",
+				"user": "Username"
+			}
+		},
+		"tasks": {
+			"active": "Active",
+			"add": "Add task",
+			"all": "All",
+			"clone": "Clone task",
+			"cronForm" : {
+				"dayOfMounth": "Day of month",
+				"advanced": "Advanced",
+				"basic": "Basic",
+				"dayOfWeek": "Day of week",
+				"everyDay": "Every day",
+				"everyHour": "Every hour",
+				"everyMounth": "Every month",
+				"everyYear": "Every year",
+				"hour": "Hour",
+				"minute": "Minute",
+				"mounth": "Month"
+			},
+			"modify": "Modify task",
+			"remove": "Remove task",
+			"running": "Running",
+			"sendMail": "Send mail",
+			"startLabel": "Start task",
+			"startOnSave": "Start on save",
+			"startWorkflow": "Start workflow",
+			"stopLabel": "Stop task",
+			"stopped": "Stopped",
+			"template": "Template",
+			"title": "Task manager",
+			"type": "Type",
+			"taskConnector": {
+				"datasourceDbFieldset": "Datasource: Relational database",
+				"datasourceLdapFieldset": "Datasource: LDAP directory",
+				"dbName": "Database name",
+				"recipientAddress": "Recipient address",
+				"senderAccount": "Sender account",
+				"toSynchronize": "To synchronize",
+				"viewPrefix": "View prefix"
+			},
+			"taskEmail": {
+				"attachmentsCategory": "Category",
+				"bodyParsing": "Body parsing",
+				"emailAccount": "Email account",
+				"fromAddressFilter": "Filter on FromAddress",
+				"keyEnd": "Key end",
+				"keyInit": "Key init",
+				"saveToAlfresco": "Save attachments to Alfresco",
+				"subjectFilter": "Filter on Subject",
+				"valueEnd": "Value end",
+				"valueInit": "Value init"
+			},
+			"taskEvent": {
+				"afterCreate": "@@ After creation",
+				"afterUpdate": "@@ After update",
+				"beforeCreate": "@@ Before creation",
+				"beforeDelete": "@@ Before delete",
+				"beforeUpdate": "@@ Before update",
+				"groupsToApply": "@@ Group to apply",
+				"phase": "@@ Phase"
+			},
+			"tasksTypes": {
+				"connector": "Connector",
+				"email": "Email",
+				"event": "Event",
+				"eventTypes": {
+					"asynchronous": "Asynchronous",
+					"synchronous": "Synchronous"
+				},
+				"workflow": "Workflow"
+			},
+			"workflow": "Workflow",
+			"workflowForm": {
+				"attributes": "Workflow attributes",
+			}
+		},
+		"welcome": {
+			"body": "Administration module.",
+			"title": "Welcome"
+		}
+	},
+	"common": {
+		"buttons": {
+			"abort": "Cancel",
+			"add": "Add",
+			"apply": "Apply",
+			"as": "as",
+			"clone": "Clone",
+			"close": "Close",
+			"confirm": "OK",
+			"export": "Export",
+			"import": "Import",
+			"load": "Load",
+			"modify": "Modify",
+			"next": "Next",
+			"previous": "Previous",
+			"print": "Print",
+			"remove": "Remove",
+			"save": "Save",
+			"update": "Update",
+			"upload": "Upload",
+			"workflow": {
+				"advance": "Advance",
+				"back": "Back",
+				"save": "Save"
+			}
+		},
+		"confirmpopup": {
+			"areyousure": "Are you sure?",
+			"title": "Confirm"
+		},
+		"credits": "Info &amp; Support",
+		"display_topic": "Displaying topics",
+		"display_topic_none": "No topics to display",
+		"display_topic_of": "of ",
+		"failure": "Failure",
+		"group": "Group",
+		"loading": "Loading...",
+		"loading_mask": {
+			"classes": "Loading classes",
+			"configuration": "Loading configuration",
+			"domain": "Loading domains",
+			"group": "Loading users and groups",
+			"lookup": "Loading lookup types",
+			"menu": "Loading menus",
+			"report": "Loading reports",
+			"workflow": "Loading activities"
+		},
+		"logout": "Logout",
+		"remove": "Remove",
+		"splash": {
+			"consultant": "ITIL consultant and support",
+			"design": "design",
+			"implementation": "implementation",
+			"maintainer": "maintainer",
+			"municipality": "Municipality of Udine",
+			"principal": "principal for the initial project"
+		},
+		"success": "Success",
+		"tbd_body": "Work in progress",
+		"tbd_title": "Work in progress",
+		"tooltip": {
+			"editParameters": "Edit the parameters",
+			"reload": "Reload",
+			"showData": "Show data"
+		},
+		"tree_names": {
+			"class": "Standard",
+			"process": "Activity",
+			"simpletable": "Simple"
+		},
+		"unknown_error": "unknown error",
+		"user": "User",
+		"wait_msg": "Sending data...",
+		"wait_title": "Please wait..."
+	},
+	"configure": {
+		"failure": {
+			"text": "Setup wizard terminated with error: ",
+			"title": "Setup Error"
+		},
+		"finish": "Finish",
+		"next": "Next",
+		"previous": "Previous",
+		"step1": {
+			"choose": "Choose default language",
+			"showLangChoose": "Show language selection in login box"
+		},
+		"step2": {
+			"create_shark": "Create a Shark schema",
+			"db_confirm_password": "Confirm Password",
+			"db_connection": "Database connection",
+			"db_create": "CMDBuild Database",
+			"db_create_name": "CMDBuild Database name",
+			"db_create_type": "CMDBuild Database type",
+			"db_demo": "Demo",
+			"db_empty": "Empty",
+			"db_existing": "Existing",
+			"db_host": "Host",
+			"db_password": "Password",
+			"db_port": "Port",
+			"db_superUser": "Super user",
+			"db_test_connection": "Test connection",
+			"db_type": "Database type",
+			"db_user": "User",
+			"db_user_create": "Create restricted database user",
+			"limited_user": "Limited user",
+			"msg": {
+				"msg": "Connection successful",
+				"pswnomatch": "Passwords do not match",
+				"title": "Test connection"
+			},
+			"new_limited_user": "Create a limited user",
+			"user_type": "User type"
+		},
+		"step3": {
+			"admin": "Administration account",
+			"admin_password": "Password",
+			"admin_user": "User name",
+			"confirm_password": "Confirm Password"
+		},
+		"success": {
+			"text": "Setup wizard is successfully completed, clicking OK you will be redirect to the application",
+			"title": "Setup Done"
+		},
+		"title": "Configure"
+	},
+	"cron": {
+		"triggerFieldWindow": {
+			"every": "Every ",
+			"exactly": "At an exact",
+			"inastepwith": "In a step width",
+			"range": "In a range"
+		}
+	},
+	"errors": {
+		"busy_wf_widgets": "The visual controls are busy, check the status of the server before trying again.",
+		"detail": "Details",
+		"error_message": "Error",
+		"error_moving_row": "An error occourred while moving the row",
+		"invalid_attributes": "The following fields have not been filled correctly:",
+		"invalid_extended_attributes": "The following visual controls have not been filled correctly:",
+		"invalid_fields": "Some fields have not been filled correctly",
+		"no_driver": "No JDBC driver was found.<br />You can find it in the CMDBuild release package and copy it into the Tomcat libraries.",
+		"no_selections": "You have not selected any card to update",
+		"reasons": {
+			"ATTRIBUTE_NOTFOUND": "Attribute {1} of {0} non found",
+			"AUTH_CLASS_NOT_AUTHORIZED": "Not enough privileges to access class {0}",
+			"AUTH_DEMO_MODE": "Operation not allowed in demo mode",
+			"AUTH_DOMAIN_NOT_AUTHORIZED": "Not enough privileges to access domain {0}",
+			"AUTH_LOGIN_WRONG": "Wrong username or password",
+			"AUTH_MULTIPLE_GROUPS": "The user has multiple group associated",
+			"AUTH_NOT_AUTHORIZED": "Unauthorized operation",
+			"AUTH_NOT_CONFIGURED": "Error configuring authentication",
+			"AUTH_NOT_LOGGED_IN": "User not logged in",
+			"AUTH_NO_GROUPS": "The user is not a member of any group",
+			"AUTH_UNKNOWN_GROUP": "Wrong group",
+			"AUTH_WRONG_PASSWORD": "Wrong password",
+			"CARD_NOTFOUND": "Card not found in {0}",
+			"CLASS_NOTFOUND": "Class {0} non found",
+			"CQL_COMPILATION_FAILED": "Failed to compile CQL query",
+			"DMS_ATTACHMENT_DELETE_ERROR": "Attachment delete failed",
+			"DMS_ATTACHMENT_NOTFOUND": "Attachment {0} for card {2} of {1} not found",
+			"DMS_ATTACHMENT_UPLOAD_ERROR": "Attachment upload failed",
+			"DMS_DOCUMENT_TYPE_DEFINITION_ERROR": "Cannot read definition for category {0}",
+			"DMS_AUTOCOMPLETION_RULES_ERROR": "Cannot read attachments autocompletion rules for class {0}",
+			"DMS_UPDATE_ERROR": "Attachment update failed",
+			"DOMAIN_NOTFOUND": "Domain {0} non found",
+			"ILLEGAL_CRON_EXPRESSION": "Invalid cron expression",
+			"LOCKED_CARD": "The user {0} has edited the card to {1} seconds",
+			"LOOKUP_NOTFOUND": "Lookup not found for type {0}",
+			"LOOKUP_TYPE_NOTFOUND": "Lookup type {0} non found",
+			"MENU_NOTFOUND": "Menu not found",
+			"NOTFOUND": "Item not found",
+			"ORM_AMBIGUOUS_DIRECTION": "Cannot automatically determine the direction for the relation",
+			"ORM_CANT_CREATE_DATABASE": "Cannot create the database",
+			"ORM_CANT_CREATE_USER": "Cannot create the user",
+			"ORM_CANT_DELETE_CARD_WITH_RELATION": "Cannot delete cards having relations",
+			"ORM_CHANGE_LOOKUPTYPE_ERROR": "Cannot change the lookup type",
+			"ORM_CONTAINS_DATA": "Cannot drop classes or attributes of tables or domains containing records",
+			"ORM_CQL_COMPILATION_FAILED": "Invalid CQL query",
+			"ORM_CSV_INVALID_ATTRIBUTES": "Cannot save the cards: invalid values found",
+			"ORM_DATABASE_CONNECTION_ERROR": "Database connection error, try to reset the connection parameters",
+			"ORM_DBNOTCONFIGURED": "Database not configured",
+			"ORM_DOMAIN_HAS_REFERENCE": "Cannot delete a domain with references associated",
+			"ORM_DUPLICATE_ATTRIBUTE": "This attribute already exists",
+			"ORM_DUPLICATE_TABLE": "A class with this name already exists",
+			"ORM_DUPLICATE_USER": "This username already exists",
+			"ORM_ERROR_CARD_SELECT": "Cannot retrieve the cards",
+			"ORM_ERROR_CARD_UPDATE": "Cannot update the cards",
+			"ORM_ERROR_DOMAIN_CREATE": "Cannot create the domain",
+			"ORM_ERROR_DOMAIN_DELETE": "Cannot delete the domain",
+			"ORM_ERROR_DOMAIN_MODIFY": "Cannot modify the domain",
+			"ORM_ERROR_GENERIC_SQL": "SQL error: {0}",
+			"ORM_ERROR_GETTING_PK": "Unable to get the primary key",
+			"ORM_ERROR_INCOMPATIBLE_CLASS": "Incompatible class: {0}",
+			"ORM_ERROR_LOOKUP_CREATE": "Cannot create the lookup",
+			"ORM_ERROR_LOOKUP_DELETE": "Cannot delete the lookup",
+			"ORM_ERROR_LOOKUP_MODIFY": "Cannot modify the lookup",
+			"ORM_ERROR_RELATION_CREATE": "Cannot create the relation",
+			"ORM_ERROR_RELATION_MODIFY": "Cannot modify the relation",
+			"ORM_FILTER_CONFLICT": "Conflicting filter definition",
+			"ORM_FULLCARDS_MULTIPLEDOMAINS": "Cannot get full cards on multiple domains",
+			"ORM_GENERIC_ERROR": "Error occourred while loading/saving data",
+			"ORM_ICONS_FILE_ALREADY_EXISTS": "File {0} already exists",
+			"ORM_ICONS_FILE_NOT_FOUND": "File not found",
+			"ORM_ICONS_UNSUPPORTED_TYPE": "File type not supported",
+			"ORM_ILLEGAL_NAME_ERROR": "Illegal name: {0}",
+			"ORM_LOOKUPTYPE_ALREADY_EXISTS": "There is already another lookup type with the same description",
+			"ORM_MALFORMED_PATCH": "Unreadable Patch",
+			"ORM_NOT_NULL_VIOLATION": "Not null constraint violated",
+			"ORM_POSTGIS_NOT_FOUND": "PostGIS is not installed",
+			"ORM_READ_ONLY_RELATION": "Read-only relation",
+			"ORM_READ_ONLY_TABLE": "Read-only class",
+			"ORM_SQL_PATCH": "Error in SQL patch",
+			"ORM_TABLE_HAS_CHILDREN": "Cannot delete a class with subclasses",
+			"ORM_TABLE_HAS_DOMAIN": "Cannot delete a class that has a domain",
+			"ORM_TYPE_ERROR": "Type mismatch",
+			"ORM_UNIQUE_VIOLATION": "Unique constraint violated",
+			"OUT_OF_DATE_PROCESS": "Process was not congruent, reload the list",
+			"PARAMETER_CLASS_UNAVAILABLE": "Cannot instantiate Java class {0}",
+			"PRIVILEGE_GROUP_NOTFOUND": "Privilege not found for group {0}",
+			"PRIVILEGE_NOTFOUND": "Privilege not found for group {0} on the class {0}",
+			"REPORT_COMPILE_ERROR": "Report compilation error",
+			"REPORT_GROUPNOTALLOWED": "Group {0} is not allowed to launch {1}",
+			"REPORT_IMPORT_ERROR": "Insert error",
+			"REPORT_INVALID_FILE": "Invalid report file",
+			"REPORT_INVALID_PARAMETER_CLASS": "Found invalid parameter Java class! Operation aborted.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_ATTRIBUTE": "Found invalid CMDBuild attribute name in parameters! Operation aborted.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_CLASS": "Found invalid CMDBuild class name in parameters! Operation aborted.",
+			"REPORT_INVALID_PARAMETER_CMDBUILD_LOOKUP": "Found invalid CMDBuild lookup name in parameter! Operation aborted.",
+			"REPORT_INVALID_PARAMETER_FORMAT": "Report parameter name format not valid! Available formats: \"name\", \"name.cmdbuildClass.attribute\", \"name.lookup.lookupname\"",
+			"REPORT_INVALID_PARAMETER_LOOKUP_CLASS": "Found invalid lookup parameter Java class! Required \"java.lang.Integer\". Operation aborted.",
+			"REPORT_INVALID_PARAMETER_REFERENCE_CLASS": "Found invalid reference parameter Java class! Required \"java.lang.Integer\". Operation aborted.",
+			"REPORT_INVALID_PARAMETER_VALUE": "Found invalid parameter value! Operation aborted.",
+			"REPORT_INVISIBLE_PARAMETER": "A report parameter refers to a hidden attribute! Operation aborted.",
+			"REPORT_LOAD_DESIGN_ERROR": "Unable to load jasper design",
+			"REPORT_NOCLASS_ERROR": "Compile error - unable to load class: {0}",
+			"REPORT_NOTFOUND": "Unable to load report {0}",
+			"REPORT_UPLOAD_ERROR": "Upload error",
+			"SCHEDULER_INTERNAL_ERROR": "Scheduler internal error: {0}",
+			"SERVICE_UNAVAILABLE": "Service unavailable",
+			"WF_CANNOT_ABORT_PROCESS": "Cannot abort process",
+			"WF_CANNOT_ACCEPT_WORKITEM": "Cannot accept user activity",
+			"WF_CANNOT_COMPLETE_WORKITEM": "Cannot complete user activity",
+			"WF_CANNOT_CONFIGURE_CMDBEXTATTR": "Cannot configure the extended attribute {0}",
+			"WF_CANNOT_FIND_XPDL": "Cannot find XPDL definition",
+			"WF_CANNOT_GETWAPI_CONNECTION": "Cannot get connection to workflow engine",
+			"WF_CANNOT_GET_PROCESSCARDID": "Cannot get process card id",
+			"WF_CANNOT_GET_PROCESS_VARIABLES": "Cannot get process variables",
+			"WF_CANNOT_GET_WORKITEM": "Cannot get user activity ",
+			"WF_CANNOT_GET_WORKITEMS": "Cannot get user activity list",
+			"WF_CANNOT_GET_WORKITEM_VARIABLES": "Cannot get user activity variables",
+			"WF_CANNOT_LOAD_ACTIVITIES": "Cannot load activities for process {0}",
+			"WF_CANNOT_REACT_CMDBEXTATTR": "Cannot complete the extended attribute {0}",
+			"WF_CANNOT_REASSIGN_WORKITEM": "Cannot reassign user activity",
+			"WF_CANNOT_RESOLVE_PARTICIPANT": "Cannot resolve participant",
+			"WF_CANNOT_RESUME_WORKITEM": "Cannot resume user activity",
+			"WF_CANNOT_START": "Cannot start process",
+			"WF_CANNOT_SUSPEND_PROCESS": "Cannot suspend process",
+			"WF_CANNOT_UPDATE_WORKITEM_VARIABLES": "Cannot update user activity variables",
+			"WF_CANNOT_UPLOAD_PACKAGE": "Cannot upload package",
+			"WF_EMAIL_CANNOT_RETRIEVE_MAIL": "Cannot retrieve email",
+			"WF_EMAIL_NOT_CONFIGURED": "Email management not configured",
+			"WF_EMAIL_NOT_SENT": "Email not sent",
+			"WF_EXTATTR_CREATEREPORT_FACTORYNOTINSESSION": "Error while creating report: the factory need is not in session",
+			"WF_GENERIC_ERROR": "Workflow generic error",
+			"WF_PACKAGE_ERROR": "Error in package",
+			"WF_PROCESSINFO_NOT_FOUND": "XPDL file missing for process",
+			"WF_START_ACTIVITY_NOT_FOUND": "I have not found a start activity for process {0}",
+			"WF_WAPI_CONNECTION_ERROR": "Cannot connect to the workflow server",
+			"WF_WORKITEM_VARIABLES_REQUIRED": "Field required: {0}",
+			"WF_WRONG_CREDENTIALS": "Wrong credentials using workflow",
+			"WF_WRONG_XPDL_CLASSNAME": "Wrong class name for given XPDL",
+			"WF_XPDL_CLASSNAME_MISSING": "Missing binding to CMDBuild class in XPDL",
+			"WF_XPDL_USERSTOP_MISSING": "Missing userStoppable field in the XPDL file",
+			"WIDGET_SERVICE_CONNECTION_ERROR": "Message send failed. Possible causes: 1) The service is not deployed; 2) The URL and/or the port number of the endpoint is not correct",
+			"WIDGET_SERVICE_MALFORMED_REQUEST": "Check if the namespace, the method name and the parameters of the web service are correct"
+		},
+		"reference_invalid": "The value doesn't match the filter",
+		"server_error": "Server unreachable",
+		"server_error_code": "An error has occurred while sending data to the server: ",
+		"show_detail": "Show details",
+		"template_error": "Template error",
+		"unknown_error": "An error has occurred",
+		"wrong_wf_widgets": "There was an error saving the following visual controls: "
+	},
+	"filterWindow": {
+		"add": "Add filter"
+	},
+	"info": {
+		"card_not_found": "The card doesn't match the current filter"
+	},
+	"login": {
+		"change_user": "Change user",
+		"failed": "Login Failed",
+		"language": "Language",
+		"login": "Login",
+		"multi_group": "Choose a group",
+		"password": "Password",
+		"relogin_message": "The authenticated session has expired. Please, insert your password again.",
+		"relogin_title": "Session expired",
+		"title": "Please Login",
+		"username": "Username",
+		"waitMsg": "Sending data...",
+		"waitTitle": "Connecting"
+	},
+	"management": {
+		"description": "Data management module",
+		"findfilter": {
+			"add": "Add",
+			"all": "Any",
+			"attachments": "Attachments",
+			"attribute": "Attribute",
+			"attributes": "Attributes",
+			"apply": "Apply",
+			"begin": "Begins with",
+			"between": "Between",
+			"clear_filter": "Clear filter",
+			"copyof": "Copy of",
+			"different": "Different",
+			"direction": "Direction",
+			"dontbegin": "Does not begin with ",
+			"dontend": "Does not end with",
+			"dontlike": "Does not contain",
+			"end": "Ends with",
+			"equals": "Equals",
+			"filter": "Filter",
+			"fromSelection": "FromSelection",
+			"functions" : "Function",
+			"go_filter": "Filter",
+			"like": "Contains",
+			"list": "List",
+			"major": "Greater than",
+			"minor": "Less than",
+			"msg": {
+				"attention": "Attention",
+				"error": "Error",
+				"no_removed": "The filter was not removed",
+				"no_server": "Server unreachable",
+				"no_set": "The filter was not set",
+				"question_sure": "Are you sure?"
+			},
+			"notinrel": "No one",
+			"notnull": "Is not null",
+			"nullo": "Is null",
+			"newfilter": "New search filter",
+			"relations": "Relations",
+			"remove": "Remove",
+			"save_filter": "Save filter",
+			"saveandapply": "Save and apply",
+			"selectedAttr": "Selected addtributes",
+			"set_filter": "Search filter",
+			"setted": "Filter setted",
+			"show_all": "Show all",
+			"title": "Choose an attribute",
+			"window_title": "Search filter"
+		},
+		"graph": {
+			"action": "Relation graph",
+			"icon_tooltip": "Open relation graph",
+			"title": "Relation graph"
+		},
+		"modcard": {
+			"add_attachment": "Add attachment",
+			"add_attachment_window": {
+				"category": "Category",
+				"description": "Description",
+				"load_attachment": "Load attachment",
+				"select_category": "Select a category...",
+				"window_title": "Add attachment"
+			},
+			"add_card": "Add card",
+			"add_relations": "Add relations",
+			"add_relations_window": {
+				"domain": "Domain",
+				"filter_tab": "Filter",
+				"list_tab": "List",
+				"select_domain": "Select a domain...",
+				"window_title": "Add relations"
+			},
+			"attachment_columns": {
+				"author": "Author",
+				"category": "Category",
+				"creation_date": "Begin date",
+				"description": "Description",
+				"filename": "File name",
+				"item": "attachment",
+				"items": "attachments",
+				"modification_date": "Modification date",
+				"version": "Version"
+			},
+			"clone_card": "Clone card",
+			"delete_attachment": "Delete attachment",
+			"delete_attachment_confirm": "Are you sure you want to delete this attachment?",
+			"delete_card": "Delete card",
+			"delete_card_confirm": "Are you sure you want to delete this card?",
+			"delete_relation": "Delete relation",
+			"delete_relation_confirm": "Are you sure you want to delete this relation?",
+			"detail_window": {
+				"detail_attributes": "Detail's attributes",
+				"relation_attributes": "Relation's attributes"
+			},
+			"download_attachment": "Download attachment",
+			"edit_attachment": "Edit attachment",
+			"edit_relation": "Edit relation",
+			"gis": {
+				"geo_attributes": "Geographical attributes",
+				"gisNavigation": "GIS Navigation",
+				"position": "Position",
+				"zoom": "Zoom"
+			},
+			"history_columns": {
+				"activity_name": "Activity name",
+				"attributes": "Attributes",
+				"begin_date": "Begin date",
+				"code": "Code",
+				"description": "Description",
+				"destclass": "Class",
+				"domain": "Domain",
+				"end_date": "End date",
+				"performer": "Activity performer",
+				"relation": "Relation",
+				"user": "User"
+			},
+			"maptoolbar": {
+				"add": "Add",
+				"drag": "Modify",
+				"drag_map": "Drag map",
+				"zoom_in": "Zoom in",
+				"zoom_out": "Zoom out"
+			},
+			"modify_card": "Modify card",
+			"modify_note": "Modify note",
+			"modify_relation_window": {
+				"window_title": "Modify relation"
+			},
+			"open_relation": "Open related card",
+			"other_fields": "Other",
+			"relation_columns": {
+				"begin_date": "Begin date",
+				"code": "Code",
+				"description": "Description",
+				"destclass": "Class",
+				"domain": "Domain",
+				"item": "item",
+				"items": "items"
+			},
+			"search_reference_window": {
+				"window_title": "Search in "
+			},
+			"subclass": "Subclass",
+			"tabs": {
+				"attachments": "Attachments",
+				"card": "Card",
+				"detail": "Detail",
+				"history": "History",
+				"map": "Map",
+				"notes": "Notes",
+				"relations": "Relations"
+			},
+			"title": "List - ",
+			"treetitle": "Cards",
+			"view_relation": "View related card"
+		},
+		"moddetail": {
+			"adddetail": "Add detail",
+			"deletedetail": "Delete detail",
+			"detail": "Detail",
+			"editdetail": "Edit detail",
+			"showattach": "Show attachments",
+			"showdetail": "Show detail",
+			"showgraph": "Show graph",
+			"shownotes": "Show notes"
+		},
+		"modmenu": {
+			"menu": "Navigation"
+		},
+		"modreport": {
+			"add_report": "Add report",
+			"delete_report": "Delete report",
+			"modify_report": "Edit report",
+			"reportForm": {
+				"description": "Description",
+				"name": "Name",
+				"report": "Report"
+			},
+			"report_parameters": "Report parameters",
+			"title": "List - ",
+			"treetitle": "Report"
+		},
+		"modutilities": {
+			"bulkupdate": {
+				"title": "Multiple update",
+				"countMessage": "{0} cards will be modified"
+			},
+			"changepassword": {
+				"newpw": "New password",
+				"oldpw": "Old password",
+				"repnew": "Retype new password",
+				"successmsgtext": "Password changed",
+				"title": "Change password",
+				"validationtext": "Passwords do not match"
+			},
+			"csv": {
+				"csvfile": "CSV file",
+				"error": "Error",
+				"exportfile": "Export",
+				"importfailure": "Import failed",
+				"importsuccess": "Import was successful",
+				"info": "Info",
+				"noupdate": "No cards to update",
+				"selectaclass": "Select a class",
+				"separator": "Separator",
+				"shownonvalid": "Show invalid records only",
+				"title": "Import CSV file",
+				"title_export": "Export CSV file",
+				"warning": "Warning"
+			},
+			"title": "Utility"
+		},
+		"modutility": {
+			"title": "Utility"
+		},
+		"modview": {
+			"title": "Views"
+		},
+		"modworkflow": {
+			"abort_card": "Abort process",
+			"abort_card_confirm": "Are you sure you want to abort this process?",
+			"activitydocumentation": "Operative Instruction",
+			"add_card": "Start",
+			"completed": "Completed",
+			"custom_steps": "Custom steps",
+			"delete_card": "Abort process",
+			"delete_card_confirm": "Are you sure you want to delete this process?",
+			"extattrs": {
+				"attachments": {
+					"must_save_to_add": "You can not add an attachment before saving the activity"
+				},
+				"calendar": {
+					"wrong_config": "The calendar is not well configured"
+				},
+				"createreport": {
+					"format_label": "Format"
+				},
+				"linkcards": {
+					"required": "Please select some cards - "
+				},
+				"manageemail": {
+					"addresshdr": "Address",
+					"ccfld": "CC",
+					"compose": "Compose email",
+					"datehdr": "Archiving date",
+					"deleteicon": "Remove",
+					"editicon": "Modify",
+					"fromfld": "From",
+					"lookup": {
+						"Draft": "Drafts",
+						"New": "New",
+						"Outgoing": "Outgoing",
+						"Received": "Received",
+						"Sent": "Sent"
+					},
+					"subjectfld": "Subject",
+					"subjecthdr": "Subject",
+					"tofld": "To",
+					"updateTemplateConfirm": "This will delete all the unsent emails.",
+					"viewicon": "View",
+					"mailsAreChanged": "The generated e-mails have changed",
+					"regenerates": "Regenerate e-mails"
+				},
+				"managerelation": {
+					"required": "Please select some relations - "
+				},
+				"notes": {
+					"must_save_to_modify": "You can not modify the notes before saving the activity"
+				}
+			},
+			"history_columns": {
+				"attributes": "Attributes",
+				"begin_date": "Begin date",
+				"description": "Description",
+				"domain": "Domain",
+				"end_date": "End date",
+				"relation": "Relation",
+				"user": "User"
+			},
+			"interrupted": "Interrupted",
+			"modify_card": "Edit activity",
+			"modify_note": "Edit note",
+			"open_attachment": "Open attachments",
+			"open_note": "Open note",
+			"started": "Started",
+			"status": "Status",
+			"statuses": {
+				"all": "All",
+				"closed.aborted": "Aborted",
+				"closed.completed": "Completed",
+				"open.not_running.suspended": "Suspended",
+				"open.running": "Open"
+			},
+			"tabs": {
+				"attachments": "Attachments",
+				"card": "Activity",
+				"detail": "Details",
+				"history": "History",
+				"notes": "Note",
+				"options": "Options",
+				"relations": "Relations",
+				"sketch": "Sketch"
+			},
+			"title": "List - ",
+			"treetitle": "Processes"
+		},
+		"welcome": {
+			"body": "Data management module.",
+			"title": "Welcome"
+		}
+	},
+	"patch": {
+		"patch_list": "List of available patches"
+	},
+	"vtype_text": {
+		"cmdbcomment": "Pipe or apostrophe not allowed",
+		"cmdbcommentrelaxed": "Pipe not allowed",
+		"invalid_character": "Invalid character",
+		"wrong_decimal_part": "Max {0} decimal digits",
+		"wrong_integer_part": "Max {0} integer digits",
+		"wrong_ip_address": "Not valid IP address",
+		"wrong_time": "{0} is not a valid value. It must be in the format {1}"
+	},
+	"warnings": {
+		"link_cards_changed_values": "The selection of \"{0}\" has been updated",
+		"only_filtered": "The changes will be applied only to the cards that meet the current filter",
+		"popup_block": "We have detected that you are using popup blocking software, please disable to run operation",
+		"warning_message": "Warning"
+	},
+	"active": "Active",
+	"addFilter": "Add Filter",
+	"addProject": "Add Project",
+	"addTemplate": "Add Template",
+	"addView": "Add View",
+	"add_attachment_from_db": "Add attachments from database",
+	"address": "Address",
+	"attachfile": "Attach File",
+	"attachmentsLookup": "Email attachments Lookup",
+	"attention": "Attention",
+	"attribute": "Attribute",
+	"availableFilters": "Available Filters",
+	"bcc": "Bcc",
+	"bim": "BIM",
+	"buttons_to_disable": "Buttons to disable",
+	"camera": "Camera",
+	"cc": "Cc",
+	"checkFrequency": "Check frequency (minutes)",
+	"choose_attachment_from_db": "Choose attachments from Database",
+	"class": "Class",
+	"clean_word_pasted_text": "Clean the text pasted from Word or other Rich Text applications",
+	"clearFilter": "Clear Filter",
+	"clear_row_and_colun_privilege": "Clear rows and columns privileges",
+	"container": "Container",
+	"controls": "Controls",
+	"cql_filter": "CQL filter",
+	"description_": "Description",
+	"disable": "Disable",
+	"display_less_attributes": "Display less attributes",
+	"display_more_attributes": "Display more attributes",
+	"download_ifc_file": "Download Ifc file",
+	"emailBody": "Body",
+	"emailTemplate": "Email Template",
+	"enable": "Enable",
+	"enabled": "Enabled",
+	"error": "Error",
+	"error_bimserver_connection": "I'm not able to connect to Bimserver",
+	"export": "Export",
+	"expose": "Expose",
+	"file_name": "File name",
+	"filter": "Filter",
+	"filterView": "From Filter",
+	"filters_for_groups": "Filters for groups",
+	"format_csv": "CSV",
+	"format_odt": "OpenOffice Odt",
+	"format_pdf": "Adobe Pdf",
+	"format_rtf": "Rich Text Format",
+	"from": "From",
+	"front": "Front",
+	"global": "Global",
+	"ifc_file": "File IFC",
+	"itIsNotAllowedFilterWithCalculatedParams": "It's not allowed to use a filter with calculated parameters",
+	"itIsNotAllowedFilterWithRuntimeParams": "It's not allowed to use a filter with user selectable parameters",
+	"last_checkin": "Last checkin",
+	"layers": "Layers",
+	"lock_cards_in_edit": "Lock cards in edit",
+	"lock_timeout": "Lock timeout (seconds)",
+	"loggedGroup": "Logged Group",
+	"loggedUser": "Logged User",
+	"mode": "Mode",
+	"modifyFilter": "Modify Filter",
+	"modifyProject": "Modify Project",
+	"modifyTemplate": "Modify Template",
+	"modifyView": "Modify View",
+	"multiGroup": "Multi group",
+	"name": "Name",
+	"no_bim_project_for_card": "There is no BIM project for this card",
+	"not_set": "Not set",
+	"open_3d_viewer": "Open 3D viewer",
+	"pan": "Pan",
+	"password": "Password",
+	"port": "Port",
+	"privileges_on_columns": "Columns privileges",
+	"privileges_on_rows": "Rows privileges",
+	"projects": "Projects",
+	"reference_to_root": "Reference to Root",
+	"removeFilter": "Remove Filter",
+	"removeProject": "Remove Project",
+	"removeTemplate": "Remove Template",
+	"removeView": "Remove View",
+	"remove_formatting": "Remove formatting",
+	"reset": "Reset",
+	"root": "Root",
+	"rotate": "Rotate",
+	"row_and_column_privileges": "Rows and columns privileges",
+	"row_add": "Add row",
+	"row_delete": "Delete row",
+	"row_edit": "Edit row",
+	"search_filters": "Search Filters",
+	"select_a_class": "Select a Class",
+	"selected_object": "Selected Object",
+	"set": "Set",
+	"setFilter": "Set Filter",
+	"setLater": "Input Parameter",
+	"show_name_of_locker_user": "Show locker username",
+	"side": "Side",
+	"sqlView": "From SQL",
+	"subject": "Subject",
+	"targetClass": "Target Class",
+	"to": "To",
+	"top": "Top",
+	"translations" : "Translations",
+	"translations_enabled" : "Enabled languages",
+	"transparent": "Transparent",
+	"tree": "Tree",
+	"tree_navigation": "Navigation tree",
+	"tree_navigation_add": "Add navigation tree",
+	"tree_navigation_attributes": "Navigation tree attributes",
+	"tree_modify": "Modify tree",
+	"tree_remove": "Remove tree",
+	"tree_root_cql": "Root CQL filter",
+	"trees_navigation": "Navigation trees",
+	"ui_configuration_for_groups": "UI configuration for group",
+	"unlock_all_cards": "Unlock all cards",
+	"uploading_attachment": "Uploading attachment...",
+	"url": "URL",
+	"username": "Username",
+	"value": "Value",
+	"views": "Views",
+	"workflow" : "Workflow",
+	"workflow_attributes" : "Workflow attributes",
+	"workflow_by_cql": "by Cql",
+	"workflow_by_name": "by name",
+	"workflow_cql_filter": "Cql filter",
+	"workflow_query_tipology": "Selection",
+	"you_have_not_set_a_filter": "You have not set a filter",
+	"zoom": "Zoom"
+}
